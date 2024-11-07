@@ -10,9 +10,7 @@ const App = () => {
     <>
       <Render />
       <Navigation />
-      bajsdbasjkbdaskj
-      absdbadbasjkdbasjkd
-      avsdbaskjdbsak
+     
     </>
   )
 }
