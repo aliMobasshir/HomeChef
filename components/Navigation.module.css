@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    display: flex;
+    align-items:center;
+    padding: 10px 20px;
+}
+
+.navigationList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.navigationItem{
+    list-style: none;
+}
+
+.navigationLink{
+    text-decoration: none;
+    color: #656565;
+    font-size: 24px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navigationLink:hover{
+    color: black;
+}
+
