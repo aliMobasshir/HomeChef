@@ -27484,7 +27484,19 @@ var _searchJsx = require("./Search.jsx");
 var _searchJsxDefault = parcelHelpers.interopDefault(_searchJsx);
 var _navigationModuleCss = require("./Navigation.module.css");
 var _navigationModuleCssDefault = parcelHelpers.interopDefault(_navigationModuleCss);
+var _hamburgerSvg = require("./Hamburger.svg");
+var _hamburgerSvgDefault = parcelHelpers.interopDefault(_hamburgerSvg);
+var _xmarkSvg = require("./xmark.svg");
+var _xmarkSvgDefault = parcelHelpers.interopDefault(_xmarkSvg);
+var _s = $RefreshSig$();
 const Navigation = ()=>{
+    _s();
+    // State to control the visibility of the menu
+    const [isMenuOpen, setMenuOpen] = (0, _react.useState)(false);
+    // Toggle function to show/hide the menu
+    const handler = ()=>{
+        setMenuOpen((prev)=>!prev); // Toggle the menu visibility
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _navigationModuleCssDefault.default).navigationContainer,
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -27501,7 +27513,7 @@ const Navigation = ()=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 16,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27510,25 +27522,41 @@ const Navigation = ()=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 17,
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 15,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _navigationModuleCssDefault.default).navigationItem,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchJsxDefault.default), {}, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 21,
+                            lineNumber: 30,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 20,
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            onClick: handler,
+                            className: (0, _navigationModuleCssDefault.default).hamburger,
+                            src: (0, _hamburgerSvgDefault.default),
+                            alt: "Click Here"
+                        }, void 0, false, {
+                            fileName: "components/Navigation.jsx",
+                            lineNumber: 35,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Navigation.jsx",
+                        lineNumber: 34,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27539,12 +27567,12 @@ const Navigation = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 25,
+                            lineNumber: 40,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 24,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27555,12 +27583,12 @@ const Navigation = ()=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 29,
+                            lineNumber: 44,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 28,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27571,31 +27599,105 @@ const Navigation = ()=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 33,
+                            lineNumber: 48,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 32,
+                        lineNumber: 47,
                         columnNumber: 11
+                    }, undefined),
+                    isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _navigationModuleCssDefault.default).menuContainer,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                onClick: handler,
+                                className: (0, _navigationModuleCssDefault.default).xmarkImage,
+                                src: (0, _xmarkSvgDefault.default),
+                                alt: ""
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 56,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/about",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 57,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/contact",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 58,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/SignUp",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Sign Up"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 59,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/SignIn",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Sign In"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 60,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/services",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Services"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 61,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Navigation.jsx",
+                        lineNumber: 53,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-                lineNumber: 13,
+                lineNumber: 22,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-            lineNumber: 11,
+            lineNumber: 21,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-        lineNumber: 9,
+        lineNumber: 20,
         columnNumber: 5
     }, undefined);
 };
+_s(Navigation, "8RJTKwk28PEvOAweyvPJvwA2a9c=");
 _c = Navigation;
 exports.default = Navigation;
 var _c;
@@ -27606,7 +27708,7 @@ $RefreshReg$(_c, "Navigation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./chef 1.svg":"jDpLP","./HomeChef.svg":"ctxag","./Search.jsx":"6tfRa","./Navigation.module.css":"gE6rM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./chef 1.svg":"jDpLP","./HomeChef.svg":"ctxag","./Search.jsx":"6tfRa","./Navigation.module.css":"gE6rM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Hamburger.svg":"aMX6k","./xmark.svg":"eA0KT"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.28.0
  *
@@ -34868,24 +34970,37 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _searchModuleCss = require("./Search.module.css");
 var _searchModuleCssDefault = parcelHelpers.interopDefault(_searchModuleCss);
+var _magnifyingGlassSvg = require("./magnifying_glass.svg");
+var _magnifyingGlassSvgDefault = parcelHelpers.interopDefault(_magnifyingGlassSvg);
 const Search = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
             color: "red"
         },
         ClassName: (0, _searchModuleCssDefault.default).searchBar,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-            className: (0, _searchModuleCssDefault.default).searchInput,
-            type: "text",
-            placeholder: "Search for recipes"
-        }, void 0, false, {
-            fileName: "components/Search.jsx",
-            lineNumber: 7,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                className: (0, _searchModuleCssDefault.default).searchInput,
+                type: "text",
+                placeholder: "Search for recipes"
+            }, void 0, false, {
+                fileName: "components/Search.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: (0, _searchModuleCssDefault.default).maginfyIcon,
+                src: (0, _magnifyingGlassSvgDefault.default),
+                alt: "Click TO Magnify"
+            }, void 0, false, {
+                fileName: "components/Search.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "components/Search.jsx",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -34899,16 +35014,31 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YDFA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./magnifying_glass.svg":"gOv3O"}],"7YDFA":[function(require,module,exports) {
+module.exports["maginfyIcon"] = `WCa7bG_maginfyIcon`;
 module.exports["searchInput"] = `WCa7bG_searchInput`;
 
-},{}],"gE6rM":[function(require,module,exports) {
+},{}],"gOv3O":[function(require,module,exports) {
+module.exports = require("44b1cd67ef553a0f").getBundleURL("avzPb") + "magnifying_glass.49a597f0.svg" + "?" + Date.now();
+
+},{"44b1cd67ef553a0f":"lgJ39"}],"gE6rM":[function(require,module,exports) {
+module.exports["hamburger"] = `jTSFqG_hamburger`;
+module.exports["menuContainer"] = `jTSFqG_menuContainer`;
+module.exports["menuItem"] = `jTSFqG_menuItem`;
 module.exports["navigation"] = `jTSFqG_navigation`;
+module.exports["navigationBrandImage"] = `jTSFqG_navigationBrandImage`;
 module.exports["navigationItem"] = `jTSFqG_navigationItem`;
 module.exports["navigationLink"] = `jTSFqG_navigationLink`;
 module.exports["navigationList"] = `jTSFqG_navigationList`;
+module.exports["xmarkImage"] = `jTSFqG_xmarkImage`;
 
-},{}],"hKJXg":[function(require,module,exports) {
+},{}],"aMX6k":[function(require,module,exports) {
+module.exports = require("896d531b53988b89").getBundleURL("avzPb") + "Hamburger.6ca782ae.svg" + "?" + Date.now();
+
+},{"896d531b53988b89":"lgJ39"}],"eA0KT":[function(require,module,exports) {
+module.exports = require("875187e2b4dd27b5").getBundleURL("avzPb") + "xmark.397b9984.svg" + "?" + Date.now();
+
+},{"875187e2b4dd27b5":"lgJ39"}],"hKJXg":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4ed0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

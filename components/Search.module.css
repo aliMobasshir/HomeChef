@@ -12,3 +12,23 @@
 .searchInput:focus{
     border: 3px solid black;
 }
+
+.maginfyIcon{
+    position: absolute;
+    top: 35px;
+    right: 58px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 670) {
+    .searchInput{
+        display: none;
+    }
+
+    .maginfyIcon{
+        display: block;
+    }
+}
