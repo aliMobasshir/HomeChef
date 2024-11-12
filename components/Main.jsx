@@ -12,18 +12,21 @@ const Main = () => {
                         YOU LOVE
                     </h1>
 
-                    <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand, 
-                    or explore by category!</p>
+                    <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand,
+                        or explore by category!</p>
 
                     <button className={Style.button} id='button'>GET STARTED </button>
                 </div>
 
                 <div className={Style.container2} id="container2">
-                    <img src={resturant} className={Style.Restaurant_Img}   alt=" resturant" />
+                    <img src={resturant} className={Style.Restaurant_Img} alt=" resturant" />
                 </div>
 
             </div>
-                <div className={Style.mainFooter}></div>
+
+            <div className={Style.mainFooter}>
+                baskdnaskdn
+            </div>
         </main>
     );
 }
