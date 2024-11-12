@@ -20,18 +20,36 @@
   border: 3px solid #000;
 }
 
+.WCa7bG_maginfyIcon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 58px;
+}
+
+@media screen and (width <= 670px) {
+  .WCa7bG_searchInput {
+    display: none;
+  }
+
+  .WCa7bG_maginfyIcon {
+    display: block;
+  }
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .jTSFqG_navigation {
-  z-index: 2;
   align-items: center;
   padding: 10px 20px;
   display: flex;
-  position: sticky;
-  top: 0;
 }
 
 .jTSFqG_navigationList {
@@ -48,14 +66,85 @@
 .jTSFqG_navigationLink {
   color: #656565;
   font-family: Inria Sans, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
 }
 
+.jTSFqG_hamburger {
+  display: none;
+}
+
 .jTSFqG_navigationLink:hover {
   color: #000;
+}
+
+.jTSFqG_xmarkImage {
+  cursor: pointer;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.jTSFqG_menuContainer {
+  z-index: 100;
+  backdrop-filter: blur(1px);
+  background-color: #333333b3;
+  border-radius: 8px;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.jTSFqG_menuItem {
+  color: #fff;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: Inria Sans, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+}
+
+.jTSFqG_menuItem:hover {
+  background-color: #fff3;
+}
+
+@media screen and (width <= 830px) {
+  .jTSFqG_navigationLink {
+    display: none;
+  }
+
+  .jTSFqG_hamburger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 10px;
+  }
+
+  .jTSFqG_menuContainer {
+    display: block;
+  }
+}
+
+@media screen and (width <= 500px) {
+  .jTSFqG_navigationBrandImage {
+    width: 170px;
+  }
 }
 
 .SnCtwa_mainContainer {
@@ -137,6 +226,10 @@
 }
 
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   overflow-x: hidden;
 }
 
