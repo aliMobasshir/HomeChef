@@ -27260,7 +27260,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27292,7 +27292,7 @@ $RefreshReg$(_c, "Render");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eFgT2":[function(require,module,exports) {
+},{"react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"eFgT2":[function(require,module,exports) {
 module.exports["text"] = `kf7_Ma_text`;
 
 },{}],"gkKU3":[function(require,module,exports) {
@@ -27501,7 +27501,7 @@ const Navigation = ()=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 17,
+                                lineNumber: 16,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27510,13 +27510,25 @@ const Navigation = ()=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 18,
+                                lineNumber: 17,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 16,
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: (0, _navigationModuleCssDefault.default).navigationItem,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchJsxDefault.default), {}, void 0, false, {
+                            fileName: "components/Navigation.jsx",
+                            lineNumber: 21,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/Navigation.jsx",
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27527,12 +27539,12 @@ const Navigation = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 22,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27543,12 +27555,12 @@ const Navigation = ()=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 27,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 26,
+                        lineNumber: 28,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27559,40 +27571,28 @@ const Navigation = ()=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 31,
+                            lineNumber: 33,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 30,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        className: (0, _navigationModuleCssDefault.default).navigationItem,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchJsxDefault.default), {}, void 0, false, {
-                            fileName: "components/Navigation.jsx",
-                            lineNumber: 35,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/Navigation.jsx",
-                        lineNumber: 34,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-            lineNumber: 12,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
@@ -34926,69 +34926,79 @@ var _restaurant1Svg = require("./restaurant 1.svg");
 var _restaurant1SvgDefault = parcelHelpers.interopDefault(_restaurant1Svg);
 const Main = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: (0, _mainModuleCssDefault.default).mainContainer,
-            id: "main-container",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "",
-                    id: "container1",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _mainModuleCssDefault.default).h1_text,
-                            children: "FIND RECIPES FOR THE FOOD YOU LOVE"
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _mainModuleCssDefault.default).mainContainer,
+                id: "main-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _mainModuleCssDefault.default).textContainer,
+                        id: "container1",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: (0, _mainModuleCssDefault.default).h1_text,
+                                children: "FIND RECIPES FOR THE FOOD YOU LOVE"
+                            }, void 0, false, {
+                                fileName: "components/Main.jsx",
+                                lineNumber: 9,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: (0, _mainModuleCssDefault.default).p_text,
+                                id: "p_text",
+                                children: "Discover delicious recipes by browsing ingredients you have on hand, or explore by category!"
+                            }, void 0, false, {
+                                fileName: "components/Main.jsx",
+                                lineNumber: 15,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _mainModuleCssDefault.default).button,
+                                id: "button",
+                                children: "GET STARTED "
+                            }, void 0, false, {
+                                fileName: "components/Main.jsx",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Main.jsx",
+                        lineNumber: 8,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _mainModuleCssDefault.default).container2,
+                        id: "container2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _restaurant1SvgDefault.default),
+                            className: (0, _mainModuleCssDefault.default).Restaurant_Img,
+                            alt: " resturant"
                         }, void 0, false, {
                             fileName: "components/Main.jsx",
-                            lineNumber: 9,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: (0, _mainModuleCssDefault.default).p_text,
-                            id: "p_text",
-                            children: "Discover delicious recipes by browsing ingredients you have on hand, or explore by category!"
-                        }, void 0, false, {
-                            fileName: "components/Main.jsx",
-                            lineNumber: 15,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: (0, _mainModuleCssDefault.default).button,
-                            id: "button",
-                            children: "GET STARTED"
-                        }, void 0, false, {
-                            fileName: "components/Main.jsx",
-                            lineNumber: 18,
+                            lineNumber: 22,
                             columnNumber: 21
                         }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Main.jsx",
-                    lineNumber: 8,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "container2",
-                    id: "container2",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _restaurant1SvgDefault.default),
-                        alt: " resturant"
                     }, void 0, false, {
                         fileName: "components/Main.jsx",
-                        lineNumber: 22,
-                        columnNumber: 21
+                        lineNumber: 21,
+                        columnNumber: 17
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "components/Main.jsx",
-                    lineNumber: 21,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "components/Main.jsx",
-            lineNumber: 7,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                ]
+            }, void 0, true, {
+                fileName: "components/Main.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _mainModuleCssDefault.default).mainFooter
+            }, void 0, false, {
+                fileName: "components/Main.jsx",
+                lineNumber: 26,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "components/Main.jsx",
         lineNumber: 6,
         columnNumber: 9
@@ -35004,11 +35014,15 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js"}],"hH8mk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH8mk":[function(require,module,exports) {
+module.exports["Restaurant_Img"] = `SnCtwa_Restaurant_Img`;
 module.exports["button"] = `SnCtwa_button`;
+module.exports["container2"] = `SnCtwa_container2`;
 module.exports["h1_text"] = `SnCtwa_h1_text`;
 module.exports["mainContainer"] = `SnCtwa_mainContainer`;
+module.exports["mainFooter"] = `SnCtwa_mainFooter`;
 module.exports["p_text"] = `SnCtwa_p_text`;
+module.exports["textContainer"] = `SnCtwa_textContainer`;
 
 },{}],"hr9Js":[function(require,module,exports) {
 module.exports = require("eb0940622d35b25e").getBundleURL("avzPb") + "restaurant 1.1bb7a7aa.svg" + "?" + Date.now();
@@ -35064,7 +35078,7 @@ const Body = ()=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container2",
-                    className: (0, _sectionModuleCssDefault.default).section_container1_category,
+                    className: (0, _sectionModuleCssDefault.default).section_container2_category,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _checkbox1SvgDefault.default),
@@ -35109,17 +35123,17 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./categories 1.svg":"bX57W","./Section.module.css":"adxdk","./checkbox 1.svg":"eEEsA"}],"bX57W":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports) {
 module.exports = require("ba3bd9ec26065452").getBundleURL("avzPb") + "categories 1.13d970bf.svg" + "?" + Date.now();
 
-},{"ba3bd9ec26065452":"lgJ39"}],"adxdk":[function(require,module,exports) {
+},{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports) {
+module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
+
+},{"9caeee95e738406a":"lgJ39"}],"adxdk":[function(require,module,exports) {
 module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
 module.exports["section_container2_category"] = `_4Nacwq_section_container2_category`;
 
-},{}],"eEEsA":[function(require,module,exports) {
-module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
-
-},{"9caeee95e738406a":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
+},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
 
 //# sourceMappingURL=index.d498c491.js.map

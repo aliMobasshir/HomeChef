@@ -7,6 +7,9 @@
     display: flex;
     align-items:center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .navigationList {
@@ -18,12 +21,13 @@
 
 .navigationItem{
     list-style: none;
+    
 }
 
 .navigationLink{
     text-decoration: none;
     color: #656565;
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal; 

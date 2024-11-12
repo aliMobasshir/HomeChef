@@ -4,7 +4,6 @@ import img1 from "./chef 1.svg";
 import img2 from "./HomeChef.svg";
 import Search from "./Search.jsx";
 import Style from './Navigation.module.css';
-
 const Navigation = () => {
   return (
     <div className={Style.navigationContainer}>
@@ -18,6 +17,9 @@ const Navigation = () => {
             <img src={img2} alt="HomeChef Image" className={Style.navigationBrandImage} />
           </li>
 
+          <li className={Style.navigationItem}>
+            <Search />
+          </li>
 
           <li className={Style.navigationItem}>
             <Link to="/" className={Style.navigationLink}>Home</Link>
@@ -31,9 +33,6 @@ const Navigation = () => {
             <Link to="/contact" className={Style.navigationLink}>Contact</Link>
           </li>
 
-          <li className={Style.navigationItem}>
-            <Search />
-          </li>
           
         </ul>
       </nav>

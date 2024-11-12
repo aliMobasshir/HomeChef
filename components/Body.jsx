@@ -15,7 +15,7 @@ const Body = () => {
                 </div>
 
 
-                <div id="section_container2" className={section.section_container1_category}>
+                <div id="section_container2" className={section.section_container2_category}>
                     <img src={rectange8} alt=" " />
                     <p>Search by ingredients</p>
                 </div>

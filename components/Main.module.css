@@ -4,27 +4,77 @@
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+
+}
+
+.textContainer{
+    padding: 2vw 0;
+   max-width: 34%;
+   margin: 2vw 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 30px;
 }
 .h1_text{
-    max-width: 42%;
-}
-
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-size: 4.2vw;
+    }
+    
 .p_text{
-    max-width: 42%;
-    margin-top: 20px;
-}
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: rgba(103, 103, 103, 0.692)
+        }
+        
+    
 .button{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    min-width: 70%;
+    padding: 15px 20px;
     background-color: #000000;
     color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 25px;
     border: none;
-    font-size: 20px;
+    font-family:monospace;
+    letter-spacing: 0.05em;
+    font-size: 2vw;
     cursor: pointer;
+    
+} 
+.button:hover{
+background-color: rgba(0, 0, 0, 0.788);
 }
+
+.Restaurant_Img{
+    max-width: 34vw;
+}
+
+.mainFooter {
+    background-color: black;
+    min-height: 20vh;
+}
+
+
+@media (max-width: 830px) {
+  .container2{
+display: none;
+  }
+  .textContainer{
+    min-width: 75%;
+  }
+  .h1_text{
+    font-size: 56px;
+  }
+  .p_text{
+    font-size: 3vw;
+        }
+    .button{
+font-size: 3vw;
+       }
+  }
+    
