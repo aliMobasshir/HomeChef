@@ -27260,7 +27260,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27292,7 +27292,7 @@ $RefreshReg$(_c, "Render");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"eFgT2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eFgT2":[function(require,module,exports) {
 module.exports["text"] = `kf7_Ma_text`;
 
 },{}],"gkKU3":[function(require,module,exports) {
@@ -34991,11 +34991,12 @@ const Main = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter
+                className: (0, _mainModuleCssDefault.default).mainFooter,
+                children: "baskdnaskdn"
             }, void 0, false, {
                 fileName: "components/Main.jsx",
-                lineNumber: 26,
-                columnNumber: 17
+                lineNumber: 27,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
@@ -35014,7 +35015,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH8mk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js"}],"hH8mk":[function(require,module,exports) {
 module.exports["Restaurant_Img"] = `SnCtwa_Restaurant_Img`;
 module.exports["button"] = `SnCtwa_button`;
 module.exports["container2"] = `SnCtwa_container2`;
@@ -35123,17 +35124,17 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./categories 1.svg":"bX57W","./Section.module.css":"adxdk","./checkbox 1.svg":"eEEsA"}],"bX57W":[function(require,module,exports) {
 module.exports = require("ba3bd9ec26065452").getBundleURL("avzPb") + "categories 1.13d970bf.svg" + "?" + Date.now();
 
-},{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports) {
-module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
-
-},{"9caeee95e738406a":"lgJ39"}],"adxdk":[function(require,module,exports) {
+},{"ba3bd9ec26065452":"lgJ39"}],"adxdk":[function(require,module,exports) {
 module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
 module.exports["section_container2_category"] = `_4Nacwq_section_container2_category`;
 
-},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
+},{}],"eEEsA":[function(require,module,exports) {
+module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
+
+},{"9caeee95e738406a":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
 
 //# sourceMappingURL=index.d498c491.js.map

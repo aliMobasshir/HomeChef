@@ -63,7 +63,7 @@
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
-  min-height: 100vh;
+  min-width: 100vw;
   margin: 0;
   display: flex;
 }
@@ -113,6 +113,7 @@
 }
 
 .SnCtwa_mainFooter {
+  color: #fff;
   background-color: #000;
   min-height: 20vh;
 }
