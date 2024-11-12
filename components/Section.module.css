@@ -2,12 +2,14 @@
     overflow-x: hidden;
 }
 .section_container {
-    background-color: white;
+    background-image: url(background.jpg);
+    background-size: cover;
     width: 100vw; /* Full viewport width */
     min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }

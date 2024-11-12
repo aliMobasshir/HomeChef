@@ -34991,8 +34991,7 @@ const Main = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter,
-                children: "baskdnaskdn"
+                className: (0, _mainModuleCssDefault.default).mainFooter
             }, void 0, false, {
                 fileName: "components/Main.jsx",
                 lineNumber: 27,

@@ -25,7 +25,7 @@ const Main = () => {
             </div>
 
             <div className={Style.mainFooter}>
-                baskdnaskdn
+                
             </div>
         </main>
     );
