@@ -27260,7 +27260,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27292,7 +27292,7 @@ $RefreshReg$(_c, "Render");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"eFgT2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Style.module.css":"eFgT2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eFgT2":[function(require,module,exports) {
 module.exports["text"] = `kf7_Ma_text`;
 
 },{}],"gkKU3":[function(require,module,exports) {
@@ -34991,11 +34991,12 @@ const Main = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter
+                className: (0, _mainModuleCssDefault.default).mainFooter,
+                children: "baskdnaskdn"
             }, void 0, false, {
                 fileName: "components/Main.jsx",
-                lineNumber: 26,
-                columnNumber: 17
+                lineNumber: 27,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
