@@ -8,8 +8,6 @@
     min-height: 100vh;
     margin: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly; 
 }
@@ -18,14 +16,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   height: 300px;
-   width: 300px;
+   height: 30vw;
+   width: 30vw;
    background-color: #d9d9d9;
    border-radius: 30px;
    cursor: pointer;
    box-shadow: 0px 5px 5px #878484;
    transition: transform 0.3s ease;
-   margin:50px;
 }
 
 .section_container1_category:hover {
@@ -39,29 +36,33 @@
 
 .section_container1_category p{
    font-family: monospace;
-   font-size: 18px;
+   font-size: 1.8vw;
    font-weight: 600;
    color: #878484;
 
 }
 .section_container1_category img{
-   width: 250px;
-   height: 250px;
+    height: 25vw;
+    width: 25vw;
 }
 
+.partition_line {
+    width: 2px;
+    height: 40vw;
+    background-color: #878484; 
+}
 
 .section_container2_category {
     display: flex;
     flex-direction: column;
     align-items: center;
-   height: 300px;
-   width: 300px;
+    height: 30vw;
+    width: 30vw;
    background-color: #d9d9d9;
    border-radius: 30px;
    cursor: pointer;
    box-shadow: 0px 5px 5px #878484;
    transition: transform 0.3s ease;
-   margin:50px;
 }
 .section_container2_category:hover {
     transform: scale(1.05); 
@@ -73,12 +74,50 @@
 
 .section_container2_category p{
     font-family: monospace;
-    font-size: 18px;
+    font-size: 1.8vw;
     font-weight: 600;
     color: #878484;
 }
 .section_container2_category img{
-    width: 250px;
-   height: 250px;
+    width: 25vw;
+   height: 25vw;
 }
 
+@media (max-width:800px){
+    .section_container{
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0px
+    }
+
+    .section_container1_category{
+        height: 300px;
+        width:300px;
+    }
+    .section_container1_category p{
+        font-size: 18px;
+    }
+    .section_container1_category img{
+        width: 250px;
+       height: 250px;
+    }
+    
+    .section_container2_category{
+        height: 300px;
+        width:300px;
+    }
+    .section_container2_category p{
+        font-size: 18px;
+    }
+    .section_container2_category img{
+        width: 250px;
+       height: 250px;
+    }
+
+    
+    .partition_line {
+        width: 80vw;
+        height: 2px;
+        background-color: #878484; 
+    }
+}
