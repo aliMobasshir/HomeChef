@@ -53,13 +53,14 @@
 }
 
 .Restaurant_Img {
-  max-width: 34vw;
+  width: 30vw;
+  height: 30vw;
 }
 
 .mainFooter {
   background-color: black;
   color: white;
-  min-height: 20vh;
+  min-height: 50px; /*had to be changed later*/
 }
 
 
