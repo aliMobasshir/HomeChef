@@ -14,6 +14,7 @@ const Body = () => {
                     <p>Explore categories</p>
                 </div>
 
+<div id="section_line" className={section.partition_line}></div>
 
                 <div id="section_container2" className={section.section_container2_category}>
                     <img src={rectange8} alt=" " />

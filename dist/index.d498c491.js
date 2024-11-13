@@ -35121,8 +35121,7 @@ const Main = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter,
-                children: "baskdnaskdn"
+                className: (0, _mainModuleCssDefault.default).mainFooter
             }, void 0, false, {
                 fileName: "components/Main.jsx",
                 lineNumber: 27,
@@ -35208,6 +35207,14 @@ const Body = ()=>{
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "section_line",
+                    className: (0, _sectionModuleCssDefault.default).partition_line
+                }, void 0, false, {
+                    fileName: "components/Body.jsx",
+                    lineNumber: 17,
+                    columnNumber: 1
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container2",
                     className: (0, _sectionModuleCssDefault.default).section_container2_category,
                     children: [
@@ -35216,20 +35223,20 @@ const Body = ()=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 19,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Search by ingredients"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 20,
+                            lineNumber: 21,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 18,
+                    lineNumber: 19,
                     columnNumber: 17
                 }, undefined)
             ]
@@ -35261,6 +35268,7 @@ module.exports = require("ba3bd9ec26065452").getBundleURL("avzPb") + "categories
 module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
 
 },{"9caeee95e738406a":"lgJ39"}],"adxdk":[function(require,module,exports) {
+module.exports["partition_line"] = `_4Nacwq_partition_line`;
 module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
 module.exports["section_container2_category"] = `_4Nacwq_section_container2_category`;
