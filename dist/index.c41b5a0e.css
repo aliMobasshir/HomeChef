@@ -30,6 +30,39 @@
   right: 58px;
 }
 
+.WCa7bG_searchResult {
+  background-color: #fff;
+  min-width: 100%;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.WCa7bG_searchResult input {
+  color: #757575;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 20px;
+  min-width: 50%;
+  padding: 13px 10px;
+  font-family: monospace;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.WCa7bG_xmarkImage {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 12px;
+}
+
 @media screen and (width <= 670px) {
   .WCa7bG_searchInput {
     display: none;

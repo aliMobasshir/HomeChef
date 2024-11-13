@@ -7,14 +7,17 @@ import Style from './Navigation.module.css';
 import hamburger from "./Hamburger.svg";
 import xmark from "./xmark.svg"
 
-const Navigation = () => {
+const Navigation = ({ setQuery}) => {
   // State to control the visibility of the menu
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [ isSearchOpen, setSearchOpen ] = useState(false)
 
   // Toggle function to show/hide the menu
   const handler = () => {
     setMenuOpen((prev) => !prev);  // Toggle the menu visibility
   }
+
+  
 
   return (
     <div className={Style.navigationContainer}>
@@ -27,13 +30,19 @@ const Navigation = () => {
           </li>
 
           <li className={Style.navigationItem}>
-            <Search />
+            <Search setSearchOpen={setSearchOpen} setQuery={setQuery} />
           </li>
 
 
-          <li>
+          {/* <li>
             <img onClick={handler} className={Style.hamburger} src={hamburger} alt="Click Here" />
-          </li>
+          </li> */}
+
+          {
+            !isSearchOpen && (
+              <img onClick={handler} className={Style.hamburger} src={hamburger} alt="Click Here" />
+            )
+          }
 
           {/* Links that should show when the menu is open */}
           <li className={Style.navigationItem}>
