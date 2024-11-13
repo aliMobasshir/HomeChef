@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden;   */
 }
 
-.navigation{
+.navigation {
     display: flex;
-    align-items:center;
+    align-items: center;
     padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    /* position: relative; */
 }
 
 .navigationList {
@@ -19,21 +19,108 @@
     align-items: center;
 }
 
-.navigationItem{
+.navigationItem {
     list-style: none;
-    
 }
 
-.navigationLink{
+.navigationLink {
     text-decoration: none;
     color: #656565;
-    font-size: 22px;
+    font-size: 24px;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
 }
 
-.navigationLink:hover{
+.hamburger {
+    display: none;
+}
+
+.navigationLink:hover {
     color: black;
 }
 
+
+.xmarkImage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+.xmarkImage {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+}
+
+.menuContainer {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 300px;
+    /* Adjust width to avoid covering the entire background */
+    height: auto;
+    /* Keep height dynamic */
+    background-color: rgba(51, 51, 51, 0.7);
+    /* Adds some transparency */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 100;
+    backdrop-filter: blur(1px);
+    /* Applies background blur */
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.menuItem:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+@media screen and (max-width: 830px) {
+    .navigationLink {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 33px;
+        right: 10px;
+    }
+
+    .menuContainer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigationBrandImage {
+        width: 170px
+    }
+}
