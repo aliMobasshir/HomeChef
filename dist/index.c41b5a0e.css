@@ -87,6 +87,7 @@
   padding: 10px 20px;
   display: flex;
   position: fixed;
+  box-shadow: 0 5px 5px #878484;
 }
 
 .jTSFqG_navigationList {
