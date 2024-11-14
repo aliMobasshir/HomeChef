@@ -35175,7 +35175,7 @@ const Main = ({ query })=>{
                         className: (0, _mainModuleCssDefault.default).container2,
                         id: "container2",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: resturant,
+                            src: (0, _restaurant1SvgDefault.default),
                             className: (0, _mainModuleCssDefault.default).Restaurant_Img,
                             alt: " resturant"
                         }, void 0, false, {

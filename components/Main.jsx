@@ -27,7 +27,7 @@ const Main = ({ query }) => {
                 </div>
 
                 <div className={Style.container2} id="container2">
-                    <img src={resturant} className={Style.Restaurant_Img} alt=" resturant" />
+                    <img src={restaurant} className={Style.Restaurant_Img} alt=" resturant" />
                 </div>
 
             </div>
