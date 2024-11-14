@@ -244,8 +244,31 @@
   font-size: 2vw;
 }
 
-.SnCtwa_button:hover {
-  background-color: #000000c9;
+.SnCtwa_buttonText {
+  color: #fff;
+  font-family: Inria Sans, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+.SnCtwa_button:hover .SnCtwa_buttonText:after {
+  transform-origin: 0 100%;
+  transform: scaleX(1);
+}
+
+.SnCtwa_buttonText:after {
+  content: "";
+  background-color: #fed39c;
+  width: 100%;
+  height: 2px;
+  transition: transform .3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
 }
 
 .SnCtwa_Restaurant_Img {
@@ -256,7 +279,27 @@
 .SnCtwa_mainFooter {
   color: #fff;
   background-color: #000;
-  min-height: 50px;
+  padding: 20px 0;
+}
+
+.SnCtwa_mainFooter ul {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.SnCtwa_featuresText {
+  color: #fed39c;
+  font-family: Yesteryear, serif;
+  font-size: 2.8vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.SnCtwa_featuresPartition {
+  background-color: #fff;
+  width: 2px;
+  height: 80px;
 }
 
 @media (width <= 830px) {
@@ -278,6 +321,23 @@
 
   .SnCtwa_button {
     font-size: 3vw;
+  }
+}
+
+@media (width <= 800px) {
+  .SnCtwa_mainFooter ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .SnCtwa_featuresText {
+    font-size: 23px;
+  }
+
+  .SnCtwa_featuresPartition {
+    background-color: #fff;
+    width: 50vw;
+    height: 2px;
   }
 }
 
@@ -469,17 +529,18 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 30vw;
+  height: 25vw;
   padding: 16px;
 }
 
 .jjQB4a_recipeCard img {
-  width: 27vw;
-  height: 20vw;
+  width: 80%;
+  height: 80%;
 }
 
 .jjQB4a_recipeCard h2 {
   font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
-  font-size: 1.8vw;
+  font-size: 6%;
   font-weight: 600;
   position: relative;
 }

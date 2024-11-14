@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Style from './recipeList.module.css';
 import arrowIcon from './right-arrow.png';
 
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0';
+
+
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 
 function RecipeList({ query }) {
