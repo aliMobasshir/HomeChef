@@ -2942,6 +2942,8 @@ var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
 var _appJsx = require("./App.jsx");
 var _appJsxDefault = parcelHelpers.interopDefault(_appJsx);
+var _aboutJsx = require("./components/About.jsx");
+var _aboutJsxDefault = parcelHelpers.interopDefault(_aboutJsx);
 var _reactRouterDom = require("react-router-dom");
 var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
@@ -2950,7 +2952,15 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 13,
+            lineNumber: 14,
+            columnNumber: 18
+        }, undefined)
+    },
+    {
+        path: "/About",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsxDefault.default), {}, void 0, false, {
+            fileName: "index.jsx",
+            lineNumber: 18,
             columnNumber: 18
         }, undefined)
     }
@@ -2959,7 +2969,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
     router: router
 }, void 0, false, {
     fileName: "index.jsx",
-    lineNumber: 19,
+    lineNumber: 24,
     columnNumber: 12
 }, undefined));
 
@@ -2968,7 +2978,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","react-router-dom":"9xmpe","./App":"ifStX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About.jsx":"jb55R","./App":"ifStX"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -34986,34 +34996,58 @@ var _xmarkSvgDefault = parcelHelpers.interopDefault(_xmarkSvg);
 var _s = $RefreshSig$();
 const Search = ({ setSearchOpen, setQuery })=>{
     _s();
-    const [search, setSearch] = (0, _react.useState)(false); // Local search state to toggle search bar visibility
+    // Destructure props correctly
+    const [search, setSearch] = (0, _react.useState)(false) // Local search state to toggle search bar visibility
+    ;
     // Toggle the search visibility
     const toggleSearch = ()=>{
-        setSearch(!search); // Toggle the local search state
-        setSearchOpen(!search); // Pass the state to the parent component (whether search is open or not)
+        setSearch(!search) // Toggle the local search state
+        ;
+        setSearchOpen(!search) // Pass the state to the parent component (whether search is open or not)
+        ;
     };
     // Close the search bar when the xmark is clicked
     const handler = ()=>{
-        setSearch(false); // Close the search bar
-        setSearchOpen(false); // Update the parent component's state to reflect the change
+        setSearch(false) // Close the search bar
+        ;
+        setSearchOpen(false) // Update the parent component's state to reflect the change
+        ;
     };
     // // Handle input changes and update the query in the parent component
     const handleInput = (e)=>{
         const inputValue = e.target.value;
         // console.log(inputValue);  // Optionally log the value
-        setQuery(inputValue); // Update the query in the parent component
+        setQuery(inputValue) // Update the query in the parent component
+        ;
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _searchModuleCssDefault.default).searchContainer,
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                className: (0, _searchModuleCssDefault.default).searchInput,
-                type: "text",
-                placeholder: "Search for recipes",
-                onInput: handleInput
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _searchModuleCssDefault.default).searchDiv,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _magnifyingGlassSvgDefault.default),
+                        alt: "Click to maginify"
+                    }, void 0, false, {
+                        fileName: "components/Search.jsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: (0, _searchModuleCssDefault.default).searchInput,
+                        type: "text",
+                        placeholder: "Search for recipes",
+                        onInput: handleInput
+                    }, void 0, false, {
+                        fileName: "components/Search.jsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "components/Search.jsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -35023,7 +35057,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
                 alt: "Click to Magnify"
             }, void 0, false, {
                 fileName: "components/Search.jsx",
-                lineNumber: 38,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             search && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35036,7 +35070,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
                         alt: "Close search"
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 47,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -35045,19 +35079,19 @@ const Search = ({ setSearchOpen, setQuery })=>{
                         onInput: handleInput
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 53,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Search.jsx",
-                lineNumber: 46,
+                lineNumber: 49,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Search.jsx",
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined);
 };
@@ -35074,6 +35108,7 @@ $RefreshReg$(_c, "Search");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","./magnifying_glass.svg":"gOv3O","./xmark.svg":"eA0KT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YDFA":[function(require,module,exports,__globalThis) {
 module.exports["maginfyIcon"] = `WCa7bG_maginfyIcon`;
+module.exports["searchDiv"] = `WCa7bG_searchDiv`;
 module.exports["searchInput"] = `WCa7bG_searchInput`;
 module.exports["searchResult"] = `WCa7bG_searchResult`;
 module.exports["xmarkImage"] = `WCa7bG_xmarkImage`;
@@ -35332,6 +35367,7 @@ var _checkbox1Svg = require("./checkbox 1.svg");
 var _checkbox1SvgDefault = parcelHelpers.interopDefault(_checkbox1Svg);
 var _sectionModuleCss = require("./Section.module.css");
 var _sectionModuleCssDefault = parcelHelpers.interopDefault(_sectionModuleCss);
+var _reactRouterDom = require("react-router-dom");
 var _fakeDataJs = require("../FakeData.js");
 var _fakeDataJsDefault = parcelHelpers.interopDefault(_fakeDataJs);
 const Body = ({ query })=>{
@@ -35344,24 +35380,32 @@ const Body = ({ query })=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container1",
                     className: (0, _sectionModuleCssDefault.default).section_container1_category,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _categories1SvgDefault.default),
-                            alt: " "
-                        }, void 0, false, {
-                            fileName: "components/Body.jsx",
-                            lineNumber: 21,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Explore categories"
-                        }, void 0, false, {
-                            fileName: "components/Body.jsx",
-                            lineNumber: 22,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/about",
+                        className: (0, _sectionModuleCssDefault.default).ReactLink,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _categories1SvgDefault.default),
+                                alt: " "
+                            }, void 0, false, {
+                                fileName: "components/Body.jsx",
+                                lineNumber: 22,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Explore categories"
+                            }, void 0, false, {
+                                fileName: "components/Body.jsx",
+                                lineNumber: 23,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Body.jsx",
+                        lineNumber: 21,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "components/Body.jsx",
                     lineNumber: 17,
                     columnNumber: 11
@@ -35371,32 +35415,40 @@ const Body = ({ query })=>{
                     className: (0, _sectionModuleCssDefault.default).partition_line
                 }, void 0, false, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container2",
                     className: (0, _sectionModuleCssDefault.default).section_container2_category,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _checkbox1SvgDefault.default),
-                            alt: " "
-                        }, void 0, false, {
-                            fileName: "components/Body.jsx",
-                            lineNumber: 31,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Search by ingredients"
-                        }, void 0, false, {
-                            fileName: "components/Body.jsx",
-                            lineNumber: 32,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/about",
+                        className: (0, _sectionModuleCssDefault.default).ReactLink,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _checkbox1SvgDefault.default),
+                                alt: " "
+                            }, void 0, false, {
+                                fileName: "components/Body.jsx",
+                                lineNumber: 34,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Search by ingredients"
+                            }, void 0, false, {
+                                fileName: "components/Body.jsx",
+                                lineNumber: 35,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Body.jsx",
+                        lineNumber: 33,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 27,
+                    lineNumber: 29,
                     columnNumber: 11
                 }, undefined)
             ]
@@ -35412,7 +35464,7 @@ const Body = ({ query })=>{
     }, undefined);
     if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {}, void 0, false, {
         fileName: "components/Body.jsx",
-        lineNumber: 40,
+        lineNumber: 44,
         columnNumber: 12
     }, undefined);
 };
@@ -35426,13 +35478,14 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"bX57W":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","react-router-dom":"9xmpe","../FakeData.js":"2L4vp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports,__globalThis) {
 module.exports = require("ba3bd9ec26065452").getBundleURL('avzPb') + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports,__globalThis) {
 module.exports = require("9caeee95e738406a").getBundleURL('avzPb') + "checkbox 1.70cff102.svg" + "?" + Date.now();
 
 },{"9caeee95e738406a":"lgJ39"}],"adxdk":[function(require,module,exports,__globalThis) {
+module.exports["ReactLink"] = `_4Nacwq_ReactLink`;
 module.exports["partition_line"] = `_4Nacwq_partition_line`;
 module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
@@ -35455,7 +35508,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc00'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35571,6 +35624,43 @@ module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
 },{}],"hx3sc":[function(require,module,exports,__globalThis) {
 module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
 
-},{"beed73946feccc95":"lgJ39"}]},["aQL8O","c2I8d","g9R30"], "g9R30", "parcelRequire94c2")
+},{"beed73946feccc95":"lgJ39"}],"jb55R":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$368c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$368c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Hello I am ABout"
+        }, void 0, false, {
+            fileName: "components/About.jsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "components/About.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$368c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","c2I8d","g9R30"], "g9R30", "parcelRequire94c2")
 
 //# sourceMappingURL=index.d498c491.js.map

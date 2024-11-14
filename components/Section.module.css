@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
     overflow-x: hidden;
 }
+.ReactLink{
+    text-align: center;
+}
+
 
 .section_container {
     background-image: url(background.jpg);
@@ -40,16 +45,20 @@
     background-color: #b0b0b0cd;
 }
 
-.section_container1_category p{
-   font-family: monospace;
-   font-size: 1.8vw;
-   font-weight: 600;
-   color: #878484;
-
+.section_container1_category p {
+    font-family: monospace;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #878484;
+    text-align: center; /* Centers text */
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    overflow: hidden; /* Hides any overflowed text */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) if text overflows */
 }
 .section_container1_category img{
     height: 25vw;
     width: 25vw;
+    object-fit: cover; /* Ensures the image scales and doesn't distort */
 }
 
 .partition_line {
@@ -57,6 +66,7 @@
     height: 40vw;
     background-color: #878484; 
 }
+
 
 .section_container2_category {
     display: flex;
