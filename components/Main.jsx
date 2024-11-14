@@ -15,7 +15,7 @@ const Main = () => {
                     <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand,
                         or explore by category!</p>
 
-                    <button className={Style.button} id='button'>GET STARTED </button>
+                    <button className={Style.button} id='button'><span className={Style.buttonText}>GET STARTED</span> </button>
                 </div>
 
                 <div className={Style.container2} id="container2">
@@ -25,7 +25,15 @@ const Main = () => {
             </div>
 
             <div className={Style.mainFooter}>
-                
+                <ul>
+                    <li className={Style.featuresText}>Nutritional  Information</li>
+                    <li className={Style.featuresPartition}></li>
+                    <li className={Style.featuresText}>300+ Recipes</li>
+                    <li className={Style.featuresPartition}></li>
+                    <li className={Style.featuresText}>26+ Cuisines</li>
+                    <li className={Style.featuresPartition}></li>
+                    <li className={Style.featuresText}>Step-by-Step Guidance</li>
+                </ul>
             </div>
         </main>
     );

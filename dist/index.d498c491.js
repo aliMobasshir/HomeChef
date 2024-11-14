@@ -35092,8 +35092,18 @@ const Main = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: (0, _mainModuleCssDefault.default).button,
                                 id: "button",
-                                children: "GET STARTED "
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: (0, _mainModuleCssDefault.default).buttonText,
+                                        children: "GET STARTED"
+                                    }, void 0, false, {
+                                        fileName: "components/Main.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 66
+                                    }, undefined),
+                                    " "
+                                ]
+                            }, void 0, true, {
                                 fileName: "components/Main.jsx",
                                 lineNumber: 18,
                                 columnNumber: 21
@@ -35128,7 +35138,68 @@ const Main = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter
+                className: (0, _mainModuleCssDefault.default).mainFooter,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "Nutritional  Information"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 29,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 30,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "300+ Recipes"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 31,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 32,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "26+ Cuisines"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 33,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "Step-by-Step Guidance"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 35,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Main.jsx",
+                    lineNumber: 28,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "components/Main.jsx",
                 lineNumber: 27,
@@ -35154,7 +35225,10 @@ $RefreshReg$(_c, "Main");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH8mk":[function(require,module,exports) {
 module.exports["Restaurant_Img"] = `SnCtwa_Restaurant_Img`;
 module.exports["button"] = `SnCtwa_button`;
+module.exports["buttonText"] = `SnCtwa_buttonText`;
 module.exports["container2"] = `SnCtwa_container2`;
+module.exports["featuresPartition"] = `SnCtwa_featuresPartition`;
+module.exports["featuresText"] = `SnCtwa_featuresText`;
 module.exports["h1_text"] = `SnCtwa_h1_text`;
 module.exports["mainContainer"] = `SnCtwa_mainContainer`;
 module.exports["mainFooter"] = `SnCtwa_mainFooter`;
