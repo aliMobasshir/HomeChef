@@ -42,7 +42,7 @@ const Main = ({ query }) => {
   if (filter.length === 0) {
     return (
       <main>
-        <h1></h1>
+        <h1>No Result</h1>
       </main>
     );
   }

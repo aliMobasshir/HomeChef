@@ -35199,7 +35199,9 @@ const Main = ({ query })=>{
     }, undefined);
     // When there is a query but no results match, show "No Result"
     if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "No Result"
+        }, void 0, false, {
             fileName: "components/Main.jsx",
             lineNumber: 45,
             columnNumber: 9
@@ -35288,29 +35290,29 @@ const Body = ({ query })=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 20,
-                            columnNumber: 11
+                            lineNumber: 21,
+                            columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Explore categories"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 21,
-                            columnNumber: 11
+                            lineNumber: 22,
+                            columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 16,
-                    columnNumber: 9
+                    lineNumber: 17,
+                    columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_line",
                     className: (0, _sectionModuleCssDefault.default).partition_line
                 }, void 0, false, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 24,
-                    columnNumber: 9
+                    lineNumber: 25,
+                    columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container2",
@@ -35321,37 +35323,37 @@ const Body = ({ query })=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 30,
-                            columnNumber: 11
+                            lineNumber: 31,
+                            columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Search by ingredients"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 31,
-                            columnNumber: 11
+                            lineNumber: 32,
+                            columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 26,
-                    columnNumber: 9
+                    lineNumber: 27,
+                    columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "components/Body.jsx",
-            lineNumber: 15,
-            columnNumber: 7
+            lineNumber: 16,
+            columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "components/Body.jsx",
-        lineNumber: 14,
-        columnNumber: 13
+        lineNumber: 15,
+        columnNumber: 7
     }, undefined);
     if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {}, void 0, false, {
         fileName: "components/Body.jsx",
         lineNumber: 40,
-        columnNumber: 7
+        columnNumber: 12
     }, undefined);
 };
 _c = Body;

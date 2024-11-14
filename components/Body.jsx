@@ -11,35 +11,33 @@ const Body = ({ query }) => {
   )
 
   if (!query) {
-    return (<section>
-      <div id='section_container' className={section.section_container}>
-        <div
-          id='section_container1'
-          className={section.section_container1_category}
-        >
-          <img src={rectange7} alt=' ' />
-          <p>Explore categories</p>
-        </div>
+    return (
+      <section>
+        <div id='section_container' className={section.section_container}>
+          <div
+            id='section_container1'
+            className={section.section_container1_category}
+          >
+            <img src={rectange7} alt=' ' />
+            <p>Explore categories</p>
+          </div>
 
-        <div id='section_line' className={section.partition_line}></div>
+          <div id='section_line' className={section.partition_line}></div>
 
-        <div
-          id='section_container2'
-          className={section.section_container2_category}
-        >
-          <img src={rectange8} alt=' ' />
-          <p>Search by ingredients</p>
+          <div
+            id='section_container2'
+            className={section.section_container2_category}
+          >
+            <img src={rectange8} alt=' ' />
+            <p>Search by ingredients</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     )
   }
 
   if (filter.length === 0) {
-    return (
-      <main>
-      </main>
-    )
+    return <main></main>
   }
 }
 
