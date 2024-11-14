@@ -1,38 +1,61 @@
 import React from 'react';
 import Style from './Main.module.css';
-import resturant from './restaurant 1.svg'
+import restaurant from './restaurant 1.svg';
+import Data from '../FakeData.js';
 
+const Main = ({ query }) => {
+  const filter = Data.filter(
+    item => item.title && item.title.toLowerCase().includes(query.toLowerCase())
+  );
 
-const Main = () => {
-   
+  // When there's no search query, show the home page
+  if (!query) {
     return (
-        <main>
-            
-            <div className={Style.mainContainer} id="main-container">
-                <div className={Style.textContainer} id='container1'>
-                    <h1 className={Style.h1_text}>
-                        FIND RECIPES
-                        FOR THE FOOD
-                        YOU LOVE...
-                    </h1>
-
-                    <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand,
-                        or explore by category!</p>
-
-                    <button className={Style.button} id='button'>GET STARTED </button>
-                </div>
-
-                <div className={Style.container2} id="container2">
-                    <img src={resturant} className={Style.Restaurant_Img} alt=" resturant" />
-                </div>
-
-            </div>
-
-            <div className={Style.mainFooter}>
-                
-            </div>
-        </main>
+      <main>
+        <div className={Style.mainContainer} id="main-container">
+          <div className={Style.textContainer} id="container1">
+            <h1 className={Style.h1_text}>
+              FIND RECIPES FOR THE FOOD YOU LOVE...
+            </h1>
+            <p className={Style.p_text} id="p_text">
+              Discover delicious recipes by browsing ingredients you have on
+              hand, or explore by category!
+            </p>
+            <button className={Style.button} id="button">
+              GET STARTED
+            </button>
+          </div>
+          <div className={Style.container2} id="container2">
+            <img
+              src={restaurant}
+              className={Style.Restaurant_Img}
+              alt="restaurant"
+            />
+          </div>
+        </div>
+        <div className={Style.mainFooter}></div>
+      </main>
     );
-}
+  }
+
+  // When there is a query but no results match, show "No Result"
+  if (filter.length === 0) {
+    return (
+      <main>
+        <h1></h1>
+      </main>
+    );
+  }
+
+  // Display search results here (optional, if you want to show results)
+//   return (
+//     <main>
+//       {/* Render search results */}
+//       {filter.map(item => (
+//         <div key={item.id}>{item.title}</div>
+//       ))}
+//     </main>
+//   );
+};
 
 export default Main;
