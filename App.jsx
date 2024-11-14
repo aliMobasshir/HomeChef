@@ -11,14 +11,15 @@ import RecipeList from "./components/recipeList.jsx"
 const App = () => {
 
   // const [query, setQuery] = useState('');
-  // console.log(query);
+  const [query, setQuery] = useState('');
+  console.log(query);
   return (
     <>
       {/* <Render /> */}
-      <Navigation  />
-      <Main />
-      <Body/>
-      <RecipeList/>
+      <Navigation setQuery={setQuery}  />
+      <Main query={query} />
+      <Body query={query}/>
+      <RecipeList query={query}/>
     </>
   )
 }

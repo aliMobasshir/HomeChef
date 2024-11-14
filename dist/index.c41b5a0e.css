@@ -80,9 +80,13 @@
 }
 
 .jTSFqG_navigation {
+  z-index: 1000;
+  background-color: #fff;
   align-items: center;
+  min-width: 100%;
   padding: 10px 20px;
   display: flex;
+  position: fixed;
 }
 
 .jTSFqG_navigationList {
@@ -213,7 +217,7 @@
   align-items: center;
   row-gap: 30px;
   max-width: 34%;
-  margin: 2vw 0;
+  margin: 10vw 0;
   padding: 2vw 0;
   display: flex;
 }

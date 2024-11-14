@@ -27231,34 +27231,46 @@ var _bodyJsx = require("./components/Body.jsx");
 var _bodyJsxDefault = parcelHelpers.interopDefault(_bodyJsx);
 var _recipeListJsx = require("./components/recipeList.jsx");
 var _recipeListJsxDefault = parcelHelpers.interopDefault(_recipeListJsx);
+var _s = $RefreshSig$();
 const App = ()=>{
+    _s();
     // const [query, setQuery] = useState('');
-    // console.log(query);
+    const [query, setQuery] = (0, _react.useState)("");
+    console.log(query);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {
+                setQuery: setQuery
+            }, void 0, false, {
                 fileName: "App.jsx",
                 lineNumber: 19,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {
+                query: query
+            }, void 0, false, {
                 fileName: "App.jsx",
                 lineNumber: 20,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {
+                query: query
+            }, void 0, false, {
                 fileName: "App.jsx",
                 lineNumber: 21,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {
+                query: query
+            }, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
+_s(App, "qO/HZodsWTfJhuzZtdaxiosei2U=");
 _c = App;
 exports.default = App;
 var _c;
@@ -34998,7 +35010,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
     // // Handle input changes and update the query in the parent component
     const handleInput = (e)=>{
         const inputValue = e.target.value;
-        console.log(inputValue); // Optionally log the value
+        // console.log(inputValue);  // Optionally log the value
         setQuery(inputValue); // Update the query in the parent component
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35007,7 +35019,8 @@ const Search = ({ setSearchOpen, setQuery })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 className: (0, _searchModuleCssDefault.default).searchInput,
                 type: "text",
-                placeholder: "Search for recipes"
+                placeholder: "Search for recipes",
+                onInput: handleInput
             }, void 0, false, {
                 fileName: "components/Search.jsx",
                 lineNumber: 30,
@@ -35020,7 +35033,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
                 alt: "Click to Magnify"
             }, void 0, false, {
                 fileName: "components/Search.jsx",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             search && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35033,21 +35046,22 @@ const Search = ({ setSearchOpen, setQuery })=>{
                         alt: "Close search"
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 46,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        placeholder: "Search"
+                        placeholder: "Search",
+                        onInput: handleInput
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Search.jsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 9
             }, undefined)
         ]
@@ -35110,8 +35124,12 @@ var _mainModuleCss = require("./Main.module.css");
 var _mainModuleCssDefault = parcelHelpers.interopDefault(_mainModuleCss);
 var _restaurant1Svg = require("./restaurant 1.svg");
 var _restaurant1SvgDefault = parcelHelpers.interopDefault(_restaurant1Svg);
-const Main = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+var _fakeDataJs = require("../FakeData.js");
+var _fakeDataJsDefault = parcelHelpers.interopDefault(_fakeDataJs);
+const Main = ({ query })=>{
+    const filter = (0, _fakeDataJsDefault.default).filter((item)=>item.title && item.title.toLowerCase().includes(query.toLowerCase()));
+    // When there's no search query, show the home page
+    if (!query) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _mainModuleCssDefault.default).mainContainer,
@@ -35126,8 +35144,8 @@ const Main = ()=>{
                                 children: "FIND RECIPES FOR THE FOOD YOU LOVE..."
                             }, void 0, false, {
                                 fileName: "components/Main.jsx",
-                                lineNumber: 13,
-                                columnNumber: 21
+                                lineNumber: 17,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: (0, _mainModuleCssDefault.default).p_text,
@@ -35135,23 +35153,23 @@ const Main = ()=>{
                                 children: "Discover delicious recipes by browsing ingredients you have on hand, or explore by category!"
                             }, void 0, false, {
                                 fileName: "components/Main.jsx",
-                                lineNumber: 19,
-                                columnNumber: 21
+                                lineNumber: 20,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: (0, _mainModuleCssDefault.default).button,
                                 id: "button",
-                                children: "GET STARTED "
+                                children: "GET STARTED"
                             }, void 0, false, {
                                 fileName: "components/Main.jsx",
-                                lineNumber: 22,
-                                columnNumber: 21
+                                lineNumber: 24,
+                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Main.jsx",
-                        lineNumber: 12,
-                        columnNumber: 17
+                        lineNumber: 16,
+                        columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _mainModuleCssDefault.default).container2,
@@ -35159,36 +35177,57 @@ const Main = ()=>{
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _restaurant1SvgDefault.default),
                             className: (0, _mainModuleCssDefault.default).Restaurant_Img,
-                            alt: " resturant"
+                            alt: "restaurant"
                         }, void 0, false, {
                             fileName: "components/Main.jsx",
-                            lineNumber: 26,
-                            columnNumber: 21
+                            lineNumber: 29,
+                            columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Main.jsx",
-                        lineNumber: 25,
-                        columnNumber: 17
+                        lineNumber: 28,
+                        columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Main.jsx",
-                lineNumber: 11,
-                columnNumber: 13
+                lineNumber: 15,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _mainModuleCssDefault.default).mainFooter
             }, void 0, false, {
                 fileName: "components/Main.jsx",
-                lineNumber: 31,
-                columnNumber: 13
+                lineNumber: 36,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Main.jsx",
-        lineNumber: 9,
-        columnNumber: 9
+        lineNumber: 14,
+        columnNumber: 7
     }, undefined);
+    // When there is a query but no results match, show "No Result"
+    if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {}, void 0, false, {
+            fileName: "components/Main.jsx",
+            lineNumber: 45,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "components/Main.jsx",
+        lineNumber: 44,
+        columnNumber: 7
+    }, undefined);
+// Display search results here (optional, if you want to show results)
+//   return (
+//     <main>
+//       {/* Render search results */}
+//       {filter.map(item => (
+//         <div key={item.id}>{item.title}</div>
+//       ))}
+//     </main>
+//   );
 };
 _c = Main;
 exports.default = Main;
@@ -35200,7 +35239,7 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH8mk":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"hH8mk":[function(require,module,exports) {
 module.exports["Restaurant_Img"] = `SnCtwa_Restaurant_Img`;
 module.exports["button"] = `SnCtwa_button`;
 module.exports["container2"] = `SnCtwa_container2`;
@@ -35213,7 +35252,17 @@ module.exports["textContainer"] = `SnCtwa_textContainer`;
 },{}],"hr9Js":[function(require,module,exports) {
 module.exports = require("eb0940622d35b25e").getBundleURL("avzPb") + "restaurant 1.1bb7a7aa.svg" + "?" + Date.now();
 
-},{"eb0940622d35b25e":"lgJ39"}],"8RO98":[function(require,module,exports) {
+},{"eb0940622d35b25e":"lgJ39"}],"2L4vp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const recipes = [
+    {},
+    {
+    }
+];
+exports.default = recipes;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8RO98":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2887 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35231,8 +35280,11 @@ var _checkbox1Svg = require("./checkbox 1.svg");
 var _checkbox1SvgDefault = parcelHelpers.interopDefault(_checkbox1Svg);
 var _sectionModuleCss = require("./Section.module.css");
 var _sectionModuleCssDefault = parcelHelpers.interopDefault(_sectionModuleCss);
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+var _fakeDataJs = require("../FakeData.js");
+var _fakeDataJsDefault = parcelHelpers.interopDefault(_fakeDataJs);
+const Body = ({ query })=>{
+    const filter = (0, _fakeDataJsDefault.default).filter((item)=>item.title && item.title.toLowerCase().includes(query.toLowerCase()));
+    if (!query) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             id: "section_container",
             className: (0, _sectionModuleCssDefault.default).section_container,
@@ -35246,29 +35298,29 @@ const Body = ()=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 13,
-                            columnNumber: 21
+                            lineNumber: 20,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Explore categories"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 14,
-                            columnNumber: 21
+                            lineNumber: 21,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 12,
-                    columnNumber: 17
+                    lineNumber: 16,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_line",
                     className: (0, _sectionModuleCssDefault.default).partition_line
                 }, void 0, false, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 17,
-                    columnNumber: 17
+                    lineNumber: 24,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "section_container2",
@@ -35279,32 +35331,37 @@ const Body = ()=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 20,
-                            columnNumber: 21
+                            lineNumber: 30,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Search by ingredients"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 21,
-                            columnNumber: 21
+                            lineNumber: 31,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 19,
-                    columnNumber: 17
+                    lineNumber: 26,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "components/Body.jsx",
-            lineNumber: 10,
-            columnNumber: 13
+            lineNumber: 15,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Body.jsx",
-        lineNumber: 9,
-        columnNumber: 9
+        lineNumber: 14,
+        columnNumber: 13
+    }, undefined);
+    if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {}, void 0, false, {
+        fileName: "components/Body.jsx",
+        lineNumber: 40,
+        columnNumber: 7
     }, undefined);
 };
 _c = Body;
@@ -35317,7 +35374,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"bX57W":[function(require,module,exports) {
 module.exports = require("ba3bd9ec26065452").getBundleURL("avzPb") + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports) {
@@ -35346,9 +35403,9 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = "3544e0a87f98468883e9169172546ac1";
+const apiKey = "af3ad633e574425c90e2c0ef4a4fefc0";
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
-function RecipeList() {
+function RecipeList({ query }) {
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]);
     const [error, setError] = (0, _react.useState)(null);
@@ -35364,7 +35421,7 @@ function RecipeList() {
             }
         }
         fetchRecipes();
-    }, []); // Empty dependency array ensures this runs only once
+    }, []);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: [
             "Error: ",
@@ -35372,34 +35429,35 @@ function RecipeList() {
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 29,
+        lineNumber: 27,
         columnNumber: 23
     }, this);
+    const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _recipeListModuleCssDefault.default).topPicksPage,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: (0, _recipeListModuleCssDefault.default).heading,
                 children: [
-                    "Today's Top picks",
+                    "Today's Top Picks",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _rightArrowPngDefault.default),
                         alt: "arrow",
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 34,
-                        columnNumber: 13
+                        lineNumber: 37,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 33,
-                columnNumber: 10
+                lineNumber: 35,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).recipeContainer,
-                children: recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeCard,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -35407,31 +35465,37 @@ function RecipeList() {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 38,
-                                columnNumber: 25
+                                lineNumber: 43,
+                                columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: recipe.title
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 39,
-                                columnNumber: 25
+                                lineNumber: 44,
+                                columnNumber: 29
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 37,
-                        columnNumber: 21
-                    }, this))
+                        lineNumber: 42,
+                        columnNumber: 25
+                    }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "No recipes found.   "
+                }, void 0, false, {
+                    fileName: "components/recipeList.jsx",
+                    lineNumber: 48,
+                    columnNumber: 21
+                }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 35,
-                columnNumber: 14
+                lineNumber: 39,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 9
     }, this);
 }
