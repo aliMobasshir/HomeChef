@@ -17,12 +17,8 @@ const App = () => {
       {/* <Render /> */}
       <Navigation  />
       <Main />
-<<<<<<< HEAD
       <Body/>
       <RecipeList/>
-=======
-      <Body  />
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
     </>
   )
 }

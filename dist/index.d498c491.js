@@ -27238,34 +27238,22 @@ const App = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-<<<<<<< HEAD
-                lineNumber: 15,
-=======
-                lineNumber: 17,
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-<<<<<<< HEAD
-                lineNumber: 16,
-=======
-                lineNumber: 18,
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-<<<<<<< HEAD
-                lineNumber: 17,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 18,
-=======
-                lineNumber: 19,
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27281,11 +27269,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-<<<<<<< HEAD
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/recipeList.jsx":"7qUU2"}],"8Ui3Q":[function(require,module,exports) {
-=======
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98"}],"8Ui3Q":[function(require,module,exports) {
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2"}],"8Ui3Q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35014,7 +34998,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
     // // Handle input changes and update the query in the parent component
     const handleInput = (e)=>{
         const inputValue = e.target.value;
-        // console.log(inputValue);  // Optionally log the value
+        console.log(inputValue); // Optionally log the value
         setQuery(inputValue); // Update the query in the parent component
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35342,8 +35326,10 @@ module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
 module.exports["section_container2_category"] = `_4Nacwq_section_container2_category`;
 
-<<<<<<< HEAD
-},{}],"7qUU2":[function(require,module,exports) {
+},{}],"eEEsA":[function(require,module,exports) {
+module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
+
+},{"9caeee95e738406a":"lgJ39"}],"7qUU2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35460,7 +35446,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc"}],"ieGJH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports) {
 module.exports["heading"] = `jjQB4a_heading`;
 module.exports["recipeCard"] = `jjQB4a_recipeCard`;
 module.exports["recipeContainer"] = `jjQB4a_recipeContainer`;
@@ -35470,11 +35456,5 @@ module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
 module.exports = require("beed73946feccc95").getBundleURL("avzPb") + "right-arrow.2f73beb6.png" + "?" + Date.now();
 
 },{"beed73946feccc95":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
-=======
-},{}],"eEEsA":[function(require,module,exports) {
-module.exports = require("9caeee95e738406a").getBundleURL("avzPb") + "checkbox 1.70cff102.svg" + "?" + Date.now();
-
-},{"9caeee95e738406a":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
->>>>>>> bfa4686694aa5ddbab7f6e642793bd31d520ac9e
 
 //# sourceMappingURL=index.d498c491.js.map

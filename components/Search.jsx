@@ -21,7 +21,7 @@ const Search = ({ setSearchOpen, setQuery }) => {  // Destructure props correctl
   // // Handle input changes and update the query in the parent component
   const handleInput = (e) => {
     const inputValue = e.target.value;
-    // console.log(inputValue);  // Optionally log the value
+    console.log(inputValue);  // Optionally log the value
     setQuery(inputValue);  // Update the query in the parent component
   };
 
