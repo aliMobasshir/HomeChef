@@ -27229,22 +27229,29 @@ var _mainJsx = require("./components/Main.jsx");
 var _mainJsxDefault = parcelHelpers.interopDefault(_mainJsx);
 var _bodyJsx = require("./components/Body.jsx");
 var _bodyJsxDefault = parcelHelpers.interopDefault(_bodyJsx);
+var _recipeListJsx = require("./components/recipeList.jsx");
+var _recipeListJsxDefault = parcelHelpers.interopDefault(_recipeListJsx);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27260,7 +27267,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/recipeList.jsx":"7qUU2"}],"8Ui3Q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35273,6 +35280,132 @@ module.exports["section_container"] = `_4Nacwq_section_container`;
 module.exports["section_container1_category"] = `_4Nacwq_section_container1_category`;
 module.exports["section_container2_category"] = `_4Nacwq_section_container2_category`;
 
-},{}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
+},{}],"7qUU2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ee5a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _recipeListModuleCss = require("./recipeList.module.css");
+var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
+var _rightArrowPng = require("./right-arrow.png");
+var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
+var _s = $RefreshSig$();
+const apiKey = "3544e0a87f98468883e9169172546ac1";
+const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+function RecipeList() {
+    _s();
+    const [recipes, setRecipes] = (0, _react.useState)([]);
+    const [error, setError] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        async function fetchRecipes() {
+            try {
+                const response = await fetch(endpoint);
+                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+                const data = await response.json();
+                setRecipes(data.recipes);
+            } catch (error) {
+                setError(error.message);
+            }
+        }
+        fetchRecipes();
+    }, []); // Empty dependency array ensures this runs only once
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/recipeList.jsx",
+        lineNumber: 29,
+        columnNumber: 23
+    }, this);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _recipeListModuleCssDefault.default).topPicksPage,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _recipeListModuleCssDefault.default).heading,
+                children: [
+                    "Today's Top picks",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _rightArrowPngDefault.default),
+                        alt: "arrow",
+                        className: (0, _recipeListModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/recipeList.jsx",
+                        lineNumber: 34,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/recipeList.jsx",
+                lineNumber: 33,
+                columnNumber: 10
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _recipeListModuleCssDefault.default).recipeContainer,
+                children: recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _recipeListModuleCssDefault.default).recipeCard,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: recipe.image,
+                                alt: recipe.title
+                            }, void 0, false, {
+                                fileName: "components/recipeList.jsx",
+                                lineNumber: 38,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: recipe.title
+                            }, void 0, false, {
+                                fileName: "components/recipeList.jsx",
+                                lineNumber: 39,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, recipe.id, true, {
+                        fileName: "components/recipeList.jsx",
+                        lineNumber: 37,
+                        columnNumber: 21
+                    }, this))
+            }, void 0, false, {
+                fileName: "components/recipeList.jsx",
+                lineNumber: 35,
+                columnNumber: 14
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/recipeList.jsx",
+        lineNumber: 32,
+        columnNumber: 9
+    }, this);
+}
+_s(RecipeList, "ohMqFt/cdTJ3t+pGlBUBekHej2E=");
+_c = RecipeList;
+exports.default = RecipeList;
+var _c;
+$RefreshReg$(_c, "RecipeList");
+
+  $parcel$ReactRefreshHelpers$ee5a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc"}],"ieGJH":[function(require,module,exports) {
+module.exports["heading"] = `jjQB4a_heading`;
+module.exports["recipeCard"] = `jjQB4a_recipeCard`;
+module.exports["recipeContainer"] = `jjQB4a_recipeContainer`;
+module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
+
+},{}],"hx3sc":[function(require,module,exports) {
+module.exports = require("beed73946feccc95").getBundleURL("avzPb") + "right-arrow.2f73beb6.png" + "?" + Date.now();
+
+},{"beed73946feccc95":"lgJ39"}]},["dlFZn","1xC6H","g9R30"], "g9R30", "parcelRequirece7c")
 
 //# sourceMappingURL=index.d498c491.js.map
