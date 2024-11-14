@@ -1,15 +1,19 @@
 import React from 'react';
 import Style from './Main.module.css';
 import resturant from './restaurant 1.svg'
+
+
 const Main = () => {
+   
     return (
         <main>
+            
             <div className={Style.mainContainer} id="main-container">
                 <div className={Style.textContainer} id='container1'>
                     <h1 className={Style.h1_text}>
                         FIND RECIPES
                         FOR THE FOOD
-                        YOU LOVE
+                        YOU LOVE...
                     </h1>
 
                     <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand,
