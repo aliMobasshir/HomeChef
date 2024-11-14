@@ -20,14 +20,6 @@ const Main = ({ query }) => {
                         YOU LOVE
                     </h1>
 
-<<<<<<< HEAD
-  // When there is a query but no results match, show "No Result"
-  if (filter.length === 0) {
-    return (
-      <main>
-        <h1>No Result</h1>
-      </main>
-=======
                     <p className={Style.p_text} id='p_text'>Discover delicious recipes by browsing ingredients you have on hand,
                         or explore by category!</p>
 
@@ -52,7 +44,6 @@ const Main = ({ query }) => {
                 </ul>
             </div>
         </main>
->>>>>>> 58ccbab3beed84f6685a51abd8fd1902e467a545
     );
   }
 

@@ -35266,25 +35266,7 @@ const Main = ({ query })=>{
     }, void 0, true, {
         fileName: "components/Main.jsx",
         lineNumber: 14,
-<<<<<<< HEAD
-        columnNumber: 7
-    }, undefined);
-    // When there is a query but no results match, show "No Result"
-    if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "No Result"
-        }, void 0, false, {
-            fileName: "components/Main.jsx",
-            lineNumber: 45,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "components/Main.jsx",
-        lineNumber: 44,
-        columnNumber: 7
-=======
         columnNumber: 9
->>>>>>> 58ccbab3beed84f6685a51abd8fd1902e467a545
     }, undefined);
 // Display search results here (optional, if you want to show results)
 //   return (
@@ -35444,7 +35426,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","../FakeData.js":"2L4vp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"bX57W":[function(require,module,exports,__globalThis) {
 module.exports = require("ba3bd9ec26065452").getBundleURL('avzPb') + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports,__globalThis) {
