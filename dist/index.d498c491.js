@@ -35058,7 +35058,7 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","./magnifying_glass.svg":"gOv3O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./xmark.svg":"eA0KT"}],"7YDFA":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","./magnifying_glass.svg":"gOv3O","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YDFA":[function(require,module,exports,__globalThis) {
 module.exports["maginfyIcon"] = `WCa7bG_maginfyIcon`;
 module.exports["searchInput"] = `WCa7bG_searchInput`;
 module.exports["searchResult"] = `WCa7bG_searchResult`;
@@ -35067,10 +35067,7 @@ module.exports["xmarkImage"] = `WCa7bG_xmarkImage`;
 },{}],"gOv3O":[function(require,module,exports,__globalThis) {
 module.exports = require("44b1cd67ef553a0f").getBundleURL('avzPb') + "magnifying_glass.49a597f0.svg" + "?" + Date.now();
 
-},{"44b1cd67ef553a0f":"lgJ39"}],"eA0KT":[function(require,module,exports,__globalThis) {
-module.exports = require("875187e2b4dd27b5").getBundleURL('avzPb') + "xmark.397b9984.svg" + "?" + Date.now();
-
-},{"875187e2b4dd27b5":"lgJ39"}],"gE6rM":[function(require,module,exports,__globalThis) {
+},{"44b1cd67ef553a0f":"lgJ39"}],"gE6rM":[function(require,module,exports,__globalThis) {
 module.exports["hamburger"] = `jTSFqG_hamburger`;
 module.exports["menuContainer"] = `jTSFqG_menuContainer`;
 module.exports["menuItem"] = `jTSFqG_menuItem`;
@@ -35084,7 +35081,10 @@ module.exports["xmarkImage"] = `jTSFqG_xmarkImage`;
 },{}],"aMX6k":[function(require,module,exports,__globalThis) {
 module.exports = require("896d531b53988b89").getBundleURL('avzPb') + "Hamburger.6ca782ae.svg" + "?" + Date.now();
 
-},{"896d531b53988b89":"lgJ39"}],"hKJXg":[function(require,module,exports,__globalThis) {
+},{"896d531b53988b89":"lgJ39"}],"eA0KT":[function(require,module,exports,__globalThis) {
+module.exports = require("875187e2b4dd27b5").getBundleURL('avzPb') + "xmark.397b9984.svg" + "?" + Date.now();
+
+},{"875187e2b4dd27b5":"lgJ39"}],"hKJXg":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$4ed0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35135,8 +35135,18 @@ const Main = ({ query })=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: (0, _mainModuleCssDefault.default).button,
                                 id: "button",
-                                children: "GET STARTED"
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: (0, _mainModuleCssDefault.default).buttonText,
+                                        children: "GET STARTED"
+                                    }, void 0, false, {
+                                        fileName: "components/Main.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 66
+                                    }, undefined),
+                                    " "
+                                ]
+                            }, void 0, true, {
                                 fileName: "components/Main.jsx",
                                 lineNumber: 24,
                                 columnNumber: 13
@@ -35171,39 +35181,79 @@ const Main = ({ query })=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _mainModuleCssDefault.default).mainFooter
+                className: (0, _mainModuleCssDefault.default).mainFooter,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "Nutritional  Information"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 29,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 30,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "300+ Recipes"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 31,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 32,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "26+ Cuisines"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 33,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresPartition
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: (0, _mainModuleCssDefault.default).featuresText,
+                            children: "Step-by-Step Guidance"
+                        }, void 0, false, {
+                            fileName: "components/Main.jsx",
+                            lineNumber: 35,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Main.jsx",
+                    lineNumber: 28,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "components/Main.jsx",
-                lineNumber: 36,
-                columnNumber: 9
+                lineNumber: 27,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Main.jsx",
-        lineNumber: 14,
-        columnNumber: 7
+        lineNumber: 6,
+        columnNumber: 9
     }, undefined);
-    // When there is a query but no results match, show "No Result"
-    if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {}, void 0, false, {
-            fileName: "components/Main.jsx",
-            lineNumber: 45,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "components/Main.jsx",
-        lineNumber: 44,
-        columnNumber: 7
-    }, undefined);
-// Display search results here (optional, if you want to show results)
-//   return (
-//     <main>
-//       {/* Render search results */}
-//       {filter.map(item => (
-//         <div key={item.id}>{item.title}</div>
-//       ))}
-//     </main>
-//   );
 };
 _c = Main;
 exports.default = Main;
@@ -35215,10 +35265,13 @@ $RefreshReg$(_c, "Main");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"hH8mk":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Main.module.css":"hH8mk","./restaurant 1.svg":"hr9Js","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH8mk":[function(require,module,exports,__globalThis) {
 module.exports["Restaurant_Img"] = `SnCtwa_Restaurant_Img`;
 module.exports["button"] = `SnCtwa_button`;
+module.exports["buttonText"] = `SnCtwa_buttonText`;
 module.exports["container2"] = `SnCtwa_container2`;
+module.exports["featuresPartition"] = `SnCtwa_featuresPartition`;
+module.exports["featuresText"] = `SnCtwa_featuresText`;
 module.exports["h1_text"] = `SnCtwa_h1_text`;
 module.exports["mainContainer"] = `SnCtwa_mainContainer`;
 module.exports["mainFooter"] = `SnCtwa_mainFooter`;
@@ -35228,17 +35281,7 @@ module.exports["textContainer"] = `SnCtwa_textContainer`;
 },{}],"hr9Js":[function(require,module,exports,__globalThis) {
 module.exports = require("eb0940622d35b25e").getBundleURL('avzPb') + "restaurant 1.1bb7a7aa.svg" + "?" + Date.now();
 
-},{"eb0940622d35b25e":"lgJ39"}],"2L4vp":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const recipes = [
-    {},
-    {
-    }
-];
-exports.default = recipes;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8RO98":[function(require,module,exports,__globalThis) {
+},{"eb0940622d35b25e":"lgJ39"}],"8RO98":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$2887 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35350,7 +35393,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../FakeData.js":"2L4vp"}],"bX57W":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports,__globalThis) {
 module.exports = require("ba3bd9ec26065452").getBundleURL('avzPb') + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports,__globalThis) {
@@ -35379,7 +35422,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0';
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
