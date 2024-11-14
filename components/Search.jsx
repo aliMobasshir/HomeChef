@@ -31,7 +31,7 @@ const Search = ({ setSearchOpen, setQuery }) => {  // Destructure props correctl
         
         className={Style.searchInput} 
         type="text" 
-        placeholder="Search for recipes" 
+        placeholder=" Search for recipes" 
         onInput={handleInput}
       />
 

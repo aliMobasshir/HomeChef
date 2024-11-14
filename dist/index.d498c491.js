@@ -35009,7 +35009,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                 className: (0, _searchModuleCssDefault.default).searchInput,
                 type: "text",
-                placeholder: "Search for recipes",
+                placeholder: " Search for recipes",
                 onInput: handleInput
             }, void 0, false, {
                 fileName: "components/Search.jsx",
@@ -35332,6 +35332,7 @@ var _checkbox1Svg = require("./checkbox 1.svg");
 var _checkbox1SvgDefault = parcelHelpers.interopDefault(_checkbox1Svg);
 var _sectionModuleCss = require("./Section.module.css");
 var _sectionModuleCssDefault = parcelHelpers.interopDefault(_sectionModuleCss);
+var _reactRouterDom = require("react-router-dom");
 var _fakeDataJs = require("../FakeData.js");
 var _fakeDataJsDefault = parcelHelpers.interopDefault(_fakeDataJs);
 const Body = ({ query })=>{
@@ -35371,7 +35372,7 @@ const Body = ({ query })=>{
                     className: (0, _sectionModuleCssDefault.default).partition_line
                 }, void 0, false, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 24,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35383,20 +35384,20 @@ const Body = ({ query })=>{
                             alt: " "
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 30,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: "Search by ingredients"
                         }, void 0, false, {
                             fileName: "components/Body.jsx",
-                            lineNumber: 31,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "components/Body.jsx",
-                    lineNumber: 26,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -35412,7 +35413,7 @@ const Body = ({ query })=>{
     }, undefined);
     if (filter.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {}, void 0, false, {
         fileName: "components/Body.jsx",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 7
     }, undefined);
 };
@@ -35426,7 +35427,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","../FakeData.js":"2L4vp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","../FakeData.js":"2L4vp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"bX57W":[function(require,module,exports,__globalThis) {
 module.exports = require("ba3bd9ec26065452").getBundleURL('avzPb') + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports,__globalThis) {
@@ -35455,7 +35456,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
+const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();

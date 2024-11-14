@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-evenly; 
     padding: 5vw 0px;
+   
 }
 
 .section_container1_category {
@@ -29,6 +30,7 @@
    cursor: pointer;
    box-shadow: 0px 5px 5px #878484;
    transition: transform 0.3s ease;
+   
 }
 
 .section_container1_category:hover {
