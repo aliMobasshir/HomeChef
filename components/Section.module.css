@@ -89,7 +89,7 @@
    height: 25vw;
 }
 
-@media (max-width:800px){
+@media (max-width:750px){
     .section_container{
         flex-direction: column;
         gap: 50px;

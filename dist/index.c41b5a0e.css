@@ -401,7 +401,7 @@
   height: 25vw;
 }
 
-@media (width <= 800px) {
+@media (width <= 750px) {
   ._4Nacwq_section_container {
     flex-direction: column;
     gap: 50px;
@@ -452,42 +452,24 @@
   display: flex;
 }
 
-.jjQB4a_recipeContainer {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  display: flex;
-}
-
 .jjQB4a_heading {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
+  font-size: 4vw;
   display: flex;
-  position: relative;
-}
-
-.jjQB4a_heading:after {
-  content: "";
-  background-color: #fed39c;
-  width: 100%;
-  height: 4px;
-  transition: transform .3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-}
-
-.jjQB4a_heading:hover:after {
-  transform-origin: 0 100%;
-  transform: scaleX(1);
 }
 
 .jjQB4a_heading img {
   height: 1em;
   margin-left: 10px;
+}
+
+.jjQB4a_recipeContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
 }
 
 .jjQB4a_recipeCard {
@@ -501,13 +483,15 @@
 }
 
 .jjQB4a_recipeCard img {
-  width: 80%;
+  border-radius: 8px;
+  width: 100%;
   height: 80%;
 }
 
 .jjQB4a_recipeCard h2 {
+  margin-top: 10px;
   font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
-  font-size: 6%;
+  font-size: 1.5vw;
   font-weight: 600;
   position: relative;
 }
@@ -516,7 +500,7 @@
   content: "";
   background-color: #fed39c;
   width: 100%;
-  height: 2px;
+  height: 3px;
   transition: transform .3s;
   position: absolute;
   bottom: 0;
@@ -527,5 +511,20 @@
 .jjQB4a_recipeCard h2:hover:after {
   transform-origin: 0 100%;
   transform: scaleX(1);
+}
+
+@media (width <= 800px) {
+  .jjQB4a_heading {
+    font-size: 36px;
+  }
+
+  .jjQB4a_recipeCard {
+    width: 300px;
+    height: 275px;
+  }
+
+  .jjQB4a_recipeCard h2 {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */
