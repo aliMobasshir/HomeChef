@@ -6,7 +6,8 @@ import Navigation from "./components/Navigation.jsx"
 import Main from "./components/Main.jsx"
 import Body from "./components/Body.jsx"
 import RecipeList from "./components/recipeList.jsx"
-
+import ReviewPage from "./components/reviewPage.jsx"
+import TrendingList from "./components/trending.jsx"
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
       <Main />
       <Body/>
       <RecipeList/>
+      <ReviewPage/>
+      <TrendingList/>
     </>
   )
 }

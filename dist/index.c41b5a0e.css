@@ -482,7 +482,13 @@
   padding: 16px;
 }
 
+.jjQB4a_recipeCard:hover {
+  border: 2px solid #ddd;
+}
+
 .jjQB4a_recipeCard img {
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   width: 100%;
   height: 80%;
@@ -525,6 +531,67 @@
 
   .jjQB4a_recipeCard h2 {
     font-size: 15px;
+  }
+}
+
+.tjevqG_mainContainer {
+  background: linear-gradient(#fed39c 50%, #d9d9d9 50%);
+}
+
+.tjevqG_reviewHeading {
+  padding: 6vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 4vw;
+}
+
+.tjevqG_reviewCardContainer {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10vw;
+  display: flex;
+}
+
+.tjevqG_reviewCard {
+  background-size: cover;
+  border-radius: 4vw;
+  width: 28vw;
+  height: 45vw;
+}
+
+#tjevqG_kashif {
+  background-image: url("kashifReview.1171da2c.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#tjevqG_zayd {
+  background-image: url("syedReview.a095823d.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#tjevqG_tanzil {
+  background-image: url("tanzilReview.365098b8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (width <= 750px) {
+  .tjevqG_reviewHeading {
+    padding: 50px 10px;
+    font-size: 32px;
+  }
+
+  .tjevqG_reviewCard {
+    border-radius: 40px;
+    width: 350px;
+    height: 600px;
+  }
+
+  .tjevqG_reviewCardContainer {
+    gap: 20px;
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */

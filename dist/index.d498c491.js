@@ -27214,27 +27214,41 @@ var _bodyJsx = require("./components/Body.jsx");
 var _bodyJsxDefault = parcelHelpers.interopDefault(_bodyJsx);
 var _recipeListJsx = require("./components/recipeList.jsx");
 var _recipeListJsxDefault = parcelHelpers.interopDefault(_recipeListJsx);
+var _reviewPageJsx = require("./components/reviewPage.jsx");
+var _reviewPageJsxDefault = parcelHelpers.interopDefault(_reviewPageJsx);
+var _trendingJsx = require("./components/trending.jsx");
+var _trendingJsxDefault = parcelHelpers.interopDefault(_trendingJsx);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 18,
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reviewPageJsxDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingJsxDefault.default), {}, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27250,7 +27264,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35467,7 +35481,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./right-arrow.png":"hx3sc"}],"ieGJH":[function(require,module,exports,__globalThis) {
 module.exports["heading"] = `jjQB4a_heading`;
 module.exports["recipeCard"] = `jjQB4a_recipeCard`;
 module.exports["recipeContainer"] = `jjQB4a_recipeContainer`;
@@ -35476,6 +35490,232 @@ module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
 },{}],"hx3sc":[function(require,module,exports,__globalThis) {
 module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
 
-},{"beed73946feccc95":"lgJ39"}]},["aQL8O","c2I8d","g9R30"], "g9R30", "parcelRequire94c2")
+},{"beed73946feccc95":"lgJ39"}],"1J5Ne":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3765 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3765.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reviewPageModuleCss = require("./reviewPage.module.css"); // Import CSS file for styling
+var _reviewPageModuleCssDefault = parcelHelpers.interopDefault(_reviewPageModuleCss);
+var _kashifReviewPng = require("./kashifReview.png");
+var _kashifReviewPngDefault = parcelHelpers.interopDefault(_kashifReviewPng);
+var _syedReviewPng = require("./syedReview.png");
+var _syedReviewPngDefault = parcelHelpers.interopDefault(_syedReviewPng);
+var _tanzilReviewPng = require("./tanzilReview.png");
+var _tanzilReviewPngDefault = parcelHelpers.interopDefault(_tanzilReviewPng);
+const Testimonials = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: (0, _reviewPageModuleCssDefault.default).mainContainer,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: (0, _reviewPageModuleCssDefault.default).reviewHeading,
+                children: "What are our users saying?"
+            }, void 0, false, {
+                fileName: "components/reviewPage.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _reviewPageModuleCssDefault.default).reviewCardContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).kashif
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).zayd
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).tanzil
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/reviewPage.jsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/reviewPage.jsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Testimonials;
+exports.default = Testimonials;
+var _c;
+$RefreshReg$(_c, "Testimonials");
+
+  $parcel$ReactRefreshHelpers$3765.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./reviewPage.module.css":"2sMzm","./kashifReview.png":"aGD4y","./syedReview.png":"h04CM","./tanzilReview.png":"kIF9G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2sMzm":[function(require,module,exports,__globalThis) {
+module.exports["kashif"] = `tjevqG_kashif`;
+module.exports["mainContainer"] = `tjevqG_mainContainer`;
+module.exports["reviewCard"] = `tjevqG_reviewCard`;
+module.exports["reviewCardContainer"] = `tjevqG_reviewCardContainer`;
+module.exports["reviewHeading"] = `tjevqG_reviewHeading`;
+module.exports["tanzil"] = `tjevqG_tanzil`;
+module.exports["zayd"] = `tjevqG_zayd`;
+
+},{}],"aGD4y":[function(require,module,exports,__globalThis) {
+module.exports = require("46c3aae7cc27de71").getBundleURL('avzPb') + "kashifReview.1171da2c.png" + "?" + Date.now();
+
+},{"46c3aae7cc27de71":"lgJ39"}],"h04CM":[function(require,module,exports,__globalThis) {
+module.exports = require("a4b6658b716bbcb4").getBundleURL('avzPb') + "syedReview.a095823d.png" + "?" + Date.now();
+
+},{"a4b6658b716bbcb4":"lgJ39"}],"kIF9G":[function(require,module,exports,__globalThis) {
+module.exports = require("f3bab8800f87f7f7").getBundleURL('avzPb') + "tanzilReview.365098b8.png" + "?" + Date.now();
+
+},{"f3bab8800f87f7f7":"lgJ39"}],"fIvsv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$98f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$98f5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _recipeListModuleCss = require("./recipeList.module.css");
+var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
+var _fireFlamePng = require("./fire-flame.png");
+var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
+var _s = $RefreshSig$();
+const apiKey = '716d2d891ccc4e788b471c105f5928e8'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+function RecipeList() {
+    _s();
+    const [recipes, setRecipes] = (0, _react.useState)([]);
+    const [error, setError] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        async function fetchRecipes() {
+            try {
+                const response = await fetch(endpoint);
+                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+                const data = await response.json();
+                setRecipes(data.recipes);
+            } catch (error) {
+                setError(error.message);
+            }
+        }
+        fetchRecipes();
+    }, []); // Empty dependency array ensures this runs only once
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 29,
+        columnNumber: 23
+    }, this);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _recipeListModuleCssDefault.default).topPicksPage,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _recipeListModuleCssDefault.default).heading,
+                children: [
+                    "Trending Dishes",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _fireFlamePngDefault.default),
+                        alt: "flame",
+                        className: (0, _recipeListModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/trending.jsx",
+                        lineNumber: 34,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/trending.jsx",
+                lineNumber: 33,
+                columnNumber: 10
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _recipeListModuleCssDefault.default).recipeContainer,
+                children: recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _recipeListModuleCssDefault.default).recipeCard,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: recipe.image,
+                                alt: recipe.title
+                            }, void 0, false, {
+                                fileName: "components/trending.jsx",
+                                lineNumber: 38,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: recipe.title
+                                }, void 0, false, {
+                                    fileName: "components/trending.jsx",
+                                    lineNumber: 39,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/trending.jsx",
+                                lineNumber: 39,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, recipe.id, true, {
+                        fileName: "components/trending.jsx",
+                        lineNumber: 37,
+                        columnNumber: 21
+                    }, this))
+            }, void 0, false, {
+                fileName: "components/trending.jsx",
+                lineNumber: 35,
+                columnNumber: 14
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 32,
+        columnNumber: 9
+    }, this);
+}
+_s(RecipeList, "ohMqFt/cdTJ3t+pGlBUBekHej2E=");
+_c = RecipeList;
+exports.default = RecipeList;
+var _c;
+$RefreshReg$(_c, "RecipeList");
+
+  $parcel$ReactRefreshHelpers$98f5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
+module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
+
+},{"1b9da1e600612d13":"lgJ39"}]},["aQL8O","c2I8d","g9R30"], "g9R30", "parcelRequire94c2")
 
 //# sourceMappingURL=index.d498c491.js.map

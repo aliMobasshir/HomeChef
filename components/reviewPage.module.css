@@ -1,0 +1,56 @@
+.mainContainer{
+    background:linear-gradient(to bottom, #fed39c 50%, #d9d9d9 50%);
+}
+
+.reviewHeading{
+    font-family: "Shantell Sans", cursive;
+    font-size: 4vw;
+    padding: 6vw;
+}
+
+.reviewCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10vw;
+    flex-wrap: wrap; 
+}
+
+.reviewCard{
+    height: 45vw;
+    width: 28vw;
+    border-radius: 4vw;
+    background-size: cover;
+}
+
+#kashif{
+    background-image: url(kashifReview.png);
+    background-size: cover;
+    background-position: center;
+}
+#zayd{
+    background-image: url(syedReview.png);
+    background-size: cover;
+    background-position: center;
+}
+#tanzil{
+    background-image: url(tanzilReview.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:750px){
+    .reviewHeading{ 
+        font-size: 32px;
+        padding: 50px 10px;
+    }
+    .reviewCard{
+        height: 600px;
+        width: 350px;
+        border-radius: 40px;
+    }
+    .reviewCardContainer{
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+}
