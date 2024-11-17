@@ -2978,7 +2978,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About.jsx":"jb55R","./App":"ifStX"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./App":"ifStX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -35527,7 +35527,6 @@ var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
 const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc00'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35649,7 +35648,218 @@ module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
 },{}],"hx3sc":[function(require,module,exports,__globalThis) {
 module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
 
-},{"beed73946feccc95":"lgJ39"}],"jb55R":[function(require,module,exports,__globalThis) {
+},{"beed73946feccc95":"lgJ39"}],"1J5Ne":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3765 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3765.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reviewPageModuleCss = require("./reviewPage.module.css"); // Import CSS file for styling
+var _reviewPageModuleCssDefault = parcelHelpers.interopDefault(_reviewPageModuleCss);
+const Reviews = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: (0, _reviewPageModuleCssDefault.default).mainContainer,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: (0, _reviewPageModuleCssDefault.default).reviewHeading,
+                children: "What are our users saying?"
+            }, void 0, false, {
+                fileName: "components/reviewPage.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _reviewPageModuleCssDefault.default).reviewCardContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).kashif
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).zayd
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _reviewPageModuleCssDefault.default).reviewCard,
+                        id: (0, _reviewPageModuleCssDefault.default).tanzil
+                    }, void 0, false, {
+                        fileName: "components/reviewPage.jsx",
+                        lineNumber: 11,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/reviewPage.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/reviewPage.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Reviews;
+exports.default = Reviews;
+var _c;
+$RefreshReg$(_c, "Reviews");
+
+  $parcel$ReactRefreshHelpers$3765.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./reviewPage.module.css":"2sMzm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2sMzm":[function(require,module,exports,__globalThis) {
+module.exports["kashif"] = `tjevqG_kashif`;
+module.exports["mainContainer"] = `tjevqG_mainContainer`;
+module.exports["reviewCard"] = `tjevqG_reviewCard`;
+module.exports["reviewCardContainer"] = `tjevqG_reviewCardContainer`;
+module.exports["reviewHeading"] = `tjevqG_reviewHeading`;
+module.exports["tanzil"] = `tjevqG_tanzil`;
+module.exports["zayd"] = `tjevqG_zayd`;
+
+},{}],"fIvsv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$98f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$98f5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _recipeListModuleCss = require("./recipeList.module.css");
+var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
+var _fireFlamePng = require("./fire-flame.png");
+var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
+var _s = $RefreshSig$();
+const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+function RecipeList() {
+    _s();
+    const [recipes, setRecipes] = (0, _react.useState)([]);
+    const [error, setError] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        async function fetchRecipes() {
+            try {
+                const response = await fetch(endpoint);
+                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+                const data = await response.json();
+                setRecipes(data.recipes);
+            } catch (error) {
+                setError(error.message);
+            }
+        }
+        fetchRecipes();
+    }, []); // Empty dependency array ensures this runs only once
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 29,
+        columnNumber: 23
+    }, this);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _recipeListModuleCssDefault.default).topPicksPage,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _recipeListModuleCssDefault.default).heading,
+                children: [
+                    "Trending Dishes",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _fireFlamePngDefault.default),
+                        alt: "flame",
+                        className: (0, _recipeListModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/trending.jsx",
+                        lineNumber: 34,
+                        columnNumber: 13
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/trending.jsx",
+                lineNumber: 33,
+                columnNumber: 10
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _recipeListModuleCssDefault.default).recipeContainer,
+                children: recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _recipeListModuleCssDefault.default).recipeCard,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: recipe.image,
+                                alt: recipe.title
+                            }, void 0, false, {
+                                fileName: "components/trending.jsx",
+                                lineNumber: 38,
+                                columnNumber: 25
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: recipe.title
+                                }, void 0, false, {
+                                    fileName: "components/trending.jsx",
+                                    lineNumber: 39,
+                                    columnNumber: 29
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/trending.jsx",
+                                lineNumber: 39,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, recipe.id, true, {
+                        fileName: "components/trending.jsx",
+                        lineNumber: 37,
+                        columnNumber: 21
+                    }, this))
+            }, void 0, false, {
+                fileName: "components/trending.jsx",
+                lineNumber: 35,
+                columnNumber: 14
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 32,
+        columnNumber: 9
+    }, this);
+}
+_s(RecipeList, "ohMqFt/cdTJ3t+pGlBUBekHej2E=");
+_c = RecipeList;
+exports.default = RecipeList;
+var _c;
+$RefreshReg$(_c, "RecipeList");
+
+  $parcel$ReactRefreshHelpers$98f5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
+module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
+
+},{"1b9da1e600612d13":"lgJ39"}],"jb55R":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$368c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
