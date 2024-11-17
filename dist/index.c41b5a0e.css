@@ -338,7 +338,7 @@
   }
 
   .SnCtwa_p_text {
-    font-size: 4vw;
+    font-size: 24px;
   }
 
   .SnCtwa_button {
@@ -588,17 +588,21 @@
 }
 
 @media (width <= 800px) {
+  .jjQB4a_recipeContainer {
+    gap: 16px;
+  }
+
   .jjQB4a_heading {
     font-size: 32px;
   }
 
   .jjQB4a_recipeCard {
-    width: 300px;
-    height: 275px;
+    width: 350px;
+    height: 325px;
   }
 
   .jjQB4a_recipeCard h2 {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 

@@ -76,14 +76,17 @@
   }
 
   @media (max-width:800px) {
+    .recipeContainer{
+        gap: 16px;
+    }
     .heading{
         font-size: 32px;
     }
     .recipeCard{
-        height: 275px;
-        width: 300px;
+        height: 325px;
+        width: 350px;
     }
     .recipeCard h2{
-        font-size: 15px;
+        font-size: 18px;
     }
   }
