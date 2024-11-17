@@ -1,3 +1,25 @@
+.searchDiv{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%
+    
+}
+.searchDiv input{
+    text-align: center;
+    padding-left: 62px;
+}
+
+.searchDiv img{
+    position: absolute;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+}
+
 .searchInput{
     background-color:#d9d9d9;
     padding: 13px 10px;
