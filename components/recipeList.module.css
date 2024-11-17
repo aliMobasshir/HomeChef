@@ -6,62 +6,57 @@
     flex-direction: column;
     gap: 50px;
 }
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+}
+ .heading img{
+    margin-left: 10px; 
+    height: 1em;
+} 
 .recipeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 2vw;
 }
 
-.heading{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.heading::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px; 
-    background-color: #fed39c; 
-    transform: scaleX(0); 
-    transition: transform 0.3s ease; 
-  }
-  
-  .heading:hover::after {
-    transform: scaleX(1); 
-    transform-origin: bottom left;
-  }
- .heading img{
-    margin-left: 10px; 
-    height: 1em;
-} 
 .recipeCard {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
-    height: 25vw;
+    height: 26vw;
     width: 30vw;
     text-align: start;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recipeCard:hover{
+   background-color: #f0f0f07d;
 }
 
 .recipeCard img{
-    height: 80%;
-    width: 80%;
+    height: 73%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.recipeCard h2{
-    font-size: 6%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
+.recipeCard h2 {
+    font-family: "Nanum Gothic Coding", monospace;
+  font-style: normal;
+    margin-top: 10px;
+    font-weight: 400;
     position: relative;
+    font-size: 1.5vw
+   
 }
+
 
 .recipeCard h2::after {
     content: "";
@@ -78,4 +73,17 @@
   .recipeCard h2:hover::after {
     transform: scaleX(1); /* Expand underline on hover */
     transform-origin: bottom left;
+  }
+
+  @media (max-width:800px) {
+    .heading{
+        font-size: 32px;
+    }
+    .recipeCard{
+        height: 275px;
+        width: 300px;
+    }
+    .recipeCard h2{
+        font-size: 15px;
+    }
   }
