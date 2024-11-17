@@ -35375,7 +35375,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList() {
     _s();
@@ -35504,13 +35504,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reviewPageModuleCss = require("./reviewPage.module.css"); // Import CSS file for styling
 var _reviewPageModuleCssDefault = parcelHelpers.interopDefault(_reviewPageModuleCss);
-var _kashifReviewPng = require("./kashifReview.png");
-var _kashifReviewPngDefault = parcelHelpers.interopDefault(_kashifReviewPng);
-var _syedReviewPng = require("./syedReview.png");
-var _syedReviewPngDefault = parcelHelpers.interopDefault(_syedReviewPng);
-var _tanzilReviewPng = require("./tanzilReview.png");
-var _tanzilReviewPngDefault = parcelHelpers.interopDefault(_tanzilReviewPng);
-const Testimonials = ()=>{
+const Reviews = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: (0, _reviewPageModuleCssDefault.default).mainContainer,
         children: [
@@ -35519,7 +35513,7 @@ const Testimonials = ()=>{
                 children: "What are our users saying?"
             }, void 0, false, {
                 fileName: "components/reviewPage.jsx",
-                lineNumber: 11,
+                lineNumber: 7,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35530,7 +35524,7 @@ const Testimonials = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).kashif
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 13,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35538,7 +35532,7 @@ const Testimonials = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).zayd
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 14,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35546,33 +35540,33 @@ const Testimonials = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).tanzil
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 15,
+                        lineNumber: 11,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/reviewPage.jsx",
-                lineNumber: 12,
+                lineNumber: 8,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/reviewPage.jsx",
-        lineNumber: 10,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
-_c = Testimonials;
-exports.default = Testimonials;
+_c = Reviews;
+exports.default = Reviews;
 var _c;
-$RefreshReg$(_c, "Testimonials");
+$RefreshReg$(_c, "Reviews");
 
   $parcel$ReactRefreshHelpers$3765.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./reviewPage.module.css":"2sMzm","./kashifReview.png":"aGD4y","./syedReview.png":"h04CM","./tanzilReview.png":"kIF9G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2sMzm":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./reviewPage.module.css":"2sMzm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2sMzm":[function(require,module,exports,__globalThis) {
 module.exports["kashif"] = `tjevqG_kashif`;
 module.exports["mainContainer"] = `tjevqG_mainContainer`;
 module.exports["reviewCard"] = `tjevqG_reviewCard`;
@@ -35581,16 +35575,7 @@ module.exports["reviewHeading"] = `tjevqG_reviewHeading`;
 module.exports["tanzil"] = `tjevqG_tanzil`;
 module.exports["zayd"] = `tjevqG_zayd`;
 
-},{}],"aGD4y":[function(require,module,exports,__globalThis) {
-module.exports = require("46c3aae7cc27de71").getBundleURL('avzPb') + "kashifReview.1171da2c.png" + "?" + Date.now();
-
-},{"46c3aae7cc27de71":"lgJ39"}],"h04CM":[function(require,module,exports,__globalThis) {
-module.exports = require("a4b6658b716bbcb4").getBundleURL('avzPb') + "syedReview.a095823d.png" + "?" + Date.now();
-
-},{"a4b6658b716bbcb4":"lgJ39"}],"kIF9G":[function(require,module,exports,__globalThis) {
-module.exports = require("f3bab8800f87f7f7").getBundleURL('avzPb') + "tanzilReview.365098b8.png" + "?" + Date.now();
-
-},{"f3bab8800f87f7f7":"lgJ39"}],"fIvsv":[function(require,module,exports,__globalThis) {
+},{}],"fIvsv":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$98f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35607,7 +35592,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList() {
     _s();

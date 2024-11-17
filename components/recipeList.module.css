@@ -28,7 +28,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
-    height: 25vw;
+    height: 26vw;
     width: 30vw;
     text-align: start;
     cursor: pointer;
@@ -40,7 +40,7 @@
 }
 
 .recipeCard img{
-    height: 80%;
+    height: 73%;
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
@@ -51,9 +51,10 @@
     font-family: "Nanum Gothic Coding", monospace;
   font-style: normal;
     margin-top: 10px;
-    font-size: 1.5vw;
     font-weight: 400;
     position: relative;
+    font-size: 1.5vw
+   
 }
 
 
@@ -76,7 +77,7 @@
 
   @media (max-width:800px) {
     .heading{
-        font-size: 36px;
+        font-size: 32px;
     }
     .recipeCard{
         height: 275px;

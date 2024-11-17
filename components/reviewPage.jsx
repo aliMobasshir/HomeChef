@@ -1,11 +1,7 @@
 import React from "react";
 import Style from "./reviewPage.module.css"; // Import CSS file for styling
-import KashifReview from './kashifReview.png';
-import syedReview from './syedReview.png';
-import KashifReview from './kashifReview.png';
-import tanzilReview from './tanzilReview.png';
 
-const Testimonials = () => {
+const Reviews = () => {
   return (
     <section className={Style.mainContainer}>
       <h2 className={Style.reviewHeading}>What are our users saying?</h2>
@@ -18,4 +14,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Reviews;
