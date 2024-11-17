@@ -475,15 +475,17 @@
 .jjQB4a_recipeCard {
   text-align: start;
   cursor: pointer;
+  text-overflow: ellipsis;
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 30vw;
   height: 25vw;
   padding: 16px;
+  overflow: hidden;
 }
 
 .jjQB4a_recipeCard:hover {
-  border: 2px solid #ddd;
+  background-color: #f0f0f07d;
 }
 
 .jjQB4a_recipeCard img {
@@ -496,9 +498,10 @@
 
 .jjQB4a_recipeCard h2 {
   margin-top: 10px;
-  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+  font-family: Nanum Gothic Coding, monospace;
   font-size: 1.5vw;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 400;
   position: relative;
 }
 

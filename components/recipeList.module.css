@@ -32,9 +32,11 @@
     width: 30vw;
     text-align: start;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .recipeCard:hover{
-    border: 2px solid #ddd;
+   background-color: #f0f0f07d;
 }
 
 .recipeCard img{
@@ -46,12 +48,12 @@
 }
 
 .recipeCard h2 {
+    font-family: "Nanum Gothic Coding", monospace;
+  font-style: normal;
     margin-top: 10px;
     font-size: 1.5vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     position: relative;
-   
 }
 
 
