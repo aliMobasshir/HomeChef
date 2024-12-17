@@ -27556,12 +27556,7 @@ const Navigation = ({ setQuery })=>{
     const [lastScrollY, setLastScrollY] = (0, _react.useState)(0);
     // Toggle function for menu visibility
     const handler = ()=>{
-<<<<<<< HEAD
-        setMenuOpen((prev)=>!prev) // Toggle the menu visibility
-        ;
-=======
         setMenuOpen((prev)=>!prev);
->>>>>>> mobasshir
     };
     // Handle scroll event to show/hide navbar
     (0, _react.useEffect)(()=>{
@@ -27595,11 +27590,7 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 25,
-=======
                                 lineNumber: 51,
->>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27608,21 +27599,13 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 26,
-=======
                                 lineNumber: 52,
->>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 24,
-=======
                         lineNumber: 50,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27632,20 +27615,12 @@ const Navigation = ({ setQuery })=>{
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 34,
-=======
                             lineNumber: 56,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 33,
-=======
                         lineNumber: 55,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27655,11 +27630,7 @@ const Navigation = ({ setQuery })=>{
                         alt: "Click Here"
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 42,
-=======
                         lineNumber: 60,
->>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27670,20 +27641,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 52,
-=======
                             lineNumber: 69,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 51,
-=======
                         lineNumber: 68,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27694,20 +27657,12 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 58,
-=======
                             lineNumber: 72,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 57,
-=======
                         lineNumber: 71,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27718,20 +27673,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 64,
-=======
                             lineNumber: 75,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 63,
-=======
                         lineNumber: 74,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27744,11 +27691,7 @@ const Navigation = ({ setQuery })=>{
                                 alt: "Close Menu"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 72,
-=======
                                 lineNumber: 81,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27757,11 +27700,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 78,
-=======
                                 lineNumber: 87,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27770,11 +27709,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 81,
-=======
                                 lineNumber: 88,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27783,11 +27718,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 84,
-=======
                                 lineNumber: 89,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27796,11 +27727,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 87,
-=======
                                 lineNumber: 90,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27809,11 +27736,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign In"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 90,
-=======
                                 lineNumber: 91,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27822,57 +27745,33 @@ const Navigation = ({ setQuery })=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 93,
-=======
                                 lineNumber: 92,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 71,
-=======
                         lineNumber: 80,
->>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                lineNumber: 23,
-=======
                 lineNumber: 49,
->>>>>>> mobasshir
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-            lineNumber: 22,
-=======
             lineNumber: 48,
->>>>>>> mobasshir
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-        lineNumber: 21,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Navigation, "wuj9xsQEwmYwrdacIcpHBEejQZc=");
-=======
         lineNumber: 47,
         columnNumber: 5
     }, undefined);
 };
 _s(Navigation, "mamaEWwHLTZbKJIUS5jHjfYoSV0=");
->>>>>>> mobasshir
 _c = Navigation;
 exports.default = Navigation;
 var _c;
