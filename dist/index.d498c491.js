@@ -35771,7 +35771,7 @@ var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
 // API configuration
-const apiKey = '3544e0a87f98468883e9169172546ac1';
+const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35925,23 +35925,23 @@ const FAQ = ()=>{
     const faqs = [
         {
             question: 'What is HomeChef?',
-            answer: 'HomeChef is a platform that provides recipes for home-cooked meals.'
+            answer: 'HomeChef is a recipe platform where you can discover, explore, and cook delicious meals with step-by-step instructions.'
         },
         {
             question: 'Is HomeChef free to use?',
-            answer: 'Yes, HomeChef is completely free to use.'
+            answer: 'Yes, HomeChef is completely free. You can access all recipes and features at no cost.'
         },
         {
             question: 'Are the recipes beginner-friendly?',
-            answer: 'Absolutely! We focus on easy and simple recipes for beginners.'
+            answer: 'Yes, our recipes are designed for all skill levels, with clear step-by-step instructions.'
         },
         {
             question: 'Can I search by the ingredients I have?',
-            answer: 'Yes, you can search for recipes based on ingredients.'
+            answer: 'Absolutely! Use the "Search by Ingredients" feature to find recipes that match what\u2019s in your kitchen.'
         },
         {
             question: 'Do I need an account to access recipes?',
-            answer: 'No account is required to access recipes.'
+            answer: 'No, you can view recipes without an account.'
         }
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36003,7 +36003,7 @@ const FAQ = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "faq_image",
+                        className: (0, _faqModuleCssDefault.default).faq_image,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _faq1SvgDefault.default),
                             alt: "FAQ illustration"
@@ -36044,7 +36044,7 @@ $RefreshReg$(_c, "FAQ");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./FAQ.module.css":"ifFkW","./FAQ 1.svg":"ixPNC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ifFkW":[function(require,module,exports,__globalThis) {
 module.exports["faq_box"] = `C1rn5W_faq_box`;
 module.exports["faq_container"] = `C1rn5W_faq_container`;
-module.exports["faq_container1"] = `C1rn5W_faq_container1`;
+module.exports["faq_image"] = `C1rn5W_faq_image`;
 module.exports["faq_span"] = `C1rn5W_faq_span`;
 module.exports["faq_text"] = `C1rn5W_faq_text`;
 module.exports["open"] = `C1rn5W_open`;

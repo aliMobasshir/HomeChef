@@ -1,51 +1,100 @@
+h1{
+  font-family: "Shantell Sans", cursive;
+  font-size: 4vw;
+  padding: 4vw;
+}
 .faq_container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
 }
 
-.faq_container1 {
-  margin-top: 20px;
-  margin-left: 20px;
-}
+
 
 .faq_box {
-  min-width: 500px;
-  background-color: #d9d9d9;
-  padding: 20px 30px;
-  margin: 10px;
+  width: 45vw;
+  background-color: #f1f3f2;
+  padding: 2vw 3vw;
+  margin: 3vw;
+  border-radius: 1.3vw;
   position: relative;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #757575;
+  font-size:1.5vw ;
 }
 
 .faq_span {
-  color: #0b0b0a;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 2.5vw;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 1.5vw;
+  right: 2vw;
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
 
 .faq_text {
   margin-top: 10px;
-  font-size: 1rem;
-  color: #333;
+  font-size: 1.5vw;
+  color: black;
   max-height: 0;  
   overflow: hidden; 
   transition: max-height 0.3s ease, margin-top 0.3s ease; 
 }
 
 
+.faq_box.open{
+  background-color: #fed39c;
+  color: black;
+}
 .faq_box.open .faq_text {
-  max-height: 1000px; 
+  max-height: 6vw; 
   margin-top: 15px; 
 }
 
 .faq_box.open .faq_span {
-  transform: rotate(45deg);
+  top: 1vw;
+  font-size: 3.5vw;
+  transform: rotate(180deg);
 }
+
+
+.faq_image img {
+  width: 25vw; 
+  max-width: 100%; 
+}
+
+@media(max-width:830px){
+  h1{
+    font-size: 32px;
+        padding: 50px 10px;
+    }
+  .faq_image{
+    display: none;
+  }
+  .faq_box{
+    min-width: 90vw;
+    padding: 25px 25px;
+    margin: 25px;
+    font-size:20px ;
+  }
+    .faq_span {
+      font-size: 30px;
+      position: absolute;
+      top: 25%;
+      right: 15px;
+    }
+    .faq_text {
+      font-size: 15px;
+    }
+    .faq_box.open .faq_span {
+      top: 18px;
+      font-size: 35px;
+    }
+    .faq_box.open .faq_text {
+      max-height: 50px; 
+      margin-top: 15px; 
+    }
+  }
