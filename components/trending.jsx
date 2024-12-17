@@ -3,7 +3,7 @@ import Style from './recipeList.module.css'
 import flameIcon from './fire-flame.png'
 
 // API configuration
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'
+const apiKey = '3544e0a87f98468883e9169172546ac1'
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
 
 function RecipeList({ query }) { // query is passed as a prop
