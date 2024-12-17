@@ -60,7 +60,7 @@ function RecipeList({ query }) { // query is passed as a prop
             </div>
           ))
         ) : (
-          <h1 className={Style.noRecipes}>No recipes found.</h1>
+          <h1 className={Style.noRecipes}>No recipes founds.</h1>
         )}
       </div>
     </div>
