@@ -27556,12 +27556,7 @@ const Navigation = ({ setQuery })=>{
     const [lastScrollY, setLastScrollY] = (0, _react.useState)(0);
     // Toggle function for menu visibility
     const handler = ()=>{
-<<<<<<< HEAD
-        setMenuOpen((prev)=>!prev) // Toggle the menu visibility
-        ;
-=======
         setMenuOpen((prev)=>!prev);
->>>>>>> mobasshir
     };
     // Handle scroll event to show/hide navbar
     (0, _react.useEffect)(()=>{
@@ -27595,11 +27590,7 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 25,
-=======
                                 lineNumber: 51,
->>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27608,21 +27599,13 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 26,
-=======
                                 lineNumber: 52,
->>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 24,
-=======
                         lineNumber: 50,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27632,20 +27615,12 @@ const Navigation = ({ setQuery })=>{
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 34,
-=======
                             lineNumber: 56,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 33,
-=======
                         lineNumber: 55,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27655,11 +27630,7 @@ const Navigation = ({ setQuery })=>{
                         alt: "Click Here"
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 42,
-=======
                         lineNumber: 60,
->>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27670,20 +27641,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 52,
-=======
                             lineNumber: 69,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 51,
-=======
                         lineNumber: 68,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27694,20 +27657,12 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 58,
-=======
                             lineNumber: 72,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 57,
-=======
                         lineNumber: 71,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27718,20 +27673,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                            lineNumber: 64,
-=======
                             lineNumber: 75,
->>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 63,
-=======
                         lineNumber: 74,
->>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27744,11 +27691,7 @@ const Navigation = ({ setQuery })=>{
                                 alt: "Close Menu"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 72,
-=======
                                 lineNumber: 81,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27757,11 +27700,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 78,
-=======
                                 lineNumber: 87,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27770,11 +27709,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 81,
-=======
                                 lineNumber: 88,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27783,11 +27718,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 84,
-=======
                                 lineNumber: 89,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27796,11 +27727,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 87,
-=======
                                 lineNumber: 90,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27809,11 +27736,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign In"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 90,
-=======
                                 lineNumber: 91,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27822,57 +27745,33 @@ const Navigation = ({ setQuery })=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                                lineNumber: 93,
-=======
                                 lineNumber: 92,
->>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                        lineNumber: 71,
-=======
                         lineNumber: 80,
->>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-                lineNumber: 23,
-=======
                 lineNumber: 49,
->>>>>>> mobasshir
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-            lineNumber: 22,
-=======
             lineNumber: 48,
->>>>>>> mobasshir
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-<<<<<<< HEAD
-        lineNumber: 21,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Navigation, "wuj9xsQEwmYwrdacIcpHBEejQZc=");
-=======
         lineNumber: 47,
         columnNumber: 5
     }, undefined);
 };
 _s(Navigation, "mamaEWwHLTZbKJIUS5jHjfYoSV0=");
->>>>>>> mobasshir
 _c = Navigation;
 exports.default = Navigation;
 var _c;
@@ -35667,11 +35566,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-<<<<<<< HEAD
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-=======
 const apiKey = '716d2d891ccc4e788b471c105f5928e8'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
->>>>>>> mobasshir
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35697,7 +35592,7 @@ function RecipeList({ query }) {
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 23
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
@@ -35714,13 +35609,13 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35733,7 +35628,7 @@ function RecipeList({ query }) {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35741,35 +35636,35 @@ function RecipeList({ query }) {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/recipeList.jsx",
-                                    lineNumber: 48,
+                                    lineNumber: 47,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 25
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "No recipes found.   "
                 }, void 0, false, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 52,
+                    lineNumber: 51,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 43,
+                lineNumber: 42,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 38,
+        lineNumber: 37,
         columnNumber: 9
     }, this);
 }
@@ -35898,12 +35793,7 @@ var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
 // API configuration
-<<<<<<< HEAD
-const apiKey = '3544e0a87f98468883e9169172546ac1' // >>>>>>> 0cd8182238d2109cb01498bebb1c0b23f9cea451
-;
-=======
-const apiKey = '716d2d891ccc4e788b471c105f5928e8';
->>>>>>> mobasshir
+const apiKey = '3544e0a87f98468883e9169172546ac1';
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35944,18 +35834,17 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 47,
+                        lineNumber: 46,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 45,
+                lineNumber: 44,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).recipeContainer,
-<<<<<<< HEAD
                 children: error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: (0, _recipeListModuleCssDefault.default).error,
                     children: [
@@ -35964,7 +35853,7 @@ function RecipeList({ query }) {
                     ]
                 }, void 0, true, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 53,
+                    lineNumber: 52,
                     columnNumber: 11
                 }, this) // Display error message
                  : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35975,7 +35864,7 @@ function RecipeList({ query }) {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 57,
+                                lineNumber: 56,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -35983,90 +35872,36 @@ function RecipeList({ query }) {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 58,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 58,
+                                lineNumber: 57,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 56,
+                        lineNumber: 55,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _recipeListModuleCssDefault.default).noRecipes,
-                    children: "No recipes found."
+                    children: "No recipes founds."
                 }, void 0, false, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 64,
+                    lineNumber: 63,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
-=======
-                children: [
-                    error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: (0, _recipeListModuleCssDefault.default).error,
-                        children: [
-                            "Error: ",
-                            error
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/trending.jsx",
-                        lineNumber: 52,
-                        columnNumber: 11
-                    }, this) // Display error message
-                     : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: (0, _recipeListModuleCssDefault.default).recipeCard,
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: recipe.image,
-                                    alt: recipe.title
-                                }, void 0, false, {
-                                    fileName: "components/trending.jsx",
-                                    lineNumber: 56,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: recipe.title
-                                    }, void 0, false, {
-                                        fileName: "components/trending.jsx",
-                                        lineNumber: 58,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "components/trending.jsx",
-                                    lineNumber: 57,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, recipe.id, true, {
-                            fileName: "components/trending.jsx",
-                            lineNumber: 55,
-                            columnNumber: 13
-                        }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _recipeListModuleCssDefault.default).noRecipes,
-                        children: "No recipes founds."
-                    }, void 0, false, {
-                        fileName: "components/trending.jsx",
-                        lineNumber: 63,
-                        columnNumber: 11
-                    }, this),
-                    "Q      "
-                ]
-            }, void 0, true, {
->>>>>>> mobasshir
                 fileName: "components/trending.jsx",
-                lineNumber: 51,
+                lineNumber: 50,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 43,
+        lineNumber: 42,
         columnNumber: 9
     }, this);
 }
