@@ -285,7 +285,7 @@
   content: "";
   background-color: #fed39c;
   width: 100%;
-  height: 2px;
+  height: 3px;
   transition: transform .3s;
   position: absolute;
   bottom: -2px;
@@ -338,7 +338,7 @@
   }
 
   .SnCtwa_p_text {
-    font-size: 4vw;
+    font-size: 24px;
   }
 
   .SnCtwa_button {
@@ -466,7 +466,7 @@
   height: 25vw;
 }
 
-@media (width <= 800px) {
+@media (width <= 750px) {
   ._4Nacwq_section_container {
     flex-direction: column;
     gap: 50px;
@@ -517,37 +517,11 @@
   display: flex;
 }
 
-.jjQB4a_recipeContainer {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  display: flex;
-}
-
 .jjQB4a_heading {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 48px;
+  font-size: 4vw;
   display: flex;
-  position: relative;
-}
-
-.jjQB4a_heading:after {
-  content: "";
-  background-color: #fed39c;
-  width: 100%;
-  height: 4px;
-  transition: transform .3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-}
-
-.jjQB4a_heading:hover:after {
-  transform-origin: 0 100%;
-  transform: scaleX(1);
 }
 
 .jjQB4a_heading img {
@@ -555,25 +529,44 @@
   margin-left: 10px;
 }
 
+.jjQB4a_recipeContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
 .jjQB4a_recipeCard {
   text-align: start;
   cursor: pointer;
+  text-overflow: ellipsis;
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 30vw;
-  height: 25vw;
+  height: 26vw;
   padding: 16px;
+  overflow: hidden;
+}
+
+.jjQB4a_recipeCard:hover {
+  background-color: #f0f0f07d;
 }
 
 .jjQB4a_recipeCard img {
-  width: 80%;
-  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 73%;
 }
 
 .jjQB4a_recipeCard h2 {
-  font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
-  font-size: 6%;
-  font-weight: 600;
+  margin-top: 10px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
   position: relative;
 }
 
@@ -592,5 +585,213 @@
 .jjQB4a_recipeCard h2:hover:after {
   transform-origin: 0 100%;
   transform: scaleX(1);
+}
+
+@media (width <= 800px) {
+  .jjQB4a_recipeContainer {
+    gap: 16px;
+  }
+
+  .jjQB4a_heading {
+    font-size: 32px;
+  }
+
+  .jjQB4a_recipeCard {
+    width: 350px;
+    height: 325px;
+  }
+
+  .jjQB4a_recipeCard h2 {
+    font-size: 18px;
+  }
+}
+
+.tjevqG_mainContainer {
+  background: linear-gradient(#fed39c 50%, #d9d9d9 50%);
+}
+
+.tjevqG_reviewHeading {
+  padding: 6vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 4vw;
+}
+
+.tjevqG_reviewCardContainer {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10vw;
+  display: flex;
+}
+
+.tjevqG_reviewCard {
+  background-size: cover;
+  border-radius: 4vw;
+  width: 28vw;
+  height: 45vw;
+}
+
+#tjevqG_kashif {
+  background-image: url("kashifReview.1171da2c.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#tjevqG_zayd {
+  background-image: url("syedReview.a095823d.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#tjevqG_tanzil {
+  background-image: url("tanzilReview.365098b8.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (width <= 750px) {
+  .tjevqG_reviewHeading {
+    padding: 50px 10px;
+    font-size: 32px;
+  }
+
+  .tjevqG_reviewCard {
+    border-radius: 40px;
+    width: 350px;
+    height: 600px;
+  }
+
+  .tjevqG_reviewCardContainer {
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+.C1rn5W_faq_container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.C1rn5W_faq_container1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.C1rn5W_faq_box {
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  min-width: 500px;
+  margin: 10px;
+  padding: 20px 30px;
+  transition: all .3s;
+  position: relative;
+}
+
+.C1rn5W_faq_span {
+  color: #0b0b0a;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: transform .3s;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.C1rn5W_faq_text {
+  color: #333;
+  max-height: 0;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: max-height .3s, margin-top .3s;
+  overflow: hidden;
+}
+
+.C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_text {
+  max-height: 1000px;
+  margin-top: 15px;
+}
+
+.C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_span {
+  transform: rotate(45deg);
+}
+
+.ASPDhq_footer_container {
+  background-color: #d9d9d9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 100px;
+  display: flex;
+}
+
+.ASPDhq_footerContent {
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "ASPDhq_footer ASPDhq_footer ASPDhq_footer ASPDhq_footer ASPDhq_footer";
+  grid-auto-flow: row;
+  place-items: center;
+  gap: 0;
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 40px;
+  display: grid;
+}
+
+.ASPDhq_image {
+  border: 2px solid #000;
+  box-shadow: 0 0 0 3px #000c;
+}
+
+.ASPDhq_navigation {
+  margin-left: 20px;
+}
+
+.ASPDhq_navigation ul, .ASPDhq_quickLinks ul, .ASPDhq_contact ul {
+  cursor: pointer;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.ASPDhq_socialMedia ul {
+  cursor: pointer;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.ASPDhq_horizontal_line {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.ASPDhq_line {
+  box-sizing: border-box;
+  background-color: #000;
+  width: 80%;
+  height: 3px;
+}
+
+.ASPDhq_copyright {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */

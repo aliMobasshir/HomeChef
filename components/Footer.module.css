@@ -1,0 +1,98 @@
+.footer_container {
+  margin-top: 100px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  margin-top: 50px;
+  grid-template-areas: 'footer footer footer footer footer'; /* Covers entire row */
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.image {
+  border: 2px solid black;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.8); /* Dark outer border */
+}
+
+/* Navigation Styling */
+.navigation {
+  margin-left: 20px; /* Margin on the left */
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column; /* Items stacked vertically */
+  gap: 10px; /* Space between items */
+  margin: 10px 0; /* Margin top and bottom */
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Quick Links Styling */
+.quickLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0; /* Margin top and bottom */
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Contact Links Styling */
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0; /* Margin top and bottom */
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Social Media Styling */
+.socialMedia ul {
+  display: flex;
+  flex-direction: row; /* Items arranged horizontally */
+  gap: 20px; /* Space between items */
+  margin: 10px 0; /* Margin top and bottom */
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px; /* Font size for social media icons */
+}
+.horizontal_line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.line {
+  width: 80%;
+  height: 3px;
+  background-color: black;
+  box-sizing: border-box; /* Ensures the line fills the entire width */
+}
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}

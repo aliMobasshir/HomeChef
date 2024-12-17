@@ -2,7 +2,7 @@ import React from 'react'
 import rectange7 from './categories 1.svg'
 import rectange8 from './checkbox 1.svg'
 import section from './Section.module.css'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Data from '../FakeData.js'
 
 const Body = ({ query }) => {
