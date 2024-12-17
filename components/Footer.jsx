@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Footer.module.css'
-import image from './HomeChef.svg'
+import image from './HomeChefLogo.svg'
+
 
 const Footer = () => {
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <ul>
             <li>HomeChef@gmail.com</li>
-            <li>9999999</li>
+            <li>199999-1999</li>
           </ul>
         </div>
 
@@ -63,7 +64,7 @@ const Footer = () => {
         <div className={style.line}></div>
       </div>
       <div className={style.copyright}>
-        <p>© 2023 HomeChef. All rights reserved.</p>
+        <p>© 2024 HomeChef | All rights reserved.</p>
       </div>
     </div>
   )

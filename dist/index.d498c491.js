@@ -35544,7 +35544,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35925,28 +35925,29 @@ const FAQ = ()=>{
     const faqs = [
         {
             question: 'What is HomeChef?',
-            answer: 'HomeChef is a platform that provides recipes for home-cooked meals.'
+            answer: 'HomeChef is a recipe platform where you can discover, explore, and cook delicious meals with step-by-step instructions.'
         },
         {
             question: 'Is HomeChef free to use?',
-            answer: 'Yes, HomeChef is completely free to use.'
+            answer: 'Yes, HomeChef is completely free. You can access all recipes and features at no cost.'
         },
         {
             question: 'Are the recipes beginner-friendly?',
-            answer: 'Absolutely! We focus on easy and simple recipes for beginners.'
+            answer: 'Yes, our recipes are designed for all skill levels, with clear step-by-step instructions.'
         },
         {
             question: 'Can I search by the ingredients I have?',
-            answer: 'Yes, you can search for recipes based on ingredients.'
+            answer: 'Absolutely! Use the "Search by Ingredients" feature to find recipes that match what\u2019s in your kitchen.'
         },
         {
             question: 'Do I need an account to access recipes?',
-            answer: 'No account is required to access recipes.'
+            answer: 'No, you can view recipes without an account.'
         }
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _faqModuleCssDefault.default).heading,
                 style: {
                     textAlign: 'center'
                 },
@@ -36003,7 +36004,7 @@ const FAQ = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "faq_image",
+                        className: (0, _faqModuleCssDefault.default).faq_image,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _faq1SvgDefault.default),
                             alt: "FAQ illustration"
@@ -36044,9 +36045,10 @@ $RefreshReg$(_c, "FAQ");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./FAQ.module.css":"ifFkW","./FAQ 1.svg":"ixPNC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ifFkW":[function(require,module,exports,__globalThis) {
 module.exports["faq_box"] = `C1rn5W_faq_box`;
 module.exports["faq_container"] = `C1rn5W_faq_container`;
-module.exports["faq_container1"] = `C1rn5W_faq_container1`;
+module.exports["faq_image"] = `C1rn5W_faq_image`;
 module.exports["faq_span"] = `C1rn5W_faq_span`;
 module.exports["faq_text"] = `C1rn5W_faq_text`;
+module.exports["heading"] = `C1rn5W_heading`;
 module.exports["open"] = `C1rn5W_open`;
 
 },{}],"ixPNC":[function(require,module,exports,__globalThis) {
@@ -36066,8 +36068,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _footerModuleCss = require("./Footer.module.css");
 var _footerModuleCssDefault = parcelHelpers.interopDefault(_footerModuleCss);
-var _homeChefSvg = require("./HomeChef.svg");
-var _homeChefSvgDefault = parcelHelpers.interopDefault(_homeChefSvg);
+var _homeChefLogoSvg = require("./HomeChefLogo.svg");
+var _homeChefLogoSvgDefault = parcelHelpers.interopDefault(_homeChefLogoSvg);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _footerModuleCssDefault.default).footer_container,
@@ -36079,16 +36081,16 @@ const Footer = ()=>{
                         className: "LogoImage",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: (0, _footerModuleCssDefault.default).image,
-                            src: (0, _homeChefSvgDefault.default),
+                            src: (0, _homeChefLogoSvgDefault.default),
                             alt: "HomeChef logo"
                         }, void 0, false, {
                             fileName: "components/Footer.jsx",
-                            lineNumber: 10,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 9,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36098,7 +36100,7 @@ const Footer = ()=>{
                                 children: "Navigation"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 14,
+                                lineNumber: 15,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36107,47 +36109,47 @@ const Footer = ()=>{
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 16,
+                                        lineNumber: 17,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "About"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 17,
+                                        lineNumber: 18,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "FAQs"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 18,
+                                        lineNumber: 19,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Privacy Policy"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 19,
+                                        lineNumber: 20,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Terms And Conditions"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 20,
+                                        lineNumber: 21,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 15,
+                                lineNumber: 16,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36157,7 +36159,7 @@ const Footer = ()=>{
                                 children: "Quick Links"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 25,
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36166,47 +36168,47 @@ const Footer = ()=>{
                                         children: "Veg Recipes"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 27,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Non-Veg Recipes"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 28,
+                                        lineNumber: 29,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Indian Recipes"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 29,
+                                        lineNumber: 30,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Explore Categories"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 30,
+                                        lineNumber: 31,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Search by Ingredients"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 31,
+                                        lineNumber: 32,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 26,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 24,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36216,7 +36218,7 @@ const Footer = ()=>{
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36225,26 +36227,26 @@ const Footer = ()=>{
                                         children: "HomeChef@gmail.com"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 38,
+                                        lineNumber: 39,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: "9999999"
+                                        children: "199999-1999"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 39,
+                                        lineNumber: 40,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 37,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36254,7 +36256,7 @@ const Footer = ()=>{
                                 children: "Social"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 44,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36264,12 +36266,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-facebook"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 47,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36277,12 +36279,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-instagram"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 50,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 49,
+                                        lineNumber: 50,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36290,12 +36292,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-x-twitter"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 53,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36303,30 +36305,30 @@ const Footer = ()=>{
                                             className: "fa-brands fa-youtube"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 56,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 55,
+                                        lineNumber: 56,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Footer.jsx",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36335,32 +36337,32 @@ const Footer = ()=>{
                     className: (0, _footerModuleCssDefault.default).line
                 }, void 0, false, {
                     fileName: "components/Footer.jsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/Footer.jsx",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _footerModuleCssDefault.default).copyright,
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "\xa9 2023 HomeChef. All rights reserved."
+                    children: "\xa9 2024 HomeChef | All rights reserved."
                 }, void 0, false, {
                     fileName: "components/Footer.jsx",
-                    lineNumber: 66,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/Footer.jsx",
-                lineNumber: 65,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Footer.jsx",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -36374,7 +36376,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer.module.css":"7bTtR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./HomeChef.svg":"ctxag"}],"7bTtR":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer.module.css":"7bTtR","./HomeChefLogo.svg":"7pU0l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7bTtR":[function(require,module,exports,__globalThis) {
 module.exports["contact"] = `ASPDhq_contact`;
 module.exports["copyright"] = `ASPDhq_copyright`;
 module.exports["footer"] = `ASPDhq_footer`;
@@ -36387,7 +36389,10 @@ module.exports["navigation"] = `ASPDhq_navigation`;
 module.exports["quickLinks"] = `ASPDhq_quickLinks`;
 module.exports["socialMedia"] = `ASPDhq_socialMedia`;
 
-},{}],"jb55R":[function(require,module,exports,__globalThis) {
+},{}],"7pU0l":[function(require,module,exports,__globalThis) {
+module.exports = require("4f19e34ce1d02795").getBundleURL('avzPb') + "HomeChefLogo.0bee7880.svg" + "?" + Date.now();
+
+},{"4f19e34ce1d02795":"lgJ39"}],"jb55R":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$368c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
