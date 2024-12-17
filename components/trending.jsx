@@ -3,11 +3,8 @@ import Style from './recipeList.module.css'
 import flameIcon from './fire-flame.png'
 
 // API configuration
-<<<<<<< HEAD
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'
-=======
-const apiKey = '3544e0a87f98468883e9169172546ac1'
->>>>>>> 0cd8182238d2109cb01498bebb1c0b23f9cea451
+
+const apiKey = '3544e0a87f98468883e9169172546ac1' // >>>>>>> 0cd8182238d2109cb01498bebb1c0b23f9cea451
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
 
 function RecipeList({ query }) { // query is passed as a prop
@@ -64,12 +61,9 @@ function RecipeList({ query }) { // query is passed as a prop
             </div>
           ))
         ) : (
-<<<<<<< HEAD
           <h1 className={Style.noRecipes}>No recipes found.</h1>
-=======
-          <h1 className={Style.noRecipes}>No recipes founds.</h1>
->>>>>>> 0cd8182238d2109cb01498bebb1c0b23f9cea451
-        )}
+        )
+      }
       </div>
     </div>
   )
