@@ -27548,16 +27548,39 @@ var _xmarkSvgDefault = parcelHelpers.interopDefault(_xmarkSvg);
 var _s = $RefreshSig$();
 const Navigation = ({ setQuery })=>{
     _s();
-    // State to control the visibility of the menu
+    // State for menu toggle and search visibility
     const [isMenuOpen, setMenuOpen] = (0, _react.useState)(false);
     const [isSearchOpen, setSearchOpen] = (0, _react.useState)(false);
-    // Toggle function to show/hide the menu
+    // Scroll visibility state
+    const [isVisible, setIsVisible] = (0, _react.useState)(true);
+    const [lastScrollY, setLastScrollY] = (0, _react.useState)(0);
+    // Toggle function for menu visibility
     const handler = ()=>{
+<<<<<<< HEAD
         setMenuOpen((prev)=>!prev) // Toggle the menu visibility
         ;
+=======
+        setMenuOpen((prev)=>!prev);
+>>>>>>> mobasshir
     };
+    // Handle scroll event to show/hide navbar
+    (0, _react.useEffect)(()=>{
+        const handleScroll = ()=>{
+            const currentScrollY = window.scrollY;
+            if (currentScrollY === 0) setIsVisible(true); // Always show navbar at top
+            else if (currentScrollY > lastScrollY && currentScrollY > 60) setIsVisible(false); // Hide navbar when scrolling down
+            else if (currentScrollY < lastScrollY) setIsVisible(true); // Show navbar when scrolling up
+            setLastScrollY(currentScrollY);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [
+        lastScrollY
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _navigationModuleCssDefault.default).navigationContainer,
+        className: `${(0, _navigationModuleCssDefault.default).navigationContainer} ${isVisible ? (0, _navigationModuleCssDefault.default).visible : (0, _navigationModuleCssDefault.default).hidden}`,
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
             className: (0, _navigationModuleCssDefault.default).navigation,
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27572,7 +27595,11 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 25,
+=======
+                                lineNumber: 51,
+>>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27581,13 +27608,21 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 26,
+=======
+                                lineNumber: 52,
+>>>>>>> mobasshir
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 24,
+=======
+                        lineNumber: 50,
+>>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27597,12 +27632,20 @@ const Navigation = ({ setQuery })=>{
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                             lineNumber: 34,
+=======
+                            lineNumber: 56,
+>>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 33,
+=======
+                        lineNumber: 55,
+>>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27612,7 +27655,11 @@ const Navigation = ({ setQuery })=>{
                         alt: "Click Here"
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 42,
+=======
+                        lineNumber: 60,
+>>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27623,12 +27670,20 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                             lineNumber: 52,
+=======
+                            lineNumber: 69,
+>>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 51,
+=======
+                        lineNumber: 68,
+>>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27639,12 +27694,20 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                             lineNumber: 58,
+=======
+                            lineNumber: 72,
+>>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 57,
+=======
+                        lineNumber: 71,
+>>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27655,12 +27718,20 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                             lineNumber: 64,
+=======
+                            lineNumber: 75,
+>>>>>>> mobasshir
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 63,
+=======
+                        lineNumber: 74,
+>>>>>>> mobasshir
                         columnNumber: 11
                     }, undefined),
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27670,10 +27741,14 @@ const Navigation = ({ setQuery })=>{
                                 onClick: handler,
                                 className: (0, _navigationModuleCssDefault.default).xmarkImage,
                                 src: (0, _xmarkSvgDefault.default),
-                                alt: ""
+                                alt: "Close Menu"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 72,
+=======
+                                lineNumber: 81,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27682,7 +27757,11 @@ const Navigation = ({ setQuery })=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 78,
+=======
+                                lineNumber: 87,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27691,7 +27770,11 @@ const Navigation = ({ setQuery })=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 81,
+=======
+                                lineNumber: 88,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27700,7 +27783,11 @@ const Navigation = ({ setQuery })=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 84,
+=======
+                                lineNumber: 89,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27709,7 +27796,11 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 87,
+=======
+                                lineNumber: 90,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27718,7 +27809,11 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign In"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 90,
+=======
+                                lineNumber: 91,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27727,33 +27822,57 @@ const Navigation = ({ setQuery })=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                                 lineNumber: 93,
+=======
+                                lineNumber: 92,
+>>>>>>> mobasshir
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                         lineNumber: 71,
+=======
+                        lineNumber: 80,
+>>>>>>> mobasshir
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
                 lineNumber: 23,
+=======
+                lineNumber: 49,
+>>>>>>> mobasshir
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
             lineNumber: 22,
+=======
+            lineNumber: 48,
+>>>>>>> mobasshir
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
+<<<<<<< HEAD
         lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
 _s(Navigation, "wuj9xsQEwmYwrdacIcpHBEejQZc=");
+=======
+        lineNumber: 47,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Navigation, "mamaEWwHLTZbKJIUS5jHjfYoSV0=");
+>>>>>>> mobasshir
 _c = Navigation;
 exports.default = Navigation;
 var _c;
@@ -35158,13 +35277,16 @@ module.exports = require("875187e2b4dd27b5").getBundleURL('avzPb') + "xmark.397b
 
 },{"875187e2b4dd27b5":"lgJ39"}],"gE6rM":[function(require,module,exports,__globalThis) {
 module.exports["hamburger"] = `jTSFqG_hamburger`;
+module.exports["hidden"] = `jTSFqG_hidden`;
 module.exports["menuContainer"] = `jTSFqG_menuContainer`;
 module.exports["menuItem"] = `jTSFqG_menuItem`;
 module.exports["navigation"] = `jTSFqG_navigation`;
 module.exports["navigationBrandImage"] = `jTSFqG_navigationBrandImage`;
+module.exports["navigationContainer"] = `jTSFqG_navigationContainer`;
 module.exports["navigationItem"] = `jTSFqG_navigationItem`;
 module.exports["navigationLink"] = `jTSFqG_navigationLink`;
 module.exports["navigationList"] = `jTSFqG_navigationList`;
+module.exports["visible"] = `jTSFqG_visible`;
 module.exports["xmarkImage"] = `jTSFqG_xmarkImage`;
 
 },{}],"aMX6k":[function(require,module,exports,__globalThis) {
@@ -35545,7 +35667,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '3544e0a87f98468883e9169172546ac1'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '716d2d891ccc4e788b471c105f5928e8'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -35772,7 +35894,7 @@ var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
 // API configuration
-const apiKey = '3544e0a87f98468883e9169172546ac1';
+const apiKey = '716d2d891ccc4e788b471c105f5928e8';
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
