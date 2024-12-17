@@ -666,4 +666,98 @@
     padding-bottom: 50px;
   }
 }
+
+.C1rn5W_faq_container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.C1rn5W_faq_container1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.C1rn5W_faq_box {
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  min-width: 500px;
+  margin: 10px;
+  padding: 20px 30px;
+  transition: all .3s;
+  position: relative;
+}
+
+.C1rn5W_faq_span {
+  color: #0b0b0a;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: transform .3s;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.C1rn5W_faq_text {
+  color: #333;
+  max-height: 0;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: max-height .3s, margin-top .3s;
+  overflow: hidden;
+}
+
+.C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_text {
+  max-height: 1000px;
+  margin-top: 15px;
+}
+
+.C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_span {
+  transform: rotate(45deg);
+}
+
+.ASPDhq_footer_container {
+  background-color: #d9d9d9;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "ASPDhq_footer ASPDhq_footer ASPDhq_footer ASPDhq_footer ASPDhq_footer";
+  grid-auto-flow: row;
+  place-items: center;
+  gap: 0;
+  min-height: 400px;
+  margin-top: 50px;
+  display: grid;
+}
+
+.ASPDhq_image {
+  border: 2px solid #000;
+  box-shadow: 0 0 0 3px #000c;
+}
+
+.ASPDhq_navigation {
+  margin-left: 20px;
+}
+
+.ASPDhq_navigation ul, .ASPDhq_quickLinks ul, .ASPDhq_contact ul {
+  cursor: pointer;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.ASPDhq_socialMedia ul {
+  cursor: pointer;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+}
 /*# sourceMappingURL=index.c41b5a0e.css.map */
