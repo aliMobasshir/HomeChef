@@ -14,29 +14,29 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'What is HomeChef?',
-      answer: 'HomeChef is a platform that provides recipes for home-cooked meals.',
+      answer: 'HomeChef is a recipe platform where you can discover, explore, and cook delicious meals with step-by-step instructions.',
     },
     {
       question: 'Is HomeChef free to use?',
-      answer: 'Yes, HomeChef is completely free to use.',
+      answer: 'Yes, HomeChef is completely free. You can access all recipes and features at no cost.',
     },
     {
       question: 'Are the recipes beginner-friendly?',
-      answer: 'Absolutely! We focus on easy and simple recipes for beginners.',
+      answer: 'Yes, our recipes are designed for all skill levels, with clear step-by-step instructions.',
     },
     {
       question: 'Can I search by the ingredients I have?',
-      answer: 'Yes, you can search for recipes based on ingredients.',
+      answer: 'Absolutely! Use the "Search by Ingredients" feature to find recipes that match what’s in your kitchen.',
     },
     {
       question: 'Do I need an account to access recipes?',
-      answer: 'No account is required to access recipes.',
+      answer: 'No, you can view recipes without an account.',
     },
   ];
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Frequently Asked Questions</h1>
+      <h1 className={style.heading} style={{ textAlign: 'center' }}>Frequently Asked Questions</h1>
       <div className={style.faq_container}>
         <div className={style.faq_container1}>
           {faqs.map((faq, index) => (
@@ -61,7 +61,7 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-        <div className="faq_image">
+        <div className={style.faq_image}>
           <img src={image} alt="FAQ illustration" />
         </div>
       </div>
