@@ -27548,18 +27548,23 @@ var _xmarkSvgDefault = parcelHelpers.interopDefault(_xmarkSvg);
 var _s = $RefreshSig$();
 const Navigation = ({ setQuery })=>{
     _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(true); // Toggle visibility
-    const [lastScrollY, setLastScrollY] = (0, _react.useState)(0); // Track last scroll position
+    // State for menu toggle and search visibility
+    const [isMenuOpen, setMenuOpen] = (0, _react.useState)(false);
+    const [isSearchOpen, setSearchOpen] = (0, _react.useState)(false);
+    // Scroll visibility state
+    const [isVisible, setIsVisible] = (0, _react.useState)(true);
+    const [lastScrollY, setLastScrollY] = (0, _react.useState)(0);
+    // Toggle function for menu visibility
+    const handler = ()=>{
+        setMenuOpen((prev)=>!prev);
+    };
+    // Handle scroll event to show/hide navbar
     (0, _react.useEffect)(()=>{
         const handleScroll = ()=>{
             const currentScrollY = window.scrollY;
-            if (currentScrollY === 0) // Always show navbar at the top
-            setIsVisible(true);
-            else if (currentScrollY > lastScrollY && currentScrollY > 60) // Scrolling down and past the threshold: hide navbar
-            setIsVisible(false);
-            else if (currentScrollY < lastScrollY) // Scrolling up: show navbar
-            setIsVisible(true);
-            // Update the last scroll position
+            if (currentScrollY === 0) setIsVisible(true); // Always show navbar at top
+            else if (currentScrollY > lastScrollY && currentScrollY > 60) setIsVisible(false); // Hide navbar when scrolling down
+            else if (currentScrollY < lastScrollY) setIsVisible(true); // Show navbar when scrolling up
             setLastScrollY(currentScrollY);
         };
         window.addEventListener('scroll', handleScroll);
@@ -27585,7 +27590,7 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 45,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27594,28 +27599,39 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 46,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 44,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _navigationModuleCssDefault.default).navigationItem,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchJsxDefault.default), {
+                            setSearchOpen: setSearchOpen,
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 49,
+                            lineNumber: 56,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 48,
+                        lineNumber: 55,
                         columnNumber: 11
+                    }, undefined),
+                    !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        onClick: handler,
+                        className: (0, _navigationModuleCssDefault.default).hamburger,
+                        src: (0, _hamburgerSvgDefault.default),
+                        alt: "Click Here"
+                    }, void 0, false, {
+                        fileName: "components/Navigation.jsx",
+                        lineNumber: 60,
+                        columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _navigationModuleCssDefault.default).navigationItem,
@@ -27625,12 +27641,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 52,
+                            lineNumber: 69,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 51,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27641,12 +27657,12 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 55,
+                            lineNumber: 72,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 54,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27657,32 +27673,105 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 58,
+                            lineNumber: 75,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 57,
+                        lineNumber: 74,
                         columnNumber: 11
+                    }, undefined),
+                    isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _navigationModuleCssDefault.default).menuContainer,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                onClick: handler,
+                                className: (0, _navigationModuleCssDefault.default).xmarkImage,
+                                src: (0, _xmarkSvgDefault.default),
+                                alt: "Close Menu"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 81,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 87,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/about",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 88,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/contact",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Contact"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 89,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/SignUp",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Sign Up"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 90,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/SignIn",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Sign In"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 91,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/services",
+                                className: (0, _navigationModuleCssDefault.default).menuItem,
+                                children: "Services"
+                            }, void 0, false, {
+                                fileName: "components/Navigation.jsx",
+                                lineNumber: 92,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/Navigation.jsx",
+                        lineNumber: 80,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-                lineNumber: 43,
+                lineNumber: 49,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-            lineNumber: 42,
+            lineNumber: 48,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-        lineNumber: 41,
+        lineNumber: 47,
         columnNumber: 5
     }, undefined);
 };
-_s(Navigation, "Js1tKTlc8juSz5SapYVpqaMgF34=");
+_s(Navigation, "mamaEWwHLTZbKJIUS5jHjfYoSV0=");
 _c = Navigation;
 exports.default = Navigation;
 var _c;
