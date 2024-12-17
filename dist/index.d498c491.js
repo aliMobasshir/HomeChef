@@ -27553,7 +27553,8 @@ const Navigation = ({ setQuery })=>{
     const [isSearchOpen, setSearchOpen] = (0, _react.useState)(false);
     // Toggle function to show/hide the menu
     const handler = ()=>{
-        setMenuOpen((prev)=>!prev); // Toggle the menu visibility
+        setMenuOpen((prev)=>!prev) // Toggle the menu visibility
+        ;
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _navigationModuleCssDefault.default).navigationContainer,
@@ -27571,7 +27572,7 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationIcon
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 28,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27580,13 +27581,13 @@ const Navigation = ({ setQuery })=>{
                                 className: (0, _navigationModuleCssDefault.default).navigationBrandImage
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 29,
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 27,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27596,12 +27597,12 @@ const Navigation = ({ setQuery })=>{
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 33,
+                            lineNumber: 34,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, undefined),
                     !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27611,8 +27612,8 @@ const Navigation = ({ setQuery })=>{
                         alt: "Click Here"
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 43,
-                        columnNumber: 15
+                        lineNumber: 42,
+                        columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _navigationModuleCssDefault.default).navigationItem,
@@ -27622,12 +27623,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 49,
+                            lineNumber: 52,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 48,
+                        lineNumber: 51,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27638,12 +27639,12 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 53,
+                            lineNumber: 58,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 52,
+                        lineNumber: 57,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27654,12 +27655,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 57,
+                            lineNumber: 64,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 56,
+                        lineNumber: 63,
                         columnNumber: 11
                     }, undefined),
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27672,7 +27673,7 @@ const Navigation = ({ setQuery })=>{
                                 alt: ""
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 64,
+                                lineNumber: 72,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27681,7 +27682,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 65,
+                                lineNumber: 78,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27690,7 +27691,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 66,
+                                lineNumber: 81,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27699,7 +27700,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 67,
+                                lineNumber: 84,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27708,7 +27709,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 68,
+                                lineNumber: 87,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27717,7 +27718,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign In"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 69,
+                                lineNumber: 90,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27726,33 +27727,33 @@ const Navigation = ({ setQuery })=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 70,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 62,
+                        lineNumber: 71,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Navigation.jsx",
-                lineNumber: 25,
+                lineNumber: 23,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "components/Navigation.jsx",
-            lineNumber: 24,
+            lineNumber: 22,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "components/Navigation.jsx",
-        lineNumber: 23,
+        lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
-_s(Navigation, "XKrRQ+iuhfc+0Ty0UXW+pep03BI=");
+_s(Navigation, "wuj9xsQEwmYwrdacIcpHBEejQZc=");
 _c = Navigation;
 exports.default = Navigation;
 var _c;
