@@ -5,34 +5,16 @@
     /* overflow-y: hidden;   */
 }
 
-.navigationContainer {
+/* .navigationContainer{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional: a subtle border */
-}
-
-
-.navigationContainer.hidden {
-    transform: translateY(-100%); /* Move the nav bar out of view */
-}
-
-.navigationContainer.visible {
-    transform: translateY(0); /* Bring the nav bar back into view */
-}
-
+} */
 
 .navigation {
     
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    /* position: relative; */
 }
 
 .navigationList {
