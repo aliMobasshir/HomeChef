@@ -1,4 +1,4 @@
-h1{
+.heading{
   font-family: "Shantell Sans", cursive;
   font-size: 4vw;
   padding: 4vw;
@@ -67,7 +67,7 @@ h1{
 }
 
 @media(max-width:830px){
-  h1{
+  .heading{
     font-size: 32px;
         padding: 50px 10px;
     }
@@ -87,14 +87,14 @@ h1{
       right: 15px;
     }
     .faq_text {
-      font-size: 15px;
+      font-size: 18px;
     }
     .faq_box.open .faq_span {
       top: 18px;
       font-size: 35px;
     }
     .faq_box.open .faq_text {
-      max-height: 50px; 
+      max-height: 100px; 
       margin-top: 15px; 
     }
   }

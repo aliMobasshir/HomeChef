@@ -667,7 +667,7 @@
   }
 }
 
-h1 {
+.C1rn5W_heading {
   padding: 4vw;
   font-family: Shantell Sans, cursive;
   font-size: 4vw;
@@ -734,7 +734,7 @@ h1 {
 }
 
 @media (width <= 830px) {
-  h1 {
+  .C1rn5W_heading {
     padding: 50px 10px;
     font-size: 32px;
   }
@@ -758,7 +758,7 @@ h1 {
   }
 
   .C1rn5W_faq_text {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_span {
@@ -767,7 +767,7 @@ h1 {
   }
 
   .C1rn5W_faq_box.C1rn5W_open .C1rn5W_faq_text {
-    max-height: 50px;
+    max-height: 100px;
     margin-top: 15px;
   }
 }

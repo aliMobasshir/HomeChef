@@ -36,7 +36,7 @@ const FAQ = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Frequently Asked Questions</h1>
+      <h1 className={style.heading} style={{ textAlign: 'center' }}>Frequently Asked Questions</h1>
       <div className={style.faq_container}>
         <div className={style.faq_container1}>
           {faqs.map((faq, index) => (

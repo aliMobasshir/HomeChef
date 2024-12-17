@@ -35947,6 +35947,7 @@ const FAQ = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _faqModuleCssDefault.default).heading,
                 style: {
                     textAlign: 'center'
                 },
@@ -36047,6 +36048,7 @@ module.exports["faq_container"] = `C1rn5W_faq_container`;
 module.exports["faq_image"] = `C1rn5W_faq_image`;
 module.exports["faq_span"] = `C1rn5W_faq_span`;
 module.exports["faq_text"] = `C1rn5W_faq_text`;
+module.exports["heading"] = `C1rn5W_heading`;
 module.exports["open"] = `C1rn5W_open`;
 
 },{}],"ixPNC":[function(require,module,exports,__globalThis) {
