@@ -2978,7 +2978,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./App":"ifStX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About.jsx":"jb55R","./App":"ifStX"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27292,7 +27292,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35662,7 +35662,9 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reviewPageModuleCss = require("./reviewPage.module.css"); // Import CSS file for styling
 var _reviewPageModuleCssDefault = parcelHelpers.interopDefault(_reviewPageModuleCss);
-const Reviews = ()=>{
+const Reviews = ({ query })=>{
+    // If query exists, do not render the Reviews component
+    if (query) return null;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: (0, _reviewPageModuleCssDefault.default).mainContainer,
         children: [
@@ -35671,7 +35673,7 @@ const Reviews = ()=>{
                 children: "What are our users saying?"
             }, void 0, false, {
                 fileName: "components/reviewPage.jsx",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35682,7 +35684,7 @@ const Reviews = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).kashif
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 9,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35690,7 +35692,7 @@ const Reviews = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).zayd
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 10,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35698,19 +35700,19 @@ const Reviews = ()=>{
                         id: (0, _reviewPageModuleCssDefault.default).tanzil
                     }, void 0, false, {
                         fileName: "components/reviewPage.jsx",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/reviewPage.jsx",
-                lineNumber: 8,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/reviewPage.jsx",
-        lineNumber: 6,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
@@ -35750,35 +35752,35 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+// API configuration
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0';
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
-function RecipeList() {
+function RecipeList({ query }) {
     _s();
-    const [recipes, setRecipes] = (0, _react.useState)([]);
-    const [error, setError] = (0, _react.useState)(null);
+    const [recipes, setRecipes] = (0, _react.useState)([]) // State for storing recipes
+    ;
+    const [error, setError] = (0, _react.useState)(null) // State for error handling
+    ;
     (0, _react.useEffect)(()=>{
         async function fetchRecipes() {
             try {
                 const response = await fetch(endpoint);
+                // Check if API request was successful
                 if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+                // Parse the response JSON
                 const data = await response.json();
-                setRecipes(data.recipes);
+                // Ensure recipes exist in the response
+                setRecipes(data?.recipes || []);
             } catch (error) {
-                setError(error.message);
+                setError(error.message) // Capture error message
+                ;
             }
         }
         fetchRecipes();
-    }, []); // Empty dependency array ensures this runs only once
-    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-        children: [
-            "Error: ",
-            error
-        ]
-    }, void 0, true, {
-        fileName: "components/trending.jsx",
-        lineNumber: 29,
-        columnNumber: 23
-    }, this);
+    }, []) // Dependency array ensures this runs only once
+    ;
+    // Filter recipes based on the query prop passed from the parent
+    const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _recipeListModuleCssDefault.default).topPicksPage,
         children: [
@@ -35792,18 +35794,29 @@ function RecipeList() {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 34,
+                        lineNumber: 46,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 33,
-                columnNumber: 10
+                lineNumber: 44,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).recipeContainer,
-                children: recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: (0, _recipeListModuleCssDefault.default).error,
+                    children: [
+                        "Error: ",
+                        error
+                    ]
+                }, void 0, true, {
+                    fileName: "components/trending.jsx",
+                    lineNumber: 52,
+                    columnNumber: 11
+                }, this) // Display error message
+                 : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeCard,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -35811,37 +35824,44 @@ function RecipeList() {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 38,
-                                columnNumber: 25
+                                lineNumber: 56,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 39,
-                                    columnNumber: 29
+                                    lineNumber: 58,
+                                    columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 39,
-                                columnNumber: 25
+                                lineNumber: 57,
+                                columnNumber: 15
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 37,
-                        columnNumber: 21
-                    }, this))
+                        lineNumber: 55,
+                        columnNumber: 13
+                    }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: (0, _recipeListModuleCssDefault.default).noRecipes,
+                    children: "No recipes found."
+                }, void 0, false, {
+                    fileName: "components/trending.jsx",
+                    lineNumber: 63,
+                    columnNumber: 11
+                }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 35,
-                columnNumber: 14
+                lineNumber: 50,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 32,
+        lineNumber: 42,
         columnNumber: 9
     }, this);
 }
