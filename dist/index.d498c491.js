@@ -35916,9 +35916,7 @@ var _faq1SvgDefault = parcelHelpers.interopDefault(_faq1Svg);
 var _s = $RefreshSig$();
 const FAQ = ()=>{
     _s();
-    // State to manage which FAQ is open
     const [openIndex, setOpenIndex] = (0, _react.useState)(null);
-    // Function to toggle FAQ visibility
     const handleToggle = (index)=>{
         setOpenIndex((prevIndex)=>prevIndex === index ? null : index);
     };
@@ -35954,7 +35952,7 @@ const FAQ = ()=>{
                 children: "Frequently Asked Questions"
             }, void 0, false, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35975,32 +35973,32 @@ const FAQ = ()=>{
                                                 children: openIndex === index ? '-' : '+'
                                             }, void 0, false, {
                                                 fileName: "components/FAQ.jsx",
-                                                lineNumber: 49,
+                                                lineNumber: 47,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/FAQ.jsx",
-                                        lineNumber: 47,
+                                        lineNumber: 45,
                                         columnNumber: 15
                                     }, undefined),
-                                    openIndex === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: (0, _faqModuleCssDefault.default).faq_text,
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: `${(0, _faqModuleCssDefault.default).faq_text} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
                                         children: faq.answer
                                     }, void 0, false, {
                                         fileName: "components/FAQ.jsx",
-                                        lineNumber: 57,
-                                        columnNumber: 17
+                                        lineNumber: 54,
+                                        columnNumber: 15
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "components/FAQ.jsx",
-                                lineNumber: 43,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 41,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36010,24 +36008,24 @@ const FAQ = ()=>{
                             alt: "FAQ illustration"
                         }, void 0, false, {
                             fileName: "components/FAQ.jsx",
-                            lineNumber: 65,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 64,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 40,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/FAQ.jsx",
-        lineNumber: 38,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 };

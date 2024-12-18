@@ -3,10 +3,8 @@ import style from './FAQ.module.css';
 import image from './FAQ 1.svg';
 
 const FAQ = () => {
-  // State to manage which FAQ is open
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Function to toggle FAQ visibility
   const handleToggle = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
@@ -53,11 +51,9 @@ const FAQ = () => {
                   {openIndex === index ? '-' : '+'}
                 </span>
               </p>
-              {openIndex === index && (
-                <p className={style.faq_text}>
-                  {faq.answer}
-                </p>
-              )}
+              <p className={`${style.faq_text} ${openIndex === index ? style.open : ''}`}>
+                {faq.answer}
+              </p>
             </div>
           ))}
         </div>
