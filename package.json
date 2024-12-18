@@ -12,7 +12,9 @@
   "description": "",
   "devDependencies": {
     "parcel": "^2.13.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.49",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
@@ -20,6 +22,9 @@
     "homechef": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "react-slick": "^0.30.3",
+    "react-slider": "^2.0.6",
+    "slick-carousel": "^1.8.1"
   }
 }
