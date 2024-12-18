@@ -6,7 +6,8 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-
+import cuisines from "./Cuisines.js";
+console.log(cuisines);
 
 const router = createBrowserRouter([
     {

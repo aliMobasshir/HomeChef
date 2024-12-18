@@ -11,6 +11,7 @@ import TrendingList from "./components/trending.jsx"
 import FAQ from "./components/FAQ.jsx"
 import Footer from "./components/Footer.jsx"
 
+
 const App = () => {
 
   // const [query, setQuery] = useState('');

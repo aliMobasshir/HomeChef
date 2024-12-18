@@ -931,4 +931,317 @@
     font-size: 15px;
   }
 }
+
+.IHfPZW_diets_container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.IHfPZW_sliderContainer {
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+}
+
+.IHfPZW_diet_heading {
+  margin-top: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.IHfPZW_diets {
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_showAllImages {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+.IHfPZW_diet {
+  opacity: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  transition: opacity 1.3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_diet_image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.IHfPZW_diet_image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.IHfPZW_leftButton, .IHfPZW_rightButton {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.IHfPZW_leftButton {
+  left: 10px;
+}
+
+.IHfPZW_rightButton {
+  right: 10px;
+}
+
+.IHfPZW_show_all {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 20px;
+  display: flex;
+}
+
+.IHfPZW_show_all_button {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.IHfPZW_horizontalline {
+  background-color: #000;
+  width: 80%;
+  height: 2px;
+  margin: 20px auto;
+}
+
+.IHfPZW_cuisines_container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.IHfPZW_cuisine_sliderContainer {
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+}
+
+.IHfPZW_cuisine_heading {
+  margin-top: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.IHfPZW_cuisines {
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_cuisine_showAllImages {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+.IHfPZW_cuisine {
+  opacity: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 60px;
+  transition: opacity 1.3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_cuisine_image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.IHfPZW_cuisine_image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.IHfPZW_cuisine_leftButton, .IHfPZW_cuisine_rightButton {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.IHfPZW_cuisine_leftButton {
+  left: 10px;
+}
+
+.IHfPZW_cuisine_rightButton {
+  right: 10px;
+}
+
+.IHfPZW_cuisine_show_all {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 20px;
+  display: flex;
+}
+
+.IHfPZW_cuisine_show_all_button {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.IHfPZW_meals_container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.IHfPZW_meal_sliderContainer {
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+}
+
+.IHfPZW_meal_heading {
+  margin-top: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.IHfPZW_meals {
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_meal_showAllImages {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+.IHfPZW_meal {
+  opacity: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 60px;
+  transition: opacity 1.3s ease-in-out;
+  display: flex;
+}
+
+.IHfPZW_meal_image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.IHfPZW_meal_image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.IHfPZW_meal_leftButton, .IHfPZW_meal_rightButton {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.IHfPZW_meal_leftButton {
+  left: 10px;
+}
+
+.IHfPZW_meal_rightButton {
+  right: 10px;
+}
+
+.IHfPZW_meal_show_all {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-family: Shantell Sans, cursive;
+  font-size: 20px;
+  display: flex;
+}
+
+.IHfPZW_meal_show_all_button {
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  background: #0000004d;
+  border: none;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
 /*# sourceMappingURL=index.c41b5a0e.css.map */
