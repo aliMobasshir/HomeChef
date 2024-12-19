@@ -29,7 +29,11 @@ const About = () => {
       <Navigation setQuery={setQuery} />
 
       {/* Diets Section */}
+      <div className={style.dietheadingnknowmore}>
       <h1 className={style.diet_heading}>Diets</h1>
+      <p>Know More About Diets</p>
+      </div>
+      
       <div className={style.diets_container}>
         {!showDietAll && (
           <>

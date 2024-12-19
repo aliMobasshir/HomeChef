@@ -36463,10 +36463,26 @@ const About = ()=>{
                 lineNumber: 29,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _aboutModuleCssDefault.default).diet_heading,
-                children: "Diets"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _aboutModuleCssDefault.default).dietheadingnknowmore,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: (0, _aboutModuleCssDefault.default).diet_heading,
+                        children: "Diets"
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 33,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Know More About Diets"
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 34,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "components/About.jsx",
                 lineNumber: 32,
                 columnNumber: 7
@@ -36484,12 +36500,12 @@ const About = ()=>{
                                 width: "20px"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 40,
+                                lineNumber: 44,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 36,
+                            lineNumber: 40,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false),
@@ -36507,12 +36523,12 @@ const About = ()=>{
                                                 alt: item.name
                                             }, void 0, false, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 49,
+                                                lineNumber: 53,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 48,
+                                            lineNumber: 52,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36520,23 +36536,23 @@ const About = ()=>{
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 51,
+                                            lineNumber: 55,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, item.id, true, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 47,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 45,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 44,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined),
                     !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36548,18 +36564,18 @@ const About = ()=>{
                             width: "20px"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 57,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/About.jsx",
-                lineNumber: 33,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36570,7 +36586,7 @@ const About = ()=>{
                     children: "Show All"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 69,
+                    lineNumber: 73,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -36578,19 +36594,19 @@ const About = ()=>{
                     children: "Show Less"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 73,
+                    lineNumber: 77,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 67,
+                lineNumber: 71,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _aboutModuleCssDefault.default).horizontalline
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 79,
+                lineNumber: 83,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -36598,7 +36614,7 @@ const About = ()=>{
                 children: "Cuisines"
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 82,
+                lineNumber: 86,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36614,12 +36630,12 @@ const About = ()=>{
                                 width: "20px"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 90,
+                                lineNumber: 94,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 86,
+                            lineNumber: 90,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false),
@@ -36637,12 +36653,12 @@ const About = ()=>{
                                                 alt: item.name
                                             }, void 0, false, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 99,
+                                                lineNumber: 103,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 98,
+                                            lineNumber: 102,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36650,23 +36666,23 @@ const About = ()=>{
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 101,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, item.id, true, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 97,
+                                    lineNumber: 101,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 95,
+                            lineNumber: 99,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 94,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, undefined),
                     !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36678,18 +36694,18 @@ const About = ()=>{
                             width: "20px"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 111,
+                            lineNumber: 115,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 107,
+                        lineNumber: 111,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/About.jsx",
-                lineNumber: 83,
+                lineNumber: 87,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36700,7 +36716,7 @@ const About = ()=>{
                     children: "Show All"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 119,
+                    lineNumber: 123,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -36708,19 +36724,19 @@ const About = ()=>{
                     children: "Show Less"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 123,
+                    lineNumber: 127,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 117,
+                lineNumber: 121,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _aboutModuleCssDefault.default).horizontalline
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 129,
+                lineNumber: 133,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -36728,7 +36744,7 @@ const About = ()=>{
                 children: "Meals"
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 132,
+                lineNumber: 136,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36744,12 +36760,12 @@ const About = ()=>{
                                 width: "20px"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 140,
+                                lineNumber: 144,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 136,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false),
@@ -36767,12 +36783,12 @@ const About = ()=>{
                                                 alt: item.name
                                             }, void 0, false, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 149,
+                                                lineNumber: 153,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 148,
+                                            lineNumber: 152,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36780,23 +36796,23 @@ const About = ()=>{
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 151,
+                                            lineNumber: 155,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, item.id, true, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 147,
+                                    lineNumber: 151,
                                     columnNumber: 15
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 145,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 144,
+                        lineNumber: 148,
                         columnNumber: 9
                     }, undefined),
                     !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36808,18 +36824,18 @@ const About = ()=>{
                             width: "20px"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 161,
+                            lineNumber: 165,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 157,
+                        lineNumber: 161,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/About.jsx",
-                lineNumber: 133,
+                lineNumber: 137,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36830,7 +36846,7 @@ const About = ()=>{
                     children: "Show All"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 169,
+                    lineNumber: 173,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -36838,24 +36854,24 @@ const About = ()=>{
                     children: "Show Less"
                 }, void 0, false, {
                     fileName: "components/About.jsx",
-                    lineNumber: 173,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 167,
+                lineNumber: 171,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _aboutModuleCssDefault.default).horizontalline
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 179,
+                lineNumber: 183,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 181,
+                lineNumber: 185,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36962,9 +36978,9 @@ module.exports["diet"] = `IHfPZW_diet`;
 module.exports["diet_heading"] = `IHfPZW_diet_heading`;
 module.exports["diet_image"] = `IHfPZW_diet_image`;
 module.exports["diet_name"] = `IHfPZW_diet_name`;
+module.exports["dietheadingnknowmore"] = `IHfPZW_dietheadingnknowmore`;
 module.exports["diets"] = `IHfPZW_diets`;
 module.exports["diets_container"] = `IHfPZW_diets_container`;
-module.exports["expanded"] = `IHfPZW_expanded`;
 module.exports["horizontalline"] = `IHfPZW_horizontalline`;
 module.exports["meal"] = `IHfPZW_meal`;
 module.exports["meal_heading"] = `IHfPZW_meal_heading`;
@@ -36984,132 +37000,132 @@ const cuisines = [
     {
         id: 1,
         name: 'African',
-        image: 'https://picsum.photos/200/200?random=1'
+        image: 'https://feastwithsafiya.com/wp-content/uploads/2021/11/creamy-tomato-soup-2.jpg'
     },
     {
         id: 2,
         name: 'Asian',
-        image: 'https://picsum.photos/200/200?random=2'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoseXWizW53EeKvEbsrk4Be_VyCZWk9xA9g&s'
     },
     {
         id: 3,
         name: 'American',
-        image: 'https://picsum.photos/200/200?random=3'
+        image: 'https://t3.ftcdn.net/jpg/07/54/04/66/360_F_754046676_EUe1K1ZYznZwGkhLbzkin0Ky86mYuEkq.jpg'
     },
     {
         id: 4,
         name: 'British',
-        image: 'https://picsum.photos/200/200?random=4'
+        image: 'https://img.freepik.com/premium-photo/top-view-vegan-lentil-shepherds-pie-white-round-plate-white-background-generative-ai_918839-7154.jpg'
     },
     {
         id: 5,
         name: 'Cajun',
-        image: 'https://picsum.photos/200/200?random=5'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7bDvyEN0jM515k7JDKb4lfOAwRovyo71cQ&s'
     },
     {
         id: 6,
         name: 'Caribbean',
-        image: 'https://picsum.photos/200/200?random=6'
+        image: 'https://www.ambitiouskitchen.com/wp-content/uploads/2020/08/Sazon-Grilled-Chicken-Thighs-3-594x594.jpg'
     },
     {
         id: 7,
         name: 'Chinese',
-        image: 'https://picsum.photos/200/200?random=7'
+        image: 'https://media.istockphoto.com/id/1252605665/photo/chilli-garlic-hakka-noodles-in-black-bowl-isolated-on-white-background-indo-chinese.jpg?s=612x612&w=0&k=20&c=lesS8Wt5JVauAqjVh9uPfoiGr1ZjsnjHWZyKw3zLg2E='
     },
     {
         id: 8,
         name: 'Eastern European',
-        image: 'https://picsum.photos/200/200?random=8'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi_M9ARlcuxaoTtuRVG931_Y_v23nj-xnUA&s'
     },
     {
         id: 9,
         name: 'European',
-        image: 'https://picsum.photos/200/200?random=9'
+        image: 'https://www.shutterstock.com/image-photo/plate-grilled-salmon-steak-potato-600nw-2141539785.jpg'
     },
     {
         id: 10,
         name: 'French',
-        image: 'https://picsum.photos/200/200?random=10'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrwJiPzvRoXe52yLVMnW5KremXvIqyqQdoeuSVDusxwOX9dBGP-RX_8XzX8On48uVfYPE&usqp=CAU'
     },
     {
         id: 11,
         name: 'German',
-        image: 'https://picsum.photos/200/200?random=11'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1mlILSY0aYzgmyE0gtQioXFr9JSAjN44sA&s'
     },
     {
         id: 12,
         name: 'Greek',
-        image: 'https://picsum.photos/200/200?random=12'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlpbO-BHk_idmiIcN19pQv3lWfFLADmukgw&s'
     },
     {
         id: 13,
         name: 'Indian',
-        image: 'https://picsum.photos/200/200?random=13'
+        image: 'https://www.shutterstock.com/image-photo/chole-bhature-north-indian-food-600nw-2241211611.jpg'
     },
     {
         id: 14,
         name: 'Irish',
-        image: 'https://picsum.photos/200/200?random=14'
+        image: 'https://img.freepik.com/premium-photo/sliced-corned-beef-with-cabbage-potatoes-plate-traditional-irish-meal-white-background_862489-13971.jpg'
     },
     {
         id: 15,
         name: 'Italian',
-        image: 'https://picsum.photos/200/200?random=15'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPWNHT7d9RL22yfONXfvILVWOYXtlKxl6Og&s'
     },
     {
         id: 16,
         name: 'Japanese',
-        image: 'https://picsum.photos/200/200?random=16'
+        image: 'https://png.pngtree.com/png-vector/20231018/ourlarge/pngtree-sushi-on-black-plate-aerial-view-generative-ai-technology-png-image_10205067.png'
     },
     {
         id: 17,
         name: 'Korean',
-        image: 'https://picsum.photos/200/200?random=17'
+        image: 'https://img.freepik.com/premium-photo/bowl-korean-food-plate-bowl-top-view-white-background_951562-72831.jpg'
     },
     {
         id: 18,
         name: 'Latin American',
-        image: 'https://picsum.photos/200/200?random=18'
+        image: 'https://img.freepik.com/premium-photo/typical-latin-america-salchipapa-sausages-with-fries-ketchup-mustard-mayo-isolated-white-surface-top-view_123827-4038.jpg?w=360'
     },
     {
         id: 19,
         name: 'Mediterranean',
-        image: 'https://picsum.photos/200/200?random=19'
+        image: 'https://www.shutterstock.com/image-photo/top-view-plate-fettuccine-alfredo-260nw-2498764063.jpg'
     },
     {
         id: 20,
         name: 'Mexican',
-        image: 'https://picsum.photos/200/200?random=20'
+        image: 'https://media.istockphoto.com/id/1348318884/photo/plate-of-mexican-food-tacos.jpg?s=612x612&w=0&k=20&c=Vt8vi4-sCaum6YrzAiAkH7lUJK5mtp2zYT3uYw1M7iA='
     },
     {
         id: 21,
         name: 'Middle Eastern',
-        image: 'https://picsum.photos/200/200?random=21'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRconGKsGVAurwaUjH9x1FVHCd1YUWghWp96A&s'
     },
     {
         id: 22,
         name: 'Nordic',
-        image: 'https://picsum.photos/200/200?random=22'
+        image: 'https://thumbs.dreamstime.com/b/poppy-seed-rolls-cardamom-buns-traditional-nordic-baked-sweet-breads-wooden-board-white-background-top-view-265974475.jpg'
     },
     {
         id: 23,
         name: 'Southern',
-        image: 'https://picsum.photos/200/200?random=23'
+        image: 'https://img.freepik.com/premium-photo/tuna-salad-with-egg-vegetables-corn-white-bowl-white-background-top-view-generative-ai_1259709-87173.jpg'
     },
     {
         id: 24,
         name: 'Spanish',
-        image: 'https://picsum.photos/200/200?random=24'
+        image: 'https://img.freepik.com/premium-photo/seafood-paella-top-view-white-background_951562-73411.jpg'
     },
     {
         id: 25,
         name: 'Thai',
-        image: 'https://picsum.photos/200/200?random=25'
+        image: 'https://media.istockphoto.com/id/878876758/photo/roast-chicken-nuggets-and-vegetables.jpg?s=612x612&w=0&k=20&c=OlYAJ9mxjb2gIZBo2KjC74WxiWAdcY3jJZC9UGfsQAs='
     },
     {
         id: 26,
         name: 'Vietnamese',
-        image: 'https://picsum.photos/200/200?random=26'
+        image: 'https://img.freepik.com/premium-photo/pho-bo-vietnamese-soup-with-beef-rice-noodles-white-background-top-view-close-up_233226-570.jpg'
     }
 ];
 exports.default = cuisines;
@@ -37121,72 +37137,72 @@ const mealTypes = [
     {
         id: 1,
         name: 'Main Course',
-        image: 'https://via.placeholder.com/150?text=Main+Course'
+        image: 'https://img.freepik.com/premium-photo/top-view-delicious-spicy-chicken-biryani-traditional-bowl-white-background-indian-food_667286-7331.jpg'
     },
     {
         id: 2,
         name: 'Side Dish',
-        image: 'https://via.placeholder.com/150?text=Side+Dish'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaeGmlN7ByogbPumharBJh_vA6cpotL_w0Vw&s'
     },
     {
         id: 3,
         name: 'Dessert',
-        image: 'https://via.placeholder.com/150?text=Dessert'
+        image: 'https://img.freepik.com/premium-photo/top-view-cheesecake-white-background-sweet-dessert-bakery-food-ai-generated_755721-19559.jpg'
     },
     {
         id: 4,
         name: 'Appetizer',
-        image: 'https://via.placeholder.com/150?text=Appetizer'
+        image: 'https://img.freepik.com/premium-photo/top-view-isolated-beer-appetizer-snack-platter-white-background_219193-3184.jpg'
     },
     {
         id: 5,
         name: 'Salad',
-        image: 'https://via.placeholder.com/150?text=Salad'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnaIyMSpNZh4HAC6WR1cSh0Z20MZdGZ222rA&s'
     },
     {
         id: 6,
         name: 'Bread',
-        image: 'https://via.placeholder.com/150?text=Bread'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-EINojHr2CfnTujQtYWMgz0MC8tJiRHhgA&s'
     },
     {
         id: 7,
         name: 'Breakfast',
-        image: 'https://via.placeholder.com/150?text=Breakfast'
+        image: 'https://t3.ftcdn.net/jpg/02/46/16/92/360_F_246169236_XndijzYiPUZmE5C8aZM9ee7wdvPD9WbX.jpg'
     },
     {
         id: 8,
         name: 'Soup',
-        image: 'https://via.placeholder.com/150?text=Soup'
+        image: 'https://img.freepik.com/premium-photo/plate-red-vegetable-soup-top-view-isolated-white-background_917664-9426.jpg'
     },
     {
         id: 9,
         name: 'Beverage',
-        image: 'https://via.placeholder.com/150?text=Beverage'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttRRoQrnZT9XD-_WlZwmZwCbMkKLOrkrN7g&s'
     },
     {
         id: 10,
         name: 'Sauce',
-        image: 'https://via.placeholder.com/150?text=Sauce'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOf_5i9b42THIHwrWpkjN_Cri0cvHmZwggA&s'
     },
     {
         id: 11,
         name: 'Marinade',
-        image: 'https://via.placeholder.com/150?text=Marinade'
+        image: 'https://img.freepik.com/premium-photo/bbq-sauce-white-background-top-view_1007204-34741.jpg'
     },
     {
         id: 12,
         name: 'Fingerfood',
-        image: 'https://via.placeholder.com/150?text=Fingerfood'
+        image: 'https://img.freepik.com/premium-photo/spring-rolls-food-plate-top-view-white-background_951562-68752.jpg'
     },
     {
         id: 13,
         name: 'Snack',
-        image: 'https://via.placeholder.com/150?text=Snack'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7cegVYAorjE28_m0YQN3eaFxlOB1zslgJw&s'
     },
     {
         id: 14,
         name: 'Drink',
-        image: 'https://via.placeholder.com/150?text=Drink'
+        image: 'https://img.freepik.com/free-photo/glass-aperol-spritz-cocktail-isolated-white-background_123827-21394.jpg'
     }
 ];
 exports.default = mealTypes;
