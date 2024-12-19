@@ -7,6 +7,9 @@ import mealTypes from '../Mealtypes.js'
 import Footer from './Footer.jsx'
 
 const About = () => {
+  const [query, setQuery] = useState('')
+  
+  
   const [mealStartIndex, setMealStartIndex] = useState(0) // State for meal section
   const [showMealAll, setShowMealAll] = useState(false) // To track "Show All" for meal section
 
@@ -82,12 +85,13 @@ const About = () => {
     : cuisines.slice(cuisineStartIndex, cuisineStartIndex + imagesPerPage)
   const displayedMeals = showMealAll
     ? mealTypes
-    : mealTypes.slice(mealStartIndex, mealStartIndex + imagesPerPage) // Fixing missing `displayedMeals`
+    : mealTypes.slice(mealStartIndex, mealStartIndex + imagesPerPage)
 
   return (
     <div className='about'>
-      <Navigation />
+      <Navigation setQuery={setQuery}/>
 
+      {/* Diets Section */} 
       <div className={style.diets_container}>
         <h1 className={style.diet_heading}>Diets</h1>
 
@@ -149,6 +153,7 @@ const About = () => {
 
       <div className={style.horizontalline}></div>
 
+      {/* {/* Cuisines Section} */}
       <div className={style.cuisines_container}>
         <h1 className={style.cuisine_heading}>Cuisines</h1>
 
@@ -212,7 +217,8 @@ const About = () => {
       </div>
 
       <div className={style.horizontalline}></div>
-
+        
+        {/* {/* MealType Section} */}
       <div className={style.meals_container}>
         <h1 className={style.meal_heading}>Meals</h1>
 

@@ -6,6 +6,7 @@ import Search from "./Search.jsx";
 import Style from './Navigation.module.css';
 import hamburger from "./Hamburger.svg";
 import xmark from "./xmark.svg";
+import App from '../App.jsx';
 
 const Navigation = ({ setQuery }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
