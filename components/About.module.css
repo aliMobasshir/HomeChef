@@ -8,6 +8,25 @@
     color: #333;
 }
 
+.dietheadingnknowmore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dietheadingnknowmore p{
+    padding-top: 5vw;
+    padding-right: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fed39c;
+    font-size:1.3vw ; 
+}
+.dietheadingnknowmore p:hover{
+   color: orange;
+   cursor: pointer;
+}
+
 /* Common styling for all container types */
 .diets_container, .cuisines_container, .meals_container {
     display: flex;
@@ -50,6 +69,7 @@
     padding: 10px;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
+    
 }
 
 
@@ -63,6 +83,7 @@
     flex-shrink: 0;
     text-align: center;
     width: 15vw;
+    cursor: pointer;
 }
 
 /* Image Containers */
@@ -93,8 +114,8 @@
 
 /* Arrow Buttons */
 .arrow_left, .arrow_right {
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: 4vw;
     background-color: #d9d9d9;
     display: flex;
     justify-content: center;
@@ -114,19 +135,21 @@
 }
 
 .show_all_button {
-    background-color: #333;
+    background-color: #ffffff;
+    border: 5px solid black;
     color: #fed39c;
     padding: 1vw 2vw;
     border: none;
-    border-radius: 10px;
+    border-radius: 1vw;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3vw;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .show_all_button:hover {
     background-color: #555;
+    color: orange;
 }
 
 /* Smooth Scrolling for Overflow */
@@ -138,6 +161,7 @@
     display: none; /* For Chrome, Safari, and Edge */
 }
 
+
 /* Expanded View (Optional) */
 /* .expanded {
     flex-wrap: wrap;
@@ -148,4 +172,47 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media(max-width:850px){
+    .diet_heading, .cuisine_heading, .meal_heading {
+        font-size: 35px;
+    }
+    .dietheadingnknowmore p{
+       font-size: 12px;
+    }
+    .diet, .cuisine, .meal {   
+        width: 100px; 
+
+    }
+    .diet_image, .cuisine_image, .meal_image {
+        width: 96px;
+        height: 95px;  
+    }
+    .diet_name, .cuisine_name, .meal_name {
+      font-size:12px ;
+    }
+    .arrow_left, .arrow_right {
+        width: 35px;
+        height: 35px; 
+    }
+    .show_all_button {
+        
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+
+    .sliderContainer {
+        max-width: 95vw;
+    }
+
+    .arrow_left, .arrow_right {
+       display: none;
+    }
+    .dietheadingnknowmore p{
+       
+        padding-right: 7vw;
+        
+    }
 }

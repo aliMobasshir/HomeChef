@@ -940,6 +940,26 @@
   font-weight: bold;
 }
 
+.IHfPZW_dietheadingnknowmore {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.IHfPZW_dietheadingnknowmore p {
+  color: #fed39c;
+  padding-top: 5vw;
+  padding-right: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.IHfPZW_dietheadingnknowmore p:hover {
+  color: orange;
+  cursor: pointer;
+}
+
 .IHfPZW_diets_container, .IHfPZW_cuisines_container, .IHfPZW_meals_container {
   flex-direction: row;
   justify-content: space-evenly;
@@ -979,6 +999,7 @@
 
 .IHfPZW_diet, .IHfPZW_cuisine, .IHfPZW_meal {
   text-align: center;
+  cursor: pointer;
   flex-direction: column;
   flex-shrink: 0;
   justify-content: center;
@@ -1017,8 +1038,8 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 4vw;
+  height: 4vw;
   display: flex;
 }
 
@@ -1034,16 +1055,17 @@
 .IHfPZW_show_all_button {
   color: #fed39c;
   cursor: pointer;
-  background-color: #333;
+  background-color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 1vw;
   padding: 1vw 2vw;
-  font-size: 1rem;
+  font-size: 1.3vw;
   font-weight: bold;
   transition: background-color .3s;
 }
 
 .IHfPZW_show_all_button:hover {
+  color: orange;
   background-color: #555;
 }
 
@@ -1067,5 +1089,51 @@
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
+}
+
+@media (width <= 850px) {
+  .IHfPZW_diet_heading, .IHfPZW_cuisine_heading, .IHfPZW_meal_heading {
+    font-size: 35px;
+  }
+
+  .IHfPZW_dietheadingnknowmore p {
+    font-size: 12px;
+  }
+
+  .IHfPZW_diet, .IHfPZW_cuisine, .IHfPZW_meal {
+    width: 100px;
+  }
+
+  .IHfPZW_diet_image, .IHfPZW_cuisine_image, .IHfPZW_meal_image {
+    width: 96px;
+    height: 95px;
+  }
+
+  .IHfPZW_diet_name, .IHfPZW_cuisine_name, .IHfPZW_meal_name {
+    font-size: 12px;
+  }
+
+  .IHfPZW_arrow_left, .IHfPZW_arrow_right {
+    width: 35px;
+    height: 35px;
+  }
+
+  .IHfPZW_show_all_button {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 500px) {
+  .IHfPZW_sliderContainer {
+    max-width: 95vw;
+  }
+
+  .IHfPZW_arrow_left, .IHfPZW_arrow_right {
+    display: none;
+  }
+
+  .IHfPZW_dietheadingnknowmore p {
+    padding-right: 7vw;
+  }
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */
