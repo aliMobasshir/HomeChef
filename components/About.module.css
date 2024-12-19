@@ -1,73 +1,149 @@
+
+/* Section Headings */
+.diet_heading, .cuisine_heading, .meal_heading {
+    font-family: "Shantell Sans", cursive;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 6vw 6vw 2vw 10vw;
+    color: #333;
+}
+
 /* Common styling for all container types */
 .diets_container, .cuisines_container, .meals_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Arrange items horizontally */
     align-items: center;
-    background-color: aqua;
-  }
-  
-  .sliderContainer, .cuisine_sliderContainer, .meal_sliderContainer {
+    justify-content: space-evenly; /* Space the items evenly */
+
+    position: relative; /* Maintain relative positioning context for arrows */
+    width: 100%;
+    padding: 2vw 0;
+}
+
+
+/* Horizontal Line */
+.horizontalline {
+    width: 80%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin: 6vw auto 0px auto;
+}
+
+/* Slider Container */
+.sliderContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
-    background-color: bisque;
-    transition: max-width 0.3s ease, height 0.3s ease;
     max-width: 80vw;
-    flex-wrap: nowrap;
-    padding: 5vw 0;
+    overflow: hidden;
     
-  }
-  
-  .expanded {
-    max-width: 80vw;
-  }
-  
-  .diets, .cuisines, .meals {
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+/* Diets, Cuisines, Meals */
+.diets, .cuisines, .meals {
     display: flex;
-    flex-wrap: nowrap;
     overflow-x: auto;
+    scroll-behavior: smooth;
     gap: 20px;
     padding: 10px;
-    transition: flex-wrap 0.3s ease;
-  }
-  
-  .showAllImages {
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+/* Individual Item Containers */
+.diet, .cuisine, .meal {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .dietRow, .cuisineRow, .mealRow {
-    flex-basis: 25%; /* Adjust this for the number of items per row */
-  }
-  
-  .diet, .cuisine, .meal {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
-    gap: 10px;
-  }
-  
-  .diet_image, .cuisine_image, .meal_image {
-    width: 100px;
-    height: 100px;
+    text-align: center;
+    width: 15vw;
+}
+
+/* Image Containers */
+.diet_image, .cuisine_image, .meal_image {
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     overflow: hidden;
-  }
-  
-  .diet_image img, .cuisine_image img, .meal_image img {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diet_image img, .cuisine_image img, .meal_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
-  
-  .horizontalline {
-    width: 80%;
-    height: 2px;
-    background-color: black;
-    margin: 20px auto;
-  }
-  
+}
+
+/* Item Names */
+.diet_name, .cuisine_name, .meal_name {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #757575;
+  font-size:1.3vw ;
+    margin-top: 25px;
+}
+
+/* Arrow Buttons */
+.arrow_left, .arrow_right {
+    width: 40px;
+    height: 40px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow_left:hover, .arrow_right:hover {
+    background-color: #878484;
+}
+
+/* Show All Button */
+.show_all {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.show_all_button {
+    background-color: #333;
+    color: #fed39c;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.show_all_button:hover {
+    background-color: #555;
+}
+
+/* Smooth Scrolling for Overflow */
+.diets, .cuisines, .meals {
+    scrollbar-width: none; /* For Firefox */
+}
+
+.diets::-webkit-scrollbar, .cuisines::-webkit-scrollbar, .meals::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+/* Expanded View (Optional) */
+.expanded {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.showAllImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

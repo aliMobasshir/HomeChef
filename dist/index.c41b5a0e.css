@@ -932,61 +932,68 @@
   }
 }
 
-.IHfPZW_diets_container, .IHfPZW_cuisines_container, .IHfPZW_meals_container {
-  background-color: #0ff;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
+.IHfPZW_diet_heading, .IHfPZW_cuisine_heading, .IHfPZW_meal_heading {
+  color: #333;
+  padding: 6vw 6vw 2vw 10vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
-.IHfPZW_sliderContainer, .IHfPZW_cuisine_sliderContainer, .IHfPZW_meal_sliderContainer {
-  background-color: bisque;
-  flex-wrap: nowrap;
-  justify-content: center;
+.IHfPZW_diets_container, .IHfPZW_cuisines_container, .IHfPZW_meals_container {
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  max-width: 80vw;
-  padding: 5vw 0;
-  transition: max-width .3s, height .3s;
+  width: 100%;
+  padding: 2vw 0;
   display: flex;
   position: relative;
 }
 
-.IHfPZW_expanded {
+.IHfPZW_horizontalline {
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 2px;
+  margin: 6vw auto 0;
+}
+
+.IHfPZW_sliderContainer {
+  border-radius: 10px;
+  align-items: center;
   max-width: 80vw;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .IHfPZW_diets, .IHfPZW_cuisines, .IHfPZW_meals {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   flex-wrap: nowrap;
   gap: 20px;
   padding: 10px;
-  transition: flex-wrap .3s;
   display: flex;
   overflow-x: auto;
 }
 
-.IHfPZW_showAllImages {
-  flex-wrap: wrap;
-  justify-content: center;
-  display: flex;
-}
-
-.IHfPZW_dietRow, .IHfPZW_cuisineRow, .IHfPZW_mealRow {
-  flex-basis: 25%;
-}
-
 .IHfPZW_diet, .IHfPZW_cuisine, .IHfPZW_meal {
+  text-align: center;
+  flex-direction: column;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  width: 15vw;
   display: flex;
 }
 
 .IHfPZW_diet_image, .IHfPZW_cuisine_image, .IHfPZW_meal_image {
+  background-color: #fff;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 10vw;
   overflow: hidden;
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 .IHfPZW_diet_image img, .IHfPZW_cuisine_image img, .IHfPZW_meal_image img {
@@ -996,10 +1003,74 @@
   height: 100%;
 }
 
-.IHfPZW_horizontalline {
-  background-color: #000;
-  width: 80%;
-  height: 2px;
-  margin: 20px auto;
+.IHfPZW_diet_name, .IHfPZW_cuisine_name, .IHfPZW_meal_name {
+  color: #757575;
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.IHfPZW_arrow_left, .IHfPZW_arrow_right {
+  cursor: pointer;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.IHfPZW_arrow_left:hover, .IHfPZW_arrow_right:hover {
+  background-color: #878484;
+}
+
+.IHfPZW_show_all {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.IHfPZW_show_all_button {
+  color: #fed39c;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 1vw 2vw;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.IHfPZW_show_all_button:hover {
+  background-color: #555;
+}
+
+.IHfPZW_diets, .IHfPZW_cuisines, .IHfPZW_meals {
+  scrollbar-width: none;
+}
+
+.IHfPZW_diets::-webkit-scrollbar {
+  display: none;
+}
+
+.IHfPZW_cuisines::-webkit-scrollbar {
+  display: none;
+}
+
+.IHfPZW_meals::-webkit-scrollbar {
+  display: none;
+}
+
+.IHfPZW_expanded {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.IHfPZW_showAllImages {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */

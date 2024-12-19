@@ -5,6 +5,8 @@ import Navigation from './Navigation.jsx';
 import cuisines from '../Cuisines.js';
 import mealTypes from '../Mealtypes.js';
 import Footer from './Footer.jsx';
+import leftArrow from './left-arrow-scroll.png'
+import rightArrow from './right-arrow-scroll.png'
 
 const About = () => {
   const [query, setQuery] = useState('');
@@ -12,19 +14,14 @@ const About = () => {
   const [showCuisineAll, setShowCuisineAll] = useState(false);
   const [showMealAll, setShowMealAll] = useState(false);
 
-  // Toggle "Show All" or "Back to Slider" for Diets
-  const toggleDietSlider = () => {
-    setShowDietAll(!showDietAll);
+  const scrollLeft = (className) => {
+    const container = document.querySelector(`.${className}`);
+    container.scrollLeft -= 200;
   };
 
-  // Toggle "Show All" or "Back to Slider" for Cuisines
-  const toggleCuisineSlider = () => {
-    setShowCuisineAll(!showCuisineAll);
-  };
-
-  // Toggle "Show All" or "Back to Slider" for Meals
-  const toggleMealSlider = () => {
-    setShowMealAll(!showMealAll);
+  const scrollRight = (className) => {
+    const container = document.querySelector(`.${className}`);
+    container.scrollLeft += 200;
   };
 
   return (
@@ -34,9 +31,19 @@ const About = () => {
       {/* Diets Section */}
       <h1 className={style.diet_heading}>Diets</h1>
       <div className={style.diets_container}>
+        {!showDietAll && (
+          <>
+            <button
+              className={style.arrow_left}
+              onClick={() => scrollLeft(style.diets)}
+            >
+            <img src={leftArrow} alt="leftarrow"  width="20px"/>
+            </button>
+          </>
+        )}
         <div className={`${style.sliderContainer} ${showDietAll ? style.expanded : ''}`}>
           <div className={`${style.diets} ${showDietAll ? style.showAllImages : ''}`}>
-            {diet.map(item => (
+            {diet.map((item) => (
               <div key={item.id} className={`${style.diet} ${showDietAll ? style.dietRow : ''}`}>
                 <div className={style.diet_image}>
                   <img src={item.image} alt={item.name} />
@@ -46,33 +53,47 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={style.show_all}>
-          {!showDietAll ? (
-            <button
-              className={style.show_all_button}
-              onClick={toggleDietSlider}
-            >
-              Show All
-            </button>
-          ) : (
-            <button
-              className={style.show_all_button}
-              onClick={toggleDietSlider}
-            >
-              Back to Slider
-            </button>
-          )}
-        </div>
+        {!showDietAll && (
+          <button
+            className={style.arrow_right}
+            onClick={() => scrollRight(style.diets)}
+          >
+            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+          </button>
+        )}
+      </div>
+
+      {/* Show All / Back to Slider Button Below */}
+      <div className={style.show_all}>
+        {!showDietAll ? (
+          <button className={style.show_all_button} onClick={() => setShowDietAll(true)}>
+            Show All
+          </button>
+        ) : (
+          <button className={style.show_all_button} onClick={() => setShowDietAll(false)}>
+            Show Less
+          </button>
+        )}
       </div>
 
       <div className={style.horizontalline}></div>
 
       {/* Cuisines Section */}
+      <h1 className={style.cuisine_heading}>Cuisines</h1>
       <div className={style.cuisines_container}>
-        <h1 className={style.cuisine_heading}>Cuisines</h1>
-        <div className={`${style.cuisine_sliderContainer} ${showCuisineAll ? style.expanded : ''}`}>
+        {!showCuisineAll && (
+          <>
+            <button
+              className={style.arrow_left}
+              onClick={() => scrollLeft(style.cuisines)}
+            >
+              <img src={leftArrow} alt="leftarrow"  width="20px"/>
+            </button>
+          </>
+        )}
+        <div className={`${style.sliderContainer} ${showCuisineAll ? style.expanded : ''}`}>
           <div className={`${style.cuisines} ${showCuisineAll ? style.showAllImages : ''}`}>
-            {cuisines.map(item => (
+            {cuisines.map((item) => (
               <div key={item.id} className={`${style.cuisine} ${showCuisineAll ? style.cuisineRow : ''}`}>
                 <div className={style.cuisine_image}>
                   <img src={item.image} alt={item.name} />
@@ -82,33 +103,47 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={style.cuisine_show_all}>
-          {!showCuisineAll ? (
-            <button
-              className={style.cuisine_show_all_button}
-              onClick={toggleCuisineSlider}
-            >
-              Show All
-            </button>
-          ) : (
-            <button
-              className={style.cuisine_show_all_button}
-              onClick={toggleCuisineSlider}
-            >
-              Back to Slider
-            </button>
-          )}
-        </div>
+        {!showCuisineAll && (
+          <button
+            className={style.arrow_right}
+            onClick={() => scrollRight(style.cuisines)}
+          >
+            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+          </button>
+        )}
+      </div>
+
+      {/* Show All / Back to Slider Button Below */}
+      <div className={style.show_all}>
+        {!showCuisineAll ? (
+          <button className={style.show_all_button} onClick={() => setShowCuisineAll(true)}>
+            Show All
+          </button>
+        ) : (
+          <button className={style.show_all_button} onClick={() => setShowCuisineAll(false)}>
+            Show Less
+          </button>
+        )}
       </div>
 
       <div className={style.horizontalline}></div>
 
       {/* Meals Section */}
+      <h1 className={style.meal_heading}>Meals</h1>
       <div className={style.meals_container}>
-        <h1 className={style.meal_heading}>Meals</h1>
-        <div className={`${style.meal_sliderContainer} ${showMealAll ? style.expanded : ''}`}>
+        {!showMealAll && (
+          <>
+            <button
+              className={style.arrow_left}
+              onClick={() => scrollLeft(style.meals)}
+            >
+              <img src={leftArrow} alt="leftarrow"  width="20px"/>
+            </button>
+          </>
+        )}
+        <div className={`${style.sliderContainer} ${showMealAll ? style.expanded : ''}`}>
           <div className={`${style.meals} ${showMealAll ? style.showAllImages : ''}`}>
-            {mealTypes.map(item => (
+            {mealTypes.map((item) => (
               <div key={item.id} className={`${style.meal} ${showMealAll ? style.mealRow : ''}`}>
                 <div className={style.meal_image}>
                   <img src={item.image} alt={item.name} />
@@ -118,24 +153,30 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={style.meal_show_all}>
-          {!showMealAll ? (
-            <button
-              className={style.meal_show_all_button}
-              onClick={toggleMealSlider}
-            >
-              Show All
-            </button>
-          ) : (
-            <button
-              className={style.meal_show_all_button}
-              onClick={toggleMealSlider}
-            >
-              Back to Slider
-            </button>
-          )}
-        </div>
+        {!showMealAll && (
+          <button
+            className={style.arrow_right}
+            onClick={() => scrollRight(style.meals)}
+          >
+            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+          </button>
+        )}
       </div>
+
+      {/* Show All / Back to Slider Button Below */}
+      <div className={style.show_all}>
+        {!showMealAll ? (
+          <button className={style.show_all_button} onClick={() => setShowMealAll(true)}>
+            Show All
+          </button>
+        ) : (
+          <button className={style.show_all_button} onClick={() => setShowMealAll(false)}>
+           Show Less
+          </button>
+        )}
+      </div>
+
+      <div className={style.horizontalline}></div>
 
       <Footer />
     </div>
