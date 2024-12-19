@@ -7,6 +7,7 @@ import mealTypes from '../Mealtypes.js'
 import Footer from './Footer.jsx'
 
 const About = () => {
+   const [query, setQuery] = useState('');
   const [mealStartIndex, setMealStartIndex] = useState(0) // State for meal section
   const [showMealAll, setShowMealAll] = useState(false) // To track "Show All" for meal section
 
@@ -86,7 +87,8 @@ const About = () => {
 
   return (
     <div className='about'>
-      <Navigation />
+      <Navigation setQuery={setQuery} />
+      
 
       <div className={style.diets_container}>
         <h1 className={style.diet_heading}>Diets</h1>

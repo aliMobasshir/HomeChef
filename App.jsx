@@ -30,6 +30,7 @@ const App = () => {
       <Footer query={query}/>
     </>
   )
+
 }
 
 export default App
