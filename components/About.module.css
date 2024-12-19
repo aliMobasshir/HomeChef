@@ -52,6 +52,8 @@
     scroll-snap-type: x mandatory;
 }
 
+
+
 /* Individual Item Containers */
 .diet, .cuisine, .meal {
     display: flex;
@@ -137,10 +139,10 @@
 }
 
 /* Expanded View (Optional) */
-.expanded {
+/* .expanded {
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 .showAllImages {
     display: flex;

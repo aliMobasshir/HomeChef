@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
-import diet from '../Diet.js';
-import style from './About.module.css';
-import Navigation from './Navigation.jsx';
-import cuisines from '../Cuisines.js';
-import mealTypes from '../Mealtypes.js';
-import Footer from './Footer.jsx';
+import React, { useState } from 'react'
+import diet from '../Diet.js'
+import style from './About.module.css'
+import Navigation from './Navigation.jsx'
+import cuisines from '../Cuisines.js'
+import mealTypes from '../Mealtypes.js'
+import Footer from './Footer.jsx'
 import leftArrow from './left-arrow-scroll.png'
 import rightArrow from './right-arrow-scroll.png'
 
 const About = () => {
-  const [query, setQuery] = useState('');
-  const [showDietAll, setShowDietAll] = useState(false); 
-  const [showCuisineAll, setShowCuisineAll] = useState(false);
-  const [showMealAll, setShowMealAll] = useState(false);
+  const [query, setQuery] = useState('')
+  const [showDietAll, setShowDietAll] = useState(false)
+  const [showCuisineAll, setShowCuisineAll] = useState(false)
+  const [showMealAll, setShowMealAll] = useState(false)
 
-  const scrollLeft = (className) => {
-    const container = document.querySelector(`.${className}`);
-    container.scrollLeft -= 200;
-  };
+  const scrollLeft = className => {
+    const container = document.querySelector(`.${className}`)
+    container.scrollLeft -= 200
+  }
 
-  const scrollRight = (className) => {
-    const container = document.querySelector(`.${className}`);
-    container.scrollLeft += 200;
-  };
+  const scrollRight = className => {
+    const container = document.querySelector(`.${className}`)
+    container.scrollLeft += 200
+  }
 
   return (
-    <div className="about">
+    <div className='about'>
       <Navigation setQuery={setQuery} />
 
       {/* Diets Section */}
@@ -37,14 +37,25 @@ const About = () => {
               className={style.arrow_left}
               onClick={() => scrollLeft(style.diets)}
             >
-            <img src={leftArrow} alt="leftarrow"  width="20px"/>
+              <img src={leftArrow} alt='leftarrow' width='20px' />
             </button>
           </>
         )}
-        <div className={`${style.sliderContainer} ${showDietAll ? style.expanded : ''}`}>
-          <div className={`${style.diets} ${showDietAll ? style.showAllImages : ''}`}>
-            {diet.map((item) => (
-              <div key={item.id} className={`${style.diet} ${showDietAll ? style.dietRow : ''}`}>
+        <div
+          className={`${style.sliderContainer} ${
+            showDietAll ? style.expanded : ''
+          }`}
+        >
+          <div
+            className={`${style.diets} ${
+              showDietAll ? style.showAllImages : ''
+            }`}
+          >
+            {diet.map(item => (
+              <div
+                key={item.id}
+                className={`${style.diet} ${showDietAll ? style.dietRow : ''}`}
+              >
                 <div className={style.diet_image}>
                   <img src={item.image} alt={item.name} />
                 </div>
@@ -58,7 +69,7 @@ const About = () => {
             className={style.arrow_right}
             onClick={() => scrollRight(style.diets)}
           >
-            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+            <img src={rightArrow} alt='leftarrow' width='20px' />
           </button>
         )}
       </div>
@@ -66,11 +77,17 @@ const About = () => {
       {/* Show All / Back to Slider Button Below */}
       <div className={style.show_all}>
         {!showDietAll ? (
-          <button className={style.show_all_button} onClick={() => setShowDietAll(true)}>
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowDietAll(true)}
+          >
             Show All
           </button>
         ) : (
-          <button className={style.show_all_button} onClick={() => setShowDietAll(false)}>
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowDietAll(false)}
+          >
             Show Less
           </button>
         )}
@@ -87,14 +104,27 @@ const About = () => {
               className={style.arrow_left}
               onClick={() => scrollLeft(style.cuisines)}
             >
-              <img src={leftArrow} alt="leftarrow"  width="20px"/>
+              <img src={leftArrow} alt='leftarrow' width='20px' />
             </button>
           </>
         )}
-        <div className={`${style.sliderContainer} ${showCuisineAll ? style.expanded : ''}`}>
-          <div className={`${style.cuisines} ${showCuisineAll ? style.showAllImages : ''}`}>
-            {cuisines.map((item) => (
-              <div key={item.id} className={`${style.cuisine} ${showCuisineAll ? style.cuisineRow : ''}`}>
+        <div
+          className={`${style.sliderContainer} ${
+            showCuisineAll ? style.expanded : ''
+          }`}
+        >
+          <div
+            className={`${style.cuisines} ${
+              showCuisineAll ? style.showAllImages : ''
+            }`}
+          >
+            {cuisines.map(item => (
+              <div
+                key={item.id}
+                className={`${style.cuisine} ${
+                  showCuisineAll ? style.cuisineRow : ''
+                }`}
+              >
                 <div className={style.cuisine_image}>
                   <img src={item.image} alt={item.name} />
                 </div>
@@ -108,7 +138,7 @@ const About = () => {
             className={style.arrow_right}
             onClick={() => scrollRight(style.cuisines)}
           >
-            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+            <img src={rightArrow} alt='leftarrow' width='20px' />
           </button>
         )}
       </div>
@@ -116,11 +146,17 @@ const About = () => {
       {/* Show All / Back to Slider Button Below */}
       <div className={style.show_all}>
         {!showCuisineAll ? (
-          <button className={style.show_all_button} onClick={() => setShowCuisineAll(true)}>
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowCuisineAll(true)}
+          >
             Show All
           </button>
         ) : (
-          <button className={style.show_all_button} onClick={() => setShowCuisineAll(false)}>
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowCuisineAll(false)}
+          >
             Show Less
           </button>
         )}
@@ -137,14 +173,25 @@ const About = () => {
               className={style.arrow_left}
               onClick={() => scrollLeft(style.meals)}
             >
-              <img src={leftArrow} alt="leftarrow"  width="20px"/>
+              <img src={leftArrow} alt='leftarrow' width='20px' />
             </button>
           </>
         )}
-        <div className={`${style.sliderContainer} ${showMealAll ? style.expanded : ''}`}>
-          <div className={`${style.meals} ${showMealAll ? style.showAllImages : ''}`}>
-            {mealTypes.map((item) => (
-              <div key={item.id} className={`${style.meal} ${showMealAll ? style.mealRow : ''}`}>
+        <div
+          className={`${style.sliderContainer} ${
+            showMealAll ? style.expanded : ''
+          }`}
+        >
+          <div
+            className={`${style.meals} ${
+              showMealAll ? style.showAllImages : ''
+            }`}
+          >
+            {mealTypes.map(item => (
+              <div
+                key={item.id}
+                className={`${style.meal} ${showMealAll ? style.mealRow : ''}`}
+              >
                 <div className={style.meal_image}>
                   <img src={item.image} alt={item.name} />
                 </div>
@@ -158,7 +205,7 @@ const About = () => {
             className={style.arrow_right}
             onClick={() => scrollRight(style.meals)}
           >
-            <img src={rightArrow} alt="leftarrow"  width="20px"/>
+            <img src={rightArrow} alt='leftarrow' width='20px' />
           </button>
         )}
       </div>
@@ -166,21 +213,28 @@ const About = () => {
       {/* Show All / Back to Slider Button Below */}
       <div className={style.show_all}>
         {!showMealAll ? (
-          <button className={style.show_all_button} onClick={() => setShowMealAll(true)}>
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowMealAll(true)}
+          >
             Show All
           </button>
         ) : (
-          <button className={style.show_all_button} onClick={() => setShowMealAll(false)}>
-           Show Less
+          <button
+            className={style.show_all_button}
+            onClick={() => setShowMealAll(false)}
+          >
+            Show Less
           </button>
         )}
       </div>
 
       <div className={style.horizontalline}></div>
 
+      
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
