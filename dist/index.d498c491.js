@@ -2979,7 +2979,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Cuisines.js":"cmcNe"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -35932,11 +35932,9 @@ var _faqModuleCssDefault = parcelHelpers.interopDefault(_faqModuleCss);
 var _faq1Svg = require("./FAQ 1.svg");
 var _faq1SvgDefault = parcelHelpers.interopDefault(_faq1Svg);
 var _s = $RefreshSig$();
-const FAQ = ({ query })=>{
+const FAQ = ()=>{
     _s();
-    // State to manage which FAQ is open
     const [openIndex, setOpenIndex] = (0, _react.useState)(null);
-    // Function to toggle FAQ visibility
     const handleToggle = (index)=>{
         setOpenIndex((prevIndex)=>prevIndex === index ? null : index);
     };
@@ -35962,8 +35960,9 @@ const FAQ = ({ query })=>{
             answer: 'No, you can view recipes without an account.'
         }
     ];
-    if (!query) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
+            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: (0, _faqModuleCssDefault.default).heading,
                 style: {
@@ -35972,81 +35971,108 @@ const FAQ = ({ query })=>{
                 children: "Frequently Asked Questions"
             }, void 0, false, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 43,
-                columnNumber: 9
+                lineNumber: 1,
+                columnNumber: 1067
             }, undefined),
+            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _faqModuleCssDefault.default).faq_container,
                 children: [
+                    " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _faqModuleCssDefault.default).faq_container1,
-                        children: faqs.map((faq, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: `${(0, _faqModuleCssDefault.default).faq_box} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: [
-                                            faq.question,
-                                            ' ',
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: (0, _faqModuleCssDefault.default).faq_span,
-                                                onClick: ()=>handleToggle(index),
-                                                children: openIndex === index ? '-' : '+'
-                                            }, void 0, false, {
-                                                fileName: "components/FAQ.jsx",
-                                                lineNumber: 57,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/FAQ.jsx",
-                                        lineNumber: 55,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    openIndex === index && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: (0, _faqModuleCssDefault.default).faq_text,
-                                        children: faq.answer
-                                    }, void 0, false, {
-                                        fileName: "components/FAQ.jsx",
-                                        lineNumber: 65,
-                                        columnNumber: 19
-                                    }, undefined)
-                                ]
-                            }, index, true, {
-                                fileName: "components/FAQ.jsx",
-                                lineNumber: 49,
-                                columnNumber: 15
-                            }, undefined))
-                    }, void 0, false, {
+                        children: [
+                            " ",
+                            faqs.map((faq, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: `${(0, _faqModuleCssDefault.default).faq_box} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                " ",
+                                                faq.question,
+                                                ' ',
+                                                " ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: (0, _faqModuleCssDefault.default).faq_span,
+                                                    onClick: ()=>handleToggle(index),
+                                                    children: [
+                                                        " ",
+                                                        openIndex === index ? '-' : '+',
+                                                        " "
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "components/FAQ.jsx",
+                                                    lineNumber: 1,
+                                                    columnNumber: 1381
+                                                }, undefined),
+                                                " "
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "components/FAQ.jsx",
+                                            lineNumber: 1,
+                                            columnNumber: 1357
+                                        }, undefined),
+                                        " ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: `${(0, _faqModuleCssDefault.default).faq_text} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
+                                            children: [
+                                                " ",
+                                                faq.answer,
+                                                " "
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "components/FAQ.jsx",
+                                            lineNumber: 1,
+                                            columnNumber: 1499
+                                        }, undefined),
+                                        " "
+                                    ]
+                                }, index, true, {
+                                    fileName: "components/FAQ.jsx",
+                                    lineNumber: 1,
+                                    columnNumber: 1266
+                                }, undefined)),
+                            " "
+                        ]
+                    }, void 0, true, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 47,
-                        columnNumber: 11
+                        lineNumber: 1,
+                        columnNumber: 1199
                     }, undefined),
+                    " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _faqModuleCssDefault.default).faq_image,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _faq1SvgDefault.default),
-                            alt: "FAQ illustration"
-                        }, void 0, false, {
-                            fileName: "components/FAQ.jsx",
-                            lineNumber: 71,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _faq1SvgDefault.default),
+                                alt: "FAQ illustration"
+                            }, void 0, false, {
+                                fileName: "components/FAQ.jsx",
+                                lineNumber: 1,
+                                columnNumber: 1646
+                            }, undefined),
+                            " "
+                        ]
+                    }, void 0, true, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 70,
-                        columnNumber: 11
-                    }, undefined)
+                        lineNumber: 1,
+                        columnNumber: 1612
+                    }, undefined),
+                    " "
                 ]
             }, void 0, true, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 46,
-                columnNumber: 9
-            }, undefined)
+                lineNumber: 1,
+                columnNumber: 1161
+            }, undefined),
+            " "
         ]
     }, void 0, true, {
         fileName: "components/FAQ.jsx",
-        lineNumber: 42,
-        columnNumber: 7
+        lineNumber: 1,
+        columnNumber: 1061
     }, undefined);
 };
 _s(FAQ, "7z1SfW1ag/kVV/D8SOtFgmPOJ8o=");
@@ -36892,7 +36918,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Diet.js":"1xx62","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1xx62":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Diet.js":"1xx62","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t"}],"1xx62":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const diets = [
