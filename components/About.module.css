@@ -72,6 +72,8 @@
     
 }
 
+
+
 /* Individual Item Containers */
 .diet, .cuisine, .meal {
     display: flex;
@@ -160,6 +162,11 @@
 }
 
 
+/* Expanded View (Optional) */
+/* .expanded {
+    flex-wrap: wrap;
+    justify-content: center;
+} */
 
 .showAllImages {
     display: flex;
