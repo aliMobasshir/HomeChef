@@ -1,330 +1,218 @@
-.diets_container {
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Hide images that go outside of the container */
+
+/* Section Headings */
+.diet_heading, .cuisine_heading, .meal_heading {
+    font-family: "Shantell Sans", cursive;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 6vw 6vw 2vw 10vw;
+    color: #333;
 }
 
+.dietheadingnknowmore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dietheadingnknowmore p{
+    padding-top: 5vw;
+    padding-right: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fed39c;
+    font-size:1.3vw ; 
+}
+.dietheadingnknowmore p:hover{
+   color: orange;
+   cursor: pointer;
+}
+
+/* Common styling for all container types */
+.diets_container, .cuisines_container, .meals_container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center;
+    justify-content: space-evenly; /* Space the items evenly */
+
+    position: relative; /* Maintain relative positioning context for arrows */
+    width: 100%;
+    padding: 2vw 0;
+}
+
+
+/* Horizontal Line */
+.horizontalline {
+    width: 80%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin: 6vw auto 0px auto;
+}
+
+/* Slider Container */
 .sliderContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 80vw;
+    overflow: hidden;
+    
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
-.diet_heading {
-  font-family: 'Shantell Sans', cursive;
-  font-size: 40px;
-
-  position: absolute;
-  top: 0;
-  left: 80px;
-  margin-top: 20px;
+/* Diets, Cuisines, Meals */
+.diets, .cuisines, .meals {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    
 }
 
-.diets {
-  display: flex;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth sliding transition and fade */
+
+
+/* Individual Item Containers */
+.diet, .cuisine, .meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    width: 15vw;
+    cursor: pointer;
 }
 
-.showAllImages {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px; /* Space between items in the grid */
+/* Image Containers */
+.diet_image, .cuisine_image, .meal_image {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.diet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px; /* Space between images */
-  flex-shrink: 0; /* Prevent images from shrinking */
-  gap: 10px;
-  opacity: 1; /* Make the images fully visible */
-  transition: opacity 1.3s ease-in-out; /* Fade effect */
+.diet_image img, .cuisine_image img, .meal_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.diet_image {
-  width: 100px;
-  height: 100px; /* Set height and width to make the circle */
-  border-radius: 50%; /* Make the container circular */
-  overflow: hidden; /* Hides any overflowed parts of the image */
+/* Item Names */
+.diet_name, .cuisine_name, .meal_name {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #757575;
+  font-size:1.3vw ;
+    margin-top: 25px;
 }
 
-.diet_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
-  object-position: center; /* Center the image inside the container */
+/* Arrow Buttons */
+.arrow_left, .arrow_right {
+    width: 4vw;
+    height: 4vw;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.leftButton,
-.rightButton {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+.arrow_left:hover, .arrow_right:hover {
+    background-color: #878484;
 }
 
-.leftButton {
-  left: 10px; /* Position the left button */
-}
-
-.rightButton {
-  right: 10px; /* Position the right button */
-}
-
+/* Show All Button */
 .show_all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  font-family: 'Shantell Sans', cursive;
-  font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .show_all_button {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  margin-top: 40px;
-  border: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-  z-index: 1;
+    background-color: #ffffff;
+    border: 5px solid black;
+    color: #fed39c;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.horizontalline {
-  width: 80%; /* Make the line span across the full width of the viewport */
-  height: 2px;
-  background-color: black;
-  margin: 20px auto;
+.show_all_button:hover {
+    background-color: #555;
+    color: orange;
 }
 
-.cuisines_container {
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Hide images that go outside of the container */
+/* Smooth Scrolling for Overflow */
+.diets, .cuisines, .meals {
+    scrollbar-width: none; /* For Firefox */
 }
 
-.cuisine_sliderContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 100px;
+.diets::-webkit-scrollbar, .cuisines::-webkit-scrollbar, .meals::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
 }
 
-.cuisine_heading {
-  font-family: 'Shantell Sans', cursive;
-  font-size: 40px;
-  position: absolute;
-  top: 0;
-  left: 80px;
-  margin-top: 20px;
+
+/* Expanded View (Optional) */
+/* .expanded {
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.showAllImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cuisines {
-  display: flex;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth sliding transition and fade */
-}
+@media(max-width:850px){
+    .diet_heading, .cuisine_heading, .meal_heading {
+        font-size: 35px;
+    }
+    .dietheadingnknowmore p{
+       font-size: 12px;
+    }
+    .diet, .cuisine, .meal {   
+        width: 100px; 
 
-.cuisine_showAllImages {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px; /* Space between items in the grid */
+    }
+    .diet_image, .cuisine_image, .meal_image {
+        width: 96px;
+        height: 95px;  
+    }
+    .diet_name, .cuisine_name, .meal_name {
+      font-size:12px ;
+    }
+    .arrow_left, .arrow_right {
+        width: 35px;
+        height: 35px; 
+    }
+    .show_all_button {
+        
+        font-size: 12px;
+    }
 }
+@media(max-width:500px){
 
-.cuisine {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 60px; /* Space between images */
-  flex-shrink: 0; /* Prevent images from shrinking */
-  gap: 10px;
-  opacity: 1; /* Make the images fully visible */
-  transition: opacity 1.3s ease-in-out; /* Fade effect */
+    .sliderContainer {
+        max-width: 95vw;
+    }
+
+    .arrow_left, .arrow_right {
+       display: none;
+    }
+    .dietheadingnknowmore p{
+       
+        padding-right: 7vw;
+        
+    }
 }
-
-.cuisine_image {
-  width: 100px;
-  height: 100px; /* Set height and width to make the circle */
-  border-radius: 50%; /* Make the container circular */
-  overflow: hidden; /* Hides any overflowed parts of the image */
-}
-
-.cuisine_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
-  object-position: center; /* Center the image inside the container */
-}
-
-.cuisine_leftButton,
-.cuisine_rightButton {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.cuisine_leftButton {
-  left: 10px; /* Position the left button */
-}
-
-.cuisine_rightButton {
-  right: 10px; /* Position the right button */
-}
-
-.cuisine_show_all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  font-family: 'Shantell Sans', cursive;
-  font-size: 20px;
-}
-
-.cuisine_show_all_button {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  margin-top: 40px;
-  border: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-/* General container for MealType section */
-.meals_container {
-  position: relative;
-  width: 100%;
-  overflow: hidden; /* Hide any content that goes outside the container */
-}
-
-/* MealType slider container styling */
-.meal_sliderContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 100px;
-}
-
-/* Heading for MealType section */
-.meal_heading {
-  font-family: 'Shantell Sans', cursive;
-  font-size: 40px;
-  position: absolute;
-  top: 0;
-  left: 80px;
-  margin-top: 20px;
-}
-
-/* Styling for the meals (slider) */
-.meals {
-  display: flex;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth sliding transition and fade */
-}
-
-/* Grid layout for showing all meals */
-.meal_showAllImages {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
-  gap: 20px; /* Space between items */
-}
-
-/* Meal item styling */
-.meal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 60px; /* Space between items */
-  flex-shrink: 0; /* Prevent shrinking */
-  gap: 10px;
-  opacity: 1; /* Fully visible */
-  transition: opacity 1.3s ease-in-out; /* Fade effect */
-}
-
-/* Styling for the meal image container */
-.meal_image {
-  width: 100px;
-  height: 100px; /* Circular container */
-  border-radius: 50%; /* Circular shape */
-  overflow: hidden; /* Hide any overflowed parts of the image */
-}
-
-/* Meal image styling */
-.meal_image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image covers the entire container */
-  object-position: center; /* Center the image */
-}
-
-/* Styling for the left button */
-.meal_leftButton,
-.meal_rightButton {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-/* Positioning of the left button */
-.meal_leftButton {
-  left: 10px;
-}
-
-/* Positioning of the right button */
-.meal_rightButton {
-  right: 10px;
-}
-
-/* Styling for the 'Show All' button */
-.meal_show_all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  font-family: 'Shantell Sans', cursive;
-  font-size: 20px;
-}
-
-/* 'Show All' button styling */
-.meal_show_all_button {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  margin-top: 40px;
-  border: none;
-  cursor: pointer;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
