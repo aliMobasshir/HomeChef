@@ -2989,11 +2989,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-<<<<<<< HEAD
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./App":"ifStX"}],"iTorj":[function(require,module,exports,__globalThis) {
-=======
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/ShowAll.jsx":"3EMrT"}],"iTorj":[function(require,module,exports,__globalThis) {
->>>>>>> 19ac68aebb4a085b81eb6e8767a05e8419a948ea
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27327,7 +27323,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About.jsx":"jb55R"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","./components/About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35549,7 +35545,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","react-router-dom":"9xmpe","../FakeData.js":"2L4vp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./About.jsx":"jb55R"}],"bX57W":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./categories 1.svg":"bX57W","./checkbox 1.svg":"eEEsA","./Section.module.css":"adxdk","react-router-dom":"9xmpe","../FakeData.js":"2L4vp","./About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bX57W":[function(require,module,exports,__globalThis) {
 module.exports = require("ba3bd9ec26065452").getBundleURL('avzPb') + "categories 1.13d970bf.svg" + "?" + Date.now();
 
 },{"ba3bd9ec26065452":"lgJ39"}],"eEEsA":[function(require,module,exports,__globalThis) {
@@ -35598,13 +35594,7 @@ var _recommendedWhole30Jsx = require("./RecommendedWhole30.jsx");
 var _recommendedWhole30JsxDefault = parcelHelpers.interopDefault(_recommendedWhole30Jsx);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-<<<<<<< HEAD
-const apiKey = '716d2d891ccc4e788b471c105f5928e8'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=716d2d891ccc4e788b471c105f5928e8&number=6`;
-function RecipeList({ query }) {
-=======
 const About = ()=>{
->>>>>>> 19ac68aebb4a085b81eb6e8767a05e8419a948ea
     _s();
     const [query, setQuery] = (0, _react.useState)('');
     const [showDietAll, setShowDietAll] = (0, _react.useState)(false);
@@ -35653,286 +35643,6 @@ const About = ()=>{
                         columnNumber: 11
                     }, undefined)
                 ]
-<<<<<<< HEAD
-            }, void 0, true, {
-                fileName: "components/reviewPage.jsx",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "components/reviewPage.jsx",
-        lineNumber: 9,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Reviews;
-exports.default = Reviews;
-var _c;
-$RefreshReg$(_c, "Reviews");
-
-  $parcel$ReactRefreshHelpers$3765.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./reviewPage.module.css":"2sMzm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2sMzm":[function(require,module,exports,__globalThis) {
-module.exports["kashif"] = `tjevqG_kashif`;
-module.exports["mainContainer"] = `tjevqG_mainContainer`;
-module.exports["reviewCard"] = `tjevqG_reviewCard`;
-module.exports["reviewCardContainer"] = `tjevqG_reviewCardContainer`;
-module.exports["reviewHeading"] = `tjevqG_reviewHeading`;
-module.exports["tanzil"] = `tjevqG_tanzil`;
-module.exports["zayd"] = `tjevqG_zayd`;
-
-},{}],"fIvsv":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$98f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$98f5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _recipeListModuleCss = require("./recipeList.module.css");
-var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
-var _fireFlamePng = require("./fire-flame.png");
-var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
-var _s = $RefreshSig$();
-// API configuration
-const apiKey = '716d2d891ccc4e788b471c105f5928e8';
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
-function RecipeList({ query }) {
-    _s();
-    const [recipes, setRecipes] = (0, _react.useState)([]) // State for storing recipes
-    ;
-    const [error, setError] = (0, _react.useState)(null) // State for error handling
-    ;
-    (0, _react.useEffect)(()=>{
-        async function fetchRecipes() {
-            try {
-                const response = await fetch(endpoint);
-                // Check if API request was successful
-                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
-                // Parse the response JSON
-                const data = await response.json();
-                // Ensure recipes exist in the response
-                setRecipes(data?.recipes || []);
-            } catch (error) {
-                setError(error.message) // Capture error message
-                ;
-            }
-        }
-        fetchRecipes();
-    }, []) // Dependency array ensures this runs only once
-    ;
-    // Filter recipes based on the query prop passed from the parent
-    const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _recipeListModuleCssDefault.default).topPicksPage,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _recipeListModuleCssDefault.default).heading,
-                children: [
-                    "Trending Dishes",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _fireFlamePngDefault.default),
-                        alt: "flame",
-                        className: (0, _recipeListModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/trending.jsx",
-                        lineNumber: 46,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/trending.jsx",
-                lineNumber: 44,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _recipeListModuleCssDefault.default).recipeContainer,
-                children: error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: (0, _recipeListModuleCssDefault.default).error,
-                    children: [
-                        "Error: ",
-                        error
-                    ]
-                }, void 0, true, {
-                    fileName: "components/trending.jsx",
-                    lineNumber: 52,
-                    columnNumber: 11
-                }, this) // Display error message
-                 : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _recipeListModuleCssDefault.default).recipeCard,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: recipe.image,
-                                alt: recipe.title
-                            }, void 0, false, {
-                                fileName: "components/trending.jsx",
-                                lineNumber: 56,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    children: recipe.title
-                                }, void 0, false, {
-                                    fileName: "components/trending.jsx",
-                                    lineNumber: 58,
-                                    columnNumber: 17
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "components/trending.jsx",
-                                lineNumber: 57,
-                                columnNumber: 15
-                            }, this)
-                        ]
-                    }, recipe.id, true, {
-                        fileName: "components/trending.jsx",
-                        lineNumber: 55,
-                        columnNumber: 13
-                    }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _recipeListModuleCssDefault.default).noRecipes,
-                    children: "No recipes founds."
-                }, void 0, false, {
-                    fileName: "components/trending.jsx",
-                    lineNumber: 63,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false, {
-                fileName: "components/trending.jsx",
-                lineNumber: 50,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/trending.jsx",
-        lineNumber: 42,
-        columnNumber: 9
-    }, this);
-}
-_s(RecipeList, "ohMqFt/cdTJ3t+pGlBUBekHej2E=");
-_c = RecipeList;
-exports.default = RecipeList;
-var _c;
-$RefreshReg$(_c, "RecipeList");
-
-  $parcel$ReactRefreshHelpers$98f5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
-module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
-
-},{"1b9da1e600612d13":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$c5d0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c5d0.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _faqModuleCss = require("./FAQ.module.css");
-var _faqModuleCssDefault = parcelHelpers.interopDefault(_faqModuleCss);
-var _faq1Svg = require("./FAQ 1.svg");
-var _faq1SvgDefault = parcelHelpers.interopDefault(_faq1Svg);
-var _s = $RefreshSig$();
-const FAQ = ()=>{
-    _s();
-    const [openIndex, setOpenIndex] = (0, _react.useState)(null);
-    const handleToggle = (index)=>{
-        setOpenIndex((prevIndex)=>prevIndex === index ? null : index);
-    };
-    const faqs = [
-        {
-            question: 'What is HomeChef?',
-            answer: 'HomeChef is a recipe platform where you can discover, explore, and cook delicious meals with step-by-step instructions.'
-        },
-        {
-            question: 'Is HomeChef free to use?',
-            answer: 'Yes, HomeChef is completely free. You can access all recipes and features at no cost.'
-        },
-        {
-            question: 'Are the recipes beginner-friendly?',
-            answer: 'Yes, our recipes are designed for all skill levels, with clear step-by-step instructions.'
-        },
-        {
-            question: 'Can I search by the ingredients I have?',
-            answer: 'Absolutely! Use the "Search by Ingredients" feature to find recipes that match what\u2019s in your kitchen.'
-        },
-        {
-            question: 'Do I need an account to access recipes?',
-            answer: 'No, you can view recipes without an account.'
-        }
-    ];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _faqModuleCssDefault.default).heading,
-                style: {
-                    textAlign: 'center'
-                },
-                children: "Frequently Asked Questions"
-            }, void 0, false, {
-                fileName: "components/FAQ.jsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _faqModuleCssDefault.default).faq_container,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _faqModuleCssDefault.default).faq_container1,
-                        children: faqs.map((faq, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: `${(0, _faqModuleCssDefault.default).faq_box} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: [
-                                            faq.question,
-                                            ' ',
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: (0, _faqModuleCssDefault.default).faq_span,
-                                                onClick: ()=>handleToggle(index),
-                                                children: openIndex === index ? '-' : '+'
-                                            }, void 0, false, {
-                                                fileName: "components/FAQ.jsx",
-                                                lineNumber: 47,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/FAQ.jsx",
-                                        lineNumber: 45,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: `${(0, _faqModuleCssDefault.default).faq_text} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
-                                        children: faq.answer
-                                    }, void 0, false, {
-                                        fileName: "components/FAQ.jsx",
-                                        lineNumber: 54,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, index, true, {
-                                fileName: "components/FAQ.jsx",
-                                lineNumber: 41,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "components/FAQ.jsx",
-                        lineNumber: 39,
-                        columnNumber: 9
-=======
             }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35958,7 +35668,6 @@ const FAQ = ()=>{
                         fileName: "components/About.jsx",
                         lineNumber: 48,
                         columnNumber: 11
->>>>>>> 19ac68aebb4a085b81eb6e8767a05e8419a948ea
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _aboutModuleCssDefault.default).diets_container,
@@ -36064,27 +35773,6 @@ const FAQ = ()=>{
                             onClick: ()=>setShowDietAll(true),
                             children: "Show All"
                         }, void 0, false, {
-<<<<<<< HEAD
-                            fileName: "components/FAQ.jsx",
-                            lineNumber: 61,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/FAQ.jsx",
-                        lineNumber: 60,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/FAQ.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "components/FAQ.jsx",
-        lineNumber: 36,
-=======
                             fileName: "components/About.jsx",
                             lineNumber: 106,
                             columnNumber: 15
@@ -36413,7 +36101,6 @@ const FAQ = ()=>{
     }, void 0, true, {
         fileName: "components/About.jsx",
         lineNumber: 34,
->>>>>>> 19ac68aebb4a085b81eb6e8767a05e8419a948ea
         columnNumber: 5
     }, undefined);
 };
@@ -36428,7 +36115,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","../Diet.js":"1xx62","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe"}],"1xx62":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Diet.js":"1xx62","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1xx62":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const diets = [
@@ -37234,7 +36921,7 @@ $RefreshReg$(_c, "Popular");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","../PopularIndian.js":"1H6BB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"1DXE6":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","../PopularIndian.js":"1H6BB","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1DXE6":[function(require,module,exports,__globalThis) {
 module.exports["RecommendedPage"] = `NGOf5W_RecommendedPage`;
 module.exports["heading"] = `NGOf5W_heading`;
 module.exports["horizontalline"] = `NGOf5W_horizontalline`;
@@ -37454,7 +37141,7 @@ $RefreshReg$(_c, "RecommendedDesserts");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"ctH7H":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ctH7H":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b392 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37596,7 +37283,7 @@ $RefreshReg$(_c, "RecommendedWhole30");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"7qUU2":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Popular.module.css":"1DXE6","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7qUU2":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$ee5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
