@@ -36922,9 +36922,30 @@ const About = ()=>{
                         lineNumber: 246,
                         columnNumber: 11
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _popularIndianJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
                         fileName: "components/About.jsx",
                         lineNumber: 248,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 249,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 250,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 252,
                         columnNumber: 11
                     }, undefined)
                 ]

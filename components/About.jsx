@@ -245,6 +245,10 @@ const About = () => {
 
           <div className={style.horizontalline}></div>
 
+          <Popular query={query} />
+          <RecommendedDesserts query={query} />
+          <RecommendedWhole30 query={query} />
+
           <Footer />
         </>
       )}
