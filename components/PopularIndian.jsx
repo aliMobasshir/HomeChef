@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import PopularIndianData from '../PopularIndian.js'
+import { Link } from 'react-router-dom'
 
 function Popular ({ query }) {
   const [recipes, setRecipes] = useState([])
@@ -46,6 +47,9 @@ function Popular ({ query }) {
             <h1>No recipes found.</h1>
           )}
         </div>
+        <Link to='/showall/cuisine/Indian'>
+          <button className={Style.show_all_button}>Show All</button>
+        </Link>
       </div>
       <div className={Style.horizontalline}></div>
     </div>

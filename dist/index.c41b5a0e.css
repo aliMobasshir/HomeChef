@@ -954,7 +954,7 @@
   background-color: #d9d9d9;
   width: 80%;
   height: 2px;
-  margin: 6vw auto 0;
+  margin: 2vw auto 0;
 }
 
 @media (width <= 800px) {
@@ -974,6 +974,23 @@
   .NGOf5W_recipeCard h2 {
     font-size: 18px;
   }
+}
+
+.NGOf5W_show_all_button {
+  color: #fed39c;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 1vw;
+  padding: 1vw 2vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.NGOf5W_show_all_button:hover {
+  color: orange;
+  background-color: #555;
 }
 
 .jjQB4a_topPicksPage {
