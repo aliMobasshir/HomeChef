@@ -35962,7 +35962,6 @@ const FAQ = ()=>{
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: (0, _faqModuleCssDefault.default).heading,
                 style: {
@@ -35971,108 +35970,81 @@ const FAQ = ()=>{
                 children: "Frequently Asked Questions"
             }, void 0, false, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 1,
-                columnNumber: 1064
+                lineNumber: 37,
+                columnNumber: 7
             }, undefined),
-            " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _faqModuleCssDefault.default).faq_container,
                 children: [
-                    " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _faqModuleCssDefault.default).faq_container1,
-                        children: [
-                            " ",
-                            faqs.map((faq, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: `${(0, _faqModuleCssDefault.default).faq_box} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
-                                    children: [
-                                        " ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: [
-                                                " ",
-                                                faq.question,
-                                                ' ',
-                                                " ",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: (0, _faqModuleCssDefault.default).faq_span,
-                                                    onClick: ()=>handleToggle(index),
-                                                    children: [
-                                                        " ",
-                                                        openIndex === index ? '-' : '+',
-                                                        " "
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "components/FAQ.jsx",
-                                                    lineNumber: 1,
-                                                    columnNumber: 1377
-                                                }, undefined),
-                                                " "
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "components/FAQ.jsx",
-                                            lineNumber: 1,
-                                            columnNumber: 1353
-                                        }, undefined),
-                                        " ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: `${(0, _faqModuleCssDefault.default).faq_text} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
-                                            children: [
-                                                " ",
-                                                faq.answer,
-                                                " "
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "components/FAQ.jsx",
-                                            lineNumber: 1,
-                                            columnNumber: 1495
-                                        }, undefined),
-                                        " "
-                                    ]
-                                }, index, true, {
-                                    fileName: "components/FAQ.jsx",
-                                    lineNumber: 1,
-                                    columnNumber: 1262
-                                }, undefined)),
-                            " "
-                        ]
-                    }, void 0, true, {
+                        children: faqs.map((faq, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: `${(0, _faqModuleCssDefault.default).faq_box} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: [
+                                            faq.question,
+                                            ' ',
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: (0, _faqModuleCssDefault.default).faq_span,
+                                                onClick: ()=>handleToggle(index),
+                                                children: openIndex === index ? '-' : '+'
+                                            }, void 0, false, {
+                                                fileName: "components/FAQ.jsx",
+                                                lineNumber: 49,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/FAQ.jsx",
+                                        lineNumber: 47,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: `${(0, _faqModuleCssDefault.default).faq_text} ${openIndex === index ? (0, _faqModuleCssDefault.default).open : ''}`,
+                                        children: faq.answer
+                                    }, void 0, false, {
+                                        fileName: "components/FAQ.jsx",
+                                        lineNumber: 56,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "components/FAQ.jsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 1,
-                        columnNumber: 1196
+                        lineNumber: 41,
+                        columnNumber: 9
                     }, undefined),
-                    " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _faqModuleCssDefault.default).faq_image,
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _faq1SvgDefault.default),
-                                alt: "FAQ illustration"
-                            }, void 0, false, {
-                                fileName: "components/FAQ.jsx",
-                                lineNumber: 1,
-                                columnNumber: 1641
-                            }, undefined),
-                            " "
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _faq1SvgDefault.default),
+                            alt: "FAQ illustration"
+                        }, void 0, false, {
+                            fileName: "components/FAQ.jsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 1,
-                        columnNumber: 1607
-                    }, undefined),
-                    " "
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/FAQ.jsx",
-                lineNumber: 1,
-                columnNumber: 1158
-            }, undefined),
-            " "
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/FAQ.jsx",
-        lineNumber: 1,
-        columnNumber: 1058
+        lineNumber: 36,
+        columnNumber: 5
     }, undefined);
 };
 _s(FAQ, "7z1SfW1ag/kVV/D8SOtFgmPOJ8o=");
