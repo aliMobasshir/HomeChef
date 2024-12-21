@@ -7,6 +7,9 @@ import mealTypes from '../Mealtypes.js'
 import Footer from './Footer.jsx'
 import leftArrow from './left-arrow-scroll.png'
 import rightArrow from './right-arrow-scroll.png'
+import Popular from './PopularIndian.jsx'
+import RecommendedDesserts from './RecommendedDesserts.jsx'
+import RecommendedWhole30 from './RecommendedWhole30.jsx'
 
 const About = () => {
   const [query, setQuery] = useState('')
@@ -234,8 +237,11 @@ const About = () => {
       </div>
 
       <div className={style.horizontalline}></div>
-
-      
+ 
+ 
+      <Popular query={query}/>
+      <RecommendedDesserts query={query} />
+      <RecommendedWhole30 query={query}/>
       <Footer />
     </div>
   )
