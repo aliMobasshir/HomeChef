@@ -35972,7 +35972,7 @@ const FAQ = ()=>{
             }, void 0, false, {
                 fileName: "components/FAQ.jsx",
                 lineNumber: 1,
-                columnNumber: 1067
+                columnNumber: 1064
             }, undefined),
             " ",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36004,14 +36004,14 @@ const FAQ = ()=>{
                                                 }, void 0, true, {
                                                     fileName: "components/FAQ.jsx",
                                                     lineNumber: 1,
-                                                    columnNumber: 1381
+                                                    columnNumber: 1377
                                                 }, undefined),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/FAQ.jsx",
                                             lineNumber: 1,
-                                            columnNumber: 1357
+                                            columnNumber: 1353
                                         }, undefined),
                                         " ",
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36024,21 +36024,21 @@ const FAQ = ()=>{
                                         }, void 0, true, {
                                             fileName: "components/FAQ.jsx",
                                             lineNumber: 1,
-                                            columnNumber: 1499
+                                            columnNumber: 1495
                                         }, undefined),
                                         " "
                                     ]
                                 }, index, true, {
                                     fileName: "components/FAQ.jsx",
                                     lineNumber: 1,
-                                    columnNumber: 1266
+                                    columnNumber: 1262
                                 }, undefined)),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "components/FAQ.jsx",
                         lineNumber: 1,
-                        columnNumber: 1199
+                        columnNumber: 1196
                     }, undefined),
                     " ",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36051,28 +36051,28 @@ const FAQ = ()=>{
                             }, void 0, false, {
                                 fileName: "components/FAQ.jsx",
                                 lineNumber: 1,
-                                columnNumber: 1646
+                                columnNumber: 1641
                             }, undefined),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "components/FAQ.jsx",
                         lineNumber: 1,
-                        columnNumber: 1612
+                        columnNumber: 1607
                     }, undefined),
                     " "
                 ]
             }, void 0, true, {
                 fileName: "components/FAQ.jsx",
                 lineNumber: 1,
-                columnNumber: 1161
+                columnNumber: 1158
             }, undefined),
             " "
         ]
     }, void 0, true, {
         fileName: "components/FAQ.jsx",
         lineNumber: 1,
-        columnNumber: 1061
+        columnNumber: 1058
     }, undefined);
 };
 _s(FAQ, "7z1SfW1ag/kVV/D8SOtFgmPOJ8o=");
@@ -36485,6 +36485,7 @@ const About = ()=>{
         const container = document.querySelector(`.${className}`);
         container.scrollLeft += 200;
     };
+    const isSearchActive = query.trim() !== '';
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "about",
         children: [
@@ -36492,445 +36493,467 @@ const About = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 32,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).dietheadingnknowmore,
+            isSearchActive ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _aboutModuleCssDefault.default).diet_heading,
-                        children: "Diets"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _popularIndianJsxDefault.default), {
+                        query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 36,
-                        columnNumber: 7
+                        lineNumber: 39,
+                        columnNumber: 11
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Know More About Diets"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
+                        query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 37,
-                        columnNumber: 7
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/About.jsx",
-                lineNumber: 35,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).diets_container,
-                children: [
-                    !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: (0, _aboutModuleCssDefault.default).arrow_left,
-                            onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).diets),
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _leftArrowScrollPngDefault.default),
-                                alt: "leftarrow",
-                                width: "20px"
-                            }, void 0, false, {
-                                fileName: "components/About.jsx",
-                                lineNumber: 47,
-                                columnNumber: 15
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 43,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showDietAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `${(0, _aboutModuleCssDefault.default).diets} ${showDietAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
-                            children: (0, _dietJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: `${(0, _aboutModuleCssDefault.default).diet} ${showDietAll ? (0, _aboutModuleCssDefault.default).dietRow : ''}`,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).diet_image,
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                src: item.image,
-                                                alt: item.name
-                                            }, void 0, false, {
-                                                fileName: "components/About.jsx",
-                                                lineNumber: 67,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "components/About.jsx",
-                                            lineNumber: 66,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).diet_name,
-                                            children: item.name
-                                        }, void 0, false, {
-                                            fileName: "components/About.jsx",
-                                            lineNumber: 69,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, item.id, true, {
-                                    fileName: "components/About.jsx",
-                                    lineNumber: 62,
-                                    columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 56,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/About.jsx",
-                        lineNumber: 51,
-                        columnNumber: 9
+                        lineNumber: 40,
+                        columnNumber: 11
                     }, undefined),
-                    !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: (0, _aboutModuleCssDefault.default).arrow_right,
-                        onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).diets),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _rightArrowScrollPngDefault.default),
-                            alt: "leftarrow",
-                            width: "20px"
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 79,
-                            columnNumber: 13
-                        }, undefined)
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
+                        query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 75,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, undefined)
                 ]
-            }, void 0, true, {
-                fileName: "components/About.jsx",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).show_all,
-                children: !showDietAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowDietAll(true),
-                    children: "Show All"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 87,
-                    columnNumber: 11
-                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowDietAll(false),
-                    children: "Show Less"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 94,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 85,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).horizontalline
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 103,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _aboutModuleCssDefault.default).cuisine_heading,
-                children: "Cuisines"
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 106,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).cuisines_container,
+            }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                 children: [
-                    !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: (0, _aboutModuleCssDefault.default).arrow_left,
-                            onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).cuisines),
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _leftArrowScrollPngDefault.default),
-                                alt: "leftarrow",
-                                width: "20px"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).dietheadingnknowmore,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: (0, _aboutModuleCssDefault.default).diet_heading,
+                                children: "Diets"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 114,
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Know More About Diets"
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 49,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 47,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).diets_container,
+                        children: [
+                            !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_left,
+                                onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).diets),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _leftArrowScrollPngDefault.default),
+                                    alt: "leftarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 54,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showDietAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: `${(0, _aboutModuleCssDefault.default).diets} ${showDietAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
+                                    children: (0, _dietJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: `${(0, _aboutModuleCssDefault.default).diet} ${showDietAll ? (0, _aboutModuleCssDefault.default).dietRow : ''}`,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).diet_image,
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        src: item.image,
+                                                        alt: item.name
+                                                    }, void 0, false, {
+                                                        fileName: "components/About.jsx",
+                                                        lineNumber: 79,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 78,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).diet_name,
+                                                    children: item.name
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 81,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, item.id, true, {
+                                            fileName: "components/About.jsx",
+                                            lineNumber: 72,
+                                            columnNumber: 19
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 66,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 61,
+                                columnNumber: 13
+                            }, undefined),
+                            !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_right,
+                                onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).diets),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _rightArrowScrollPngDefault.default),
+                                    alt: "rightarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 91,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 87,
                                 columnNumber: 15
                             }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 52,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).show_all,
+                        children: !showDietAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowDietAll(true),
+                            children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 110,
-                            columnNumber: 13
+                            lineNumber: 98,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowDietAll(false),
+                            children: "Show Less"
+                        }, void 0, false, {
+                            fileName: "components/About.jsx",
+                            lineNumber: 105,
+                            columnNumber: 15
                         }, undefined)
-                    }, void 0, false),
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 96,
+                        columnNumber: 11
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `${(0, _aboutModuleCssDefault.default).cuisines} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
-                            children: (0, _cuisinesJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: `${(0, _aboutModuleCssDefault.default).cuisine} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).cuisineRow : ''}`,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).cuisine_image,
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                src: item.image,
-                                                alt: item.name
-                                            }, void 0, false, {
-                                                fileName: "components/About.jsx",
-                                                lineNumber: 136,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "components/About.jsx",
-                                            lineNumber: 135,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).cuisine_name,
-                                            children: item.name
-                                        }, void 0, false, {
+                        className: (0, _aboutModuleCssDefault.default).horizontalline
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 114,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: (0, _aboutModuleCssDefault.default).cuisine_heading,
+                        children: "Cuisines"
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 117,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).cuisines_container,
+                        children: [
+                            !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_left,
+                                onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).cuisines),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _leftArrowScrollPngDefault.default),
+                                    alt: "leftarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 124,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 120,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: `${(0, _aboutModuleCssDefault.default).cuisines} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
+                                    children: (0, _cuisinesJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: `${(0, _aboutModuleCssDefault.default).cuisine} ${showCuisineAll ? (0, _aboutModuleCssDefault.default).cuisineRow : ''}`,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).cuisine_image,
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        src: item.image,
+                                                        alt: item.name
+                                                    }, void 0, false, {
+                                                        fileName: "components/About.jsx",
+                                                        lineNumber: 145,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 144,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).cuisine_name,
+                                                    children: item.name
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 147,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, item.id, true, {
                                             fileName: "components/About.jsx",
                                             lineNumber: 138,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, item.id, true, {
+                                            columnNumber: 19
+                                        }, undefined))
+                                }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 129,
+                                    lineNumber: 132,
                                     columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 123,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/About.jsx",
-                        lineNumber: 118,
-                        columnNumber: 9
-                    }, undefined),
-                    !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: (0, _aboutModuleCssDefault.default).arrow_right,
-                        onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).cuisines),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _rightArrowScrollPngDefault.default),
-                            alt: "leftarrow",
-                            width: "20px"
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 148,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "components/About.jsx",
-                        lineNumber: 144,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/About.jsx",
-                lineNumber: 107,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).show_all,
-                children: !showCuisineAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowCuisineAll(true),
-                    children: "Show All"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 156,
-                    columnNumber: 11
-                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowCuisineAll(false),
-                    children: "Show Less"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 163,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 154,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).horizontalline
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 172,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _aboutModuleCssDefault.default).meal_heading,
-                children: "Meals"
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 175,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).meals_container,
-                children: [
-                    !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: (0, _aboutModuleCssDefault.default).arrow_left,
-                            onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).meals),
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _leftArrowScrollPngDefault.default),
-                                alt: "leftarrow",
-                                width: "20px"
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 183,
+                                lineNumber: 127,
+                                columnNumber: 13
+                            }, undefined),
+                            !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_right,
+                                onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).cuisines),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _rightArrowScrollPngDefault.default),
+                                    alt: "rightarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 157,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 153,
                                 columnNumber: 15
                             }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).show_all,
+                        children: !showCuisineAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowCuisineAll(true),
+                            children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 179,
-                            columnNumber: 13
+                            lineNumber: 164,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowCuisineAll(false),
+                            children: "Show Less"
+                        }, void 0, false, {
+                            fileName: "components/About.jsx",
+                            lineNumber: 171,
+                            columnNumber: 15
                         }, undefined)
-                    }, void 0, false),
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 162,
+                        columnNumber: 11
+                    }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showMealAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `${(0, _aboutModuleCssDefault.default).meals} ${showMealAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
-                            children: (0, _mealtypesJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: `${(0, _aboutModuleCssDefault.default).meal} ${showMealAll ? (0, _aboutModuleCssDefault.default).mealRow : ''}`,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).meal_image,
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                src: item.image,
-                                                alt: item.name
-                                            }, void 0, false, {
-                                                fileName: "components/About.jsx",
-                                                lineNumber: 203,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        }, void 0, false, {
+                        className: (0, _aboutModuleCssDefault.default).horizontalline
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 180,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: (0, _aboutModuleCssDefault.default).meal_heading,
+                        children: "Meals"
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 183,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).meals_container,
+                        children: [
+                            !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_left,
+                                onClick: ()=>scrollLeft((0, _aboutModuleCssDefault.default).meals),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _leftArrowScrollPngDefault.default),
+                                    alt: "leftarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 190,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 186,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: `${(0, _aboutModuleCssDefault.default).sliderContainer} ${showMealAll ? (0, _aboutModuleCssDefault.default).expanded : ''}`,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: `${(0, _aboutModuleCssDefault.default).meals} ${showMealAll ? (0, _aboutModuleCssDefault.default).showAllImages : ''}`,
+                                    children: (0, _mealtypesJsDefault.default).map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: `${(0, _aboutModuleCssDefault.default).meal} ${showMealAll ? (0, _aboutModuleCssDefault.default).mealRow : ''}`,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).meal_image,
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                        src: item.image,
+                                                        alt: item.name
+                                                    }, void 0, false, {
+                                                        fileName: "components/About.jsx",
+                                                        lineNumber: 211,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 210,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: (0, _aboutModuleCssDefault.default).meal_name,
+                                                    children: item.name
+                                                }, void 0, false, {
+                                                    fileName: "components/About.jsx",
+                                                    lineNumber: 213,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, item.id, true, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 202,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: (0, _aboutModuleCssDefault.default).meal_name,
-                                            children: item.name
-                                        }, void 0, false, {
-                                            fileName: "components/About.jsx",
-                                            lineNumber: 205,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, item.id, true, {
+                                            lineNumber: 204,
+                                            columnNumber: 19
+                                        }, undefined))
+                                }, void 0, false, {
                                     fileName: "components/About.jsx",
                                     lineNumber: 198,
                                     columnNumber: 15
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "components/About.jsx",
-                            lineNumber: 192,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 193,
+                                columnNumber: 13
+                            }, undefined),
+                            !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _aboutModuleCssDefault.default).arrow_right,
+                                onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).meals),
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _rightArrowScrollPngDefault.default),
+                                    alt: "rightarrow",
+                                    width: "20px"
+                                }, void 0, false, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 223,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/About.jsx",
+                                lineNumber: 219,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "components/About.jsx",
-                        lineNumber: 187,
-                        columnNumber: 9
+                        lineNumber: 184,
+                        columnNumber: 11
                     }, undefined),
-                    !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: (0, _aboutModuleCssDefault.default).arrow_right,
-                        onClick: ()=>scrollRight((0, _aboutModuleCssDefault.default).meals),
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _rightArrowScrollPngDefault.default),
-                            alt: "leftarrow",
-                            width: "20px"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).show_all,
+                        children: !showMealAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowMealAll(true),
+                            children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 215,
-                            columnNumber: 13
+                            lineNumber: 230,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: (0, _aboutModuleCssDefault.default).show_all_button,
+                            onClick: ()=>setShowMealAll(false),
+                            children: "Show Less"
+                        }, void 0, false, {
+                            fileName: "components/About.jsx",
+                            lineNumber: 237,
+                            columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 211,
+                        lineNumber: 228,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _aboutModuleCssDefault.default).horizontalline
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 246,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _popularIndianJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 248,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 249,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 250,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
+                        fileName: "components/About.jsx",
+                        lineNumber: 252,
                         columnNumber: 11
                     }, undefined)
                 ]
-            }, void 0, true, {
-                fileName: "components/About.jsx",
-                lineNumber: 176,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).show_all,
-                children: !showMealAll ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowMealAll(true),
-                    children: "Show All"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 223,
-                    columnNumber: 11
-                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _aboutModuleCssDefault.default).show_all_button,
-                    onClick: ()=>setShowMealAll(false),
-                    children: "Show Less"
-                }, void 0, false, {
-                    fileName: "components/About.jsx",
-                    lineNumber: 230,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 221,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _aboutModuleCssDefault.default).horizontalline
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 239,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _popularIndianJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 242,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 243,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 244,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 245,
-                columnNumber: 7
-            }, undefined)
+            }, void 0, true)
         ]
     }, void 0, true, {
         fileName: "components/About.jsx",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 };
@@ -37291,12 +37314,14 @@ function Popular({ query }) {
         try {
             // Directly set the `results` from imported data
             const data = (0, _popularIndianJsDefault.default);
-            if (data.results && Array.isArray(data.results)) setRecipes(data.results); // Ensure the results array is used
-            else throw new Error("No results found in data.");
+            if (data.results && Array.isArray(data.results)) setRecipes(data.results) // Ensure the results array is used
+            ;
+            else throw new Error('No results found in data.');
         } catch (error) {
-            setError("Failed to load data.");
+            setError('Failed to load data.');
         }
-    }, []); // Empty dependency array to mimic componentDidMount behavior
+    }, []) // Empty dependency array to mimic componentDidMount behavior
+    ;
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: [
             "Error: ",
