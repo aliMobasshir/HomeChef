@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import Style from './Popular.module.css';
-import PopularIndianData from '../PopularIndian.js';
+import React, { useEffect, useState } from 'react'
+import Style from './Popular.module.css'
+import PopularIndianData from '../PopularIndian.js'
 
-function Popular({ query }) {
-  const [recipes, setRecipes] = useState([]);
-  const [error, setError] = useState(null);
+function Popular ({ query }) {
+  const [recipes, setRecipes] = useState([])
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     try {
       // Directly set the `results` from imported data
-      const data = PopularIndianData;
+      const data = PopularIndianData
       if (data.results && Array.isArray(data.results)) {
-        setRecipes(data.results); // Ensure the results array is used
+        setRecipes(data.results) // Ensure the results array is used
       } else {
-        throw new Error("No results found in data.");
+        throw new Error('No results found in data.')
       }
     } catch (error) {
-      setError("Failed to load data.");
+      setError('Failed to load data.')
     }
-  }, []); // Empty dependency array to mimic componentDidMount behavior
+  }, []) // Empty dependency array to mimic componentDidMount behavior
 
-  if (error) return <p>Error: {error}</p>;
+  if (error) return <p>Error: {error}</p>
 
   const filteredRecipes = Array.isArray(recipes)
     ? recipes.filter(recipe =>
         recipe.title.toLowerCase().includes(query.toLowerCase())
       )
-    : [];
+    : []
 
   return (
     <div>
@@ -49,7 +49,7 @@ function Popular({ query }) {
       </div>
       <div className={Style.horizontalline}></div>
     </div>
-  );
+  )
 }
 
-export default Popular;
+export default Popular
