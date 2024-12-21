@@ -1,0 +1,218 @@
+
+/* Section Headings */
+.diet_heading, .cuisine_heading, .meal_heading {
+    font-family: "Shantell Sans", cursive;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 6vw 6vw 2vw 10vw;
+    color: #333;
+}
+
+.dietheadingnknowmore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dietheadingnknowmore p{
+    padding-top: 5vw;
+    padding-right: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fed39c;
+    font-size:1.3vw ; 
+}
+.dietheadingnknowmore p:hover{
+   color: orange;
+   cursor: pointer;
+}
+
+/* Common styling for all container types */
+.diets_container, .cuisines_container, .meals_container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center;
+    justify-content: space-evenly; /* Space the items evenly */
+
+    position: relative; /* Maintain relative positioning context for arrows */
+    width: 100%;
+    padding: 2vw 0;
+}
+
+
+/* Horizontal Line */
+.horizontalline {
+    width: 80%;
+    height: 2px;
+    background-color: #d9d9d9;
+    margin: 6vw auto 0px auto;
+}
+
+/* Slider Container */
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 80vw;
+    overflow: hidden;
+    
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+/* Diets, Cuisines, Meals */
+.diets, .cuisines, .meals {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    
+}
+
+
+
+/* Individual Item Containers */
+.diet, .cuisine, .meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    width: 15vw;
+    cursor: pointer;
+}
+
+/* Image Containers */
+.diet_image, .cuisine_image, .meal_image {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diet_image img, .cuisine_image img, .meal_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Item Names */
+.diet_name, .cuisine_name, .meal_name {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #757575;
+  font-size:1.3vw ;
+    margin-top: 25px;
+}
+
+/* Arrow Buttons */
+.arrow_left, .arrow_right {
+    width: 4vw;
+    height: 4vw;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow_left:hover, .arrow_right:hover {
+    background-color: #878484;
+}
+
+/* Show All Button */
+.show_all {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.show_all_button {
+    background-color: #ffffff;
+    border: 5px solid black;
+    color: #fed39c;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.show_all_button:hover {
+    background-color: #555;
+    color: orange;
+}
+
+/* Smooth Scrolling for Overflow */
+.diets, .cuisines, .meals {
+    scrollbar-width: none; /* For Firefox */
+}
+
+.diets::-webkit-scrollbar, .cuisines::-webkit-scrollbar, .meals::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+/* Expanded View (Optional) */
+/* .expanded {
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.showAllImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media(max-width:850px){
+    .diet_heading, .cuisine_heading, .meal_heading {
+        font-size: 35px;
+    }
+    .dietheadingnknowmore p{
+       font-size: 12px;
+    }
+    .diet, .cuisine, .meal {   
+        width: 100px; 
+
+    }
+    .diet_image, .cuisine_image, .meal_image {
+        width: 96px;
+        height: 95px;  
+    }
+    .diet_name, .cuisine_name, .meal_name {
+      font-size:12px ;
+    }
+    .arrow_left, .arrow_right {
+        width: 35px;
+        height: 35px; 
+    }
+    .show_all_button {
+        
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+
+    .sliderContainer {
+        max-width: 95vw;
+    }
+
+    .arrow_left, .arrow_right {
+       display: none;
+    }
+    .dietheadingnknowmore p{
+       
+        padding-right: 7vw;
+        
+    }
+}

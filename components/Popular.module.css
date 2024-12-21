@@ -1,0 +1,114 @@
+.RecommendedPage {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.heading {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 0vw 10vw;
+  color: #333;
+  text-align: start;
+  margin-top: 15vw;
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.recipeCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  height: 26vw;
+  width: 30vw;
+  text-align: start;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipeCard:hover {
+  background-color: #f0f0f07d;
+}
+
+.recipeCard img {
+  height: 73%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipeCard h2 {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-style: normal;
+  margin-top: 10px;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.5vw;
+}
+
+.recipeCard h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #fed39c; /* Color of the underline */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.recipeCard h2:hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
+  transform-origin: bottom left;
+}
+.horizontalline {
+  width: 80%;
+  height: 2px;
+  background-color: #d9d9d9;
+  margin: 2vw auto 0px auto;
+}
+
+@media (max-width: 800px) {
+  .recipeContainer {
+    gap: 16px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .recipeCard {
+    height: 325px;
+    width: 350px;
+  }
+  .recipeCard h2 {
+    font-size: 18px;
+  }
+}
+
+.show_all_button {
+    background-color: #ffffff;
+    border: 5px solid black;
+    color: #fed39c;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.show_all_button:hover {
+    background-color: #555;
+    color: orange;
+}

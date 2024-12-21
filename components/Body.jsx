@@ -4,8 +4,9 @@ import rectange8 from './checkbox 1.svg'
 import section from './Section.module.css'
 import {Link} from 'react-router-dom'
 import Data from '../FakeData.js'
+import About from './About.jsx'
 
-const Body = ({ query }) => {
+const Body = ({ query}) => {
   const filter = Data.filter(
     item => item.title && item.title.toLowerCase().includes(query.toLowerCase())
   )
@@ -21,6 +22,7 @@ const Body = ({ query }) => {
             <Link to='/about' className={section.ReactLink}>
               <img src={rectange7} alt=' ' />
               <p>Explore categories</p>
+              
             </Link>
           </div>
 

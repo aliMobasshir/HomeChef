@@ -34,7 +34,9 @@ const FAQ = () => {
 
   return (
     <div>
-      <h1 className={style.heading} style={{ textAlign: 'center' }}>Frequently Asked Questions</h1>
+      <h1 className={style.heading} style={{ textAlign: 'center' }}>
+        Frequently Asked Questions
+      </h1>
       <div className={style.faq_container}>
         <div className={style.faq_container1}>
           {faqs.map((faq, index) => (
@@ -51,7 +53,13 @@ const FAQ = () => {
                   {openIndex === index ? '-' : '+'}
                 </span>
               </p>
+<<<<<<< HEAD
               <p className={`${style.faq_text} ${openIndex === index ? style.open : ''}`}>
+=======
+              <p
+                className={`${style.faq_text} ${openIndex === index ? style.open : ''}`}
+              >
+>>>>>>> 19ac68aebb4a085b81eb6e8767a05e8419a948ea
                 {faq.answer}
               </p>
             </div>

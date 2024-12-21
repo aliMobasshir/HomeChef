@@ -10,6 +10,8 @@ import ReviewPage from "./components/reviewPage.jsx"
 import TrendingList from "./components/trending.jsx"
 import FAQ from "./components/FAQ.jsx"
 import Footer from "./components/Footer.jsx"
+import About from "./components/About.jsx"
+
 
 const App = () => {
 
@@ -29,6 +31,7 @@ const App = () => {
       <Footer query={query}/>
     </>
   )
+
 }
 
 export default App
