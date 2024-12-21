@@ -35561,9 +35561,8 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '716d2d891ccc4e788b471c105f5928e8' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-;
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=716d2d891ccc4e788b471c105f5928e8&number=6`;
 function RecipeList({ query }) {
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]);
@@ -36026,12 +36025,12 @@ const FAQ = ()=>{
                             alt: "FAQ illustration"
                         }, void 0, false, {
                             fileName: "components/FAQ.jsx",
-                            lineNumber: 65,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/FAQ.jsx",
-                        lineNumber: 64,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined)
                 ]
