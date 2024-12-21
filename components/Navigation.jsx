@@ -7,6 +7,7 @@ import Style from './Navigation.module.css';
 import hamburger from "./Hamburger.svg";
 import xmark from "./xmark.svg";
 
+
 const Navigation = ({ setQuery }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSearchOpen, setSearchOpen] = useState(false);

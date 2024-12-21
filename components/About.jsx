@@ -10,6 +10,7 @@ import rightArrow from './right-arrow-scroll.png'
 import Popular from './PopularIndian.jsx'
 import RecommendedDesserts from './RecommendedDesserts.jsx'
 import RecommendedWhole30 from './RecommendedWhole30.jsx'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [query, setQuery] = useState('')
@@ -30,7 +31,7 @@ const About = () => {
   const isSearchActive = query.trim() !== ''
 
   return (
-    <div className="about">
+    <div className='about'>
       <Navigation setQuery={setQuery} />
 
       {isSearchActive ? (
@@ -55,7 +56,7 @@ const About = () => {
                 className={style.arrow_left}
                 onClick={() => scrollLeft(style.diets)}
               >
-                <img src={leftArrow} alt="leftarrow" width="20px" />
+                <img src={leftArrow} alt='leftarrow' width='20px' />
               </button>
             )}
             <div
@@ -69,17 +70,24 @@ const About = () => {
                 }`}
               >
                 {diet.map(item => (
-                  <div
-                    key={item.id}
+                  <Link
+                    to={`/showAll/diet/${item.name}`}
                     className={`${style.diet} ${
                       showDietAll ? style.dietRow : ''
                     }`}
                   >
-                    <div className={style.diet_image}>
-                      <img src={item.image} alt={item.name} />
+                    <div
+                      key={item.id}
+                      className={`${style.diet} ${
+                        showDietAll ? style.dietRow : ''
+                      }`}
+                    >
+                      <div className={style.diet_image}>
+                        <img src={item.image} alt={item.name} />
+                      </div>
+                      <div className={style.diet_name}>{item.name}</div>
                     </div>
-                    <div className={style.diet_name}>{item.name}</div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -88,7 +96,7 @@ const About = () => {
                 className={style.arrow_right}
                 onClick={() => scrollRight(style.diets)}
               >
-                <img src={rightArrow} alt="rightarrow" width="20px" />
+                <img src={rightArrow} alt='rightarrow' width='20px' />
               </button>
             )}
           </div>
@@ -121,7 +129,7 @@ const About = () => {
                 className={style.arrow_left}
                 onClick={() => scrollLeft(style.cuisines)}
               >
-                <img src={leftArrow} alt="leftarrow" width="20px" />
+                <img src={leftArrow} alt='leftarrow' width='20px' />
               </button>
             )}
             <div
@@ -135,17 +143,22 @@ const About = () => {
                 }`}
               >
                 {cuisines.map(item => (
-                  <div
-                    key={item.id}
-                    className={`${style.cuisine} ${
-                      showCuisineAll ? style.cuisineRow : ''
-                    }`}
+                  <Link
+                    to={`/showAll/cuisine/${item.name}`}
+                    className={style.cuisine}
                   >
-                    <div className={style.cuisine_image}>
-                      <img src={item.image} alt={item.name} />
+                    <div
+                      key={item.id}
+                      className={`${style.cuisine} ${
+                        showCuisineAll ? style.cuisineRow : ''
+                      }`}
+                    >
+                      <div className={style.cuisine_image}>
+                        <img src={item.image} alt={item.name} />
+                      </div>
+                      <div className={style.cuisine_name}>{item.name}</div>
                     </div>
-                    <div className={style.cuisine_name}>{item.name}</div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -154,7 +167,7 @@ const About = () => {
                 className={style.arrow_right}
                 onClick={() => scrollRight(style.cuisines)}
               >
-                <img src={rightArrow} alt="rightarrow" width="20px" />
+                <img src={rightArrow} alt='rightarrow' width='20px' />
               </button>
             )}
           </div>
@@ -187,7 +200,7 @@ const About = () => {
                 className={style.arrow_left}
                 onClick={() => scrollLeft(style.meals)}
               >
-                <img src={leftArrow} alt="leftarrow" width="20px" />
+                <img src={leftArrow} alt='leftarrow' width='20px' />
               </button>
             )}
             <div
@@ -201,17 +214,19 @@ const About = () => {
                 }`}
               >
                 {mealTypes.map(item => (
-                  <div
-                    key={item.id}
-                    className={`${style.meal} ${
-                      showMealAll ? style.mealRow : ''
-                    }`}
-                  >
-                    <div className={style.meal_image}>
-                      <img src={item.image} alt={item.name} />
+                  <Link to={`/showAll/type/${item.name}`} className={style.meal}>
+                    <div
+                      key={item.id}
+                      className={`${style.meal} ${
+                        showMealAll ? style.mealRow : ''
+                      }`}
+                    >
+                      <div className={style.meal_image}>
+                        <img src={item.image} alt={item.name} />
+                      </div>
+                      <div className={style.meal_name}>{item.name}</div>
                     </div>
-                    <div className={style.meal_name}>{item.name}</div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -220,7 +235,7 @@ const About = () => {
                 className={style.arrow_right}
                 onClick={() => scrollRight(style.meals)}
               >
-                <img src={rightArrow} alt="rightarrow" width="20px" />
+                <img src={rightArrow} alt='rightarrow' width='20px' />
               </button>
             )}
           </div>

@@ -7,6 +7,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import cuisines from "./Cuisines.js";
+import ShowAll from "./components/ShowAll.jsx";
 console.log(cuisines);
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     {
         path : "/About",
         element: <About />,
+    }
+    ,{
+        path : "/ShowAll/:type/:name",
+        element: <ShowAll />,
     }
 ]);
 

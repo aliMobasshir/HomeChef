@@ -53,7 +53,9 @@ const FAQ = () => {
                   {openIndex === index ? '-' : '+'}
                 </span>
               </p>
-              <p className={`${style.faq_text} ${openIndex === index ? style.open : ''}`}>
+              <p
+                className={`${style.faq_text} ${openIndex === index ? style.open : ''}`}
+              >
                 {faq.answer}
               </p>
             </div>
