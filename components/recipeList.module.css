@@ -82,6 +82,7 @@
     }
     .heading{
         font-size: 32px;
+        padding: 0px 20px;
     }
     .recipeCard{
         height: 325px;

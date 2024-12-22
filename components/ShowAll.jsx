@@ -4,7 +4,7 @@ import Style from './recipeList.module.css' // Reusing the same CSS
 import arrowIcon from './right-arrow.png'
 import Navigation from './Navigation'
 
-const apiKey = '716d2d891ccc4e788b471c105f5928e8' // Replace with your actual API key
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0' // Replace with your actual API key
 
 const ShowAll = () => {
   const { type, name } = useParams()
@@ -39,7 +39,6 @@ const ShowAll = () => {
       <div className={Style.topPicksPage}>
         <h1 className={Style.heading}>
            {type}: {name}'s Dishes
-          <img src={arrowIcon} alt="arrow" className={Style.icon} />
         </h1>
 
         {error ? (

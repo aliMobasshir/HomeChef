@@ -584,6 +584,7 @@
   justify-content: center;
   align-items: center;
   width: 15vw;
+  padding: 1vw 0;
   display: flex;
 }
 
@@ -680,7 +681,7 @@
     font-size: 35px;
   }
 
-  .IHfPZW_dietheadingnknowmore p {
+  .IHfPZW_dietheadingnknowmore button {
     font-size: 12px;
   }
 
@@ -691,6 +692,11 @@
   .IHfPZW_diet_image, .IHfPZW_cuisine_image, .IHfPZW_meal_image {
     width: 96px;
     height: 95px;
+  }
+
+  .IHfPZW_diet_image:hover, .IHfPZW_cuisine_image:hover, .IHfPZW_meal_image:hover {
+    animation: none;
+    scale: none;
   }
 
   .IHfPZW_diet_name, .IHfPZW_cuisine_name, .IHfPZW_meal_name {
@@ -714,10 +720,6 @@
 
   .IHfPZW_arrow_left, .IHfPZW_arrow_right {
     display: none;
-  }
-
-  .IHfPZW_dietheadingnknowmore p {
-    padding-right: 7vw;
   }
 }
 
@@ -1009,6 +1011,10 @@
   .NGOf5W_recipeCard h2 {
     font-size: 18px;
   }
+
+  .NGOf5W_show_all_button {
+    font-size: 12px;
+  }
 }
 
 .p2h0Oa_dietsInfo {
@@ -1143,6 +1149,7 @@
   }
 
   .jjQB4a_heading {
+    padding: 0 20px;
     font-size: 32px;
   }
 

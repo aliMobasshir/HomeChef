@@ -111,4 +111,7 @@
   .recipeCard h2 {
     font-size: 18px;
   }
+  .show_all_button {
+    font-size: 12px;
+}
 }

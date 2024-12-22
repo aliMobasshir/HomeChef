@@ -87,6 +87,7 @@
     text-align: center;
     width: 15vw;
     cursor: pointer;
+    padding: 1vw 0;
 }
 
 /* Image Containers */
@@ -186,7 +187,7 @@
     .diet_heading, .cuisine_heading, .meal_heading {
         font-size: 35px;
     }
-    .dietheadingnknowmore p{
+    .dietheadingnknowmore button{
        font-size: 12px;
     }
     .diet, .cuisine, .meal {   
@@ -196,6 +197,10 @@
     .diet_image, .cuisine_image, .meal_image {
         width: 96px;
         height: 95px;  
+    }
+    .diet_image:hover, .cuisine_image:hover, .meal_image:hover {
+        animation: none;
+        scale: none;
     }
     .diet_name, .cuisine_name, .meal_name {
       font-size:12px ;
@@ -218,11 +223,7 @@
     .arrow_left, .arrow_right {
        display: none;
     }
-    .dietheadingnknowmore p{
-       
-        padding-right: 7vw;
-        
-    }
+   
 }
 
 @keyframes rotate {
