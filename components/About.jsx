@@ -48,7 +48,9 @@ const About = () => {
           {/* Diets Section */}
           <div className={style.dietheadingnknowmore}>
             <h1 className={style.diet_heading}>Diets</h1>
-            <button>Know More About Diets</button>
+            <Link to='/knowMoreDiets'>
+              <button>Know More About Diets</button>
+            </Link>
           </div>
 
           <div className={style.diets_container}>
@@ -215,7 +217,10 @@ const About = () => {
                 }`}
               >
                 {mealTypes.map(item => (
-                  <Link to={`/showAll/type/${item.name}`} className={style.meal}>
+                  <Link
+                    to={`/showAll/type/${item.name}`}
+                    className={style.meal}
+                  >
                     <div
                       key={item.id}
                       className={`${style.meal} ${
