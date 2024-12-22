@@ -49,7 +49,7 @@ function RecommendedDesserts ({ query }) {
           )}
         </div>
 
-        <Link to='/showall'>
+        <Link to='/showall/type/dessert'>
           <button className={Style.show_all_button}>Show All</button>
         </Link>
       </div>

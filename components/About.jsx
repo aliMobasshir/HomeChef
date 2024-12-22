@@ -11,6 +11,7 @@ import Popular from './PopularIndian.jsx'
 import RecommendedDesserts from './RecommendedDesserts.jsx'
 import RecommendedWhole30 from './RecommendedWhole30.jsx'
 import { Link } from 'react-router-dom'
+import KnowMoreDiets from './KnowMoreDiets.jsx'
 
 const About = () => {
   const [query, setQuery] = useState('')
@@ -47,7 +48,7 @@ const About = () => {
           {/* Diets Section */}
           <div className={style.dietheadingnknowmore}>
             <h1 className={style.diet_heading}>Diets</h1>
-            <p>Know More About Diets</p>
+            <button>Know More About Diets</button>
           </div>
 
           <div className={style.diets_container}>
@@ -263,7 +264,6 @@ const About = () => {
           <Popular query={query} />
           <RecommendedDesserts query={query} />
           <RecommendedWhole30 query={query} />
-
           <Footer />
         </>
       )}

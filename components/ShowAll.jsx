@@ -12,7 +12,7 @@ const ShowAll = () => {
   const [error, setError] = useState(null)
   const [query, setQuery] = useState('')
 
-  const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=100`
+  const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=200`
 
   useEffect(() => {
     async function fetchRecipes() {
@@ -38,7 +38,7 @@ const ShowAll = () => {
       <Navigation setQuery={setQuery} />
       <div className={Style.topPicksPage}>
         <h1 className={Style.heading}>
-          Results for {type}: {name}
+           {type}: {name}'s Dishes
           <img src={arrowIcon} alt="arrow" className={Style.icon} />
         </h1>
 

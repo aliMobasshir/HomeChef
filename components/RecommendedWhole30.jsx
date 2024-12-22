@@ -49,7 +49,7 @@ function RecommendedWhole30 ({ query }) {
           )}
         </div>
 
-        <Link to='/showall'>
+        <Link to='/showall/diet/whole30'>
           <button className={Style.show_all_button}>Show All</button>
         </Link>
       </div>

@@ -14,16 +14,19 @@
     justify-content: space-between;
 }
 
-.dietheadingnknowmore p{
-    padding-top: 5vw;
-    padding-right: 10vw;
+.dietheadingnknowmore button{
+    margin-top: 5vw;
+    margin-right: 10vw;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #fed39c;
+    color: orange;
     font-size:1.3vw ; 
+    padding: 1vw 2vw;
+    border: none;
+    background-color: white;
 }
-.dietheadingnknowmore p:hover{
-   color: orange;
+.dietheadingnknowmore button:hover{
+   color: rgb(255, 119, 0);
    cursor: pointer;
 }
 
@@ -96,6 +99,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.diet_image:hover, .cuisine_image:hover, .meal_image:hover {
+    animation: rotate 10s linear infinite;
+    scale: 1.1;
+}
+
 .diet_image img, .cuisine_image img, .meal_image img {
     width: 100%;
     height: 100%;
@@ -137,7 +145,7 @@
 .show_all_button {
     background-color: #ffffff;
     border: 5px solid black;
-    color: #fed39c;
+    color: orange;
     padding: 1vw 2vw;
     border: none;
     border-radius: 1vw;
@@ -149,7 +157,7 @@
 
 .show_all_button:hover {
     background-color: #555;
-    color: orange;
+    color: rgb(255, 119, 0);
 }
 
 /* Smooth Scrolling for Overflow */
@@ -216,3 +224,14 @@
         
     }
 }
+
+@keyframes rotate {
+    0% {
+        transform:  rotate(0deg);
+    }
+    100% {
+        transform:  rotate(360deg);
+    }
+}
+
+  
