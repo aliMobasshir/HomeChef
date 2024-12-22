@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import cuisines from "./Cuisines.js";
 import ShowAll from "./components/ShowAll.jsx";
+    
 console.log(cuisines);
 
 const router = createBrowserRouter([
@@ -22,7 +23,9 @@ const router = createBrowserRouter([
     ,{
         path : "/ShowAll/:type/:name",
         element: <ShowAll />,
-    }
+    },
+    
+    
 ]);
 
 

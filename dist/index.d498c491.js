@@ -2955,7 +2955,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 18
         }, undefined)
     },
@@ -2963,7 +2963,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/About",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 18
         }, undefined)
     },
@@ -2971,7 +2971,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/ShowAll/:type/:name",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _showAllJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 24,
+            lineNumber: 25,
             columnNumber: 18
         }, undefined)
     }
@@ -2980,7 +2980,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
     router: router
 }, void 0, false, {
     fileName: "index.jsx",
-    lineNumber: 30,
+    lineNumber: 33,
     columnNumber: 12
 }, undefined));
 
@@ -37300,7 +37300,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '716d2d891ccc4e788b471c105f5928e8' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = 'f2fbb965309246e7906f64251396be87' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 ;
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
@@ -37528,7 +37528,7 @@ var _fireFlamePng = require("./fire-flame.png");
 var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
 var _s = $RefreshSig$();
 // API configuration
-const apiKey = '3544e0a87f98468883e9169172546ac1';
+const apiKey = 'f2fbb965309246e7906f64251396be87';
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -37829,7 +37829,7 @@ var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _navigation = require("./Navigation");
 var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 var _s = $RefreshSig$();
-const apiKey = '716d2d891ccc4e788b471c105f5928e8' // Replace with your actual API key
+const apiKey = 'f2fbb965309246e7906f64251396be87' // Replace with your actual API key
 ;
 const ShowAll = ()=>{
     _s();
