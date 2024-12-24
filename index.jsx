@@ -9,6 +9,7 @@ import {
 import cuisines from "./Cuisines.js";
 import ShowAll from "./components/ShowAll.jsx";
 import KnowMoreDiets from "./components/KnowMoreDiets.jsx";
+import Image from "./components/Image.jsx";
 console.log(cuisines);
 
 const router = createBrowserRouter([
@@ -27,6 +28,9 @@ const router = createBrowserRouter([
     {
         path : "/knowMoreDiets",
         element: <KnowMoreDiets  />,
+    },{
+        path: "/image/:id",
+        element: <Image />,
     }
 ]);
 
