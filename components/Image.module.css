@@ -1,0 +1,123 @@
+.error{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 1rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: rgba(255,0,0,0.1);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.imagePara{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 3rem; */
+    margin-top: 40px;
+    
+}
+.para{
+    text-align: center;
+    max-width: 30%;   
+    line-height: 1.6;
+}
+.para p{
+    line-height: 1.6;
+}
+
+
+.ingredientHeading{
+    margin-left: 120px;
+    margin-top: 40px;
+}
+.ingredientContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.ingredient{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.instructionsHeading{
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
+.instruction{
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    /*marginTOp */
+    margin-top: 40px;   
+}
+.instruction p{
+    line-height: 1.6;
+    max-width: 1000px;
+    
+}
+.instruction h2{
+    margin-bottom: 10px;
+    padding-left: 30px;
+    /* border: 2px solid #ccc; */
+}
+
+.ingredientStep{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.equipmentStep{
+    margin-top: 20px;
+    padding-left: 30px; 
+}
+.ingredientHere{
+    display: flex;
+    position: relative;
+    /* Problem */
+    /* margin-top: -22px; */
+}
+.ingredientList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 250px;
+    
+}
+.ingredientList li{
+    line-height: 1.6;
+    list-style-type: circle
+
+}
+
+.equipment{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 250px;
+}
+.equipment li{
+    line-height: 1.6;
+    /* Problem */
+    list-style-type: circle
+}
