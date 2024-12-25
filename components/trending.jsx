@@ -9,6 +9,7 @@ const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&nu
 function RecipeList({ query }) { // query is passed as a prop
   const [recipes, setRecipes] = useState([]) // State for storing recipes
   const [error, setError] = useState(null) // State for error handling
+  const [loading , setLoadaing] = useState(true)
 
   useEffect(() => {
     async function fetchRecipes() {
@@ -24,7 +25,8 @@ function RecipeList({ query }) { // query is passed as a prop
         const data = await response.json()
 
         // Ensure recipes exist in the response
-        setRecipes(data?.recipes || [])
+        setRecipes(data?.recipes || [])        
+        setLoadaing(false)
       } catch (error) {
         setError(error.message) // Capture error message
       }
@@ -34,6 +36,8 @@ function RecipeList({ query }) { // query is passed as a prop
   }, []) // Dependency array ensures this runs only once
 
   // Filter recipes based on the query prop passed from the parent
+  if(loading) return <p>Loading...</p>
+  
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
   )

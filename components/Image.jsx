@@ -46,7 +46,7 @@ const Image = () => {
     const sentences = sanitizedText.split('.')
     return sentences.slice(0, 7).join('. ') + '.'
   }
-
+  // Loading Page 
   if (loading) {
     return <p className={style.loading}>Loading...</p>
   }

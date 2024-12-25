@@ -8,6 +8,7 @@ const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&nu
 function RecipeList ({ query }) {
   const [recipes, setRecipes] = useState([])
   const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function fetchRecipes () {
@@ -17,6 +18,7 @@ function RecipeList ({ query }) {
           throw new Error(`An error has occurred: ${response.status}`)
         const data = await response.json()
         setRecipes(data.recipes)
+        setLoading(false)
       } catch (error) {
         setError(error.message)
       }
@@ -24,8 +26,12 @@ function RecipeList ({ query }) {
 
     fetchRecipes()
   }, [])
+  
 
+  if(loading) return <p>Loading...</p>
+  
   if (error) return <p>Error: {error}</p>
+
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
