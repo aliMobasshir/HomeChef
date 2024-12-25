@@ -4,7 +4,7 @@ import Style from './recipeList.module.css' // Reusing the same CSS
 import arrowIcon from './right-arrow.png'
 import Navigation from './Navigation'
 
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1' // 5253113cb6ff4e67ad11c72ec6ae2ec0 // af3ad633e574425c90e2c0ef4a4fefc0 // Replace with your actual API key
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0' // 5253113cb6ff4e67ad11c72ec6ae2ec0 // af3ad633e574425c90e2c0ef4a4fefc0 // Replace with your actual API key
 
 const ShowAll = () => {
   const { type, name } = useParams()
