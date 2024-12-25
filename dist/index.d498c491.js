@@ -37623,7 +37623,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '716d2d891ccc4e788b471c105f5928e8'; //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -38151,7 +38151,7 @@ var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _navigation = require("./Navigation");
 var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 var _s = $RefreshSig$();
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1' // 5253113cb6ff4e67ad11c72ec6ae2ec0 // af3ad633e574425c90e2c0ef4a4fefc0 // Replace with your actual API key
+const apiKey = '0d0e212f1a904e9cb772072f49167a4b' // 5253113cb6ff4e67ad11c72ec6ae2ec0 // af3ad633e574425c90e2c0ef4a4fefc0 // Replace with your actual API key
 ;
 const ShowAll = ()=>{
     _s();
@@ -38306,7 +38306,7 @@ var _footerJsx = require("./Footer.jsx");
 var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _s = $RefreshSig$();
 // import Footer from './Footer.jsx'  
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1' // 834e4826627e40619840c9f299b31f36 // f2fbb965309246e7906f64251396be87 // 5ce733c6c24d4454ab2395b906ae5dc1 // 5253113cb6ff4e67ad11c72ec6ae2ec0
+const apiKey = '716d2d891ccc4e788b471c105f5928e8' // 834e4826627e40619840c9f299b31f36 // f2fbb965309246e7906f64251396be87 // 5ce733c6c24d4454ab2395b906ae5dc1 // 5253113cb6ff4e67ad11c72ec6ae2ec0
 ;
 const Image = ()=>{
     _s();
@@ -38626,7 +38626,7 @@ $RefreshReg$(_c, "Image");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Image.module.css":"3dNuP","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt"}],"3dNuP":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./Image.module.css":"3dNuP","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt"}],"3dNuP":[function(require,module,exports,__globalThis) {
 module.exports["equipment"] = `CdOZGa_equipment`;
 module.exports["equipmentStep"] = `CdOZGa_equipmentStep`;
 module.exports["error"] = `CdOZGa_error`;
