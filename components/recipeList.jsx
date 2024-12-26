@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Style from './recipeList.module.css'
-import arrowIcon from './right-arrow.png'
+import RandomIcon from './Random_icon.png'
 
-const apiKey = '834e4826627e40619840c9f299b31f36'
+const apiKey = '3544e0a87f98468883e9169172546ac1'
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -54,8 +54,8 @@ function RecipeList ({ query }) {
   return (
     <div className={Style.topPicksPage}>
       <h1 className={Style.heading}>
-        Today's Top Picks
-        <img src={arrowIcon} alt='arrow' className={Style.icon} />
+        Random Picks
+        <img src={RandomIcon} alt='arrow' className={Style.icon} />
       </h1>
       <div className={Style.recipeContainer}>
         {filteredRecipes.length > 0 ? (

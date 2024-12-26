@@ -1,3 +1,5 @@
+
+
 .mainContainer {
   background-color: #D9D9D9;
 
@@ -90,7 +92,7 @@
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-
+list-style: none;
 }
 
 .featuresText{
