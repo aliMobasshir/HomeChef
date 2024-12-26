@@ -37083,7 +37083,7 @@ var _popularModuleCss = require("./Popular.module.css");
 var _popularModuleCssDefault = parcelHelpers.interopDefault(_popularModuleCss);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = 'f2fbb965309246e7906f64251396be87';
+const apiKey = 'd2a320ed5a3a463ca1b8dce923cd49dc';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37727,11 +37727,11 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _rightArrowPng = require("./right-arrow.png");
 var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _s = $RefreshSig$();
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
-// 834e4826627e40619840c9f299b31f36 
-// f2fbb965309246e7906f64251396be87 
+const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0 
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
 // d2a320ed5a3a463ca1b8dce923cd49dc
 // af3ad633e574425c90e2c0ef4a4fefc0
 // 3544e0a87f98468883e9169172546ac1
@@ -37765,8 +37765,8 @@ function RecipeList({ query }) {
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 41,
-        columnNumber: 21
+        lineNumber: 42,
+        columnNumber: 12
     }, this);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _recipeListModuleCssDefault.default).loaderContainer,
@@ -37774,13 +37774,13 @@ function RecipeList({ query }) {
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/recipeList.jsx",
-            lineNumber: 44,
-            columnNumber: 7
+            lineNumber: 48,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 43,
-        columnNumber: 23
+        lineNumber: 47,
+        columnNumber: 7
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37796,13 +37796,13 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 58,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 56,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37815,7 +37815,7 @@ function RecipeList({ query }) {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 64,
+                                lineNumber: 67,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37823,35 +37823,35 @@ function RecipeList({ query }) {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/recipeList.jsx",
-                                    lineNumber: 66,
+                                    lineNumber: 69,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/recipeList.jsx",
-                                lineNumber: 65,
+                                lineNumber: 68,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 63,
+                        lineNumber: 66,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "No recipes found. "
                 }, void 0, false, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 71,
+                    lineNumber: 74,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 60,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 55,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -37866,7 +37866,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./right-arrow.png":"hx3sc"}],"ieGJH":[function(require,module,exports,__globalThis) {
 module.exports["eggRst"] = `jjQB4a_eggRst`;
 module.exports["eggRst"];
 module.exports["heading"] = `jjQB4a_heading`;
@@ -38145,7 +38145,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./fire-flame.png":"4QPOt"}],"4QPOt":[function(require,module,exports,__globalThis) {
 module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
 
 },{"1b9da1e600612d13":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
@@ -38505,7 +38505,7 @@ var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _s = $RefreshSig$();
 // import Footer from './Footer.jsx'
 // const apiKey = '716d2d891ccc4e788b471c105f5928e8' // 834e4826627e40619840c9f299b31f36 // f2fbb965309246e7906f64251396be87 // 5ce733c6c24d4454ab2395b906ae5dc1 // 5253113cb6ff4e67ad11c72ec6ae2ec0
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+const apiKey = '716d2d891ccc4e788b471c105f5928e8';
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
