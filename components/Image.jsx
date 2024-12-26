@@ -16,7 +16,7 @@ const Image = () => {
   const baseImageUrl = 'https://spoonacular.com/cdn/ingredients_100x100/'
 
   useEffect(() => {
-    async function fetchRecipes () {
+    async function fetchRecipes() {
       try {
         const response = await fetch(endpoint)
         if (!response.ok) {
@@ -37,14 +37,15 @@ const Image = () => {
     const tempDiv = document.createElement('div')
     tempDiv.innerHTML = summary
 
-    // Remove all <a> tags
     const links = tempDiv.querySelectorAll('a')
     links.forEach(link => link.remove())
 
-    // Extract sanitized text and limit it to 6-7 sentences
     const sanitizedText = tempDiv.textContent || tempDiv.innerText || ''
     const sentences = sanitizedText.split('.')
     return sentences.slice(0, 7).join('. ') + '.'
+  }
+  if (error) {
+    return <p className={style.error}>Error: {error}</p>
   }
 
   if (loading) {
@@ -53,102 +54,98 @@ const Image = () => {
   </div>
   }
 
-  if (error) {
-    return <p className={style.error}>Error: {error}</p>
-  }
-
   if (!recipes) {
     return <p className={style.error}>No recipe data found!</p>
   }
 
   return (
     <div>
-<Navigation />
-    <div className={style.instructionPageContainer}>
-      
-  
-      <div className={style.imagePara}>
-        <div className={style.image}>
-          <img src={recipes.image} alt={recipes.title || 'Recipe Image'} />
-        </div>
-        <div className={style.para}>
-          <h2>{recipes.title}</h2>
-          <p>{sanitizeAndLimitSummary(recipes.summary)}</p>
-        </div>
-      </div>
-
-      <h1 className={style.ingredientHeading}>Ingredients needed:</h1>
-
-      <div className={style.ingredientContainer}>
-        {recipes.extendedIngredients.map((ingredient, index) => (
-          <div key={index} className={style.ingredient}>
-            <p>{ingredient.name}</p>
-            <img
-              src={`${baseImageUrl}${ingredient.image}`}
-              alt={ingredient.name}
-              className={style.ingredientImage}
-            />
+      <Navigation />
+      <div className={style.instructionPageContainer}>
+        <div className={style.imagePara}>
+          <div className={style.image}>
+            <img src={recipes.image} alt={recipes.title || 'Recipe Image'} />
           </div>
-        ))}
-      </div>
+          <div className={style.para}>
+            <h2>{recipes.title}</h2>
+            <p>{sanitizeAndLimitSummary(recipes.summary)}</p>
+          </div>
+        </div>
 
-      <h1 className={style.instructionsHeading}>Instructions:</h1>
-      <div className={style.instructionsContainer}>
-        {recipes.analyzedInstructions &&
-          recipes.analyzedInstructions[0] &&
-          recipes.analyzedInstructions[0].steps.map((step, index) => (
-            <div key={index} className={style.instructionContainer}>
-              <div className={style.instruction}>
-                <h2>Step {index + 1}:</h2>
-                <p>{step.step}</p>
-              </div>
+        <h1 className={style.ingredientHeading}>Ingredients needed:</h1>
+
+        <div className={style.ingredientContainer}>
+          {recipes.extendedIngredients.map((ingredient, index) => (
+            <div key={index} className={style.ingredient}>
+              <p>{ingredient.name}</p>
+              <img
+                src={`${baseImageUrl}${ingredient.image}`}
+                alt={ingredient.name}
+                className={style.ingredientImage}
+              />
+            </div>
+          ))}
+        </div>
+
+        <h1 className={style.instructionsHeading}>Instructions:</h1>
+        {recipes.analyzedInstructions && recipes.analyzedInstructions.length > 0 ? (
+          recipes.analyzedInstructions.map((instruction, instructionIndex) => (
+            instruction.steps && instruction.steps.length > 0 && (
+              <div key={instructionIndex} className={style.instructionsContainer}>
+                {instruction.steps.map((step, index) => (
+                  <div key={index} className={style.instructionContainer}>
+                    <div className={style.instruction}>
+                      <h2>Step {index + 1}:</h2>
+                      <p>{step.step}</p>
+                    </div>
+                    
 
              
 
-              {step.ingredients && step.ingredients.length > 0 && (
-                <div className={style.stepIngredients}>
-                  <h3 className={style.ingredientStep}>
-                    Ingredients used here:
-                  </h3>
+                    {step.ingredients && step.ingredients.length > 0 && (
+                      <div className={style.stepIngredients}>
+                        <h3 className={style.ingredientStep}>
+                          Ingredients used here:
+                        </h3>
+                        <div>
+                          {step.ingredients.map((ingredient, ingredientIndex) => (
+                            <div key={ingredientIndex} className={style.ingredientHere}>
+                              <ul className={style.ingredientList}>
+                                <li>{ingredient.name}</li>
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
-                 <div> {step.ingredients.map((ingredient, ingredientIndex) => (
-                    <div key={ingredientIndex} className={style.ingredientHere}>
-                      <ul className={style.ingredientList} key={ingredientIndex} >
-                        <li>{ingredient.name}</li>
-                      </ul>
-                    </div>
-                  ))}</div>
-                 
-                </div>
-              )}
-
-              {/* Equipment for this step in a separate div */}
-
-              {step.equipment && step.equipment.length > 0 && (
-                <div className={style.stepEquipment}>
-                  <h3 className={style.equipmentStep}>
-                    Equipments needed here:
-                  </h3>
-                  <div>
-                  {step.equipment.map((equipment, equipmentIndex) => (
-                    <div key={equipmentIndex} className={style.equipmentHere}>
-                      <ul className={style.equipmentList} key={equipmentIndex}>
-                        <li>{equipment.name}</li>
-                      </ul>
-                    </div>
-                  ))}
+                    {step.equipment && step.equipment.length > 0 && (
+                      <div className={style.stepEquipment}>
+                        <h3 className={style.equipmentStep}>
+                          Equipments needed here:
+                        </h3>
+                        <div>
+                          {step.equipment.map((equipment, equipmentIndex) => (
+                            <div key={equipmentIndex} className={style.equipmentHere}>
+                              <ul className={style.equipmentList}>
+                                <li>{equipment.name}</li>
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                 
-                </div>
-              )}
-            </div>
-          ))}
+                ))}
+              </div>
+            )
+          ))
+        ) : (
+          <p>No instructions available.</p>
+        )}
       </div>
-
-    </div>
       <Footer />
     </div>
-    
   )
 }
 
