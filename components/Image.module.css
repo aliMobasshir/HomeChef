@@ -20,12 +20,12 @@
   transition: all 0.3s ease;
 }
 
-.imagePara {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  /* gap: 3rem; */
-  padding-top: 5vw;
+.imagePara{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5vw;
+    flex-wrap: wrap-reverse;
 }
 
 .image img {
@@ -34,10 +34,10 @@
   border-image: linear-gradient(to bottom, #d9d9d9, #757575) 1;
 }
 
-.para {
-  text-align: center;
-  max-width: 40%;
-  line-height: 1.6;
+.para{
+    text-align: center;
+    max-width: 40vw;   
+    line-height: 1.6;
 }
 .para h2 {
   color: orange;
@@ -90,22 +90,20 @@
   overflow: hidden;
   background-color: white;
 }
-/* .ingredient img{
-    width: 8vw;
-} */
-.ingredient p {
-  line-height: 1.6;
-  font-size: 2vw;
-  font-family: Shantell Sans, cursive;
-  font-weight: 600;
-  text-transform: capitalize;
-}
 
-.instructionsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 6vw;
-}
+ .ingredient p{
+    line-height: 1.6;
+    font-size: 2vw;
+    font-family: Shantell Sans, cursive;
+    font-weight: 600;
+    text-transform: capitalize;
+ }
+    
+ .instructionsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+ }
 
 .instructionsHeading {
   font-size: 3vw;
@@ -195,6 +193,189 @@
 }
 
 .equipmententList li {
-  list-style-type: disc;
-  margin-bottom: 0.25rem; /* Adds spacing between items */
+    list-style-type:disc; 
+    margin-bottom: 0.25rem; /* Adds spacing between items */
+  }
+
+  .loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%;   /* Full width */
+    background-color: orange; /* Optional background color */
+  }
+
+  .loader {
+    position: relative;
+    width: 120px;
+    height: 14px;
+    border-radius: 0 0 15px 15px;
+    background-color: #3e494d;
+    box-shadow: 0 -1px 4px #5d6063 inset;
+    animation: panex 0.5s linear alternate infinite;
+    transform-origin: 170px 0;
+    z-index: 10;
+    perspective: 300px;
+
 }
+.loader::before {
+  content: '';
+  position: absolute;
+  left: calc( 100% - 2px);
+  top: 0;
+  z-index: -2;
+  height: 10px;
+  width: 70px;
+  border-radius: 0 4px 4px 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#6c4924, #4b2d21), linear-gradient(#4d5457 24px, transparent 0), linear-gradient(#9f9e9e 24px, transparent 0);
+  background-size: 50px 10px , 4px 8px , 24px 4px;
+  background-position: right center , 17px center , 0px center;
+}
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -2;
+    transform: translate(-50% , -20px) rotate3d(75, -2, 3, 78deg);
+    width: 55px;
+    height: 53px;
+    background: #fff;
+    background-image:
+    radial-gradient(circle 3px , #fff6 90%, transparent 10%),
+    radial-gradient(circle 12px , #ffc400 90%, transparent 10%),
+    radial-gradient(circle 12px , #ffae00 100%, transparent 0);
+    background-repeat: no-repeat;
+    background-position: -4px -6px , -2px -2px , -1px -1px;
+    box-shadow: -2px -3px #0002 inset, 0 0 4px #0003 inset;
+    border-radius: 47% 36% 50% 50% / 49% 45% 42% 44%;
+    animation: eggRst 1s ease-out infinite;
+  }
+
+@keyframes eggRst {
+  0% ,  100%{  transform: translate(-50%, -20px) rotate3d(90, 0, 0, 90deg); opacity: 0; }
+  10% , 90% {  transform: translate(-50%, -30px) rotate3d(90, 0, 0, 90deg); opacity: 1; }
+  25%  {transform:  translate(-50% , -40px) rotate3d(85, 17, 2, 70deg) }
+  75% {transform:  translate(-50% , -40px) rotate3d(75, -3, 2, 70deg) }
+  50% {transform:  translate(-55% , -50px) rotate3d(75, -8, 3, 50deg) }
+}
+@keyframes panex {
+  0%{  transform: rotate(-5deg)  }
+  100%{  transform: rotate(10deg)  }
+}
+  
+  @media(max-width:800px){
+    
+    .image img{
+        width: 80vw;
+    }
+    
+    .para{
+        max-width: 80vw;   
+    }
+    .para h2{
+        margin-top: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        display: inline-block;
+        padding: 0vw 1vw
+    }
+    
+    .para p{
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .ingredientHeading{
+        margin: 50px 50px 20px 50px;
+        font-size: 30px;
+    }
+    .ingredient{
+        min-height:100px ;
+        min-width: 300px;
+    }
+    .ingredient p{
+        font-size: 20px;
+     }
+
+     .instructionsContainer{
+        gap: 50px;
+        padding: 20px;
+     }
+    
+    
+    .instructionsHeading{
+        text-align: center;
+       margin: 50px 50px 20px 50px;
+        font-size: 30px;
+    }
+    
+    .instruction{
+        gap: 20px; 
+    }
+    .instruction h2{
+        font-size: 30px;
+    }
+    .instruction p{
+        font-size: 20px;
+        min-width: 100px;
+    }
+
+    .stepIngredients{
+        margin-top: 25px;
+        gap: 20px;
+    }
+    
+    .stepIngredients h3{
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    
+    .ingredientList{
+     font-size: 20px;
+     margin-left: 20px;
+    }
+    .ingredientList li {
+        list-style-type:disc; 
+        margin-bottom: 0.25rem; /* Adds spacing between items */
+      }
+    
+    .stepEquipment{
+        margin-top: 25px;
+        gap: 20px; 
+    }
+    
+    .stepEquipment h3{
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    
+    .equipmentList{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    
+    .equipmententList li {
+        list-style-type:disc; 
+        margin-bottom: 0.25rem; /* Adds spacing between items */
+      }
+  }
+
+  @media(max-width:400px){
+    .instructionsContainer{
+       padding: 20px;
+     }
+    .instruction{
+        gap: 20px; 
+        flex-wrap: wrap;
+    }
+    .stepIngredients,.stepEquipment{
+   flex-wrap: wrap;
+    };    
+    .stepEquipment h3,.stepIngredients h3{
+        padding: 5px 8px ;
+        
+    }; 
+  }

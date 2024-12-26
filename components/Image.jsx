@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 import style from './Image.module.css'
 import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
-
-const apiKey = 'f2fbb965309246e7906f64251396be87' // f2fbb965309246e7906f64251396be87 // 3036c2facd2447e380f01fd8061794c4
+// import Footer from './Footer.jsx'  
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0' // 834e4826627e40619840c9f299b31f36 // f2fbb965309246e7906f64251396be87 // 5ce733c6c24d4454ab2395b906ae5dc1 // 5253113cb6ff4e67ad11c72ec6ae2ec0 //d2a320ed5a3a463ca1b8dce923cd49dc
 
 const Image = () => {
   const { id } = useParams()
@@ -49,9 +49,10 @@ const Image = () => {
   }
 
   if (loading) {
-    return <p className={style.loading}>Loading...</p>
+    return  <div className={style.loaderContainer}>
+    <p className={style.loader}></p>
+  </div>
   }
-
 
   if (!recipes) {
     return <p className={style.error}>No recipe data found!</p>
@@ -97,6 +98,9 @@ const Image = () => {
                       <h2>Step {index + 1}:</h2>
                       <p>{step.step}</p>
                     </div>
+                    
+
+             
 
                     {step.ingredients && step.ingredients.length > 0 && (
                       <div className={style.stepIngredients}>

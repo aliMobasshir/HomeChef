@@ -36,8 +36,10 @@ function RecipeList({ query }) { // query is passed as a prop
   }, []) // Dependency array ensures this runs only once
 
   // Filter recipes based on the query prop passed from the parent
-  if(loading) return <p>Loading...</p>
-  
+  if(loading)  return  <div className={Style.loaderContainer}>
+      <p className={Style.loader}></p>
+    </div>  
+
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
   )

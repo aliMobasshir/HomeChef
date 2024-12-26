@@ -38,7 +38,9 @@ const ShowAll = () => {
 
   if (error) return <p>Error: {error}</p>
 
-  if (loading) return <p>Loading...</p>
+  if (loading) return <div className={Style.loaderContainer}>
+        <p className={Style.loader}></p>
+      </div>  
 
   return (
     <>

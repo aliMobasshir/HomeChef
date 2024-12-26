@@ -32,7 +32,9 @@ function RecommendedWhole30 ({ query }) {
 
   if (error) return <p>Error: {error}</p>
 
-  if (loading) return <p>Loading...</p>
+  if (loading)  return  <div className={Style.loaderContainer}>
+      <p className={Style.loader}></p>
+    </div>
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
