@@ -46,6 +46,8 @@ function RecipeList({ query }) { // query is passed as a prop
     fetchRecipes()
   }, []) // Dependency array ensures this runs only once
 
+  if(error) return <p>Error: {error}</p>
+
   // Filter recipes based on the query prop passed from the parent
   if(loading)  return  <div className={Style.loaderContainer}>
       <p className={Style.loader}></p>

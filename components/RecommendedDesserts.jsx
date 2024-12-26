@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
-const apiKey = '834e4826627e40619840c9f299b31f36'
+const apiKey = 'f2fbb965309246e7906f64251396be87'
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -39,12 +39,12 @@ function RecommendedDesserts ({ query }) {
 
     fetchRecipes()
   }, [])
-
+  if (error) return <p>Error: {error}</p>
+  
   if (loading)  return  <div className={Style.loaderContainer}>
       <p className={Style.loader}></p>
     </div>
 
-  if (error) return <p>Error: {error}</p>
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())

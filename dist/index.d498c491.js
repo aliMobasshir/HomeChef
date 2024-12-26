@@ -37083,7 +37083,7 @@ var _popularModuleCss = require("./Popular.module.css");
 var _popularModuleCssDefault = parcelHelpers.interopDefault(_popularModuleCss);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '834e4826627e40619840c9f299b31f36';
+const apiKey = 'f2fbb965309246e7906f64251396be87';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37116,20 +37116,6 @@ function RecommendedDesserts({ query }) {
         }
         fetchRecipes();
     }, []);
-    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _popularModuleCssDefault.default).loaderContainer,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            className: (0, _popularModuleCssDefault.default).loader
-        }, void 0, false, {
-            fileName: "components/RecommendedDesserts.jsx",
-            lineNumber: 44,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 43,
-        columnNumber: 25
-    }, this);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: [
             "Error: ",
@@ -37137,8 +37123,22 @@ function RecommendedDesserts({ query }) {
         ]
     }, void 0, true, {
         fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 47,
+        lineNumber: 42,
         columnNumber: 21
+    }, this);
+    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _popularModuleCssDefault.default).loaderContainer,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            className: (0, _popularModuleCssDefault.default).loader
+        }, void 0, false, {
+            fileName: "components/RecommendedDesserts.jsx",
+            lineNumber: 45,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/RecommendedDesserts.jsx",
+        lineNumber: 44,
+        columnNumber: 25
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38024,6 +38024,16 @@ function RecipeList({ query }) {
         fetchRecipes();
     }, []) // Dependency array ensures this runs only once
     ;
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 49,
+        columnNumber: 20
+    }, this);
     // Filter recipes based on the query prop passed from the parent
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _recipeListModuleCssDefault.default).loaderContainer,
@@ -38031,12 +38041,12 @@ function RecipeList({ query }) {
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/trending.jsx",
-            lineNumber: 51,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "components/trending.jsx",
-        lineNumber: 50,
+        lineNumber: 52,
         columnNumber: 24
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
@@ -38053,13 +38063,13 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 63,
+                        lineNumber: 65,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 61,
+                lineNumber: 63,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38072,7 +38082,7 @@ function RecipeList({ query }) {
                     ]
                 }, void 0, true, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 69,
+                    lineNumber: 71,
                     columnNumber: 11
                 }, this) // Display error message
                  : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38083,7 +38093,7 @@ function RecipeList({ query }) {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 73,
+                                lineNumber: 75,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -38091,36 +38101,36 @@ function RecipeList({ query }) {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 77,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 74,
+                                lineNumber: 76,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 72,
+                        lineNumber: 74,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _recipeListModuleCssDefault.default).noRecipes,
                     children: "No recipes founds."
                 }, void 0, false, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 80,
+                    lineNumber: 82,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 67,
+                lineNumber: 69,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 59,
+        lineNumber: 61,
         columnNumber: 9
     }, this);
 }
@@ -38493,13 +38503,13 @@ var _navigationJsxDefault = parcelHelpers.interopDefault(_navigationJsx);
 var _footerJsx = require("./Footer.jsx");
 var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _s = $RefreshSig$();
-// import Footer from './Footer.jsx'  
+// import Footer from './Footer.jsx'
 // const apiKey = '716d2d891ccc4e788b471c105f5928e8' // 834e4826627e40619840c9f299b31f36 // f2fbb965309246e7906f64251396be87 // 5ce733c6c24d4454ab2395b906ae5dc1 // 5253113cb6ff4e67ad11c72ec6ae2ec0
 const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
-// 834e4826627e40619840c9f299b31f36 
-// f2fbb965309246e7906f64251396be87 
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0 
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
 // d2a320ed5a3a463ca1b8dce923cd49dc
 // af3ad633e574425c90e2c0ef4a4fefc0
 // 3544e0a87f98468883e9169172546ac1
@@ -38548,7 +38558,7 @@ const Image = ()=>{
         ]
     }, void 0, true, {
         fileName: "components/Image.jsx",
-        lineNumber: 61,
+        lineNumber: 60,
         columnNumber: 12
     }, undefined);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38558,26 +38568,26 @@ const Image = ()=>{
         }, void 0, false, {
             fileName: "components/Image.jsx",
             lineNumber: 66,
-            columnNumber: 7
+            columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "components/Image.jsx",
         lineNumber: 65,
-        columnNumber: 12
+        columnNumber: 7
     }, undefined);
     if (!recipes) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         className: (0, _imageModuleCssDefault.default).error,
         children: "No recipe data found!"
     }, void 0, false, {
         fileName: "components/Image.jsx",
-        lineNumber: 71,
+        lineNumber: 72,
         columnNumber: 12
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
                 fileName: "components/Image.jsx",
-                lineNumber: 76,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38593,12 +38603,12 @@ const Image = ()=>{
                                     alt: recipes.title || 'Recipe Image'
                                 }, void 0, false, {
                                     fileName: "components/Image.jsx",
-                                    lineNumber: 80,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/Image.jsx",
-                                lineNumber: 79,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38608,26 +38618,26 @@ const Image = ()=>{
                                         children: recipes.title
                                     }, void 0, false, {
                                         fileName: "components/Image.jsx",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: sanitizeAndLimitSummary(recipes.summary)
                                     }, void 0, false, {
                                         fileName: "components/Image.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Image.jsx",
-                                lineNumber: 82,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Image.jsx",
-                        lineNumber: 78,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -38635,7 +38645,7 @@ const Image = ()=>{
                         children: "Ingredients needed:"
                     }, void 0, false, {
                         fileName: "components/Image.jsx",
-                        lineNumber: 88,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38647,7 +38657,7 @@ const Image = ()=>{
                                         children: ingredient.name
                                     }, void 0, false, {
                                         fileName: "components/Image.jsx",
-                                        lineNumber: 93,
+                                        lineNumber: 94,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -38656,18 +38666,18 @@ const Image = ()=>{
                                         className: (0, _imageModuleCssDefault.default).ingredientImage
                                     }, void 0, false, {
                                         fileName: "components/Image.jsx",
-                                        lineNumber: 94,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "components/Image.jsx",
-                                lineNumber: 92,
+                                lineNumber: 93,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "components/Image.jsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -38675,7 +38685,7 @@ const Image = ()=>{
                         children: "Instructions:"
                     }, void 0, false, {
                         fileName: "components/Image.jsx",
-                        lineNumber: 103,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, undefined),
                     recipes.analyzedInstructions && recipes.analyzedInstructions.length > 0 ? recipes.analyzedInstructions.map((instruction, instructionIndex)=>instruction.steps && instruction.steps.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38694,21 +38704,21 @@ const Image = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 111,
-                                                    columnNumber: 23
+                                                    lineNumber: 118,
+                                                    columnNumber: 25
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     children: step.step
                                                 }, void 0, false, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 112,
-                                                    columnNumber: 23
+                                                    lineNumber: 119,
+                                                    columnNumber: 25
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/Image.jsx",
-                                            lineNumber: 110,
-                                            columnNumber: 21
+                                            lineNumber: 117,
+                                            columnNumber: 23
                                         }, undefined),
                                         step.ingredients && step.ingredients.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: (0, _imageModuleCssDefault.default).stepIngredients,
@@ -38718,8 +38728,8 @@ const Image = ()=>{
                                                     children: "Ingredients used here:"
                                                 }, void 0, false, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 120,
-                                                    columnNumber: 25
+                                                    lineNumber: 124,
+                                                    columnNumber: 27
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: step.ingredients.map((ingredient, ingredientIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38730,29 +38740,29 @@ const Image = ()=>{
                                                                     children: ingredient.name
                                                                 }, void 0, false, {
                                                                     fileName: "components/Image.jsx",
-                                                                    lineNumber: 127,
-                                                                    columnNumber: 33
+                                                                    lineNumber: 135,
+                                                                    columnNumber: 37
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "components/Image.jsx",
-                                                                lineNumber: 126,
-                                                                columnNumber: 31
+                                                                lineNumber: 134,
+                                                                columnNumber: 35
                                                             }, undefined)
                                                         }, ingredientIndex, false, {
                                                             fileName: "components/Image.jsx",
-                                                            lineNumber: 125,
-                                                            columnNumber: 29
+                                                            lineNumber: 130,
+                                                            columnNumber: 33
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 123,
-                                                    columnNumber: 25
+                                                    lineNumber: 127,
+                                                    columnNumber: 27
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/Image.jsx",
-                                            lineNumber: 119,
-                                            columnNumber: 23
+                                            lineNumber: 123,
+                                            columnNumber: 25
                                         }, undefined),
                                         step.equipment && step.equipment.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: (0, _imageModuleCssDefault.default).stepEquipment,
@@ -38762,8 +38772,8 @@ const Image = ()=>{
                                                     children: "Equipments needed here:"
                                                 }, void 0, false, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 137,
-                                                    columnNumber: 25
+                                                    lineNumber: 146,
+                                                    columnNumber: 27
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: step.equipment.map((equipment, equipmentIndex)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38774,62 +38784,62 @@ const Image = ()=>{
                                                                     children: equipment.name
                                                                 }, void 0, false, {
                                                                     fileName: "components/Image.jsx",
-                                                                    lineNumber: 144,
-                                                                    columnNumber: 33
+                                                                    lineNumber: 156,
+                                                                    columnNumber: 35
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "components/Image.jsx",
-                                                                lineNumber: 143,
-                                                                columnNumber: 31
+                                                                lineNumber: 155,
+                                                                columnNumber: 33
                                                             }, undefined)
                                                         }, equipmentIndex, false, {
                                                             fileName: "components/Image.jsx",
-                                                            lineNumber: 142,
-                                                            columnNumber: 29
+                                                            lineNumber: 151,
+                                                            columnNumber: 31
                                                         }, undefined))
                                                 }, void 0, false, {
                                                     fileName: "components/Image.jsx",
-                                                    lineNumber: 140,
-                                                    columnNumber: 25
+                                                    lineNumber: 149,
+                                                    columnNumber: 27
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/Image.jsx",
-                                            lineNumber: 136,
-                                            columnNumber: 23
+                                            lineNumber: 145,
+                                            columnNumber: 25
                                         }, undefined)
                                     ]
                                 }, index, true, {
                                     fileName: "components/Image.jsx",
-                                    lineNumber: 109,
-                                    columnNumber: 19
+                                    lineNumber: 116,
+                                    columnNumber: 21
                                 }, undefined))
                         }, instructionIndex, false, {
                             fileName: "components/Image.jsx",
-                            lineNumber: 107,
-                            columnNumber: 15
+                            lineNumber: 111,
+                            columnNumber: 17
                         }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "No instructions available."
                     }, void 0, false, {
                         fileName: "components/Image.jsx",
-                        lineNumber: 157,
+                        lineNumber: 169,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Image.jsx",
-                lineNumber: 77,
+                lineNumber: 78,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/Image.jsx",
-                lineNumber: 160,
+                lineNumber: 172,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Image.jsx",
-        lineNumber: 75,
+        lineNumber: 76,
         columnNumber: 5
     }, undefined);
 };
