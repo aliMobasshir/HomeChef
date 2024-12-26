@@ -37116,20 +37116,6 @@ function RecommendedDesserts({ query }) {
         }
         fetchRecipes();
     }, []);
-    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: (0, _popularModuleCssDefault.default).loaderContainer,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            className: (0, _popularModuleCssDefault.default).loader
-        }, void 0, false, {
-            fileName: "components/RecommendedDesserts.jsx",
-            lineNumber: 44,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 43,
-        columnNumber: 25
-    }, this);
     if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: [
             "Error: ",
@@ -37137,8 +37123,22 @@ function RecommendedDesserts({ query }) {
         ]
     }, void 0, true, {
         fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 47,
+        lineNumber: 43,
         columnNumber: 21
+    }, this);
+    if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _popularModuleCssDefault.default).loaderContainer,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            className: (0, _popularModuleCssDefault.default).loader
+        }, void 0, false, {
+            fileName: "components/RecommendedDesserts.jsx",
+            lineNumber: 46,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "components/RecommendedDesserts.jsx",
+        lineNumber: 45,
+        columnNumber: 25
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37148,7 +37148,7 @@ function RecommendedDesserts({ query }) {
                 children: "Recommended in Desserts"
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37166,7 +37166,7 @@ function RecommendedDesserts({ query }) {
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/RecommendedDesserts.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 63,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37174,34 +37174,34 @@ function RecommendedDesserts({ query }) {
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/RecommendedDesserts.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 65,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "components/RecommendedDesserts.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, recipe.id, true, {
                                     fileName: "components/RecommendedDesserts.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/RecommendedDesserts.jsx",
-                                lineNumber: 60,
+                                lineNumber: 61,
                                 columnNumber: 15
                             }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: "No recipes found. "
                         }, void 0, false, {
                             fileName: "components/RecommendedDesserts.jsx",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -37211,31 +37211,31 @@ function RecommendedDesserts({ query }) {
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/RecommendedDesserts.jsx",
-                            lineNumber: 75,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 74,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 56,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _popularModuleCssDefault.default).horizontalline
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 79,
+                lineNumber: 80,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 54,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
@@ -37724,10 +37724,14 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _recipeListModuleCss = require("./recipeList.module.css");
 var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
-var _rightArrowPng = require("./right-arrow.png");
-var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
+var _randomIconPng = require("./Random_icon.png");
+var _randomIconPngDefault = parcelHelpers.interopDefault(_randomIconPng);
 var _s = $RefreshSig$();
+<<<<<<< HEAD
 const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+=======
+const apiKey = '3544e0a87f98468883e9169172546ac1';
+>>>>>>> 8ae8ce8a64b6eab3a39f71848f5eabce3b2b3ed9
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37789,9 +37793,9 @@ function RecipeList({ query }) {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: (0, _recipeListModuleCssDefault.default).heading,
                 children: [
-                    "Today's Top Picks",
+                    "Random Picks",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _rightArrowPngDefault.default),
+                        src: (0, _randomIconPngDefault.default),
                         alt: "arrow",
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
@@ -37866,7 +37870,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./Random_icon.png":"5H693","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports,__globalThis) {
 module.exports["eggRst"] = `jjQB4a_eggRst`;
 module.exports["eggRst"];
 module.exports["heading"] = `jjQB4a_heading`;
@@ -37878,10 +37882,10 @@ module.exports["recipeCard"] = `jjQB4a_recipeCard`;
 module.exports["recipeContainer"] = `jjQB4a_recipeContainer`;
 module.exports["topPicksPage"] = `jjQB4a_topPicksPage`;
 
-},{}],"hx3sc":[function(require,module,exports,__globalThis) {
-module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
+},{}],"5H693":[function(require,module,exports,__globalThis) {
+module.exports = require("8d203b5798f209e8").getBundleURL('avzPb') + "Random_icon.34c3d3a0.png" + "?" + Date.now();
 
-},{"beed73946feccc95":"lgJ39"}],"1J5Ne":[function(require,module,exports,__globalThis) {
+},{"8d203b5798f209e8":"lgJ39"}],"1J5Ne":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$3765 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37982,10 +37986,13 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _recipeListModuleCss = require("./recipeList.module.css");
 var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
-var _fireFlamePng = require("./fire-flame.png");
-var _fireFlamePngDefault = parcelHelpers.interopDefault(_fireFlamePng);
+var _quickRecipeIconPng = require("./Quick_Recipe_icon.png");
+var _quickRecipeIconPngDefault = parcelHelpers.interopDefault(_quickRecipeIconPng);
 var _s = $RefreshSig$();
+<<<<<<< HEAD
 // API configuration
+=======
+>>>>>>> 8ae8ce8a64b6eab3a39f71848f5eabce3b2b3ed9
 const apiKey = '3544e0a87f98468883e9169172546ac1';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
@@ -37997,47 +38004,63 @@ const apiKey = '3544e0a87f98468883e9169172546ac1';
 // 0d0e212f1a904e9cb772072f49167a4b
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
+const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&maxReadyTime=20&number=6&sort=random`;
 function RecipeList({ query }) {
     _s();
-    const [recipes, setRecipes] = (0, _react.useState)([]) // State for storing recipes
-    ;
-    const [error, setError] = (0, _react.useState)(null) // State for error handling
-    ;
-    const [loading, setLoadaing] = (0, _react.useState)(true);
+    const [recipes, setRecipes] = (0, _react.useState)([]);
+    const [error, setError] = (0, _react.useState)(null);
+    const [loading, setLoading] = (0, _react.useState)(true);
     (0, _react.useEffect)(()=>{
         async function fetchRecipes() {
             try {
                 const response = await fetch(endpoint);
-                // Check if API request was successful
                 if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
-                // Parse the response JSON
                 const data = await response.json();
-                // Ensure recipes exist in the response
-                setRecipes(data?.recipes || []);
-                setLoadaing(false);
+                // Check if the response contains 'results'
+                if (data?.results) setRecipes(data.results);
+                else setError('No recipes found in the response.');
             } catch (error) {
-                setError(error.message) // Capture error message
+                setError(error.message);
+            } finally{
+                setLoading(false) // Ensure loading state is updated even after error
                 ;
             }
         }
         fetchRecipes();
-    }, []) // Dependency array ensures this runs only once
-    ;
-    // Filter recipes based on the query prop passed from the parent
+    }, []);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 52,
+        columnNumber: 21
+    }, this);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _recipeListModuleCssDefault.default).loaderContainer,
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/trending.jsx",
-            lineNumber: 51,
-            columnNumber: 7
+            lineNumber: 57,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "components/trending.jsx",
-        lineNumber: 50,
-        columnNumber: 24
+        lineNumber: 56,
+        columnNumber: 7
+    }, this);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        children: [
+            "Error: ",
+            error
+        ]
+    }, void 0, true, {
+        fileName: "components/trending.jsx",
+        lineNumber: 62,
+        columnNumber: 21
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38046,36 +38069,25 @@ function RecipeList({ query }) {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: (0, _recipeListModuleCssDefault.default).heading,
                 children: [
-                    "Trending Dishes",
+                    "Rapid Recipes",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _fireFlamePngDefault.default),
+                        src: (0, _quickRecipeIconPngDefault.default),
                         alt: "flame",
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 63,
-                        columnNumber: 13
+                        lineNumber: 72,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 61,
-                columnNumber: 9
+                lineNumber: 70,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).recipeContainer,
-                children: error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: (0, _recipeListModuleCssDefault.default).error,
-                    children: [
-                        "Error: ",
-                        error
-                    ]
-                }, void 0, true, {
-                    fileName: "components/trending.jsx",
-                    lineNumber: 69,
-                    columnNumber: 11
-                }, this) // Display error message
-                 : filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: filteredRecipes.length > 0 ? filteredRecipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeCard,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -38083,7 +38095,7 @@ function RecipeList({ query }) {
                                 alt: recipe.title
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 73,
+                                lineNumber: 79,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -38091,40 +38103,40 @@ function RecipeList({ query }) {
                                     children: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 81,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "components/trending.jsx",
-                                lineNumber: 74,
+                                lineNumber: 80,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, recipe.id, true, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 72,
+                        lineNumber: 78,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _recipeListModuleCssDefault.default).noRecipes,
-                    children: "No recipes founds."
+                    children: "No recipes found."
                 }, void 0, false, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 80,
+                    lineNumber: 86,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 67,
-                columnNumber: 9
+                lineNumber: 75,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 59,
-        columnNumber: 9
+        lineNumber: 69,
+        columnNumber: 5
     }, this);
 }
-_s(RecipeList, "c9we/Vx5kycwwWejDVGCO5nX3yM=");
+_s(RecipeList, "1x66Du8ccXgoLHCkC87akHoVKzc=");
 _c = RecipeList;
 exports.default = RecipeList;
 var _c;
@@ -38135,10 +38147,10 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
-module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./Quick_Recipe_icon.png":"2BCLX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2BCLX":[function(require,module,exports,__globalThis) {
+module.exports = require("cc4751e6044a593").getBundleURL('avzPb') + "Quick_Recipe_icon.bfe2aa31.png" + "?" + Date.now();
 
-},{"1b9da1e600612d13":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
+},{"cc4751e6044a593":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c5d0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38482,7 +38494,10 @@ $RefreshReg$(_c, "ShowAll");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOk8I":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hx3sc":[function(require,module,exports,__globalThis) {
+module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
+
+},{"beed73946feccc95":"lgJ39"}],"lOk8I":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$2fbb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

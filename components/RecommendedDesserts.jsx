@@ -39,12 +39,13 @@ function RecommendedDesserts ({ query }) {
 
     fetchRecipes()
   }, [])
-
+  
+  if (error) return <p>Error: {error}</p>
+  
   if (loading)  return  <div className={Style.loaderContainer}>
       <p className={Style.loader}></p>
     </div>
 
-  if (error) return <p>Error: {error}</p>
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())

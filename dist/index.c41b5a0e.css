@@ -301,6 +301,7 @@
 .SnCtwa_mainFooter ul {
   justify-content: space-evenly;
   align-items: center;
+  list-style: none;
   display: flex;
 }
 
@@ -1176,8 +1177,9 @@ a {
 }
 
 .jjQB4a_heading img {
-  height: 1em;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-bottom: ;
+  height: 1.5em;
 }
 
 .jjQB4a_recipeContainer {
