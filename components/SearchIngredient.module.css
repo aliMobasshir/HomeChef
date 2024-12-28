@@ -1,0 +1,167 @@
+.heading {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.description {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 2vw;
+  margin: 2vw;
+  border: 2px solid #d9d9d9;
+  padding: 20px;
+  background-color: #656565;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 50px;
+}
+
+/* CSS */
+.button {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+  will-change: transform;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  background-color: #d9d9d9;
+  padding: 10px 10px;
+  border-radius: 10px;
+  min-width: 30vw;
+  border: none;
+  font-size: 20px;
+  font-family: monospace;
+  color: #757575;
+}
+
+.ingredientContainer {
+  border: 2px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 22px;
+  padding: 20px;
+}
+
+.ingredientItemContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+}
+
+.selected_ingredients_item_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 2px solid #d9d9d9;
+  margin: 22px;
+}
+
+.recipe_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.recipeCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  height: 26vw;
+  width: 30vw;
+  text-align: start;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipeCard:hover {
+  background-color: #f0f0f07d;
+}
+
+.recipeCard img {
+  height: 73%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipeCard h2 {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-style: normal;
+  margin-top: 10px;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.5vw;
+}
+
+.recipeCard h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #fed39c; /* Color of the underline */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.recipeCard h2:hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
+  transform-origin: bottom left;
+}

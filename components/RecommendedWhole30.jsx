@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
-const apiKey = '834e4826627e40619840c9f299b31f36'
-// 834e4826627e40619840c9f299b31f36 
-// f2fbb965309246e7906f64251396be87 
+const apiKey = '3544e0a87f98468883e9169172546ac1' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+// const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${apiKey}&number=9&offset=5`
+
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0 
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
 // d2a320ed5a3a463ca1b8dce923cd49dc
 // af3ad633e574425c90e2c0ef4a4fefc0
 // 3544e0a87f98468883e9169172546ac1
@@ -39,11 +41,21 @@ function RecommendedWhole30 ({ query }) {
     fetchRecipes()
   }, [])
 
-  if (error) return <p>Error: {error}</p>
+  if (error)
+    return(
+      <div>
+      <h1 className={Style.heading}>Recommended in Whole30 Diet</h1>
 
-  if (loading)  return  <div className={Style.loaderContainer}>
-      <p className={Style.loader}></p>
-    </div>
+      <p className={Style.error}>Error: {error}</p>
+      </div>
+    )
+
+  if (loading)
+    return (
+      <div className={Style.loaderContainer}>
+        <p className={Style.loader}></p>
+      </div>
+    )
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())

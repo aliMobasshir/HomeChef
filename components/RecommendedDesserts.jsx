@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
-const apiKey = '834e4826627e40619840c9f299b31f36'
-// 834e4826627e40619840c9f299b31f36 
-// f2fbb965309246e7906f64251396be87 
+
+const apiKey = '3544e0a87f98468883e9169172546ac1'
+
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0 
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
 // d2a320ed5a3a463ca1b8dce923cd49dc
 // af3ad633e574425c90e2c0ef4a4fefc0
 // 3544e0a87f98468883e9169172546ac1
@@ -14,7 +16,6 @@ const apiKey = '834e4826627e40619840c9f299b31f36'
 // 3036c2facd2447e380f01fd8061794c4
 
 const endpoint = `https://api.spoonacular.com/recipes/complexSearch?type=dessert&apiKey=${apiKey}&number=9&offset=21`
-
 
 function RecommendedDesserts ({ query }) {
   const [recipes, setRecipes] = useState([])
@@ -31,21 +32,31 @@ function RecommendedDesserts ({ query }) {
           throw new Error(`An error has occurred: ${response.status}`)
         const data = await response.json()
         setRecipes(data.results)
-        setLoading(false)
       } catch (error) {
         setError(error.message)
+      } finally {
+        setLoading(false) // Ensure loading is false regardless of success or error
       }
     }
 
     fetchRecipes()
   }, [])
-  
-  if (error) return <p>Error: {error}</p>
-  
-  if (loading)  return  <div className={Style.loaderContainer}>
-      <p className={Style.loader}></p>
-    </div>
 
+  if (error) {
+    return (
+      <div className={Style.errorContainer}>
+        <h1 className={Style.heading}>Recommended in Desserts</h1>
+        <h1 className={Style.error}>Error: {error}</h1>
+      </div>
+    )
+  }
+
+  if (loading)
+    return (
+      <div className={Style.loaderContainer}>
+        <p className={Style.loader}></p>
+      </div>
+    )
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
@@ -58,8 +69,8 @@ function RecommendedDesserts ({ query }) {
         <div className={Style.recipeContainer}>
           {filteredRecipes.length > 0 ? (
             filteredRecipes.map(recipe => (
-              <Link to={`/image/${type}/${name}/${recipe.id}`}>
-                <div key={recipe.id} className={Style.recipeCard}>
+              <Link key={recipe.id} to={`/image/${type}/${name}/${recipe.id}`}>
+                <div className={Style.recipeCard}>
                   <img src={recipe.image} alt={recipe.title} />
                   <h2>
                     <span>{recipe.title}</span>
@@ -68,7 +79,7 @@ function RecommendedDesserts ({ query }) {
               </Link>
             ))
           ) : (
-            <h1>No recipes found. </h1>
+            <h1>No recipes found.</h1>
           )}
         </div>
 

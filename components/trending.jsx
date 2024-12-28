@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Style from './recipeList.module.css'
 import QuickIcon from './Quick_Recipe_icon.png'
 
+
+// API configuration
+// =======
+// >>>>>>> 8ae8ce8a64b6eab3a39f71848f5eabce3b2b3ed9
 const apiKey = '3544e0a87f98468883e9169172546ac1'
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
