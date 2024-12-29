@@ -1,9 +1,7 @@
-
-
 .description {
   width: 89vw;
   background-color: #656565;
-  margin: 5vw ;
+  margin: 5vw;
   padding: 2vw;
   font-family: Shantell Sans, cursive;
   font-size: 2.5vw;
@@ -31,39 +29,38 @@
 
 /* CSS */
 .button {
-   color: orange;
+  color: orange;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3vw;
   font-weight: 600;
-  background:none;
+  background: none;
   border: none;
   text-transform: uppercase;
 }
 
 .button:hover {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.button:active{
+.button:active {
   color: rgb(255, 145, 0);
 }
-.resultButton{
+.resultButton {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3vw;
   font-weight: 600;
-  background:orange;
+  background: orange;
   border: none;
   text-transform: uppercase;
   padding: 10px 20px;
 }
 
-.resultButton:hover{
+.resultButton:hover {
   cursor: pointer;
-  
 }
 
-.resultButton:active{
+.resultButton:active {
   background-color: rgb(255, 145, 0);
 }
 
@@ -78,16 +75,15 @@
   margin: 4vw auto 0 auto;
 }
 
-.selected_ingredients_item_container h2{
+.selected_ingredients_item_container h2 {
   color: orange;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
   font-weight: 600;
-  background:none;
+  background: none;
   border: none;
   text-transform: capitalize;
 }
-
 
 .ingredientContainerParent {
   display: flex;
@@ -100,30 +96,29 @@
   height: 38vw;
   border: 2px solid #d9d9d9;
   display: grid;
-  grid-template-rows: repeat(11, min-content); 
-  grid-auto-flow: column; 
+  grid-template-rows: repeat(11, min-content);
+  grid-auto-flow: column;
   gap: 20px;
-  overflow-x: auto; 
-  overflow-y: hidden; 
+  overflow-x: auto;
+  overflow-y: hidden;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   margin: 0 auto 5vw auto;
-
 }
 
 .ingredientItemContainer {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 8px;
-  width: 200px; 
+  width: 200px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;;
+  font-size: 16px;
   font-weight: 300;
   text-transform: capitalize;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 18px;
   height: 18px;
   appearance: none; /* Removes the default checkbox styling */
@@ -133,15 +128,15 @@ input[type="checkbox"] {
 }
 
 /* When the checkbox is checked */
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background-color: orange; /* Orange background when checked */
   border-color: orange; /* Maintain the orange border when checked */
   position: relative;
 }
 
 /* Add a checkmark inside the checkbox when checked */
-input[type="checkbox"]:checked::before {
-  content: "";
+input[type='checkbox']:checked::before {
+  content: '';
   border: 4px solid #000;
   border-width: 0 4px 4px 0;
   width: 6px;
@@ -152,7 +147,7 @@ input[type="checkbox"]:checked::before {
   transform: rotate(45deg);
 }
 
-.result h1{
+.result h1 {
   margin: 10vw 10vw 2vw 10vw;
   font-size: 3vw;
   font-weight: 600;
@@ -161,7 +156,6 @@ input[type="checkbox"]:checked::before {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-
 
 .recipe_Container {
   display: flex;
@@ -221,3 +215,62 @@ input[type="checkbox"]:checked::before {
 }
 
 
+
+/* Loader Property */
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-color: orange; /* Optional background color */
+}
+
+.loader {
+  position: relative;
+  width: 120px;
+  height: 14px;
+  border-radius: 0 0 15px 15px;
+  background-color: #3e494d;
+  box-shadow: 0 -1px 4px #5d6063 inset;
+  animation: panex 0.5s linear alternate infinite;
+  transform-origin: 170px 0;
+  z-index: 10;
+  perspective: 300px;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  left: calc(100% - 2px);
+  top: 0;
+  z-index: -2;
+  height: 10px;
+  width: 70px;
+  border-radius: 0 4px 4px 0;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#6c4924, #4b2d21),
+    linear-gradient(#4d5457 24px, transparent 0),
+    linear-gradient(#9f9e9e 24px, transparent 0);
+  background-size: 50px 10px, 4px 8px, 24px 4px;
+  background-position: right center, 17px center, 0px center;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -2;
+  transform: translate(-50%, -20px) rotate3d(75, -2, 3, 78deg);
+  width: 55px;
+  height: 53px;
+  background: #fff;
+  background-image: radial-gradient(circle 3px, #fff6 90%, transparent 10%),
+    radial-gradient(circle 12px, #ffc400 90%, transparent 10%),
+    radial-gradient(circle 12px, #ffae00 100%, transparent 0);
+  background-repeat: no-repeat;
+  background-position: -4px -6px, -2px -2px, -1px -1px;
+  box-shadow: -2px -3px #0002 inset, 0 0 4px #0003 inset;
+  border-radius: 47% 36% 50% 50% / 49% 45% 42% 44%;
+  animation: eggRst 1s ease-out infinite;
+}

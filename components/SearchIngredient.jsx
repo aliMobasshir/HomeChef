@@ -16,7 +16,10 @@ const SearchIngredient = () => {
   const [error, setError] = useState(null)
   const [showAllData, setShowAllData] = useState(false)
   const [shouldFetchData, setShouldFetchData] = useState(false) // State to control fetching
-
+  window.scrollTo({
+    top : 0,
+    behavior : 'smooth',
+  })
   const handleInput = e => {
     setSearchIngredientQuery(e.target.value)
   }
