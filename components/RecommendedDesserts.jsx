@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
 
-
+import apiImage from './api_error_image.gif'
 const apiKey = '3544e0a87f98468883e9169172546ac1'
 
 // 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87 
+// f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
 // 5253113cb6ff4e67ad11c72ec6ae2ec0
 // d2a320ed5a3a463ca1b8dce923cd49dc
@@ -20,7 +20,7 @@ const endpoint = `https://api.spoonacular.com/recipes/complexSearch?type=dessert
 
 function RecommendedDesserts ({ query }) {
   const [recipes, setRecipes] = useState([])
-  const [error, setError] = useState(null)
+  const [error, setError] = useState()
   const [loading, setLoading] = useState(true)
   const type = 'type'
   const name = 'dessert'
@@ -42,28 +42,57 @@ function RecommendedDesserts ({ query }) {
 
     fetchRecipes()
   }, [])
-  
-  
-  if (loading)  return  <div className={Style.loaderContainer}>
-      <p className={Style.loader}></p>
-    </div>
 
-  if (error) {
+  
+  // <h1 className={Style.heading}>Recommended in Desserts</h1>
+  // Render 401 error image if the error status is 401
+  if (error?.includes('402'))
     return (
-      <div className={Style.errorContainer}>
+      <div>
         <h1 className={Style.heading}>Recommended in Desserts</h1>
-        <h1 className={Style.error}>Error: {error}</h1>
+        <div className={Style.errorContainer}>
+          <img src={apiImage} alt='arrow' className={Style.icon} />
+          <p>Failed to fetch recipes Data Due to an Api Error. Please Try after Some Time</p>
+        </div>
       </div>
     )
-  }
 
-  if (loading)
+  if (
+    error?.includes('401') ||
+    error?.includes('503') ||
+    error?.includes('504')
+  )
     return (
-      <div className={Style.loaderContainer}>
-        <p className={Style.loader}></p>
+      <div>
+        <h1 className={Style.heading}>Recommended in Desserts</h1>
+        <div className={Style.errorContainer}>
+          <img
+            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
+            alt='arrow'
+            className={Style.icon}
+          />
+
+          <p>
+            Failed to fetch recipe data due to a server error. Please try again
+            later.
+          </p>
+        </div>
       </div>
     )
 
+    if (loading)
+      return (
+        <div className={Style.loaderContainer}>
+          <p className={Style.loader}></p>
+        </div>
+      )
+
+  // if (loading)
+  //   return (
+  //     <div className={Style.loaderContainer}>
+  //       <p className={Style.loader}></p>
+  //     </div>
+  //   )
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())

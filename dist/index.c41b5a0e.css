@@ -891,6 +891,31 @@ body {
   }
 }
 
+.NGOf5W_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.NGOf5W_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 2.3vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.NGOf5W_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
 .NGOf5W_RecommendedPage {
   flex-direction: column;
   justify-content: center;
@@ -1106,24 +1131,18 @@ body {
   .NGOf5W_show_all_button {
     font-size: 12px;
   }
-}
 
-.NGOf5W_error {
-  color: red;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px #00000080;
-  background-color: #ff00001a;
-  border: 1px solid red;
-  border-radius: 5px;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-family: Roboto, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: all .3s;
-  box-shadow: 1px 1px 1px #00000080;
+  .NGOf5W_errorContainer {
+    gap: 20px;
+  }
+
+  .NGOf5W_errorContainer img {
+    height: 10.5em;
+  }
+
+  .NGOf5W_errorContainer p {
+    font-size: 1.2rem;
+  }
 }
 
 .p2h0Oa_dietsInfo {
@@ -1175,6 +1194,31 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.jjQB4a_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.jjQB4a_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jjQB4a_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .jjQB4a_topPicksPage {
@@ -1368,6 +1412,18 @@ a {
 
   .jjQB4a_recipeCard h2 {
     font-size: 18px;
+  }
+
+  .jjQB4a_errorContainer {
+    gap: 20px;
+  }
+
+  .jjQB4a_errorContainer img {
+    height: 10.5em;
+  }
+
+  .jjQB4a_errorContainer p {
+    font-size: 1.2rem;
   }
 }
 

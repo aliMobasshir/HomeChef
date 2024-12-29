@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
-const apiKey = '3544e0a87f98468883e9169172546ac1' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+
+import apiImage from './api_error_image.gif'
+const apiKey = '834e4826627e40619840c9f299b31f36' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 // const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${apiKey}&number=9&offset=5`
 
 // 834e4826627e40619840c9f299b31f36
@@ -41,12 +43,41 @@ function RecommendedWhole30 ({ query }) {
     fetchRecipes()
   }, [])
 
-  if (error)
+  // /
+
+  // Render 401 error image if the error status is 401
+  if (error?.includes('402'))
     return (
       <div>
         <h1 className={Style.heading}>Recommended in Whole30 Diet</h1>
+        <div className={Style.errorContainer}>
+          <img src={apiImage} alt='arrow' className={Style.icon} />
 
-        <p className={Style.error}>Error: {error}</p>
+          <p>Failed to fetch recipes Data. Please Try after Some Time</p>
+        </div>
+      </div>
+    )
+
+  if (
+    error?.includes('401') ||
+    error?.includes('503') ||
+    error?.includes('504')
+  )
+    return (
+      <div>
+        <h1 className={Style.heading}>Recommended in Whole30 Diet</h1>
+        <div className={Style.errorContainer}>
+          <img
+            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
+            alt='arrow'
+            className={Style.icon}
+          />
+
+          <p>
+            Failed to fetch recipe data due to a server error. Please try again
+            later.
+          </p>
+        </div>
       </div>
     )
 
