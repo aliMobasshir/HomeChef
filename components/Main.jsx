@@ -11,7 +11,7 @@ const Main = ({ query }) => {
   // When there's no search query, show the home page
   if (!query) {
     return (
-        <main>
+        <main >
             <div className={Style.mainContainer} id="main-container">
                 <div className={Style.textContainer} id='container1'>
                     <h1 className={Style.h1_text}>

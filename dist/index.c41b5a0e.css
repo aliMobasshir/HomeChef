@@ -86,7 +86,7 @@
 }
 
 @media screen and (width <= 670px) {
-  .WCa7bG_searchInput {
+  .WCa7bG_searchInput, .WCa7bG_searchDiv img {
     display: none;
   }
 
@@ -1430,6 +1430,10 @@ a {
     gap: 20px;
     padding-bottom: 50px;
   }
+}
+
+.C1rn5W_FaqMainContainer {
+  overflow-x: hidden;
 }
 
 .C1rn5W_heading {

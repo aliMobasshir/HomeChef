@@ -82,6 +82,10 @@
     .searchInput{
         display: none;
     }
+    .searchDiv img{
+        display: none;  
+    }
+    
 
     .maginfyIcon{
         display: block;

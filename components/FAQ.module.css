@@ -1,3 +1,7 @@
+.FaqMainContainer{
+  overflow-x: hidden;
+}
+
 .heading{
   font-family: "Shantell Sans", cursive;
   font-size: 4vw;
@@ -9,6 +13,7 @@
   align-items: center;
   justify-content:space-evenly;
   margin-bottom: 50px;
+
 }
 
 

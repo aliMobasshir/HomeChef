@@ -33,7 +33,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div>
+    <div className={style.FaqMainContainer}>
       <h1 className={style.heading} style={{ textAlign: 'center' }}>
         Frequently Asked Questions
       </h1>

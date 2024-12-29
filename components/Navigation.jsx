@@ -56,15 +56,19 @@ const Navigation = ({ setQuery }) => {
           {!isSearchOpen && (
             <img onClick={handler} className={Style.hamburger} src={hamburger} alt="Click Here" />
           )}
+
           <li className={Style.navigationItem}>
             <Link to="/" className={Style.navigationLink}>Home</Link>
           </li>
+
           <li className={Style.navigationItem}>
             <Link to="/about" className={Style.navigationLink}>About</Link>
           </li>
+
           <li className={Style.navigationItem}>
             <Link to="/contact" className={Style.navigationLink}>Contact</Link>
           </li>
+          
           {isMenuOpen && (
             <div className={Style.menuContainer}>
               <img onClick={handler} className={Style.xmarkImage} src={xmark} alt="Close Menu" />

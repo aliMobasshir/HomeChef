@@ -5,7 +5,7 @@ import QuickIcon from './Quick_Recipe_icon.png'
 
 // API configuration
 
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
+const apiKey = '3544e0a87f98468883e9169172546ac1'
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
@@ -53,14 +53,9 @@ function RecipeList({ query }) {
     fetchRecipes()
   }, []) 
 
-<<<<<<< HEAD
-  if(error) return <p>Error: {error}</p>
 
-  // Filter recipes based on the query prop passed from the parent
-  if(loading)  return  <div className={Style.loaderContainer}>
-      <p className={Style.loader}></p>
-    </div>  
-=======
+
+
   if (error) return <p>Error: {error}</p>;
   
   if (loading) {
@@ -71,8 +66,7 @@ function RecipeList({ query }) {
     )
   }
 
-  if (error) return <p>Error: {error}</p>;
->>>>>>> mobasshir
+  // if (error) return <p>Error: {error}</p>;
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
