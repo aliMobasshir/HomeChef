@@ -1,4 +1,6 @@
-
+/* *{
+  overflow-x: hidden;
+} */
 
 .mainContainer {
   background-color: #D9D9D9;

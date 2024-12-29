@@ -19,7 +19,7 @@ const Body = ({ query}) => {
             id='section_container1'
             className={section.section_container1_category}
           >
-            <Link to='/about' className={section.ReactLink}>
+            <Link to='/exploreCategory' className={section.ReactLink}>
               <img src={rectange7} alt=' ' />
               <p>Explore categories</p>
               

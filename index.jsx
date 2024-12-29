@@ -9,6 +9,7 @@ import KnowMoreDiets from './components/KnowMoreDiets.jsx'
 import Image from './components/Image.jsx'
 import SearchIngredient from './components/SearchIngredient.jsx'
 import SearchIngredientImage from './components/SearchIngredientImage.jsx'
+import ExploreCategory from './components/ExploreCategory.jsx'
 console.log(cuisines)
 
 const router = createBrowserRouter([
@@ -17,9 +18,14 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/About',
-    element: <About />
+    path: '/exploreCategory',
+    element: <ExploreCategory />
   },
+
+  // {
+  //   path: '/about',
+  //   element: <About />
+  // },
   {
     path: '/SearchIngredient',
     element: <SearchIngredient />
