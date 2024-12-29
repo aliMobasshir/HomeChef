@@ -163,7 +163,7 @@ const SearchIngredient = () => {
       <div className='selected_ingredients_container'>
         {selectedIngredients.length > 0 && (
           <div className={style.selected_ingredients_item_container}>
-            <h2>Selected Ingredients :</h2>
+            <h2>Selected :</h2>
             {selectedIngredients.map((ingredient, index) => {
               return (
                 <div key={index} className={style.ingredientItemContainer}>
@@ -206,28 +206,30 @@ const SearchIngredient = () => {
 
       {/* Recipes */}
       <div className={style.result}>
-        <h1>Resulted Recipes:</h1>
-        <div className={style.recipe_Container}>
-          {loading && <p>Loading...</p>}
-          {showAllData &&
-            filterDishesData.length > 0 &&
-            filterDishesData.map((item, index) => {
-              return (
-                <Link to={`/searchIngredientImage/${item.id}`} key={index}>
-                  <div className={style.recipeCard}>
-                    <img src={item.image} alt='Click Image' />
-                    <h3>{item.title}</h3>
-                  </div>
-                </Link>
-              )
-            })}
-          {!showAllData && !loading && selectedIngredients.length === 0 && (
-            <p>
-              No recipes to display. Please select ingredients and try again.
-            </p>
-          )}
-        </div>
-      </div>
+  <h1>Resulted Recipes:</h1>
+  {loading && (
+    <div className={style.loader}></div> // Show loader when loading is true
+  )}
+  {!loading && (
+    <div className={style.recipe_Container}>
+      {showAllData && filterDishesData.length > 0 ? (
+        filterDishesData.map((item, index) => (
+          <Link to={`/searchIngredientImage/${item.id}`} key={index}>
+            <div className={style.recipeCard}>
+              <img src={item.image} alt='Click Image' />
+              <h3>{item.title}</h3>
+            </div>
+          </Link>
+        ))
+      ) : (
+        <p>
+          No recipes to display , Please select ingredients and try again.
+        </p>
+      )}
+    </div>
+  )}
+</div>
+
 
       <Footer />
     </div>

@@ -3029,7 +3029,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/SearchIngredientImage.jsx":"gbMQ2"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -36851,7 +36851,7 @@ var _popularIndianJs = require("../PopularIndian.js");
 var _popularIndianJsDefault = parcelHelpers.interopDefault(_popularIndianJs);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '3036c2facd2447e380f01fd8061794c4';
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37112,7 +37112,7 @@ var _popularModuleCss = require("./Popular.module.css");
 var _popularModuleCssDefault = parcelHelpers.interopDefault(_popularModuleCss);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '3544e0a87f98468883e9169172546ac1';
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37315,7 +37315,7 @@ var _popularModuleCss = require("./Popular.module.css");
 var _popularModuleCssDefault = parcelHelpers.interopDefault(_popularModuleCss);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '3544e0a87f98468883e9169172546ac1' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
 ;
 // const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${apiKey}&number=9&offset=5`
 // 834e4826627e40619840c9f299b31f36
@@ -37803,7 +37803,11 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _randomIconPng = require("./Random_icon.png");
 var _randomIconPngDefault = parcelHelpers.interopDefault(_randomIconPng);
 var _s = $RefreshSig$();
+<<<<<<< HEAD
 const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0';
+=======
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+>>>>>>> cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -38064,7 +38068,11 @@ var _s = $RefreshSig$();
 // API configuration
 // =======
 // >>>>>>> 8ae8ce8a64b6eab3a39f71848f5eabce3b2b3ed9
+<<<<<<< HEAD
 const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+=======
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+>>>>>>> cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -38396,7 +38404,7 @@ var _rightArrowPngDefault = parcelHelpers.interopDefault(_rightArrowPng);
 var _navigation = require("./Navigation");
 var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 var _s = $RefreshSig$();
-const apiKey = 'f2fbb965309246e7906f64251396be87';
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -38589,7 +38597,11 @@ var _footerJsx = require("./Footer.jsx");
 var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _s = $RefreshSig$();
 // import Footer from './Footer.jsx'  
+<<<<<<< HEAD
 const apiKey = 'd2a320ed5a3a463ca1b8dce923cd49dc';
+=======
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+>>>>>>> cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -39177,7 +39189,7 @@ const SearchIngredient = ()=>{
                     className: (0, _searchIngredientModuleCssDefault.default).selected_ingredients_item_container,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: "Selected Ingredients :"
+                            children: "Selected :"
                         }, void 0, false, {
                             fileName: "components/SearchIngredient.jsx",
                             lineNumber: 166,
@@ -39278,63 +39290,59 @@ const SearchIngredient = ()=>{
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
                         lineNumber: 209,
-                        columnNumber: 9
+                        columnNumber: 3
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: (0, _searchIngredientModuleCssDefault.default).recipe_Container,
-                        children: [
-                            loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Loading..."
-                            }, void 0, false, {
-                                fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 211,
-                                columnNumber: 23
-                            }, undefined),
-                            showAllData && filterDishesData.length > 0 && filterDishesData.map((item, index)=>{
-                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: `/searchIngredientImage/${item.id}`,
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: (0, _searchIngredientModuleCssDefault.default).recipeCard,
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                src: item.image,
-                                                alt: "Click Image"
-                                            }, void 0, false, {
-                                                fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 218,
-                                                columnNumber: 21
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                children: item.title
-                                            }, void 0, false, {
-                                                fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 219,
-                                                columnNumber: 21
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 217,
-                                        columnNumber: 19
-                                    }, undefined)
-                                }, index, false, {
-                                    fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 216,
-                                    columnNumber: 17
-                                }, undefined);
-                            }),
-                            !showAllData && !loading && selectedIngredients.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "No recipes to display. Please select ingredients and try again."
-                            }, void 0, false, {
-                                fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 225,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _searchIngredientModuleCssDefault.default).loader
+                    }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 210,
-                        columnNumber: 9
+                        lineNumber: 211,
+                        columnNumber: 5
+                    }, undefined) // Show loader when loading is true
+                    ,
+                    !loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _searchIngredientModuleCssDefault.default).recipe_Container,
+                        children: showAllData && filterDishesData.length > 0 ? filterDishesData.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: `/searchIngredientImage/${item.id}`,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: (0, _searchIngredientModuleCssDefault.default).recipeCard,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: item.image,
+                                            alt: "Click Image"
+                                        }, void 0, false, {
+                                            fileName: "components/SearchIngredient.jsx",
+                                            lineNumber: 219,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: item.title
+                                        }, void 0, false, {
+                                            fileName: "components/SearchIngredient.jsx",
+                                            lineNumber: 220,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/SearchIngredient.jsx",
+                                    lineNumber: 218,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, index, false, {
+                                fileName: "components/SearchIngredient.jsx",
+                                lineNumber: 217,
+                                columnNumber: 11
+                            }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "No recipes to display , Please select ingredients and try again."
+                        }, void 0, false, {
+                            fileName: "components/SearchIngredient.jsx",
+                            lineNumber: 225,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "components/SearchIngredient.jsx",
+                        lineNumber: 214,
+                        columnNumber: 5
                     }, undefined)
                 ]
             }, void 0, true, {
@@ -39344,7 +39352,7 @@ const SearchIngredient = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 232,
+                lineNumber: 234,
                 columnNumber: 7
             }, undefined)
         ]
@@ -39365,25 +39373,23 @@ $RefreshReg$(_c, "SearchIngredient");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredient.module.css":"68nWq","../IngredientData.js":"4XC9W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"68nWq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredient.module.css":"68nWq","../IngredientData.js":"4XC9W","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"68nWq":[function(require,module,exports,__globalThis) {
 module.exports["button"] = `t7jeDG_button`;
 module.exports["description"] = `t7jeDG_description`;
-module.exports["eggRst"] = `t7jeDG_eggRst`;
-module.exports["eggRst"];
 module.exports["ingredientContainer"] = `t7jeDG_ingredientContainer`;
 module.exports["ingredientContainerParent"] = `t7jeDG_ingredientContainerParent`;
 module.exports["ingredientItemContainer"] = `t7jeDG_ingredientItemContainer`;
 module.exports["loader"] = `t7jeDG_loader`;
-module.exports["loaderContainer"] = `t7jeDG_loaderContainer`;
-module.exports["panex"] = `t7jeDG_panex`;
-module.exports["panex"];
 module.exports["recipeCard"] = `t7jeDG_recipeCard`;
+module.exports["recipeContainer"] = `t7jeDG_recipeContainer`;
 module.exports["recipe_Container"] = `t7jeDG_recipe_Container`;
 module.exports["result"] = `t7jeDG_result`;
 module.exports["resultButton"] = `t7jeDG_resultButton`;
 module.exports["searchContainer"] = `t7jeDG_searchContainer`;
 module.exports["searchInput"] = `t7jeDG_searchInput`;
 module.exports["selected_ingredients_item_container"] = `t7jeDG_selected_ingredients_item_container`;
+module.exports["spin"] = `t7jeDG_spin`;
+module.exports["spin"];
 
 },{}],"4XC9W":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -39645,7 +39651,7 @@ var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _searchIngredientImageModuleCss = require("./SearchIngredientImage.module.css"); // Ensure to import your CSS/Module styles
 var _searchIngredientImageModuleCssDefault = parcelHelpers.interopDefault(_searchIngredientImageModuleCss);
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 const SearchIngredientImage = ()=>{
     _s();
     const { id } = (0, _reactRouterDom.useParams)();
@@ -39988,7 +39994,7 @@ $RefreshReg$(_c, "SearchIngredientImage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./SearchIngredientImage.module.css":"7JaIJ"}],"7JaIJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredientImage.module.css":"7JaIJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7JaIJ":[function(require,module,exports,__globalThis) {
 module.exports["eggRst"] = `M0v9NW_eggRst`;
 module.exports["eggRst"];
 module.exports["equipmentList"] = `M0v9NW_equipmentList`;
