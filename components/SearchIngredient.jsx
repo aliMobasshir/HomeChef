@@ -16,10 +16,14 @@ const SearchIngredient = () => {
   const [error, setError] = useState(null)
   const [showAllData, setShowAllData] = useState(false)
   const [shouldFetchData, setShouldFetchData] = useState(false) // State to control fetching
-  window.scrollTo({
-    top : 0,
-    behavior : 'smooth',
-  })
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
+
   const handleInput = e => {
     setSearchIngredientQuery(e.target.value)
   }
@@ -27,7 +31,9 @@ const SearchIngredient = () => {
   const handleCheckbox = ingredient => {
     if (selectedIngredients.includes(ingredient)) {
       // Uncheck - Remove ingredient from selected list
-      setSelectedIngredients(selectedIngredients.filter(item => item !== ingredient))
+      setSelectedIngredients(
+        selectedIngredients.filter(item => item !== ingredient)
+      )
     } else {
       // Check - Add ingredient to selected list
       setSelectedIngredients([...selectedIngredients, ingredient])
@@ -109,8 +115,8 @@ const SearchIngredient = () => {
         <input
           onInput={handleInput}
           className={style.searchInput}
-          type="text"
-          placeholder="Search by ingredients"
+          type='text'
+          placeholder='Search by ingredients'
         />
         <button
           onClick={() => setSelectedIngredients(IngredientfilterData)} // Select all visible ingredients
@@ -136,7 +142,7 @@ const SearchIngredient = () => {
       </div>
 
       {/* Selected ingredients */}
-      <div className="selected_ingredients_container">
+      <div className='selected_ingredients_container'>
         {selectedIngredients.length > 0 && (
           <div className={style.selected_ingredients_item_container}>
             <h2>Selected Ingredients :</h2>
@@ -144,12 +150,14 @@ const SearchIngredient = () => {
               return (
                 <div key={index} className={style.ingredientItemContainer}>
                   <input
-                    type="checkbox"
+                    type='checkbox'
                     id={`selected-ingredient-${index}`}
                     onChange={() => handleCheckbox(ingredient)}
                     checked={selectedIngredients.includes(ingredient)} // Make checkbox controlled
                   />
-                  <label htmlFor={`selected-ingredient-${index}`}>{ingredient}</label>
+                  <label htmlFor={`selected-ingredient-${index}`}>
+                    {ingredient}
+                  </label>
                 </div>
               )
             })}
@@ -164,7 +172,7 @@ const SearchIngredient = () => {
             IngredientfilterData.map((ingredient, index) => (
               <div key={index} className={style.ingredientItemContainer}>
                 <input
-                  type="checkbox"
+                  type='checkbox'
                   id={`ingredient-${index}`}
                   onChange={() => handleCheckbox(ingredient)}
                   checked={selectedIngredients.includes(ingredient)} // Make checkbox controlled
@@ -189,14 +197,16 @@ const SearchIngredient = () => {
               return (
                 <Link to={`/searchIngredientImage/${item.id}`} key={index}>
                   <div className={style.recipeCard}>
-                    <img src={item.image} alt="Click Image" />
+                    <img src={item.image} alt='Click Image' />
                     <h3>{item.title}</h3>
                   </div>
                 </Link>
               )
             })}
           {!showAllData && !loading && selectedIngredients.length === 0 && (
-            <p>No recipes to display. Please select ingredients and try again.</p>
+            <p>
+              No recipes to display. Please select ingredients and try again.
+            </p>
           )}
         </div>
       </div>
