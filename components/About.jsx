@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import diet from '../Diet.js'
 import style from './About.module.css'
 import Navigation from './Navigation.jsx'
@@ -19,11 +19,14 @@ const About = () => {
   const [showCuisineAll, setShowCuisineAll] = useState(false)
   const [showMealAll, setShowMealAll] = useState(false)
 
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
 
+  
   const scrollLeft = className => {
     const container = document.querySelector(`.${className}`)
     container.scrollLeft -= 200
