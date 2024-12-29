@@ -38890,7 +38890,7 @@ $RefreshReg$(_c, "ShowAll");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hx3sc":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Navigation":"kfJB7"}],"hx3sc":[function(require,module,exports,__globalThis) {
 module.exports = require("beed73946feccc95").getBundleURL('avzPb') + "right-arrow.2f73beb6.png" + "?" + Date.now();
 
 },{"beed73946feccc95":"lgJ39"}],"lOk8I":[function(require,module,exports,__globalThis) {
