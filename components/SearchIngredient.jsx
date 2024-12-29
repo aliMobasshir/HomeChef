@@ -51,7 +51,7 @@ const SearchIngredient = () => {
     }
   }
 
-  const showAll = className => {
+  const showAll = () => {
     if (selectedIngredients.length > 0) {
       setShowAllData(true)
       setShouldFetchData(true) // Trigger data fetch when the button is clicked
@@ -152,7 +152,7 @@ const SearchIngredient = () => {
         </button>
 
         <button
-          onClick={() => showAll(style.resultButton)}
+          onClick={() => showAll()}
           className={style.resultButton}
         >
           Show results

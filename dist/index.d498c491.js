@@ -37803,7 +37803,7 @@ var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModule
 var _randomIconPng = require("./Random_icon.png");
 var _randomIconPngDefault = parcelHelpers.interopDefault(_randomIconPng);
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -38064,7 +38064,7 @@ var _s = $RefreshSig$();
 // API configuration
 // =======
 // >>>>>>> 8ae8ce8a64b6eab3a39f71848f5eabce3b2b3ed9
-const apiKey = '3544e0a87f98468883e9169172546ac1';
+const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -38589,7 +38589,7 @@ var _footerJsx = require("./Footer.jsx");
 var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _s = $RefreshSig$();
 // import Footer from './Footer.jsx'  
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+const apiKey = 'd2a320ed5a3a463ca1b8dce923cd49dc';
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -39028,7 +39028,7 @@ const SearchIngredient = ()=>{
             ingredient
         ]);
     };
-    const showAll = (className)=>{
+    const showAll = ()=>{
         if (selectedIngredients.length > 0) {
             setShowAllData(true);
             setShouldFetchData(true) // Trigger data fetch when the button is clicked
@@ -39157,7 +39157,7 @@ const SearchIngredient = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: ()=>showAll((0, _searchIngredientModuleCssDefault.default).resultButton),
+                        onClick: ()=>showAll(),
                         className: (0, _searchIngredientModuleCssDefault.default).resultButton,
                         children: "Show results"
                     }, void 0, false, {

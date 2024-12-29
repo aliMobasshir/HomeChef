@@ -3,7 +3,7 @@ import Style from './recipeList.module.css'
 import RandomIcon from './Random_icon.png'
 
 
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'
+const apiKey = 'af3ad633e574425c90e2c0ef4a4fefc0'
 
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
