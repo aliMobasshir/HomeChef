@@ -35642,10 +35642,12 @@ const About = ()=>{
     const [showDietAll, setShowDietAll] = (0, _react.useState)(false);
     const [showCuisineAll, setShowCuisineAll] = (0, _react.useState)(false);
     const [showMealAll, setShowMealAll] = (0, _react.useState)(false);
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    (0, _react.useEffect)(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     const scrollLeft = (className)=>{
         const container = document.querySelector(`.${className}`);
         container.scrollLeft -= 200;
@@ -35664,7 +35666,7 @@ const About = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 43,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             isSearchActive ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35673,21 +35675,21 @@ const About = ()=>{
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 48,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 49,
+                        lineNumber: 53,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 50,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -35701,7 +35703,7 @@ const About = ()=>{
                                 children: "Diets"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 57,
+                                lineNumber: 61,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -35710,18 +35712,18 @@ const About = ()=>{
                                     children: "Know More About Diets"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 58,
+                                lineNumber: 62,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/About.jsx",
-                        lineNumber: 56,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35736,12 +35738,12 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 69,
+                                    lineNumber: 73,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 65,
+                                lineNumber: 69,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35761,12 +35763,12 @@ const About = ()=>{
                                                             alt: item.name
                                                         }, void 0, false, {
                                                             fileName: "components/About.jsx",
-                                                            lineNumber: 96,
+                                                            lineNumber: 100,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 95,
+                                                        lineNumber: 99,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35774,28 +35776,28 @@ const About = ()=>{
                                                         children: item.name
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 102,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, item.id, true, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 89,
+                                                lineNumber: 93,
                                                 columnNumber: 21
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 83,
+                                            lineNumber: 87,
                                             columnNumber: 19
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 77,
+                                    lineNumber: 81,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 72,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, undefined),
                             !showDietAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35807,18 +35809,18 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 109,
+                                    lineNumber: 113,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 105,
+                                lineNumber: 109,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/About.jsx",
-                        lineNumber: 63,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35829,7 +35831,7 @@ const About = ()=>{
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 116,
+                            lineNumber: 120,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -35837,19 +35839,19 @@ const About = ()=>{
                             children: "Show Less"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 123,
+                            lineNumber: 127,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 114,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _aboutModuleCssDefault.default).horizontalline
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 132,
+                        lineNumber: 136,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -35857,7 +35859,7 @@ const About = ()=>{
                         children: "Cuisines"
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 135,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35872,12 +35874,12 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 142,
+                                    lineNumber: 146,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 138,
+                                lineNumber: 142,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35897,12 +35899,12 @@ const About = ()=>{
                                                             alt: item.name
                                                         }, void 0, false, {
                                                             fileName: "components/About.jsx",
-                                                            lineNumber: 167,
+                                                            lineNumber: 171,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 170,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35910,28 +35912,28 @@ const About = ()=>{
                                                         children: item.name
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 169,
+                                                        lineNumber: 173,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, item.id, true, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 160,
+                                                lineNumber: 164,
                                                 columnNumber: 21
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 156,
+                                            lineNumber: 160,
                                             columnNumber: 19
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 150,
+                                    lineNumber: 154,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 145,
+                                lineNumber: 149,
                                 columnNumber: 13
                             }, undefined),
                             !showCuisineAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35943,18 +35945,18 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 180,
+                                    lineNumber: 184,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 176,
+                                lineNumber: 180,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/About.jsx",
-                        lineNumber: 136,
+                        lineNumber: 140,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35965,7 +35967,7 @@ const About = ()=>{
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 187,
+                            lineNumber: 191,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -35973,19 +35975,19 @@ const About = ()=>{
                             children: "Show Less"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 194,
+                            lineNumber: 198,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 185,
+                        lineNumber: 189,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _aboutModuleCssDefault.default).horizontalline
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 203,
+                        lineNumber: 207,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -35993,7 +35995,7 @@ const About = ()=>{
                         children: "Meals"
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 206,
+                        lineNumber: 210,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36008,12 +36010,12 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 213,
+                                    lineNumber: 217,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 209,
+                                lineNumber: 213,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36033,12 +36035,12 @@ const About = ()=>{
                                                             alt: item.name
                                                         }, void 0, false, {
                                                             fileName: "components/About.jsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 242,
                                                             columnNumber: 25
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 237,
+                                                        lineNumber: 241,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36046,28 +36048,28 @@ const About = ()=>{
                                                         children: item.name
                                                     }, void 0, false, {
                                                         fileName: "components/About.jsx",
-                                                        lineNumber: 240,
+                                                        lineNumber: 244,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, item.id, true, {
                                                 fileName: "components/About.jsx",
-                                                lineNumber: 231,
+                                                lineNumber: 235,
                                                 columnNumber: 21
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/About.jsx",
-                                            lineNumber: 227,
+                                            lineNumber: 231,
                                             columnNumber: 19
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 221,
+                                    lineNumber: 225,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 216,
+                                lineNumber: 220,
                                 columnNumber: 13
                             }, undefined),
                             !showMealAll && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36079,18 +36081,18 @@ const About = ()=>{
                                     width: "20px"
                                 }, void 0, false, {
                                     fileName: "components/About.jsx",
-                                    lineNumber: 251,
+                                    lineNumber: 255,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 247,
+                                lineNumber: 251,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/About.jsx",
-                        lineNumber: 207,
+                        lineNumber: 211,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36101,7 +36103,7 @@ const About = ()=>{
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 258,
+                            lineNumber: 262,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: (0, _aboutModuleCssDefault.default).show_all_button,
@@ -36109,45 +36111,45 @@ const About = ()=>{
                             children: "Show Less"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 265,
+                            lineNumber: 269,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 256,
+                        lineNumber: 260,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _aboutModuleCssDefault.default).horizontalline
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 274,
+                        lineNumber: 278,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _popularIndianJsxDefault.default), {
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 276,
+                        lineNumber: 280,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedDessertsJsxDefault.default), {
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 277,
+                        lineNumber: 281,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recommendedWhole30JsxDefault.default), {
                         query: query
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 278,
+                        lineNumber: 282,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 279,
+                        lineNumber: 283,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -36155,11 +36157,11 @@ const About = ()=>{
         ]
     }, void 0, true, {
         fileName: "components/About.jsx",
-        lineNumber: 42,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
-_s(About, "5QppAInIcQ0+0u/M+a6J6NXoN34=");
+_s(About, "4+TRuFFzQ0MEesOyFF4b1DLNIXM=");
 _c = About;
 exports.default = About;
 var _c;
@@ -38986,7 +38988,17 @@ var _ingredientDataJs = require("../IngredientData.js"); // Ensure the path is c
 var _ingredientDataJsDefault = parcelHelpers.interopDefault(_ingredientDataJs);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b';
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
+// 834e4826627e40619840c9f299b31f36 
+// f2fbb965309246e7906f64251396be87 
+// 5ce733c6c24d4454ab2395b906ae5dc1
+// 5253113cb6ff4e67ad11c72ec6ae2ec0 
+// d2a320ed5a3a463ca1b8dce923cd49dc
+// af3ad633e574425c90e2c0ef4a4fefc0
+// 3544e0a87f98468883e9169172546ac1
+// 0d0e212f1a904e9cb772072f49167a4b
+// 716d2d891ccc4e788b471c105f5928e8
+// 3036c2facd2447e380f01fd8061794c4
 const SearchIngredient = ()=>{
     _s();
     const [query, setQuery] = (0, _react.useState)('');
@@ -39016,11 +39028,15 @@ const SearchIngredient = ()=>{
             ingredient
         ]);
     };
-    const showAll = ()=>{
+    const showAll = (className)=>{
         if (selectedIngredients.length > 0) {
             setShowAllData(true);
             setShouldFetchData(true) // Trigger data fetch when the button is clicked
             ;
+            window.scrollTo({
+                top: 1000,
+                behavior: 'smooth'
+            });
         } else setShowAllData(false) // If no ingredients are selected, show no recipes
         ;
     };
@@ -39076,7 +39092,7 @@ const SearchIngredient = ()=>{
         ]
     }, void 0, true, {
         fileName: "components/SearchIngredient.jsx",
-        lineNumber: 100,
+        lineNumber: 115,
         columnNumber: 21
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39085,7 +39101,7 @@ const SearchIngredient = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 104,
+                lineNumber: 119,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39094,12 +39110,12 @@ const SearchIngredient = ()=>{
                     children: "Find recipes that use as many of the given ingredients as possible and require as few additional ingredients as possible."
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 107,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 106,
+                lineNumber: 121,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39112,7 +39128,7 @@ const SearchIngredient = ()=>{
                         placeholder: "Search by ingredients"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 115,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39121,7 +39137,7 @@ const SearchIngredient = ()=>{
                         children: "Select All"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 121,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39137,22 +39153,22 @@ const SearchIngredient = ()=>{
                         children: "Clear all"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 128,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: showAll,
+                        onClick: ()=>showAll((0, _searchIngredientModuleCssDefault.default).resultButton),
                         className: (0, _searchIngredientModuleCssDefault.default).resultButton,
                         children: "Show results"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 139,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 114,
+                lineNumber: 129,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39164,7 +39180,7 @@ const SearchIngredient = ()=>{
                             children: "Selected Ingredients :"
                         }, void 0, false, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 148,
+                            lineNumber: 166,
                             columnNumber: 13
                         }, undefined),
                         selectedIngredients.map((ingredient, index)=>{
@@ -39178,7 +39194,7 @@ const SearchIngredient = ()=>{
                                         checked: selectedIngredients.includes(ingredient)
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 152,
+                                        lineNumber: 170,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39186,25 +39202,25 @@ const SearchIngredient = ()=>{
                                         children: ingredient
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 158,
+                                        lineNumber: 176,
                                         columnNumber: 19
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 151,
+                                lineNumber: 169,
                                 columnNumber: 17
                             }, undefined);
                         })
                     ]
                 }, void 0, true, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 147,
+                    lineNumber: 165,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 145,
+                lineNumber: 163,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39221,7 +39237,7 @@ const SearchIngredient = ()=>{
                                     checked: selectedIngredients.includes(ingredient)
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 174,
+                                    lineNumber: 192,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39229,29 +39245,29 @@ const SearchIngredient = ()=>{
                                     children: ingredient
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 180,
+                                    lineNumber: 198,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 173,
+                            lineNumber: 191,
                             columnNumber: 15
                         }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "No ingredients found"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 184,
+                        lineNumber: 202,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 170,
+                    lineNumber: 188,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 169,
+                lineNumber: 187,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39261,7 +39277,7 @@ const SearchIngredient = ()=>{
                         children: "Resulted Recipes:"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 191,
+                        lineNumber: 209,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39271,7 +39287,7 @@ const SearchIngredient = ()=>{
                                 children: "Loading..."
                             }, void 0, false, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 193,
+                                lineNumber: 211,
                                 columnNumber: 23
                             }, undefined),
                             showAllData && filterDishesData.length > 0 && filterDishesData.map((item, index)=>{
@@ -39285,25 +39301,25 @@ const SearchIngredient = ()=>{
                                                 alt: "Click Image"
                                             }, void 0, false, {
                                                 fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 200,
+                                                lineNumber: 218,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 201,
+                                                lineNumber: 219,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 199,
+                                        lineNumber: 217,
                                         columnNumber: 19
                                     }, undefined)
                                 }, index, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 198,
+                                    lineNumber: 216,
                                     columnNumber: 17
                                 }, undefined);
                             }),
@@ -39311,30 +39327,30 @@ const SearchIngredient = ()=>{
                                 children: "No recipes to display. Please select ingredients and try again."
                             }, void 0, false, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 207,
+                                lineNumber: 225,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 192,
+                        lineNumber: 210,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 190,
+                lineNumber: 208,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 214,
+                lineNumber: 232,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/SearchIngredient.jsx",
-        lineNumber: 103,
+        lineNumber: 118,
         columnNumber: 5
     }, undefined);
 };
