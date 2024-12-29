@@ -3029,7 +3029,11 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+<<<<<<< HEAD
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2"}],"iTorj":[function(require,module,exports,__globalThis) {
+=======
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+>>>>>>> danish
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -38943,10 +38947,15 @@ $RefreshReg$(_c, "Image");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Image.module.css":"3dNuP","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3dNuP":[function(require,module,exports,__globalThis) {
+<<<<<<< HEAD
 module.exports["eggRst"] = `CdOZGa_eggRst`;
 module.exports["eggRst"];
 module.exports["equipmentList"] = `CdOZGa_equipmentList`;
 module.exports["equipmententList"] = `CdOZGa_equipmententList`;
+=======
+module.exports["equipment"] = `CdOZGa_equipment`;
+module.exports["equipmentStep"] = `CdOZGa_equipmentStep`;
+>>>>>>> danish
 module.exports["error"] = `CdOZGa_error`;
 module.exports["image"] = `CdOZGa_image`;
 module.exports["imagePara"] = `CdOZGa_imagePara`;
