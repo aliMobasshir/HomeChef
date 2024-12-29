@@ -4,7 +4,7 @@ import style from './Image.module.css'
 import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
 // import Footer from './Footer.jsx'  
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
 // 834e4826627e40619840c9f299b31f36 
 // f2fbb965309246e7906f64251396be87 
 // 5ce733c6c24d4454ab2395b906ae5dc1

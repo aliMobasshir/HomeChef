@@ -4,7 +4,7 @@ import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
 import style from './SearchIngredientImage.module.css' // Ensure to import your CSS/Module styles
 
-const apiKey = '0d0e212f1a904e9cb772072f49167a4b'
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
 
 const SearchIngredientImage = () => {
   const { id } = useParams()

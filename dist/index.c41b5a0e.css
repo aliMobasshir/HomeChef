@@ -1961,7 +1961,7 @@ a {
   color: orange;
   background-color: #656565;
   width: 89vw;
-  margin: 5vw;
+  margin: 5vw auto 0;
   padding: 2vw;
   font-family: Shantell Sans, cursive;
   font-size: 2.5vw;
@@ -1973,7 +1973,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 89vw;
-  margin: 10vw auto 4vw;
+  margin: 10vw auto 3vw;
   display: flex;
 }
 
@@ -2031,7 +2031,7 @@ a {
   gap: 20px;
   width: 89vw;
   max-height: 15vw;
-  margin: 4vw auto 0;
+  margin: 3vw auto 0;
   padding: 20px;
   display: grid;
   overflow: auto hidden;
@@ -2073,7 +2073,7 @@ a {
   gap: 20px;
   width: 89vw;
   height: 38vw;
-  margin: 0 auto 5vw;
+  margin: 0 auto 3vw;
   padding: 20px;
   display: flex;
   overflow: auto visible;
