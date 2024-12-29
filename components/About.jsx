@@ -26,7 +26,8 @@ const About = () => {
     })
   }, [])
 
-  
+
+
   const scrollLeft = className => {
     const container = document.querySelector(`.${className}`)
     container.scrollLeft -= 200
