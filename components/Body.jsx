@@ -32,7 +32,7 @@ const Body = ({ query}) => {
             id='section_container2'
             className={section.section_container2_category}
           >
-            <Link to="/about" className={section.ReactLink}>
+            <Link to="/SearchIngredient" className={section.ReactLink}>
               <img src={rectange8} alt=' ' />
               <p>Search by ingredients</p>
             </Link>

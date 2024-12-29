@@ -184,3 +184,22 @@ background-position: right center , 17px center , 0px center;
     font-size: 12px;
 }
 }
+
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
