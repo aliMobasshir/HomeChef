@@ -3035,7 +3035,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -39374,7 +39374,7 @@ $RefreshReg$(_c, "SearchIngredient");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredient.module.css":"68nWq","../IngredientData.js":"4XC9W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"68nWq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredient.module.css":"68nWq","../IngredientData.js":"4XC9W","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"68nWq":[function(require,module,exports,__globalThis) {
 module.exports["button"] = `t7jeDG_button`;
 module.exports["description"] = `t7jeDG_description`;
 module.exports["ingredientContainer"] = `t7jeDG_ingredientContainer`;
@@ -39995,7 +39995,7 @@ $RefreshReg$(_c, "SearchIngredientImage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./SearchIngredientImage.module.css":"7JaIJ"}],"7JaIJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredientImage.module.css":"7JaIJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7JaIJ":[function(require,module,exports,__globalThis) {
 module.exports["eggRst"] = `M0v9NW_eggRst`;
 module.exports["eggRst"];
 module.exports["equipmentList"] = `M0v9NW_equipmentList`;
