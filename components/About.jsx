@@ -19,6 +19,11 @@ const About = () => {
   const [showCuisineAll, setShowCuisineAll] = useState(false)
   const [showMealAll, setShowMealAll] = useState(false)
 
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+
   const scrollLeft = className => {
     const container = document.querySelector(`.${className}`)
     container.scrollLeft -= 200
@@ -27,6 +32,8 @@ const About = () => {
   const scrollRight = className => {
     const container = document.querySelector(`.${className}`)
     container.scrollLeft += 200
+    let scrollPosition = container.scrollLeft
+    console.log(scrollPosition)
   }
 
   const isSearchActive = query.trim() !== ''
