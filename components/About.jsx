@@ -1,288 +1,135 @@
-import React, { useEffect, useState } from 'react'
-import diet from '../Diet.js'
+import React from 'react'
 import style from './About.module.css'
 import Navigation from './Navigation.jsx'
-import cuisines from '../Cuisines.js'
-import mealTypes from '../Mealtypes.js'
+import Happycustomerbg from './happycustomer.svg'
+import mission from './missionImage.svg'
+import MobasshirImage from './MobasshirImage.svg';
+import linkedinicon from './Linkedinicon.svg'
+import externalIcon from './ExternalLinkicon.svg'
+import DanishImage from './DanishImage.svg'
 import Footer from './Footer.jsx'
-import leftArrow from './left-arrow-scroll.png'
-import rightArrow from './right-arrow-scroll.png'
-import Popular from './PopularIndian.jsx'
-import RecommendedDesserts from './RecommendedDesserts.jsx'
-import RecommendedWhole30 from './RecommendedWhole30.jsx'
-import { Link } from 'react-router-dom'
-import KnowMoreDiets from './KnowMoreDiets.jsx'
+
+// import { Link } from 'react-router-dom'
+
 
 const About = () => {
-  const [query, setQuery] = useState('')
-  const [showDietAll, setShowDietAll] = useState(false)
-  const [showCuisineAll, setShowCuisineAll] = useState(false)
-  const [showMealAll, setShowMealAll] = useState(false)
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }, [])
-
-
-
-  const scrollLeft = className => {
-    const container = document.querySelector(`.${className}`)
-    container.scrollLeft -= 200
-  }
-
-  const scrollRight = className => {
-    const container = document.querySelector(`.${className}`)
-    container.scrollLeft += 200
-    let scrollPosition = container.scrollLeft
-    console.log(scrollPosition)
-  }
-
-  const isSearchActive = query.trim() !== ''
 
   return (
     <div className='about'>
-      <Navigation setQuery={setQuery} />
-
-      {isSearchActive ? (
-        <>
-          {/* Render search results */}
-          <Popular query={query} />
-          <RecommendedDesserts query={query} />
-          <RecommendedWhole30 query={query} />
-        </>
-      ) : (
-        <>
-          {/* Render original sections when no search query */}
-          {/* Diets Section */}
-          <div className={style.dietheadingnknowmore}>
-            <h1 className={style.diet_heading}>Diets</h1>
-            <Link to='/knowMoreDiets'>
-              <button>Know More About Diets</button>
-            </Link>
+      <Navigation />
+      <div className={style.aboutwebsite}>
+        <div className={style.HeaderPage}>
+          <h1>About HOMECHEF</h1>
+          <p>know everything .... about us</p>
+        </div>
+        <div className={style.straightLine}></div>
+        <div className={style.WhoWeAreContainer}>
+          <h1>who we are</h1>
+          <p>We are HomeChef, a platform designed to make discovering and cooking delicious meals easier and more enjoyable. Whether you're a seasoned chef or just starting out, we provide you with the tools and inspiration to create meals that suit your taste, dietary preferences, and skill level. Our mission is to bring the joy of cooking to everyone with a user-friendly, feature-rich experience.</p>
+        </div>
+        <div className={style.whatweoffercontainer}>
+          <h1>what we offer</h1>
+          <div className={style.cards}>
+            <div className={style.card1}><p>Find
+              Recipes</p></div>
+            <div className={style.card2}><p>Explore
+              categories</p></div>
+            <div className={style.card3}><p>Ingredient Based Search</p></div>
+            <div className={style.card4}><p>Vast Recipe
+              Collection</p></div>
           </div>
+        </div>
 
-          <div className={style.diets_container}>
-            {!showDietAll && (
-              <button
-                className={style.arrow_left}
-                onClick={() => scrollLeft(style.diets)}
-              >
-                <img src={leftArrow} alt='leftarrow' width='20px' />
-              </button>
-            )}
-            <div
-              className={`${style.sliderContainer} ${
-                showDietAll ? style.expanded : ''
-              }`}
-            >
-              <div
-                className={`${style.diets} ${
-                  showDietAll ? style.showAllImages : ''
-                }`}
-              >
-                {diet.map(item => (
-                  <Link
-                    to={`/showAll/diet/${item.name}`}
-                    className={`${style.diet} ${
-                      showDietAll ? style.dietRow : ''
-                    }`}
-                  >
-                    <div
-                      key={item.id}
-                      className={`${style.diet} ${
-                        showDietAll ? style.dietRow : ''
-                      }`}
-                    >
-                      <div className={style.diet_image}>
-                        <img src={item.image} alt={item.name} />
-                      </div>
-                      <div className={style.diet_name}>{item.name}</div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+        <div className={style.whychoosehomechefcontainer}>
+          <h1>why choose HomeChef</h1>
+          <div className={style.textnimage}>
+            <div className={style.textarea}>
+              <h3>Customer Satisfaction:</h3>
+              <p>We’re committed to providing a satisfying and reliable experience for all our users.</p>
+              <h3>Easy-to-Use Platform:</h3>
+              <p>A simple, intuitive interface makes recipe browsing quick and easy.</p>
+              <h3>Extensive Recipe Library:</h3>
+              <p>Thousands of recipes to meet every dietary need and taste preference.</p>
+              <h3>Time-Saving:</h3>
+              <p>Find recipes quickly and spend more time cooking.</p>
             </div>
-            {!showDietAll && (
-              <button
-                className={style.arrow_right}
-                onClick={() => scrollRight(style.diets)}
-              >
-                <img src={rightArrow} alt='rightarrow' width='20px' />
-              </button>
-            )}
-          </div>
-
-          <div className={style.show_all}>
-            {!showDietAll ? (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowDietAll(true)}
-              >
-                Show All
-              </button>
-            ) : (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowDietAll(false)}
-              >
-                Show Less
-              </button>
-            )}
-          </div>
-
-          <div className={style.horizontalline}></div>
-
-          {/* Cuisines Section */}
-          <h1 className={style.cuisine_heading}>Cuisines</h1>
-          <div className={style.cuisines_container}>
-            {!showCuisineAll && (
-              <button
-                className={style.arrow_left}
-                onClick={() => scrollLeft(style.cuisines)}
-              >
-                <img src={leftArrow} alt='leftarrow' width='20px' />
-              </button>
-            )}
-            <div
-              className={`${style.sliderContainer} ${
-                showCuisineAll ? style.expanded : ''
-              }`}
-            >
-              <div
-                className={`${style.cuisines} ${
-                  showCuisineAll ? style.showAllImages : ''
-                }`}
-              >
-                {cuisines.map(item => (
-                  <Link
-                    to={`/showAll/cuisine/${item.name}`}
-                    className={style.cuisine}
-                  >
-                    <div
-                      key={item.id}
-                      className={`${style.cuisine} ${
-                        showCuisineAll ? style.cuisineRow : ''
-                      }`}
-                    >
-                      <div className={style.cuisine_image}>
-                        <img src={item.image} alt={item.name} />
-                      </div>
-                      <div className={style.cuisine_name}>{item.name}</div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+            <div className={style.imageContainer}>
+              <img src={Happycustomerbg} alt="happy customer" />
             </div>
-            {!showCuisineAll && (
-              <button
-                className={style.arrow_right}
-                onClick={() => scrollRight(style.cuisines)}
-              >
-                <img src={rightArrow} alt='rightarrow' width='20px' />
-              </button>
-            )}
+
           </div>
+        </div>
 
-          <div className={style.show_all}>
-            {!showCuisineAll ? (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowCuisineAll(true)}
-              >
-                Show All
-              </button>
-            ) : (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowCuisineAll(false)}
-              >
-                Show Less
-              </button>
-            )}
-          </div>
-
-          <div className={style.horizontalline}></div>
-
-          {/* Meals Section */}
-          <h1 className={style.meal_heading}>Meals</h1>
-          <div className={style.meals_container}>
-            {!showMealAll && (
-              <button
-                className={style.arrow_left}
-                onClick={() => scrollLeft(style.meals)}
-              >
-                <img src={leftArrow} alt='leftarrow' width='20px' />
-              </button>
-            )}
-            <div
-              className={`${style.sliderContainer} ${
-                showMealAll ? style.expanded : ''
-              }`}
-            >
-              <div
-                className={`${style.meals} ${
-                  showMealAll ? style.showAllImages : ''
-                }`}
-              >
-                {mealTypes.map(item => (
-                  <Link
-                    to={`/showAll/type/${item.name}`}
-                    className={style.meal}
-                  >
-                    <div
-                      key={item.id}
-                      className={`${style.meal} ${
-                        showMealAll ? style.mealRow : ''
-                      }`}
-                    >
-                      <div className={style.meal_image}>
-                        <img src={item.image} alt={item.name} />
-                      </div>
-                      <div className={style.meal_name}>{item.name}</div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+        {/* our mission */}
+        <div className={style.ourmission}>
+          <h1>our mission</h1>
+          <div className={style.textnimage}
+          ><div className={style.imageContainer}>
+              <img src={mission} alt="mission" />
             </div>
-            {!showMealAll && (
-              <button
-                className={style.arrow_right}
-                onClick={() => scrollRight(style.meals)}
-              >
-                <img src={rightArrow} alt='rightarrow' width='20px' />
-              </button>
-            )}
+            <div className={style.missiontext}>
+              <h3>At HomeChef, we aim to:</h3>
+              <h4>Provide a platform where everyone can find and create memorable meals.</h4>
+              <h4>Empower users to discover new flavors and expand their culinary horizons.</h4>
+              <h4>Help save time by offering easy-to-follow recipes that fit into busy schedules.</h4>
+              <h4>Encourage sustainability by reducing food waste with our ingredient-based search feature.</h4>
+            </div>
+          </div>
+        </div>
+
+        <div className={style.conclusion}>
+          <h1>Start Your Culinary Journey Today</h1>
+          <p>Join the HomeChef community and discovere the joy of cooking with HomeChef. Start exploring our diverse recipe collection, find the perfect dishes for your needs, and let us guide you to your next great meal.
+            <br />Let's cook up something amazing together!
+          </p>
+          <div className={style.straightLine2}></div>
+        </div>
+      </div>
+
+
+      <div className={style.aboutdeveloper}>
+        <div className={style.header}>
+          <h1>about the developers
+          </h1>
+        </div>
+      </div>
+
+      <div className={style.devdetail}>
+        <div className={style.profileimgcontainer}>
+          <img src={MobasshirImage} alt="Md Mobasshir ALi Image" />
+        </div>
+        <div className={style.devinfo}>
+          <h1>Md Mobasshir ALi</h1>
+          <p>3rd year Computer science engineering student at Integral University</p>
+          <div class={style.linkedinbutton}>
+            <img src={linkedinicon} alt="LinkedIn Icon" class={style.iconlefticon} />
+            <span>Linked in</span>
+            <img src={externalIcon} alt="External Link Icon" class={style.iconrighticon} />
           </div>
 
-          <div className={style.show_all}>
-            {!showMealAll ? (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowMealAll(true)}
-              >
-                Show All
-              </button>
-            ) : (
-              <button
-                className={style.show_all_button}
-                onClick={() => setShowMealAll(false)}
-              >
-                Show Less
-              </button>
-            )}
-          </div>
+        </div>
+      </div>
 
-          <div className={style.horizontalline}></div>
+      <div className={style.straightLine}></div>
 
-          <Popular query={query} />
-          <RecommendedDesserts query={query} />
-          <RecommendedWhole30 query={query} />
-          <Footer />
-        </>
-      )}
+      <div className={style.devdetail}>
+
+<div className={style.devinfo2}>
+  <h1>Mohd danish</h1>
+  <p>3rd year Computer science engineering student at Integral University</p>
+  <div class={style.linkedinbutton}>
+  <img src={linkedinicon} alt="LinkedIn Icon" class={style.iconlefticon} />
+  <span>Linked in</span>
+  <img src={externalIcon} alt="External Link Icon" class={style.iconrighticon} />
+</div>
+</div>
+<div className={style.profileimgcontainer}>
+  <img src={DanishImage} alt="Md Mobasshir ALi Image" />
+</div>
+      </div>
+      <div className={style.straightLine}></div>
+      <Footer />
     </div>
   )
 }

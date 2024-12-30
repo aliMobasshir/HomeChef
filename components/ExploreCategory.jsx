@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import diet from '../Diet.js'
-import style from './About.module.css'
+import style from './ExploreCategories.module.css'
 import Navigation from './Navigation.jsx'
 import cuisines from '../Cuisines.js'
 import mealTypes from '../Mealtypes.js'
