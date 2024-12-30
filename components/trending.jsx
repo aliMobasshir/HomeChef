@@ -5,7 +5,7 @@ import apiImage from './api_error_image.gif'
 
 // API configuration
 
-const apiKey = '3544e0a87f98468883e9169172546ac1'
+const apiKey = 'f2fbb965309246e7906f64251396be87'
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
@@ -61,7 +61,7 @@ function RecipeList ({ query }) {
             <img src={QuickIcon} alt='flame' className={Style.icon} />
           </h1>
         </div>
-        
+
         <div className={Style.errorContainer}>
           <img src={apiImage} alt='arrow' className={Style.icon} />
 
@@ -76,27 +76,41 @@ function RecipeList ({ query }) {
     error?.includes('504')
   )
     return (
-      <div className={Style.errorContainer}>
-        <img
-          src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
-          alt='arrow'
-          className={Style.icon}
-        />
+      <div>
+        <div className={Style.topPicksPage}>
+          <h1 className={Style.heading}>
+            Rapid Recipes
+            <img src={QuickIcon} alt='flame' className={Style.icon} />
+          </h1>
+        </div>
 
-        <p>
-          Failed to fetch recipe data due to a server error. Please try again
-          later.
-        </p>
+        <div className={Style.errorContainer}>
+          <img
+            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
+            alt='arrow'
+            className={Style.icon}
+          />
+
+          <p>
+            Failed to fetch recipe data due to a server error. Please try again
+            later.
+          </p>
+        </div>
       </div>
     )
 
-  if (loading) {
+  if (loading)
     return (
-      <div className={Style.loaderContainer}>
-        <p className={Style.loader}></p>
+      <div>
+        <div className={Style.topPicksPage}>
+          <h1 className={Style.heading}>
+            Rapid Recipes
+            <img src={QuickIcon} alt='flame' className={Style.icon} />
+          </h1>
+        </div>
+        <div className={Style.loader}></div>
       </div>
     )
-  }
 
   // if (error) return <p>Error: {error}</p>;
 

@@ -3,7 +3,7 @@ import Style from './recipeList.module.css'
 import RandomIcon from './Random_icon.png'
 import apiImage from './api_error_image.gif'
 
-const apiKey = '834e4826627e40619840c9f299b31f36'
+const apiKey = 'f2fbb965309246e7906f64251396be87'
 //  cb830b43603108a2e1b0d922bac475a945a8404a
 
 // 834e4826627e40619840c9f299b31f36
@@ -93,8 +93,14 @@ function RecipeList ({ query }) {
   // Render loading indicator while fetching data
   if (loading)
     return (
-      <div className={Style.loaderContainer}>
-        <p className={Style.loader}></p>
+      <div>
+        <div className={Style.topPicksPage}>
+          <h1 className={Style.heading}>
+            Random Picks
+            <img src={RandomIcon} alt='arrow' className={Style.icon} />
+          </h1>
+        </div>
+        <div className={Style.loader}></div>
       </div>
     )
 

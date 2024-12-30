@@ -3,7 +3,7 @@ import Style from './Popular.module.css'
 import { Link } from 'react-router-dom'
 
 import apiImage from './api_error_image.gif'
-const apiKey = '3544e0a87f98468883e9169172546ac1'
+const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
 
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
@@ -43,7 +43,6 @@ function RecommendedDesserts ({ query }) {
     fetchRecipes()
   }, [])
 
-  
   // <h1 className={Style.heading}>Recommended in Desserts</h1>
   // Render 401 error image if the error status is 401
   if (error?.includes('402'))
@@ -52,7 +51,10 @@ function RecommendedDesserts ({ query }) {
         <h1 className={Style.heading}>Recommended in Desserts</h1>
         <div className={Style.errorContainer}>
           <img src={apiImage} alt='arrow' className={Style.icon} />
-          <p>Failed to fetch recipes Data Due to an Api Error. Please Try after Some Time</p>
+          <p>
+            Failed to fetch recipes Data Due to an Api Error. Please Try after
+            Some Time
+          </p>
         </div>
       </div>
     )
@@ -80,12 +82,13 @@ function RecommendedDesserts ({ query }) {
       </div>
     )
 
-    if (loading)
-      return (
-        <div className={Style.loaderContainer}>
-          <p className={Style.loader}></p>
-        </div>
-      )
+  if (loading)
+    return (
+      <div>
+        <h1 className={Style.heading}>Recommended in Desserts</h1>
+        <div className={Style.loader}></div>
+      </div>
+    )
 
   // if (loading)
   //   return (
