@@ -3,11 +3,12 @@ import { useParams } from 'react-router-dom'
 import style from './Image.module.css'
 import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
+import { useNavigate } from 'react-router-dom'
 
-const apiKey = '3544e0a87f98468883e9169172546ac1'
+const apiKey = '5253113cb6ff4e67ad11c72ec6ae2ec0'
 //cb830b43603108a2e1b0d922bac475a945a8404a
-// 834e4826627e40619840c9f299b31f36 
-// f2fbb965309246e7906f64251396be87 
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
 
 // 5ce733c6c24d4454ab2395b906ae5dc1
 // 5253113cb6ff4e67ad11c72ec6ae2ec0
@@ -23,6 +24,7 @@ const Image = () => {
   const [recipes, setRecipes] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(true)
+  const naviagte = useNavigate()
 
   const endpoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
   const baseImageUrl = 'https://spoonacular.com/cdn/ingredients_100x100/'
@@ -56,9 +58,50 @@ const Image = () => {
     const sentences = sanitizedText.split('.')
     return sentences.slice(0, 7).join('. ') + '.'
   }
-  if (error) {
-    return <p className={style.error}>Error: {error}</p>
-  }
+  if (error?.includes('402'))
+    return (
+      <div>
+        <div className={style.errorContainer}>
+          <img src={apiImage} alt='arrow' className={style.icon} />
+
+          <p>Failed to fetch recipes Data. Please Try after Some Time</p>
+        </div>
+
+        <div className={style.btnContainer}>
+          <button className={style.btn} onClick={() => naviagte(-1)}>
+            Go Back
+          </button>
+        </div>
+      </div>
+    )
+
+  if (
+    error?.includes('401') ||
+    error?.includes('503') ||
+    error?.includes('504')
+  )
+    return (
+      <div>
+        <div className={style.errorContainer}>
+          <img
+            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
+            alt='arrow'
+            className={style.icon}
+          />
+
+          <p>
+            Failed to fetch recipe data due to a server error. Please try again
+            later.
+          </p>
+        </div>
+
+        <div className={style.btnContainer}>
+          <button className={style.btn} onClick={() => naviagte(-1)}>
+            Go Back
+          </button>
+        </div>
+      </div>
+    )
 
   if (loading) {
     return (

@@ -4,7 +4,19 @@ import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
 import style from './SearchIngredientImage.module.css' // Ensure to import your CSS/Module styles
 
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
+const apiKey = '834e4826627e40619840c9f299b31f36'
+//cb830b43603108a2e1b0d922bac475a945a8404a
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
+
+// 5ce733c6c24d4454ab2395b906ae5dc1
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
+// d2a320ed5a3a463ca1b8dce923cd49dc
+// af3ad633e574425c90e2c0ef4a4fefc0
+// 3544e0a87f98468883e9169172546ac1
+// 0d0e212f1a904e9cb772072f49167a4b
+// 716d2d891ccc4e788b471c105f5928e8
+// 3036c2facd2447e380f01fd8061794c4
 
 const SearchIngredientImage = () => {
   const { id } = useParams()
@@ -45,9 +57,9 @@ const SearchIngredientImage = () => {
     return sentences.slice(0, 7).join('. ') + '.'
   }
 
-  if (error) {
-    return <p className={style.error}>Error: {error}</p>
-  }
+    // if (error) {
+    //   return <p className={style.error}>Error: {error}</p>
+    // }
 
   if (loading) {
     return (

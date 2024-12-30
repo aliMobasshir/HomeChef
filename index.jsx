@@ -10,12 +10,13 @@ import Image from './components/Image.jsx'
 import SearchIngredient from './components/SearchIngredient.jsx'
 import SearchIngredientImage from './components/SearchIngredientImage.jsx'
 import ExploreCategory from './components/ExploreCategory.jsx'
+// import Error from './components/Error.jsx'
 console.log(cuisines)
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
   },
   {
     path: '/exploreCategory',
@@ -47,6 +48,9 @@ const router = createBrowserRouter([
     element : <SearchIngredientImage />
   }
 ])
+
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

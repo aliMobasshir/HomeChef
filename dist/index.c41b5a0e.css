@@ -891,6 +891,51 @@ body {
   }
 }
 
+.NGOf5W_loader {
+  border: 6px solid #f3f3f3;
+  border-top-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  animation: 1s linear infinite NGOf5W_spin;
+}
+
+@keyframes NGOf5W_spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.NGOf5W_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.NGOf5W_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 2.3vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.NGOf5W_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
 .NGOf5W_RecommendedPage {
   flex-direction: column;
   justify-content: center;
@@ -992,99 +1037,6 @@ body {
   background-color: #555;
 }
 
-.NGOf5W_loaderContainer {
-  background-color: orange;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-
-.NGOf5W_loader {
-  transform-origin: 170px 0;
-  z-index: 10;
-  perspective: 300px;
-  background-color: #3e494d;
-  border-radius: 0 0 15px 15px;
-  width: 120px;
-  height: 14px;
-  animation: .5s linear infinite alternate NGOf5W_panex;
-  position: relative;
-  box-shadow: inset 0 -1px 4px #5d6063;
-}
-
-.NGOf5W_loader:before {
-  content: "";
-  z-index: -2;
-  background-image: linear-gradient(#6c4924, #4b2d21), linear-gradient(#4d5457 24px, #0000 0), linear-gradient(#9f9e9e 24px, #0000 0);
-  background-position: 100%, 17px, 0;
-  background-repeat: no-repeat;
-  background-size: 50px 10px, 4px 8px, 24px 4px;
-  border-radius: 0 4px 4px 0;
-  width: 70px;
-  height: 10px;
-  position: absolute;
-  top: 0;
-  left: calc(100% - 2px);
-}
-
-.NGOf5W_loader:after {
-  content: "";
-  z-index: -2;
-  background-color: #fff;
-  background-image: radial-gradient(3px, #fff6 90%, #0000 10%), radial-gradient(12px, #ffc400 90%, #0000 10%), radial-gradient(12px, #ffae00 100%, #0000 0);
-  background-position: -4px -6px, -2px -2px, -1px -1px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
-  border-radius: 47% 36% 50% 50% / 49% 45% 42% 44%;
-  width: 55px;
-  height: 53px;
-  animation: 1s ease-out infinite NGOf5W_eggRst;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -20px)rotate3d(75, -2, 3, 78deg);
-  box-shadow: inset -2px -3px #0002, inset 0 0 4px #0003;
-}
-
-@keyframes NGOf5W_eggRst {
-  0%, 100% {
-    opacity: 0;
-    transform: translate(-50%, -20px)rotate3d(90, 0, 0, 90deg);
-  }
-
-  10%, 90% {
-    opacity: 1;
-    transform: translate(-50%, -30px)rotate3d(90, 0, 0, 90deg);
-  }
-
-  25% {
-    transform: translate(-50%, -40px)rotate3d(85, 17, 2, 70deg);
-  }
-
-  75% {
-    transform: translate(-50%, -40px)rotate3d(75, -3, 2, 70deg);
-  }
-
-  50% {
-    transform: translate(-55%, -50px)rotate3d(75, -8, 3, 50deg);
-  }
-}
-
-@keyframes NGOf5W_panex {
-  0% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
 @media (width <= 800px) {
   .NGOf5W_recipeContainer {
     gap: 16px;
@@ -1106,24 +1058,18 @@ body {
   .NGOf5W_show_all_button {
     font-size: 12px;
   }
-}
 
-.NGOf5W_error {
-  color: red;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px #00000080;
-  background-color: #ff00001a;
-  border: 1px solid red;
-  border-radius: 5px;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-family: Roboto, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: all .3s;
-  box-shadow: 1px 1px 1px #00000080;
+  .NGOf5W_errorContainer {
+    gap: 20px;
+  }
+
+  .NGOf5W_errorContainer img {
+    height: 10.5em;
+  }
+
+  .NGOf5W_errorContainer p {
+    font-size: 1.2rem;
+  }
 }
 
 .p2h0Oa_dietsInfo {
@@ -1175,6 +1121,67 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.jjQB4a_loader {
+  border: 6px solid #f3f3f3;
+  border-top-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  animation: 1s linear infinite jjQB4a_spin;
+}
+
+@keyframes jjQB4a_spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.jjQB4a_btnContainer {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.jjQB4a_btn {
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1.5vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 1.5vw;
+}
+
+.jjQB4a_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.jjQB4a_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jjQB4a_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .jjQB4a_topPicksPage {
@@ -1258,99 +1265,6 @@ a {
   transform: scaleX(1);
 }
 
-.jjQB4a_loaderContainer {
-  background-color: orange;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-
-.jjQB4a_loader {
-  transform-origin: 170px 0;
-  z-index: 10;
-  perspective: 300px;
-  background-color: #3e494d;
-  border-radius: 0 0 15px 15px;
-  width: 120px;
-  height: 14px;
-  animation: .5s linear infinite alternate jjQB4a_panex;
-  position: relative;
-  box-shadow: inset 0 -1px 4px #5d6063;
-}
-
-.jjQB4a_loader:before {
-  content: "";
-  z-index: -2;
-  background-image: linear-gradient(#6c4924, #4b2d21), linear-gradient(#4d5457 24px, #0000 0), linear-gradient(#9f9e9e 24px, #0000 0);
-  background-position: 100%, 17px, 0;
-  background-repeat: no-repeat;
-  background-size: 50px 10px, 4px 8px, 24px 4px;
-  border-radius: 0 4px 4px 0;
-  width: 70px;
-  height: 10px;
-  position: absolute;
-  top: 0;
-  left: calc(100% - 2px);
-}
-
-.jjQB4a_loader:after {
-  content: "";
-  z-index: -2;
-  background-color: #fff;
-  background-image: radial-gradient(3px, #fff6 90%, #0000 10%), radial-gradient(12px, #ffc400 90%, #0000 10%), radial-gradient(12px, #ffae00 100%, #0000 0);
-  background-position: -4px -6px, -2px -2px, -1px -1px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
-  border-radius: 47% 36% 50% 50% / 49% 45% 42% 44%;
-  width: 55px;
-  height: 53px;
-  animation: 1s ease-out infinite jjQB4a_eggRst;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -20px)rotate3d(75, -2, 3, 78deg);
-  box-shadow: inset -2px -3px #0002, inset 0 0 4px #0003;
-}
-
-@keyframes jjQB4a_eggRst {
-  0%, 100% {
-    opacity: 0;
-    transform: translate(-50%, -20px)rotate3d(90, 0, 0, 90deg);
-  }
-
-  10%, 90% {
-    opacity: 1;
-    transform: translate(-50%, -30px)rotate3d(90, 0, 0, 90deg);
-  }
-
-  25% {
-    transform: translate(-50%, -40px)rotate3d(85, 17, 2, 70deg);
-  }
-
-  75% {
-    transform: translate(-50%, -40px)rotate3d(75, -3, 2, 70deg);
-  }
-
-  50% {
-    transform: translate(-55%, -50px)rotate3d(75, -8, 3, 50deg);
-  }
-}
-
-@keyframes jjQB4a_panex {
-  0% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
 @media (width <= 800px) {
   .jjQB4a_recipeContainer {
     gap: 16px;
@@ -1368,6 +1282,22 @@ a {
 
   .jjQB4a_recipeCard h2 {
     font-size: 18px;
+  }
+
+  .jjQB4a_errorContainer {
+    gap: 20px;
+  }
+
+  .jjQB4a_errorContainer img {
+    height: 10.5em;
+  }
+
+  .jjQB4a_errorContainer p {
+    font-size: 1.2rem;
+  }
+
+  .jjQB4a_btn {
+    font-size: 5.5vw;
   }
 }
 
@@ -1547,22 +1477,45 @@ a {
   padding-bottom: 100px;
 }
 
-.CdOZGa_error {
-  color: red;
+.CdOZGa_btnContainer {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.CdOZGa_btn {
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 1.5vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 1.5vw;
+}
+
+.CdOZGa_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.CdOZGa_errorContainer p {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px #00000080;
-  background-color: #ff00001a;
-  border: 1px solid red;
-  border-radius: 5px;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-family: Roboto, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: all .3s;
-  box-shadow: 1px 1px 1px #00000080;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.CdOZGa_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .CdOZGa_imagePara {
@@ -1940,6 +1893,22 @@ a {
     margin-bottom: .25rem;
     list-style-type: disc;
   }
+
+  .CdOZGa_errorContainer {
+    gap: 20px;
+  }
+
+  .CdOZGa_errorContainer img {
+    height: 10.5em;
+  }
+
+  .CdOZGa_errorContainer p {
+    font-size: 1.2rem;
+  }
+
+  .CdOZGa_btn {
+    font-size: 5.5vw;
+  }
 }
 
 @media (width <= 400px) {
@@ -1959,6 +1928,48 @@ a {
   .CdOZGa_stepEquipment h3, .CdOZGa_stepIngredients h3 {
     padding: 5px 8px;
   }
+}
+
+.t7jeDG_btnContainer {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.t7jeDG_btn {
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 1.5vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 1.5vw;
+}
+
+.t7jeDG_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.t7jeDG_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.t7jeDG_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
 .t7jeDG_description {
@@ -2224,9 +2235,11 @@ input[type="checkbox"]:checked:before {
   }
 }
 
-.t7jeDG_recipe_Container p {
+.t7jeDG_no_recipes {
   color: #757575;
   text-transform: capitalize;
+  text-align: center;
+  margin-top: 5vw;
   margin-bottom: 2vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3vw;

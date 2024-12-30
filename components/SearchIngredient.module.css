@@ -1,3 +1,43 @@
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1.5vw;
+  font-family: 'Shantell Sans', cursive;
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: hidden;
+}
+.errorContainer p {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.errorContainer img {
+  height: 20.5em;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
 .description {
   width: 89vw;
   background-color: #656565;
@@ -67,7 +107,10 @@
 .selected_ingredients_item_container {
   display: grid;
   grid-auto-flow: column; /* Items flow into columns */
-  grid-template-rows: repeat(auto-fill, minmax(2vw, 1fr)); /* Create rows with a minimum size */
+  grid-template-rows: repeat(
+    auto-fill,
+    minmax(2vw, 1fr)
+  ); /* Create rows with a minimum size */
   gap: 20px; /* Space between items */
   max-height: 15vw; /* Limit the container height */
   overflow-x: auto; /* Enable horizontal scrolling if columns overflow */
@@ -92,8 +135,6 @@
   background: #f3f3f3; /* Scrollbar track color */
 }
 
-
-
 .selected_ingredients_item_container h2 {
   color: orange;
   font-family: Arial, Helvetica, sans-serif;
@@ -116,7 +157,7 @@
   border: 2px solid #d9d9d9;
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap; /* Allow items to wrap onto the next column */
+  flex-wrap: wrap; /* Allow items to wrap onto the next column */
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
@@ -124,8 +165,6 @@
   overflow-x: auto; /* Enable horizontal scrolling */
   overflow-y: visible; /* Allow vertical overflow without hiding content */
 }
-
-
 
 .ingredientItemContainer {
   display: flex;
@@ -170,7 +209,7 @@ input[type='checkbox']:checked {
 
 /* Add a checkmark inside the checkbox when checked */
 input[type='checkbox']:checked::before {
-  content: "";
+  content: '';
   border: 4px solid #000;
   border-width: 0 4px 4px 0;
   width: 6px;
@@ -249,8 +288,6 @@ input[type='checkbox']:checked::before {
   transform-origin: bottom left;
 }
 
-
-
 /* Loader Property */
 /* Loader styles */
 .loader {
@@ -272,21 +309,31 @@ input[type='checkbox']:checked::before {
   }
 }
 
-.recipe_Container p {
+/* .recipe_Container p {
   color: #757575;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3vw;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 2vw;
+} */
+
+.no_recipes {
+  color: #757575;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 2vw;
+  margin-top: 5vw;
+  text-align: center;
 }
 
-
-@media(max-width:800px){
+@media (max-width: 800px) {
   .description {
     font-size: 24px;
   }
-  
+
   .searchContainer {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -295,8 +342,9 @@ input[type='checkbox']:checked::before {
     margin-bottom: 50px;
   }
 
-  .button,.resultButton {
-    font-size:14px;
+  .button,
+  .resultButton {
+    font-size: 14px;
   }
 
   .searchInput {
@@ -318,53 +366,49 @@ input[type='checkbox']:checked::before {
     width: 16px;
     height: 16px;
   }
-  input[type="checkbox"]:checked:before {
+  input[type='checkbox']:checked:before {
     width: 3.5px;
     height: 11px;
     top: -1px;
     left: 3px;
     transform: rotate(41deg);
-}
+  }
 
-.selected_ingredients_item_container {
-  max-height: 20vh;
-}
+  .selected_ingredients_item_container {
+    max-height: 20vh;
+  }
 
-.selected_ingredients_item_container h2 {
-  font-size: 14px;
-}
-.selected_ingredients_item_container::-webkit-scrollbar {
-  height: 10px; /* Horizontal scrollbar height */
-}
+  .selected_ingredients_item_container h2 {
+    font-size: 14px;
+  }
+  .selected_ingredients_item_container::-webkit-scrollbar {
+    height: 10px; /* Horizontal scrollbar height */
+  }
 
-.selected_ingredients_item_container::-webkit-scrollbar-thumb {
-  background: orange; /* Scrollbar thumb color */
-  border-radius: 5px; /* Rounded scrollbar thumb */
-}
+  .selected_ingredients_item_container::-webkit-scrollbar-thumb {
+    background: orange; /* Scrollbar thumb color */
+    border-radius: 5px; /* Rounded scrollbar thumb */
+  }
 
-.result h1 {
-  margin: 50px 10vw ;
-  font-size: 22px;
-}
-.recipe_Container p {
- 
-  font-size: 12px;
-  
-  margin:0px 10px 50px 10px;
-}
+  .result h1 {
+    margin: 50px 10vw;
+    font-size: 22px;
+  }
+  .recipe_Container p {
+    font-size: 12px;
 
-.recipeContainer{
-  gap: 16px;
-}
+    margin: 0px 10px 50px 10px;
+  }
 
-.recipeCard{
-  height: 325px;
-  width: 350px;
-}
-.recipeCard h3{
-  font-size: 18px;
-}
+  .recipeContainer {
+    gap: 16px;
+  }
 
-
-
+  .recipeCard {
+    height: 325px;
+    width: 350px;
+  }
+  .recipeCard h3 {
+    font-size: 18px;
+  }
 }
