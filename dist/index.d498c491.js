@@ -36062,7 +36062,7 @@ const About = ()=>{
                         className: (0, _aboutModuleCssDefault.default).devinfo,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Md Mobasshir ALi"
+                                children: "Md Mobasshir Ali"
                             }, void 0, false, {
                                 fileName: "components/About.jsx",
                                 lineNumber: 103,
@@ -36148,38 +36148,47 @@ const About = ()=>{
                                 lineNumber: 120,
                                 columnNumber: 3
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                class: (0, _aboutModuleCssDefault.default).linkedinbutton,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: (0, _linkediniconSvgDefault.default),
-                                        alt: "LinkedIn Icon",
-                                        class: (0, _aboutModuleCssDefault.default).iconlefticon
-                                    }, void 0, false, {
-                                        fileName: "components/About.jsx",
-                                        lineNumber: 122,
-                                        columnNumber: 3
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        children: "Linked in"
-                                    }, void 0, false, {
-                                        fileName: "components/About.jsx",
-                                        lineNumber: 123,
-                                        columnNumber: 3
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: (0, _externalLinkiconSvgDefault.default),
-                                        alt: "External Link Icon",
-                                        class: (0, _aboutModuleCssDefault.default).iconrighticon
-                                    }, void 0, false, {
-                                        fileName: "components/About.jsx",
-                                        lineNumber: 124,
-                                        columnNumber: 3
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "https://www.linkedin.com/in/your-profile-link",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: (0, _aboutModuleCssDefault.default).linkedinbutton,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _linkediniconSvgDefault.default),
+                                            alt: "LinkedIn Icon",
+                                            class: (0, _aboutModuleCssDefault.default).iconlefticon
+                                        }, void 0, false, {
+                                            fileName: "components/About.jsx",
+                                            lineNumber: 128,
+                                            columnNumber: 3
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "Linked in"
+                                        }, void 0, false, {
+                                            fileName: "components/About.jsx",
+                                            lineNumber: 129,
+                                            columnNumber: 3
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _externalLinkiconSvgDefault.default),
+                                            alt: "External Link Icon",
+                                            class: (0, _aboutModuleCssDefault.default).iconrighticon
+                                        }, void 0, false, {
+                                            fileName: "components/About.jsx",
+                                            lineNumber: 130,
+                                            columnNumber: 3
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/About.jsx",
+                                    lineNumber: 127,
+                                    columnNumber: 3
+                                }, undefined)
+                            }, void 0, false, {
                                 fileName: "components/About.jsx",
-                                lineNumber: 121,
+                                lineNumber: 122,
                                 columnNumber: 3
                             }, undefined)
                         ]
@@ -36192,15 +36201,15 @@ const About = ()=>{
                         className: (0, _aboutModuleCssDefault.default).profileimgcontainer,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _danishImageSvgDefault.default),
-                            alt: "Md Mobasshir ALi Image"
+                            alt: "Mohd danish Image"
                         }, void 0, false, {
                             fileName: "components/About.jsx",
-                            lineNumber: 128,
+                            lineNumber: 136,
                             columnNumber: 3
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/About.jsx",
-                        lineNumber: 127,
+                        lineNumber: 135,
                         columnNumber: 1
                     }, undefined)
                 ]
@@ -36213,12 +36222,12 @@ const About = ()=>{
                 className: (0, _aboutModuleCssDefault.default).straightLine
             }, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 131,
+                lineNumber: 139,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/About.jsx",
-                lineNumber: 132,
+                lineNumber: 140,
                 columnNumber: 7
             }, undefined)
         ]

@@ -326,6 +326,7 @@
 
   .SnCtwa_textContainer {
     min-width: 75%;
+    padding: 40px 0;
   }
 
   .SnCtwa_h1_text {
@@ -337,6 +338,7 @@
   }
 
   .SnCtwa_button {
+    margin-bottom: 10px;
     font-size: 3vw;
   }
 }
@@ -523,7 +525,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vw;
   display: flex;
 }
 
@@ -548,14 +550,14 @@ body {
 
 .IHfPZW_WhoWeAreContainer {
   width: 100vw;
-  height: 80vh;
+  min-height: 41vw;
 }
 
 .IHfPZW_WhoWeAreContainer h1 {
   color: #ff8f00;
   text-transform: capitalize;
   text-align: center;
-  margin: 20vh auto 10vh;
+  margin: 15vw auto 8vw;
   font-family: Times New Roman, Times, serif;
   font-size: 4vw;
 }
@@ -573,7 +575,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 60vw;
   display: flex;
 }
 
@@ -588,7 +590,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin: 10vh 0;
+  margin: 10vw 0;
   display: flex;
 }
 
@@ -598,7 +600,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 20vw;
-  min-height: 60vh;
+  min-height: 30vw;
   padding: 2vh 2vw;
   display: flex;
   position: relative;
@@ -674,14 +676,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vw;
   display: flex;
 }
 
 .IHfPZW_whychoosehomechefcontainer h1 {
   color: #ff8f00;
   text-transform: capitalize;
-  margin-top: 10vh;
+  margin-top: 8vw;
   font-family: Times New Roman, Times, serif;
   font-size: 4vw;
 }
@@ -690,7 +692,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  margin: 10vh 0;
+  margin: 8vw 0;
   display: flex;
 }
 
@@ -700,10 +702,11 @@ body {
   padding-left: 1vw;
   font-family: Times New Roman, Times, serif;
   font-size: 2vw;
+  line-height: 1.6;
 }
 
 .IHfPZW_textarea h3 {
-  margin-top: 5vh;
+  margin-top: 3vw;
 }
 
 .IHfPZW_imageContainer {
@@ -718,14 +721,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vw;
   display: flex;
 }
 
 .IHfPZW_ourmission h1 {
   color: #ff8f00;
   text-transform: capitalize;
-  margin-top: 10vh;
+  margin-top: 8vw;
   font-family: Times New Roman, Times, serif;
   font-size: 4vw;
 }
@@ -738,24 +741,24 @@ body {
   font-family: Times New Roman, Times, serif;
   font-size: 2vw;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 .IHfPZW_missiontext h4 {
-  margin-top: 8vh;
+  margin-top: 5vw;
 }
 
 .IHfPZW_conclusion {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 90vh;
+  min-height: 70vw;
   display: flex;
 }
 
 .IHfPZW_conclusion h1 {
   color: #ff8f00;
   text-transform: capitalize;
-  margin-top: 10vh;
   font-family: Times New Roman, Times, serif;
   font-size: 4vw;
 }
@@ -779,7 +782,7 @@ body {
 .IHfPZW_header {
   background-color: #ff8f00;
   align-items: center;
-  min-height: 40vh;
+  min-height: 30vw;
   display: flex;
 }
 
@@ -796,19 +799,18 @@ body {
   background-color: #000;
   justify-content: space-between;
   align-items: center;
-  min-height: 90vh;
-  padding: 10vh 0;
+  min-height: 70vw;
+  padding: 5vw 0;
   display: flex;
 }
 
 .IHfPZW_profileimgcontainer {
   border: 5px solid #fff;
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 50vw;
 }
 
 .IHfPZW_profileimgcontainer img {
-  max-height: 80vh;
+  max-width: 100%;
 }
 
 .IHfPZW_devinfo {
@@ -816,7 +818,7 @@ body {
   justify-content: space-evenly;
   align-items: flex-end;
   max-width: 45vw;
-  min-height: 80vh;
+  min-height: 60vw;
   display: flex;
 }
 
@@ -879,7 +881,7 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
   max-width: 45vw;
-  min-height: 80vh;
+  min-height: 60vw;
   display: flex;
 }
 
@@ -899,6 +901,171 @@ body {
   text-align: center;
   font-family: Times New Roman, Times, serif;
   font-size: 3vw;
+}
+
+@media (width <= 800px) {
+  .IHfPZW_HeaderPage {
+    min-height: 70vw;
+  }
+
+  .IHfPZW_HeaderPage h1 {
+    font-size: 48px;
+  }
+
+  .IHfPZW_HeaderPage p {
+    font-size: 24px;
+  }
+
+  .IHfPZW_WhoWeAreContainer h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_WhoWeAreContainer p {
+    font-size: 18px;
+  }
+
+  .IHfPZW_whatweoffercontainer h1 {
+    margin-top: 10vw;
+    font-size: 36px;
+  }
+
+  .IHfPZW_cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .IHfPZW_cards p {
+    font-size: 18px;
+  }
+
+  .IHfPZW_card1, .IHfPZW_card2, .IHfPZW_card3, .IHfPZW_card4 {
+    width: 150px;
+    min-height: 250px;
+  }
+
+  .IHfPZW_card1:after, .IHfPZW_card2:after, .IHfPZW_card3:after, .IHfPZW_card4:after {
+    font-size: 18px;
+  }
+
+  .IHfPZW_whychoosehomechefcontainer h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_textnimage {
+    justify-content: center;
+    width: 100vw;
+    margin: 8vw 0;
+    display: flex;
+  }
+
+  .IHfPZW_textarea {
+    max-width: 90%;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .IHfPZW_imageContainer {
+    display: none;
+  }
+
+  .IHfPZW_ourmission h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_missiontext {
+    text-align: center;
+    max-width: 90%;
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 16px;
+  }
+
+  .IHfPZW_missiontext h4 {
+    margin-top: 5vw;
+  }
+
+  .IHfPZW_conclusion h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_conclusion p {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 490px) {
+  .IHfPZW_HeaderPage {
+    min-height: 70vh;
+  }
+
+  .IHfPZW_HeaderPage h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_HeaderPage p {
+    font-size: 24px;
+  }
+
+  .IHfPZW_WhoWeAreContainer h1 {
+    font-size: 36px;
+  }
+
+  .IHfPZW_WhoWeAreContainer p {
+    font-size: 18px;
+  }
+
+  .IHfPZW_whatweoffercontainer h1 {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+
+  .IHfPZW_cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .IHfPZW_card1, .IHfPZW_card2, .IHfPZW_card3, .IHfPZW_card4 {
+    width: 150px;
+    min-height: 250px;
+  }
+
+  .IHfPZW_whychoosehomechefcontainer h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 32px;
+  }
+
+  .IHfPZW_ourmission h1 {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+
+  .IHfPZW_conclusion h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 36px;
+  }
+
+  .IHfPZW_conclusion p {
+    margin: 50px auto;
+    font-size: 16px;
+  }
+
+  .IHfPZW_linkedinbutton {
+    border-radius: 20px;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .IHfPZW_iconlefticon, .IHfPZW_iconrighticon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .IHfPZW_straightLine2 {
+    margin-bottom: 50px;
+  }
 }
 
 .ASPDhq_footer_container {

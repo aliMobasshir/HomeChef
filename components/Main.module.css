@@ -119,6 +119,7 @@ list-style: none;
 
   .textContainer {
     min-width: 75%;
+    padding: 40px 0px;
   }
 
   .h1_text {
@@ -131,6 +132,7 @@ list-style: none;
 
   .button {
     font-size: 3vw;
+    margin-bottom: 10px;
   }
 }
 
