@@ -3,7 +3,7 @@
 }
 
 .HeaderPage{
-    min-height: 100vh;
+    min-height: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,8 +32,9 @@
 }
 
 .WhoWeAreContainer{
-    height: 80vh;
     width: 100vw;
+    min-height: 41vw;
+    
 }
 
 .WhoWeAreContainer h1{
@@ -41,7 +42,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #ff8f00;
     text-transform: capitalize;
-    margin: 20vh auto 10vh auto;
+    margin: 15vw auto 8vw auto;
     text-align: center;
 }
 
@@ -59,7 +60,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 60vw;
 }
 
 .whatweoffercontainer h1{
@@ -70,7 +71,7 @@
 }
 
 .cards {
-    margin: 10vh 0;
+    margin: 10vw 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -79,7 +80,7 @@
 
 .card1, .card2, .card3, .card4 {
     width: 20vw;
-    min-height: 60vh;
+    min-height: 30vw;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid white;
     display: flex;
@@ -159,7 +160,7 @@
 .whychoosehomechefcontainer{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vw;
     justify-content: center;
     align-items: center;
 }
@@ -169,11 +170,11 @@
     font-family: 'Times New Roman', Times, serif;
     color: #ff8f00;
     text-transform: capitalize;
-    margin-top: 10vh;
+    margin-top: 8vw;
 }
 
 .textnimage{
-    margin: 10vh 0;
+    margin: 8vw 0;
     width: 100vw;
     display: flex;
     justify-content:space-between;
@@ -186,10 +187,11 @@
     font-size: 2vw;
     font-family: Times New Roman, Times, serif;
     color: white;
+    line-height: 1.6;
 }
 
 .textarea h3{
-    margin-top: 5vh;
+    margin-top: 3vw;
 }
 
 .imageContainer{
@@ -203,7 +205,7 @@
 .ourmission {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vw;
     justify-content: center;
     align-items: center;
 }
@@ -212,7 +214,7 @@
     font-family: 'Times New Roman', Times, serif;
     color: #ff8f00;
     text-transform: capitalize;
-    margin-top: 10vh;
+    margin-top: 8vw;
 }
 
 .missiontext{
@@ -223,14 +225,15 @@
     text-align: center;
     padding-right: 10vw;
     font-weight: 400;
+    line-height: 1.6;
 }
 
 .missiontext h4{
-    margin-top: 8vh;
+    margin-top: 5vw;
 }
 
 .conclusion {
-    min-height: 90vh;
+    min-height: 70vw;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
@@ -242,7 +245,6 @@ flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     color: #ff8f00;
     text-transform: capitalize;
-    margin-top: 10vh;
 }
 
 .conclusion p{
@@ -262,7 +264,7 @@ flex-direction: column;
 }
 /* about developers section */
 .header{
-    min-height: 40vh;
+    min-height: 30vw;
     background-color: #ff8f00;
     display: flex;
     align-items: center;
@@ -278,26 +280,26 @@ flex-direction: column;
 }
 
 .devdetail{
-    min-height: 90vh;
+    min-height: 70vw;
     background-color: black;
-    padding: 10vh 0;
+    padding: 5vw 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
 .profileimgcontainer{
-    max-height: fit-content;
     border: 5px solid white;
-    max-width: fit-content;
+    max-width: 50vw;
 }
 
 .profileimgcontainer img{
-    max-height: 80vh;
+    max-width: 100%;
 }
 
 .devinfo{
-    min-height: 80vh ;
+    min-height: 60vw ;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -362,7 +364,7 @@ flex-direction: column;
   
 
   .devinfo2{
-    min-height: 80vh ;
+    min-height: 60vw ;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -387,4 +389,169 @@ flex-direction: column;
     color: white;
     text-transform: capitalize;
     text-align: center;
+}
+
+@media(max-width:800px){
+    .HeaderPage{
+        min-height: 70vw
+    }
+
+    .HeaderPage h1{
+        font-size: 48px
+    }
+    
+    .HeaderPage p{
+        font-size: 24px;
+    }
+
+.WhoWeAreContainer h1{
+    font-size: 36px;
+}
+.WhoWeAreContainer p{
+    font-size: 18px;
+}
+ .whatweoffercontainer h1{
+        font-size: 36px;
+        margin-top: 10vw;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .cards p {
+        font-size: 18px;
+    }
+    
+    
+        .card1, .card2, .card3, .card4 {
+            width: 150px;
+            min-height: 250px;
+        }
+
+        .card1::after,.card2::after,.card3::after,.card4::after{
+            font-size: 18px;
+        }
+
+        .whychoosehomechefcontainer h1{
+            font-size: 36px;
+        }
+        .textnimage{
+            margin: 8vw 0;
+            width: 100vw;
+            display: flex;
+            justify-content:center;
+            
+        }
+        
+        .textarea{
+            max-width: 90%;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        .imageContainer{
+          display: none;
+        }
+       
+        .ourmission h1{
+            font-size: 36px;
+        }
+        
+        .missiontext{
+            max-width: 90%;
+            padding-left: 20px;
+            font-size: 16px;
+            text-align: center;
+            padding-right: 0;
+        }
+        
+        .missiontext h4{
+            margin-top: 5vw;
+        }
+
+        .conclusion h1{
+            font-size: 36px;
+        }
+        .conclusion p{
+            font-size: 16px;
+        }
+
+
+        
+}
+
+@media(max-width:490px){
+    .HeaderPage{
+        min-height: 70vh
+    }
+
+    .HeaderPage h1{
+        font-size: 36px
+    }
+    
+    .HeaderPage p{
+        font-size: 24px;
+    }
+
+.WhoWeAreContainer h1{
+    font-size: 36px;
+    
+}
+.WhoWeAreContainer p{
+    font-size: 18px;
+}
+ .whatweoffercontainer h1{
+        font-size: 36px;
+        margin-top: 100px;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+        .card1, .card2, .card3, .card4 {
+            width: 150px;
+            min-height: 250px;
+        }
+
+        .whychoosehomechefcontainer h1{
+
+            font-size: 32px;
+            margin-top: 70px;
+            text-align: center;
+        }
+    
+       
+        .ourmission h1{
+            font-size: 36px;
+            margin-top: 100px;
+        }
+        
+    
+
+        .conclusion h1{
+            margin-top: 100px;
+            font-size: 36px;
+            text-align: center;
+        }
+        .conclusion p{
+            font-size: 16px;
+            margin: 50px auto;
+        }
+
+        .linkedinbutton {
+            font-size: 14px; /* Adjust font size */
+            padding: 8px 16px; /* Adjust padding */
+            border-radius: 20px; /* Adjust border radius */
+            gap: 6px; /* Adjust gap */
+        }
+    
+        .iconlefticon, .iconrighticon {
+            width: 16px; /* Adjust icon size */
+            height: 16px; /* Adjust icon size */
+        }
+        .straightLine2 {
+            margin-bottom: 50px;
+        }
+        
 }

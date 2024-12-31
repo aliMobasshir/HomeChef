@@ -100,7 +100,7 @@ const About = () => {
           <img src={MobasshirImage} alt="Md Mobasshir ALi Image" />
         </div>
         <div className={style.devinfo}>
-          <h1>Md Mobasshir ALi</h1>
+          <h1>Md Mobasshir Ali</h1>
           <p>3rd year Computer science engineering student at Integral University</p>
           <div class={style.linkedinbutton}>
             <img src={linkedinicon} alt="LinkedIn Icon" class={style.iconlefticon} />
@@ -118,14 +118,22 @@ const About = () => {
 <div className={style.devinfo2}>
   <h1>Mohd danish</h1>
   <p>3rd year Computer science engineering student at Integral University</p>
+
+  <a
+  href="https://www.linkedin.com/in/your-profile-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <div class={style.linkedinbutton}>
   <img src={linkedinicon} alt="LinkedIn Icon" class={style.iconlefticon} />
   <span>Linked in</span>
   <img src={externalIcon} alt="External Link Icon" class={style.iconrighticon} />
 </div>
+</a>
+
 </div>
 <div className={style.profileimgcontainer}>
-  <img src={DanishImage} alt="Md Mobasshir ALi Image" />
+  <img src={DanishImage} alt="Mohd danish Image" />
 </div>
       </div>
       <div className={style.straightLine}></div>
