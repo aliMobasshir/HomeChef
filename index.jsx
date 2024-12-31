@@ -16,7 +16,7 @@ console.log(cuisines)
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App />
   },
   {
     path: '/exploreCategory',
@@ -43,14 +43,12 @@ const router = createBrowserRouter([
     path: '/image/:type/:name/:id',
     element: <Image />
   },
+
   {
-    path : "/searchIngredientImage/:id",
-    element : <SearchIngredientImage />
+    path: '/searchIngredientImage/:id',
+    element: <SearchIngredientImage />
   }
 ])
-
-
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

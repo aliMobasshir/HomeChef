@@ -1,6 +1,11 @@
 .aboutwebsite{
     background-color: black;
 }
+.linkedinbuttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .HeaderPage{
     min-height: 50vw;
