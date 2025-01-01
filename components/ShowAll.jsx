@@ -5,10 +5,9 @@ import arrowIcon from './right-arrow.png'
 import Navigation from './Navigation'
 import apiImage from './api_error_image.gif'
 
-<<<<<<< HEAD
-const apiKey = 'f2fbb965309246e7906f64251396be87' // Replace with your actual API key
-=======
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
+
+const apiKey = 'f2fbb965309246e7906f64251396be87' // Replace with your actual API key'
+
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -19,7 +18,7 @@ const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
 // 0d0e212f1a904e9cb772072f49167a4b
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
->>>>>>> mobasshir
+
 
 const ShowAll = () => {
   const { type, name } = useParams()

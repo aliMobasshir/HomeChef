@@ -5,11 +5,7 @@ import apiImage from './api_error_image.gif'
 import { Link } from 'react-router-dom'
 
 // API configuration
-<<<<<<< HEAD
-const apiKey = 'f2fbb965309246e7906f64251396be87'
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
-=======
->>>>>>> mobasshir
+
 
 const apiKey = '0d0e212f1a904e9cb772072f49167a4b  '
 //cb830b43603108a2e1b0d922bac475a945a8404a

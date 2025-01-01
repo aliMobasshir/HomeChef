@@ -2934,6 +2934,33 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$046e.prelude(module);
 
 try {
+// <<<<<<< HEAD
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./App.jsx";
+// import About from "./components/About.jsx";
+// import {
+//     createBrowserRouter,
+//     RouterProvider,
+// } from "react-router-dom";
+// import cuisines from "./Cuisines.js";
+// import ShowAll from "./components/ShowAll.jsx";
+// console.log(cuisines);
+// const router = createBrowserRouter([
+//     {
+//         path: "/",
+//         element: <App />,
+//     },
+//     {
+//         path : "/About",
+//         element: <About />,
+//     }
+//     ,{
+//         path : "/ShowAll/:type/:name",
+//         element: <ShowAll />,
+//     },
+// ]);
+// =======
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
@@ -2966,20 +2993,15 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-<<<<<<< HEAD
-            lineNumber: 17,
-            columnNumber: 18
-=======
-            lineNumber: 19,
+            lineNumber: 50,
             columnNumber: 14
->>>>>>> mobasshir
         }, undefined)
     },
     {
         path: '/exploreCategory',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _exploreCategoryJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 23,
+            lineNumber: 54,
             columnNumber: 14
         }, undefined)
     },
@@ -2987,20 +3009,15 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/about',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-<<<<<<< HEAD
-            lineNumber: 21,
-            columnNumber: 18
-=======
-            lineNumber: 28,
+            lineNumber: 59,
             columnNumber: 14
->>>>>>> mobasshir
         }, undefined)
     },
     {
         path: '/SearchIngredient',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchIngredientJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 32,
+            lineNumber: 63,
             columnNumber: 14
         }, undefined)
     },
@@ -3008,11 +3025,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/ShowAll/:type/:name',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _showAllJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-<<<<<<< HEAD
-            lineNumber: 25,
-            columnNumber: 18
-=======
-            lineNumber: 36,
+            lineNumber: 67,
             columnNumber: 14
         }, undefined)
     },
@@ -3020,7 +3033,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/knowMoreDiets',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _knowMoreDietsJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 40,
+            lineNumber: 71,
             columnNumber: 14
         }, undefined)
     },
@@ -3028,7 +3041,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/image/:type/:name/:id',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 44,
+            lineNumber: 75,
             columnNumber: 14
         }, undefined)
     },
@@ -3036,9 +3049,8 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: '/searchIngredientImage/:id',
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchIngredientImageJsxDefault.default), {}, void 0, false, {
             fileName: "index.jsx",
-            lineNumber: 49,
+            lineNumber: 80,
             columnNumber: 14
->>>>>>> mobasshir
         }, undefined)
     }
 ]);
@@ -3046,13 +3058,8 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
     router: router
 }, void 0, false, {
     fileName: "index.jsx",
-<<<<<<< HEAD
-    lineNumber: 33,
-    columnNumber: 12
-=======
-    lineNumber: 54,
+    lineNumber: 85,
     columnNumber: 3
->>>>>>> mobasshir
 }, undefined));
 
   $parcel$ReactRefreshHelpers$046e.postlude(module);
@@ -36697,10 +36704,6 @@ var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-<<<<<<< HEAD
-const apiKey = 'f2fbb965309246e7906f64251396be87' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-;
-=======
 const apiKey = '3544e0a87f98468883e9169172546ac1';
 //  cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
@@ -36713,7 +36716,6 @@ const apiKey = '3544e0a87f98468883e9169172546ac1';
 // 0d0e212f1a904e9cb772072f49167a4b
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
->>>>>>> mobasshir
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
 function RecipeList({ query }) {
     _s();
@@ -36753,18 +36755,18 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/recipeList.jsx",
-                            lineNumber: 55,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 53,
+                    lineNumber: 55,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 52,
+                lineNumber: 54,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36776,26 +36778,26 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 59,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipes Data. Please Try after Some Time"
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 61,
+                        lineNumber: 63,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 58,
+                lineNumber: 60,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 51,
+        lineNumber: 53,
         columnNumber: 7
     }, this);
     if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36812,18 +36814,18 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/recipeList.jsx",
-                            lineNumber: 76,
+                            lineNumber: 78,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 74,
+                    lineNumber: 76,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 73,
+                lineNumber: 75,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36835,26 +36837,26 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 80,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipe data due to a server error. Please try again later."
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 86,
+                        lineNumber: 88,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 79,
+                lineNumber: 81,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 72,
+        lineNumber: 74,
         columnNumber: 7
     }, this);
     // Render loading indicator while fetching data
@@ -36872,31 +36874,31 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/recipeList.jsx",
-                            lineNumber: 101,
+                            lineNumber: 103,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 99,
+                    lineNumber: 101,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 98,
+                lineNumber: 100,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).loader
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 104,
+                lineNumber: 106,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 97,
+        lineNumber: 99,
         columnNumber: 7
     }, this);
     // Filter recipes based on query input
@@ -36915,13 +36917,13 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 118,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 116,
+                lineNumber: 118,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36936,7 +36938,7 @@ function RecipeList({ query }) {
                                     alt: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/recipeList.jsx",
-                                    lineNumber: 125,
+                                    lineNumber: 127,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -36944,40 +36946,40 @@ function RecipeList({ query }) {
                                         children: recipe.title
                                     }, void 0, false, {
                                         fileName: "components/recipeList.jsx",
-                                        lineNumber: 127,
+                                        lineNumber: 129,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/recipeList.jsx",
-                                    lineNumber: 126,
+                                    lineNumber: 128,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, recipe.id, true, {
                             fileName: "components/recipeList.jsx",
-                            lineNumber: 124,
+                            lineNumber: 126,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "components/recipeList.jsx",
-                        lineNumber: 123,
+                        lineNumber: 125,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "No recipes found. "
                 }, void 0, false, {
                     fileName: "components/recipeList.jsx",
-                    lineNumber: 133,
+                    lineNumber: 135,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/recipeList.jsx",
-                lineNumber: 120,
+                lineNumber: 122,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/recipeList.jsx",
-        lineNumber: 115,
+        lineNumber: 117,
         columnNumber: 5
     }, this);
 }
@@ -37118,10 +37120,6 @@ var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 // API configuration
-<<<<<<< HEAD
-const apiKey = 'f2fbb965309246e7906f64251396be87';
-const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`;
-=======
 const apiKey = '0d0e212f1a904e9cb772072f49167a4b  ';
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
@@ -37135,7 +37133,6 @@ const apiKey = '0d0e212f1a904e9cb772072f49167a4b  ';
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
 const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&maxReadyTime=20&number=6&sort=random`;
->>>>>>> mobasshir
 function RecipeList({ query }) {
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]);
@@ -37173,18 +37170,18 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/trending.jsx",
-                            lineNumber: 62,
+                            lineNumber: 63,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 60,
+                    lineNumber: 61,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37196,26 +37193,26 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipes Data. Please Try after Some Time"
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 69,
+                        lineNumber: 70,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 58,
+        lineNumber: 59,
         columnNumber: 7
     }, this);
     if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37232,18 +37229,18 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/trending.jsx",
-                            lineNumber: 84,
+                            lineNumber: 85,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 82,
+                    lineNumber: 83,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 81,
+                lineNumber: 82,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37255,26 +37252,26 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 89,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipe data due to a server error. Please try again later."
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 95,
+                        lineNumber: 96,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 88,
+                lineNumber: 89,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 80,
+        lineNumber: 81,
         columnNumber: 7
     }, this);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37291,31 +37288,31 @@ function RecipeList({ query }) {
                             className: (0, _recipeListModuleCssDefault.default).icon
                         }, void 0, false, {
                             fileName: "components/trending.jsx",
-                            lineNumber: 109,
+                            lineNumber: 110,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 107,
+                    lineNumber: 108,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 106,
+                lineNumber: 107,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).loader
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 112,
+                lineNumber: 113,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 105,
+        lineNumber: 106,
         columnNumber: 7
     }, this);
     // if (error) return <p>Error: {error}</p>;
@@ -37333,13 +37330,13 @@ function RecipeList({ query }) {
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 126,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/trending.jsx",
-                lineNumber: 124,
+                lineNumber: 125,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37354,7 +37351,7 @@ function RecipeList({ query }) {
                                     alt: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 134,
+                                    lineNumber: 135,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37362,41 +37359,41 @@ function RecipeList({ query }) {
                                         children: recipe.title
                                     }, void 0, false, {
                                         fileName: "components/trending.jsx",
-                                        lineNumber: 136,
+                                        lineNumber: 137,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "components/trending.jsx",
-                                    lineNumber: 135,
+                                    lineNumber: 136,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, recipe.id, true, {
                             fileName: "components/trending.jsx",
-                            lineNumber: 133,
+                            lineNumber: 134,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "components/trending.jsx",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _recipeListModuleCssDefault.default).noRecipes,
                     children: "No recipes found."
                 }, void 0, false, {
                     fileName: "components/trending.jsx",
-                    lineNumber: 142,
+                    lineNumber: 143,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "components/trending.jsx",
-                lineNumber: 129,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/trending.jsx",
-        lineNumber: 123,
+        lineNumber: 124,
         columnNumber: 5
     }, this);
 }
@@ -37730,11 +37727,8 @@ var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _s = $RefreshSig$();
-<<<<<<< HEAD
-const apiKey = 'f2fbb965309246e7906f64251396be87' // Replace with your actual API key
+const apiKey = 'f2fbb965309246e7906f64251396be87' // Replace with your actual API key'
 ;
-=======
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
 // 5ce733c6c24d4454ab2395b906ae5dc1
@@ -37745,7 +37739,6 @@ const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
 // 0d0e212f1a904e9cb772072f49167a4b
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
->>>>>>> mobasshir
 const ShowAll = ()=>{
     _s();
     const { type, name } = (0, _reactRouterDom.useParams)();
@@ -37787,20 +37780,20 @@ const ShowAll = ()=>{
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 59,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipes Data. Please Try after Some Time"
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 61,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 58,
+                lineNumber: 61,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37811,18 +37804,18 @@ const ShowAll = ()=>{
                     children: "Go Back"
                 }, void 0, false, {
                     fileName: "components/ShowAll.jsx",
-                    lineNumber: 65,
+                    lineNumber: 68,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 64,
+                lineNumber: 67,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 57,
+        lineNumber: 60,
         columnNumber: 7
     }, undefined);
     if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37836,20 +37829,20 @@ const ShowAll = ()=>{
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 78,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipe data due to a server error. Please try again later."
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 84,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 77,
+                lineNumber: 80,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37860,18 +37853,18 @@ const ShowAll = ()=>{
                     children: "Go Back"
                 }, void 0, false, {
                     fileName: "components/ShowAll.jsx",
-                    lineNumber: 91,
+                    lineNumber: 94,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 90,
+                lineNumber: 93,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 76,
+        lineNumber: 79,
         columnNumber: 7
     }, undefined);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37880,12 +37873,12 @@ const ShowAll = ()=>{
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/ShowAll.jsx",
-            lineNumber: 99,
+            lineNumber: 102,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 98,
+        lineNumber: 101,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -37894,7 +37887,7 @@ const ShowAll = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 105,
+                lineNumber: 108,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37910,7 +37903,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 107,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, undefined),
                     error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37920,7 +37913,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 112,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeContainer,
@@ -37934,7 +37927,7 @@ const ShowAll = ()=>{
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-                                            lineNumber: 122,
+                                            lineNumber: 125,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -37942,40 +37935,40 @@ const ShowAll = ()=>{
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/ShowAll.jsx",
-                                                lineNumber: 124,
+                                                lineNumber: 127,
                                                 columnNumber: 23
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 126,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "components/ShowAll.jsx",
-                                    lineNumber: 121,
+                                    lineNumber: 124,
                                     columnNumber: 19
                                 }, undefined)
                             }, recipe.id, false, {
                                 fileName: "components/ShowAll.jsx",
-                                lineNumber: 117,
+                                lineNumber: 120,
                                 columnNumber: 17
                             }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: "No recipes found."
                         }, void 0, false, {
                             fileName: "components/ShowAll.jsx",
-                            lineNumber: 130,
+                            lineNumber: 133,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 114,
+                        lineNumber: 117,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 106,
+                lineNumber: 109,
                 columnNumber: 7
             }, undefined)
         ]
