@@ -3008,6 +3008,187 @@ input[type="checkbox"]:checked:before {
   }
 }
 
+.NGOf5W_loader {
+  border: 6px solid #f3f3f3;
+  border-top-color: orange;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+  animation: 1s linear infinite NGOf5W_spin;
+}
+
+@keyframes NGOf5W_spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.NGOf5W_errorContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.NGOf5W_errorContainer p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 20px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 2.3vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.NGOf5W_errorContainer img {
+  height: 20.5em;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.NGOf5W_RecommendedPage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+  display: flex;
+}
+
+.NGOf5W_heading {
+  color: #333;
+  text-align: start;
+  margin-top: 15vw;
+  padding: 0 10vw;
+  font-family: Shantell Sans, cursive;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.NGOf5W_recipeContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.NGOf5W_recipeCard {
+  text-align: start;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30vw;
+  height: 26vw;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.NGOf5W_recipeCard:hover {
+  background-color: #f0f0f07d;
+}
+
+.NGOf5W_recipeCard img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 73%;
+}
+
+.NGOf5W_recipeCard h2 {
+  margin-top: 10px;
+  font-family: Nanum Gothic Coding, monospace;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+.NGOf5W_recipeCard h2:after {
+  content: "";
+  background-color: #fed39c;
+  width: 100%;
+  height: 2px;
+  transition: transform .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+}
+
+.NGOf5W_recipeCard h2:hover:after {
+  transform-origin: 0 100%;
+  transform: scaleX(1);
+}
+
+.NGOf5W_horizontalline {
+  background-color: #d9d9d9;
+  width: 80%;
+  height: 2px;
+  margin: 2vw auto 0;
+}
+
+.NGOf5W_show_all_button {
+  color: orange;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 1vw;
+  padding: 1vw 2vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.NGOf5W_show_all_button:hover {
+  color: #f70;
+  background-color: #555;
+}
+
+@media (width <= 800px) {
+  .NGOf5W_recipeContainer {
+    gap: 16px;
+  }
+
+  .NGOf5W_heading {
+    font-size: 32px;
+  }
+
+  .NGOf5W_recipeCard {
+    width: 350px;
+    height: 325px;
+  }
+
+  .NGOf5W_recipeCard h2 {
+    font-size: 18px;
+  }
+
+  .NGOf5W_show_all_button {
+    font-size: 12px;
+  }
+
+  .NGOf5W_errorContainer {
+    gap: 20px;
+  }
+
+  .NGOf5W_errorContainer img {
+    height: 10.5em;
+  }
+
+  .NGOf5W_errorContainer p {
+    font-size: 1.2rem;
+  }
+}
+
 .DNUXEq_diet_heading, .DNUXEq_cuisine_heading, .DNUXEq_meal_heading {
   color: #333;
   padding: 6vw 6vw 2vw 10vw;
@@ -3233,184 +3414,109 @@ input[type="checkbox"]:checked:before {
   }
 }
 
-.NGOf5W_loader {
-  border: 6px solid #f3f3f3;
-  border-top-color: orange;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 50px auto;
-  animation: 1s linear infinite NGOf5W_spin;
-}
-
-@keyframes NGOf5W_spin {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.NGOf5W_errorContainer {
-  flex-direction: column;
+._92uu0W_contact_container {
+  color: #f1faee;
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 80px;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
   display: flex;
-  overflow-x: hidden;
 }
 
-.NGOf5W_errorContainer p {
+._92uu0W_contact_content {
   text-align: center;
-  width: 60%;
+  margin-bottom: 30px;
+}
+
+._92uu0W_contact_content h1 {
+  color: #a8dadc;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+._92uu0W_contact_content p {
+  color: #f1faee;
+  max-width: 400px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+._92uu0W_form_container {
+  background-color: #1d3557;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  box-shadow: 0 8px 15px #0003;
+}
+
+._92uu0W_form_input_container {
   margin-bottom: 20px;
-  font-family: Nanum Gothic Coding, monospace;
-  font-size: 2.3vw;
-  font-style: normal;
-  font-weight: 400;
 }
 
-.NGOf5W_errorContainer img {
-  height: 20.5em;
-  margin-bottom: 0;
-  margin-left: 15px;
-}
-
-.NGOf5W_RecommendedPage {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 50px 0;
-  display: flex;
-}
-
-.NGOf5W_heading {
-  color: #333;
-  text-align: start;
-  margin-top: 15vw;
-  padding: 0 10vw;
-  font-family: Shantell Sans, cursive;
-  font-size: 3vw;
-  font-weight: bold;
-}
-
-.NGOf5W_recipeContainer {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  display: flex;
-}
-
-.NGOf5W_recipeCard {
-  text-align: start;
-  cursor: pointer;
-  text-overflow: ellipsis;
-  border: 1px solid #ddd;
+._92uu0W_form_input {
+  color: #1d3557;
+  background-color: #f1faee;
+  border: 2px solid #457b9d;
   border-radius: 8px;
-  width: 30vw;
-  height: 26vw;
-  padding: 16px;
-  overflow: hidden;
-}
-
-.NGOf5W_recipeCard:hover {
-  background-color: #f0f0f07d;
-}
-
-.NGOf5W_recipeCard img {
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
+  outline: none;
   width: 100%;
-  height: 73%;
+  padding: 15px;
+  font-size: 1rem;
+  transition: all .3s;
 }
 
-.NGOf5W_recipeCard h2 {
-  margin-top: 10px;
-  font-family: Nanum Gothic Coding, monospace;
-  font-size: 1.5vw;
-  font-style: normal;
-  font-weight: 400;
-  position: relative;
+._92uu0W_form_input:focus {
+  border-color: #a8dadc;
+  box-shadow: 0 0 8px #a8dadc80;
 }
 
-.NGOf5W_recipeCard h2:after {
-  content: "";
-  background-color: #fed39c;
-  width: 100%;
-  height: 2px;
-  transition: transform .3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
+textarea._92uu0W_form_input {
+  resize: none;
 }
 
-.NGOf5W_recipeCard h2:hover:after {
-  transform-origin: 0 100%;
-  transform: scaleX(1);
+._92uu0W_container_button {
+  text-align: center;
 }
 
-.NGOf5W_horizontalline {
-  background-color: #d9d9d9;
-  width: 80%;
-  height: 2px;
-  margin: 2vw auto 0;
-}
-
-.NGOf5W_show_all_button {
-  color: orange;
+._92uu0W_section__link {
+  color: #1d3557;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #a8dadc;
   border: none;
-  border-radius: 1vw;
-  padding: 1vw 2vw;
-  font-size: 1.3vw;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
   font-weight: bold;
-  transition: background-color .3s;
+  transition: all .3s;
 }
 
-.NGOf5W_show_all_button:hover {
-  color: #f70;
-  background-color: #555;
+._92uu0W_section__link:hover {
+  color: #457b9d;
+  background-color: #f1faee;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px #0003;
 }
 
-@media (width <= 800px) {
-  .NGOf5W_recipeContainer {
-    gap: 16px;
+._92uu0W_section__link:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@media (width <= 768px) {
+  ._92uu0W_contact_content h1 {
+    font-size: 2.5rem;
   }
 
-  .NGOf5W_heading {
-    font-size: 32px;
+  ._92uu0W_contact_content p {
+    font-size: 1rem;
   }
 
-  .NGOf5W_recipeCard {
-    width: 350px;
-    height: 325px;
-  }
-
-  .NGOf5W_recipeCard h2 {
-    font-size: 18px;
-  }
-
-  .NGOf5W_show_all_button {
-    font-size: 12px;
-  }
-
-  .NGOf5W_errorContainer {
-    gap: 20px;
-  }
-
-  .NGOf5W_errorContainer img {
-    height: 10.5em;
-  }
-
-  .NGOf5W_errorContainer p {
-    font-size: 1.2rem;
+  ._92uu0W_form_container {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=index.c41b5a0e.css.map */
