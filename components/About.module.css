@@ -1,218 +1,562 @@
-
-/* Section Headings */
-.diet_heading, .cuisine_heading, .meal_heading {
-    font-family: "Shantell Sans", cursive;
-    font-size: 3vw;
-    font-weight: bold;
-    padding: 6vw 6vw 2vw 10vw;
-    color: #333;
+.aboutwebsite{
+    background-color: black;
+}
+.linkedinbuttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.dietheadingnknowmore{
+.HeaderPage{
+    min-height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.0.85)), url(aboutBackground.webp);
+    background-size: contain;
+}
+
+.HeaderPage h1{
+    font-size: 6vw;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HeaderPage p{
+    font-size: 2.5vw;
+    color: #ff8f00;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.straightLine{
+    height: 1px;
+    width: 100%;
+    background-color: #ff8f00;
+}
+
+.WhoWeAreContainer{
+    width: 100vw;
+    min-height: 41vw;
+    
+}
+
+.WhoWeAreContainer h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff8f00;
+    text-transform: capitalize;
+    margin: 15vw auto 8vw auto;
+    text-align: center;
+}
+
+.WhoWeAreContainer p{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0vh 10vw;
+}
+
+.whatweoffercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vw;
+}
+
+.whatweoffercontainer h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff8f00;
+    text-transform: capitalize;
+}
+
+.cards {
+    margin: 10vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card1, .card2, .card3, .card4 {
+    width: 20vw;
+    min-height: 30vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 2vw;
+    position: relative;
+    overflow: hidden; /* Ensures content doesn't spill out */
+}
+
+.cards p {
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+    border: 1px solid #ff8f00;
+}
+
+.card1:hover p, .card2:hover p, .card3:hover p, .card4:hover p {
+    opacity: 0; /* Hide the initial content on hover */
+}
+
+.card1::after {
+    content: "Quickly discover recipes that fit your preferences, whether you're craving a classic dish or want to try something new.";
+    position: absolute;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    color: #ff8f00;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 2vw;
+}
+
+.card2::after {
+    content: "Browse by diet, cuisine, and meal type for easy navigation.";
+    position: absolute;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    color: #ff8f00;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 2vw;
+}
+
+.card3::after {
+    content: "Make the most of what’s in your kitchen! Enter the ingredients you already have, and HomeChef will find recipes you can cook with them.";
+    position: absolute;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    color: #ff8f00;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 2vw;
+}
+
+.card4::after {
+    content: "With hundreds of recipes to explore, you'll never run out of meal ideas,HomeChef provides an extensive library to meet your needs.";
+    position: absolute;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    color: #ff8f00;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vh 2vw;
+   
+}
+
+.card1:hover::after, .card2:hover::after, .card3:hover::after, .card4:hover::after {
+    opacity: 1; /* Show hover text when hovered */
+}
+
+.whychoosehomechefcontainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.whychoosehomechefcontainer h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff8f00;
+    text-transform: capitalize;
+    margin-top: 8vw;
+}
+
+.textnimage{
+    margin: 8vw 0;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.textarea{
+    max-width: 40vw;
+    padding-left: 1vw;
+    font-size: 2vw;
+    font-family: Times New Roman, Times, serif;
+    color: white;
+    line-height: 1.6;
+}
+
+.textarea h3{
+    margin-top: 3vw;
+}
+
+.imageContainer{
+    max-width: 59vw;
+}
+
+.imageContainer img{
+    max-width: 100%;
+}
+
+.ourmission {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vw;
+    justify-content: center;
+    align-items: center;
+}
+.ourmission h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff8f00;
+    text-transform: capitalize;
+    margin-top: 8vw;
+}
+
+.missiontext{
+    font-size: 2vw;
+    font-family: Times New Roman, Times, serif;
+    color: white;
+    max-width: 42vw;
+    text-align: center;
+    padding-right: 10vw;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.missiontext h4{
+    margin-top: 5vw;
+}
+
+.conclusion {
+    min-height: 70vw;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-direction: column;
+}
+
+.conclusion h1{
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff8f00;
+    text-transform: capitalize;
+}
+
+.conclusion p{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0vh 10vw;
+    line-height: 1.6;
+}
+
+.straightLine2{
+    height: 1px;
+    width: 70%;
+    background-color: #ff8f00;
+}
+/* about developers section */
+.header{
+    min-height: 30vw;
+    background-color: #ff8f00;
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 10vw;
+    max-width: 70vw;
+    text-transform: capitalize;
+    font-family: Times New Roman, Times, serif;
+    padding: 3vw 5vw;
+    text-decoration: underline;
+}
+
+.devdetail{
+    min-height: 70vw;
+    background-color: black;
+    padding: 5vw 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
-.dietheadingnknowmore p{
-    padding-top: 5vw;
-    padding-right: 10vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color: #fed39c;
-    font-size:1.3vw ; 
-}
-.dietheadingnknowmore p:hover{
-   color: orange;
-   cursor: pointer;
+.profileimgcontainer{
+    border: 5px solid white;
+    max-width: 50vw;
 }
 
-/* Common styling for all container types */
-.diets_container, .cuisines_container, .meals_container {
-    display: flex;
-    flex-direction: row; /* Arrange items horizontally */
-    align-items: center;
-    justify-content: space-evenly; /* Space the items evenly */
-
-    position: relative; /* Maintain relative positioning context for arrows */
-    width: 100%;
-    padding: 2vw 0;
+.profileimgcontainer img{
+    max-width: 100%;
 }
 
-
-/* Horizontal Line */
-.horizontalline {
-    width: 80%;
-    height: 2px;
-    background-color: #d9d9d9;
-    margin: 6vw auto 0px auto;
-}
-
-/* Slider Container */
-.sliderContainer {
-    display: flex;
-    align-items: center;
-    position: relative;
-    max-width: 80vw;
-    overflow: hidden;
-    
-    border-radius: 10px;
-    padding: 10px 0;
-}
-
-/* Diets, Cuisines, Meals */
-.diets, .cuisines, .meals {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 10px;
-    flex-wrap: nowrap;
-    scroll-snap-type: x mandatory;
-    
-}
-
-
-
-/* Individual Item Containers */
-.diet, .cuisine, .meal {
+.devinfo{
+    min-height: 60vw ;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    max-width: 45vw;
+}
+
+.devinfo h1{
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-transform: capitalize;
+    background-color: #ff8f00;
+    border: 1px solid white;
+    padding: 1vw;
+}
+
+
+.devinfo p {
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: capitalize;
     text-align: center;
-    width: 15vw;
-    cursor: pointer;
 }
 
-/* Image Containers */
-.diet_image, .cuisine_image, .meal_image {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.diet_image img, .cuisine_image img, .meal_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* Item Names */
-.diet_name, .cuisine_name, .meal_name {
-    font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #757575;
-  font-size:1.3vw ;
-    margin-top: 25px;
-}
-
-/* Arrow Buttons */
-.arrow_left, .arrow_right {
-    width: 4vw;
-    height: 4vw;
-    background-color: #d9d9d9;
+.linkedinbutton {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.arrow_left:hover, .arrow_right:hover {
-    background-color: #878484;
-}
-
-/* Show All Button */
-.show_all {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.show_all_button {
-    background-color: #ffffff;
-    border: 5px solid black;
-    color: #fed39c;
-    padding: 1vw 2vw;
+    justify-content: center;
+    gap: 1vw; /* Space between the icons and text */
+    background-color: #0077b5; /* LinkedIn blue */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5vw; /* Text size in vw */
+    padding: 1vw 2vw; /* Padding in vw */
+    border-radius: 5vw; /* Rounded corners */
     border: none;
-    border-radius: 1vw;
+    text-transform: capitalize;
     cursor: pointer;
-    font-size: 1.3vw;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+    box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Box shadow in vw */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+  }
+  
+  .linkedinbutton:hover {
+    background-color: #005983; /* Darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  .iconlefticon {
+    width: 2vw; /* Icon size in vw */
+    height: 2vw; /* Icon size in vw */
+    margin-right: 0.5vw; /* Margin to the right in vw */
+  }
+  
+  .iconrighticon {
+    width: 2vw; /* Icon size in vw */
+    height: 2vw; /* Icon size in vw */
+    margin-left: 0.5vw; /* Margin to the left in vw */
+  }
+  
 
-.show_all_button:hover {
-    background-color: #555;
-    color: orange;
-}
-
-/* Smooth Scrolling for Overflow */
-.diets, .cuisines, .meals {
-    scrollbar-width: none; /* For Firefox */
-}
-
-.diets::-webkit-scrollbar, .cuisines::-webkit-scrollbar, .meals::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Edge */
-}
-
-
-/* Expanded View (Optional) */
-/* .expanded {
-    flex-wrap: wrap;
-    justify-content: center;
-} */
-
-.showAllImages {
+  .devinfo2{
+    min-height: 60vw ;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    max-width: 45vw;
 }
 
-@media(max-width:850px){
-    .diet_heading, .cuisine_heading, .meal_heading {
-        font-size: 35px;
-    }
-    .dietheadingnknowmore p{
-       font-size: 12px;
-    }
-    .diet, .cuisine, .meal {   
-        width: 100px; 
+.devinfo2 h1{
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-transform: capitalize;
+    background-color: #ff8f00;
+    border: 1px solid white;
+    padding: 1vw 7vw;
+}
 
+
+.devinfo2 p {
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    .HeaderPage{
+        min-height: 70vw
     }
-    .diet_image, .cuisine_image, .meal_image {
-        width: 96px;
-        height: 95px;  
+
+    .HeaderPage h1{
+        font-size: 48px
     }
-    .diet_name, .cuisine_name, .meal_name {
-      font-size:12px ;
+    
+    .HeaderPage p{
+        font-size: 24px;
     }
-    .arrow_left, .arrow_right {
-        width: 35px;
-        height: 35px; 
+
+.WhoWeAreContainer h1{
+    font-size: 36px;
+}
+.WhoWeAreContainer p{
+    font-size: 18px;
+}
+ .whatweoffercontainer h1{
+        font-size: 36px;
+        margin-top: 10vw;
     }
-    .show_all_button {
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .cards p {
+        font-size: 18px;
+    }
+    
+    
+        .card1, .card2, .card3, .card4 {
+            width: 150px;
+            min-height: 250px;
+        }
+
+        .card1::after,.card2::after,.card3::after,.card4::after{
+            font-size: 18px;
+        }
+
+        .whychoosehomechefcontainer h1{
+            font-size: 36px;
+        }
+        .textnimage{
+            margin: 8vw 0;
+            width: 100vw;
+            display: flex;
+            justify-content:center;
+            
+        }
         
-        font-size: 12px;
-    }
-}
-@media(max-width:500px){
+        .textarea{
+            max-width: 90%;
+            padding-left: 20px;
+            font-size: 16px;
+        }
 
-    .sliderContainer {
-        max-width: 95vw;
-    }
-
-    .arrow_left, .arrow_right {
-       display: none;
-    }
-    .dietheadingnknowmore p{
+        .imageContainer{
+          display: none;
+        }
        
-        padding-right: 7vw;
+        .ourmission h1{
+            font-size: 36px;
+        }
         
+        .missiontext{
+            max-width: 90%;
+            padding-left: 20px;
+            font-size: 16px;
+            text-align: center;
+            padding-right: 0;
+        }
+        
+        .missiontext h4{
+            margin-top: 5vw;
+        }
+
+        .conclusion h1{
+            font-size: 36px;
+        }
+        .conclusion p{
+            font-size: 16px;
+        }
+
+
+        
+}
+
+@media(max-width:490px){
+    .HeaderPage{
+        min-height: 70vh
     }
+
+    .HeaderPage h1{
+        font-size: 36px
+    }
+    
+    .HeaderPage p{
+        font-size: 24px;
+    }
+
+.WhoWeAreContainer h1{
+    font-size: 36px;
+    
+}
+.WhoWeAreContainer p{
+    font-size: 18px;
+}
+ .whatweoffercontainer h1{
+        font-size: 36px;
+        margin-top: 100px;
+    }
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+        .card1, .card2, .card3, .card4 {
+            width: 150px;
+            min-height: 250px;
+        }
+
+        .whychoosehomechefcontainer h1{
+
+            font-size: 32px;
+            margin-top: 70px;
+            text-align: center;
+        }
+    
+       
+        .ourmission h1{
+            font-size: 36px;
+            margin-top: 100px;
+        }
+        
+    
+
+        .conclusion h1{
+            margin-top: 100px;
+            font-size: 36px;
+            text-align: center;
+        }
+        .conclusion p{
+            font-size: 16px;
+            margin: 50px auto;
+        }
+
+        .linkedinbutton {
+            font-size: 14px; /* Adjust font size */
+            padding: 8px 16px; /* Adjust padding */
+            border-radius: 20px; /* Adjust border radius */
+            gap: 6px; /* Adjust gap */
+        }
+    
+        .iconlefticon, .iconrighticon {
+            width: 16px; /* Adjust icon size */
+            height: 16px; /* Adjust icon size */
+        }
+        .straightLine2 {
+            margin-bottom: 50px;
+        }
+        
 }

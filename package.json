@@ -22,7 +22,7 @@
     "homechef": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0",
+    "react-router-dom": "^6.28.1",
     "react-slick": "^0.30.3",
     "react-slider": "^2.0.6",
     "slick-carousel": "^1.8.1"

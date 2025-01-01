@@ -1,89 +1,92 @@
-.searchDiv{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%
-    
+ 
+
+.searchDiv {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
-.searchDiv input{
-    text-align: center;
-    padding-left: 62px;
+.searchDiv input {
+  text-align: center;
+  padding-left: 62px;
 }
 
-.searchDiv img{
-    position: absolute;
-    left: 12px;
-    width: 30px;
-    height: 30px;
-    opacity: 0.3;
+.searchDiv img {
+  position: absolute;
+  left: 12px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
 }
 
-.searchInput{
-    background-color:#d9d9d9;
-    padding: 13px 10px;
-    border-radius: 20px;
-    min-width: 30vw;
-    border: none;
-   font-size: 20px;
-   font-family: monospace;
-   color: #757575;  
+.searchInput {
+  background-color: #d9d9d9;
+  padding: 13px 10px;
+  border-radius: 20px;
+  min-width: 30vw;
+  border: none;
+  font-size: 20px;
+  font-family: monospace;
+  color: #757575;
 }
 
-.searchInput:focus{
-    border: 3px solid black;
+.searchInput:focus {
+  border: 3px solid black;
 }
 
-.maginfyIcon{
-    position: absolute;
-    top: 35px;
-    right: 58px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    display: none;
+.maginfyIcon {
+  position: absolute;
+  top: 35px;
+  right: 58px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
 }
 
 /* Search Section */
-.searchResult{
-    min-width: 100%;
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: white;
-    font-size: 20px;
+.searchResult {
+  min-width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  font-size: 20px;
 }
-.searchResult input{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color:#d9d9d9;
-    padding: 13px 10px;
-    border-radius: 20px;
-    min-width: 50%;
-    border: none;
-   font-size: 20px;
-   font-family: monospace;
-   color: #757575
+.searchResult input {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #d9d9d9;
+  padding: 13px 10px;
+  border-radius: 20px;
+  min-width: 50%;
+  border: none;
+  font-size: 20px;
+  font-family: monospace;
+  color: #757575;
 }
 .xmarkImage {
-    position: absolute;
-    top: 30px;
-    right: 12px;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 670) {
-    .searchInput{
-        display: none;
-    }
+  .searchInput {
+    display: none;
+  }
+  .searchDiv img {
+    display: none;
+  }
 
-    .maginfyIcon{
-        display: block;
-    }
+  .maginfyIcon {
+    display: block;
+  }
 }

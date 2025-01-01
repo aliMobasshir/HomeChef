@@ -1,3 +1,7 @@
+/* *{
+  overflow-x: hidden;
+} */
+
 .mainContainer {
   background-color: #D9D9D9;
 
@@ -90,7 +94,7 @@
 display: flex;
 align-items: center;
 justify-content: space-evenly;
-
+list-style: none;
 }
 
 .featuresText{
@@ -115,6 +119,7 @@ justify-content: space-evenly;
 
   .textContainer {
     min-width: 75%;
+    padding: 40px 0px;
   }
 
   .h1_text {
@@ -127,6 +132,7 @@ justify-content: space-evenly;
 
   .button {
     font-size: 3vw;
+    margin-bottom: 10px;
   }
 }
 

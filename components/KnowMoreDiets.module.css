@@ -1,0 +1,40 @@
+.dietsInfo{
+    background-color: #353535;
+    display: flex;
+    gap: 6vw;
+    flex-direction: column;
+    padding: 6vw;
+}
+.dietItem{
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    
+}
+.dietsInfo h1{
+    color: orange;
+    font-family: "Shantell Sans", cursive;
+    font-size: 3vw;
+    font-weight: bold;
+    
+}
+.dietsInfo p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size:1.5vw ;
+    
+}
+@media(max-width:800px){
+    .dietsInfo h1{
+        font-size: 30px;
+    }
+    .dietsInfo p{
+        font-size: 16px;
+    }
+    .dietsInfo{
+        gap: 35px;}
+        .dietItem{
+            gap: 10px;
+        }
+}
