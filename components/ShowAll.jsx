@@ -1,104 +1,75 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import Style from './recipeList.module.css' // Reusing the same CSS
-import arrowIcon from './right-arrow.png'
-import Navigation from './Navigation'
-import apiImage from './api_error_image.gif'
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import Style from './recipeList.module.css';
+import Navigation from './Navigation';
+import apiImage from './api_error_image.gif';
 
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1'
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
+const apiKey = 'f2fbb965309246e7906f64251396be87';
 
 const ShowAll = () => {
-  const { type, name } = useParams()
-  const [recipes, setRecipes] = useState([])
-  const [error, setError] = useState(null)
-  const [query, setQuery] = useState('')
-  const [loading, setLoading] = useState(true)
-  const naviagte = useNavigate()
+  const { type, name } = useParams();
+  const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState(null);
+  const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [offset, setOffset] = useState(0); // Added offset for pagination
+  const navigate = useNavigate();
 
-  const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=200`
+  const fetchRecipes = async () => {
+    setLoading(true);
+    setError(null);
+
+    const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=100&offset=${offset}`;
+
+    try {
+      const response = await fetch(endpoint);
+      if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+      const data = await response.json();
+      setRecipes(data.results || []);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    async function fetchRecipes () {
-      try {
-        const response = await fetch(endpoint)
-        if (!response.ok)
-          throw new Error(`An error has occurred: ${response.status}`)
-        const data = await response.json()
-        setRecipes(data.results || [])
-        setLoading(false)
-      } catch (error) {
-        setError(error.message)
-      }
-    }
+    fetchRecipes();
+  }, [type, name, offset]); // Re-fetch when offset changes
 
-    const handleGoBack = () => {
-      naviagte(-1)
-    }
+  const handleNextPage = () => {
+    setOffset(prevOffset => prevOffset + 100);
+  };
 
-    fetchRecipes()
-  }, [type, name])
+  const handlePreviousPage = () => {
+    if (offset > 0) setOffset(prevOffset => prevOffset - 100);
+  };
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
-  )
-
-  if (error?.includes('402'))
-    return (
-      <div>
-        <div className={Style.errorContainer}>
-          <img src={apiImage} alt='arrow' className={Style.icon} />
-
-          <p>Failed to fetch recipes Data. Please Try after Some Time</p>
-        </div>
-
-        <div className={Style.btnContainer}>
-          <button className={Style.btn} onClick={() => naviagte(-1)}>Go Back</button>
-        </div>
-      </div>
-    )
-
-  if (
-    error?.includes('401') ||
-    error?.includes('503') ||
-    error?.includes('504')
-  )
-    return (
-      <div>
-        <div className={Style.errorContainer}>
-          <img
-            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
-            alt='arrow'
-            className={Style.icon}
-          />
-
-          <p>
-            Failed to fetch recipe data due to a server error. Please try again
-            later.
-          </p>
-        </div>
-
-        <div className={Style.btnContainer}>
-          <button className={Style.btn} onClick={() => naviagte(-1)}>Go Back</button>
-        </div>
-      </div>
-    )
+  );
 
   if (loading)
     return (
       <div className={Style.loaderContainer}>
         <p className={Style.loader}></p>
       </div>
-    )
+    );
+
+  if (error?.includes('402'))
+    return (
+      <div>
+        <div className={Style.errorContainer}>
+          <img src={apiImage} alt="Error" className={Style.icon} />
+          <p>Failed to fetch recipes data. Please try again later.</p>
+        </div>
+        <div className={Style.btnContainer}>
+          <button className={Style.btn} onClick={() => navigate(-1)}>
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
 
   return (
     <>
@@ -114,10 +85,7 @@ const ShowAll = () => {
           <div className={Style.recipeContainer}>
             {filteredRecipes.length > 0 ? (
               filteredRecipes.map(recipe => (
-                <Link
-                  to={`/image/${type}/${name}/${recipe.id}`}
-                  key={recipe.id}
-                >
+                <Link to={`/image/${type}/${name}/${recipe.id}`} key={recipe.id}>
                   <div className={Style.recipeCard}>
                     <img src={recipe.image} alt={recipe.title} />
                     <h2>
@@ -131,9 +99,22 @@ const ShowAll = () => {
             )}
           </div>
         )}
+
+        <div className={Style.paginationContainer}>
+          <button
+            className={Style.paginationBtn}
+            onClick={handlePreviousPage}
+            disabled={offset === 0}
+          >
+            Previous Page
+          </button>
+          <button className={Style.paginationBtn} onClick={handleNextPage}>
+            Next Page
+          </button>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ShowAll
+export default ShowAll;

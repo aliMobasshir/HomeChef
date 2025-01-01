@@ -12,19 +12,19 @@ import About from "./components/About.jsx";
 import SearchResult from "./components/SearchResult.jsx";
 
 const App = () => {
-  const [query, setQuery] = useState(""); // Query state that will be passed down to components
+  const [query, setQuery] = useState(""); 
 
   return (
     <>
-      {/* Pass setQuery to Navigation component */}
+     
       <Navigation setQuery={setQuery} />
 
-      {/* Conditionally render based on query */}
+      
       {query ? (
-        // If there is a query, show SearchResult
+        
         <SearchResult query={query} />
       ) : (
-        // If there is no query, show other components
+       
         <>
           <Main query={query} />
           <Body query={query} />

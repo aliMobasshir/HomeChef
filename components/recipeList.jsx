@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Style from './recipeList.module.css'
 import RandomIcon from './Random_icon.png'
 import apiImage from './api_error_image.gif'
+import { Link } from 'react-router-dom'
 
-const apiKey = 'f2fbb965309246e7906f64251396be87'
+const apiKey = '3544e0a87f98468883e9169172546ac1'
 //  cb830b43603108a2e1b0d922bac475a945a8404a
 
 // 834e4826627e40619840c9f299b31f36
@@ -119,12 +120,14 @@ function RecipeList ({ query }) {
       <div className={Style.recipeContainer}>
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map(recipe => (
-            <div key={recipe.id} className={Style.recipeCard}>
-              <img src={recipe.image} alt={recipe.title} />
-              <h2>
-                <span>{recipe.title}</span>
-              </h2>
-            </div>
+            <Link to={`/searchIngredientImage/${recipe.id}`}>
+              <div key={recipe.id} className={Style.recipeCard}>
+                <img src={recipe.image} alt={recipe.title} />
+                <h2>
+                  <span>{recipe.title}</span>
+                </h2>
+              </div>
+            </Link>
           ))
         ) : (
           <h1>No recipes found. </h1>

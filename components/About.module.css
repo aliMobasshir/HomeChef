@@ -1,6 +1,11 @@
 .aboutwebsite{
     background-color: black;
 }
+.linkedinbuttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .HeaderPage{
     min-height: 50vw;
@@ -192,10 +197,12 @@
 
 .textarea h3{
     margin-top: 3vw;
+    color: #ff8f00;
 }
 
 .imageContainer{
     max-width: 59vw;
+   
 }
 
 .imageContainer img{
@@ -230,6 +237,10 @@
 
 .missiontext h4{
     margin-top: 5vw;
+}
+
+.missiontext h3{
+    color: #ff8f00;
 }
 
 .conclusion {

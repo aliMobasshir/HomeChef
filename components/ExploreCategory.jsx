@@ -12,6 +12,7 @@ import RecommendedDesserts from './RecommendedDesserts.jsx'
 import RecommendedWhole30 from './RecommendedWhole30.jsx'
 import { Link } from 'react-router-dom'
 import KnowMoreDiets from './KnowMoreDiets.jsx'
+import SearchResult from './SearchResult.jsx'
 
 const About = () => {
   const [query, setQuery] = useState('')
@@ -40,18 +41,16 @@ const About = () => {
     console.log(scrollPosition)
   }
 
-  const isSearchActive = query.trim() !== ''
+ 
 
   return (
     <div className='about'>
       <Navigation setQuery={setQuery} />
-
-      {isSearchActive ? (
+      
+      
+      {query ? (
         <>
-          {/* Render search results */}
-          <Popular query={query} />
-          <RecommendedDesserts query={query} />
-          <RecommendedWhole30 query={query} />
+         <SearchResult query={query} />
         </>
       ) : (
         <>
