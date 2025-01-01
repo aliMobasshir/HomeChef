@@ -27274,8 +27274,6 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
 var _renderJsx = require("./components/Render.jsx");
 var _renderJsxDefault = parcelHelpers.interopDefault(_renderJsx);
 var _navigationJsx = require("./components/Navigation.jsx");
@@ -27296,74 +27294,86 @@ var _footerJsx = require("./components/Footer.jsx");
 var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
 var _aboutJsx = require("./components/About.jsx");
 var _aboutJsxDefault = parcelHelpers.interopDefault(_aboutJsx);
+var _searchResultJsx = require("./components/SearchResult.jsx");
+var _searchResultJsxDefault = parcelHelpers.interopDefault(_searchResultJsx);
 var _s = $RefreshSig$();
 const App = ()=>{
     _s();
-    // const [query, setQuery] = useState('');
-    const [query, setQuery] = (0, _react.useState)('');
-    console.log(query);
+    const [query, setQuery] = (0, _react.useState)(""); // Query state that will be passed down to components
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 24,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {
+            query ? // If there is a query, show SearchResult
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchResultJsxDefault.default), {
                 query: query
             }, void 0, false, {
                 fileName: "App.jsx",
                 lineNumber: 25,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reviewPageJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 28,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {
-                query: query
-            }, void 0, false, {
-                fileName: "App.jsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined)
+                columnNumber: 9
+            }, undefined) : // If there is no query, show other components
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 30,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recipeListJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reviewPageJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _trendingJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 33,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 34,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
+                        fileName: "App.jsx",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true)
         ]
     }, void 0, true);
 };
-_s(App, "qO/HZodsWTfJhuzZtdaxiosei2U=");
+_s(App, "HYX2QbDDdTtlu7GfoQbAPZOIM6k=");
 _c = App;
 exports.default = App;
 var _c;
@@ -27374,7 +27384,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","./components/About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","./components/About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/SearchResult.jsx":"4BD5I"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35110,31 +35120,22 @@ var _magnifyingGlassSvgDefault = parcelHelpers.interopDefault(_magnifyingGlassSv
 var _xmarkSvg = require("./xmark.svg");
 var _xmarkSvgDefault = parcelHelpers.interopDefault(_xmarkSvg);
 var _s = $RefreshSig$();
-const Search = ({ setSearchOpen, setQuery })=>{
+const Search = ({ setQuery })=>{
     _s();
-    // Destructure props correctly
-    const [search, setSearch] = (0, _react.useState)(false) // Local search state to toggle search bar visibility
-    ;
-    // Toggle the search visibility
-    const toggleSearch = ()=>{
-        setSearch(!search) // Toggle the local search state
-        ;
-        setSearchOpen(!search) // Pass the state to the parent component (whether search is open or not)
-        ;
-    };
-    // Close the search bar when the xmark is clicked
-    const handler = ()=>{
-        setSearch(false) // Close the search bar
-        ;
-        setSearchOpen(false) // Update the parent component's state to reflect the change
-        ;
-    };
-    // // Handle input changes and update the query in the parent component
+    const [search, setSearch] = (0, _react.useState)(false);
+    const [localQuery, setLocalQuery] = (0, _react.useState)(''); // Local state for input
+    // Handle input changes and update query in parent (App.jsx)
     const handleInput = (e)=>{
-        const inputValue = e.target.value;
-        // console.log(inputValue);  // Optionally log the value
-        setQuery(inputValue) // Update the query in the parent component
-        ;
+        setLocalQuery(e.target.value); // Local query state
+        setQuery(e.target.value); // Update query in App.jsx
+    };
+    // Toggle search visibility
+    const toggleSearch = ()=>{
+        setSearch(!search);
+    };
+    // Close search bar
+    const handler = ()=>{
+        setSearch(false);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: (0, _searchModuleCssDefault.default).searchContainer,
@@ -35144,26 +35145,27 @@ const Search = ({ setSearchOpen, setQuery })=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _magnifyingGlassSvgDefault.default),
-                        alt: "Click to maginify"
+                        alt: "Click to magnify"
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 32,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         className: (0, _searchModuleCssDefault.default).searchInput,
                         type: "text",
                         placeholder: "Search for recipes",
-                        onInput: handleInput
+                        value: localQuery,
+                        onChange: handleInput
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 33,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Search.jsx",
-                lineNumber: 31,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -35173,7 +35175,7 @@ const Search = ({ setSearchOpen, setQuery })=>{
                 alt: "Click to Magnify"
             }, void 0, false, {
                 fileName: "components/Search.jsx",
-                lineNumber: 41,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined),
             search && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35186,32 +35188,33 @@ const Search = ({ setSearchOpen, setQuery })=>{
                         alt: "Close search"
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 50,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
                         placeholder: "Search",
-                        onInput: handleInput
+                        value: localQuery,
+                        onChange: handleInput
                     }, void 0, false, {
                         fileName: "components/Search.jsx",
-                        lineNumber: 56,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Search.jsx",
-                lineNumber: 49,
+                lineNumber: 47,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/Search.jsx",
-        lineNumber: 30,
+        lineNumber: 27,
         columnNumber: 5
     }, undefined);
 };
-_s(Search, "U++H1Seh0ABbq6ENHr6v/byZWis=");
+_s(Search, "i6Bb9yT8EZdoh8c9hAWxKP2qmwA=");
 _c = Search;
 exports.default = Search;
 var _c;
@@ -35222,20 +35225,20 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Search.module.css":"7YDFA","./magnifying_glass.svg":"gOv3O","./xmark.svg":"eA0KT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YDFA":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./magnifying_glass.svg":"gOv3O","./xmark.svg":"eA0KT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Search.module.css":"7YDFA"}],"gOv3O":[function(require,module,exports,__globalThis) {
+module.exports = require("44b1cd67ef553a0f").getBundleURL('avzPb') + "magnifying_glass.49a597f0.svg" + "?" + Date.now();
+
+},{"44b1cd67ef553a0f":"lgJ39"}],"eA0KT":[function(require,module,exports,__globalThis) {
+module.exports = require("875187e2b4dd27b5").getBundleURL('avzPb') + "xmark.397b9984.svg" + "?" + Date.now();
+
+},{"875187e2b4dd27b5":"lgJ39"}],"7YDFA":[function(require,module,exports,__globalThis) {
 module.exports["maginfyIcon"] = `WCa7bG_maginfyIcon`;
 module.exports["searchDiv"] = `WCa7bG_searchDiv`;
 module.exports["searchInput"] = `WCa7bG_searchInput`;
 module.exports["searchResult"] = `WCa7bG_searchResult`;
 module.exports["xmarkImage"] = `WCa7bG_xmarkImage`;
 
-},{}],"gOv3O":[function(require,module,exports,__globalThis) {
-module.exports = require("44b1cd67ef553a0f").getBundleURL('avzPb') + "magnifying_glass.49a597f0.svg" + "?" + Date.now();
-
-},{"44b1cd67ef553a0f":"lgJ39"}],"eA0KT":[function(require,module,exports,__globalThis) {
-module.exports = require("875187e2b4dd27b5").getBundleURL('avzPb') + "xmark.397b9984.svg" + "?" + Date.now();
-
-},{"875187e2b4dd27b5":"lgJ39"}],"gE6rM":[function(require,module,exports,__globalThis) {
+},{}],"gE6rM":[function(require,module,exports,__globalThis) {
 module.exports["hamburger"] = `jTSFqG_hamburger`;
 module.exports["menuContainer"] = `jTSFqG_menuContainer`;
 module.exports["menuItem"] = `jTSFqG_menuItem`;
@@ -37499,7 +37502,152 @@ module.exports["open"] = `C1rn5W_open`;
 },{}],"ixPNC":[function(require,module,exports,__globalThis) {
 module.exports = require("d986c1b9e6500ce0").getBundleURL('avzPb') + "FAQ 1.589e2fea.svg" + "?" + Date.now();
 
-},{"d986c1b9e6500ce0":"lgJ39"}],"cmcNe":[function(require,module,exports,__globalThis) {
+},{"d986c1b9e6500ce0":"lgJ39"}],"4BD5I":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$67f6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$67f6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _recipeListModuleCss = require("./recipeList.module.css");
+var _recipeListModuleCssDefault = parcelHelpers.interopDefault(_recipeListModuleCss);
+var _s = $RefreshSig$();
+const SearchResult = ({ query })=>{
+    _s();
+    const [recipes, setRecipes] = (0, _react.useState)([]) // State to store fetched recipes
+    ;
+    const [error, setError] = (0, _react.useState)(null) // State to handle errors
+    ;
+    // Fetch recipes when query changes
+    (0, _react.useEffect)(()=>{
+        if (query.trim() === '') {
+            setRecipes([]) // Clear recipes if query is empty
+            ;
+            return;
+        }
+        const fetchRecipes = async ()=>{
+            try {
+                const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=d2a320ed5a3a463ca1b8dce923cd49dc&number=100`);
+                const data = await response.json();
+                if (data.results) setRecipes(data.results) // Set fetched recipes
+                ;
+                else setRecipes([]) // If no recipes found, clear the results
+                ;
+            } catch (error) {
+                setError('Failed to fetch recipes') // Handle errors
+                ;
+            }
+        };
+        fetchRecipes();
+    }, [
+        query
+    ]) // Re-run the effect when query changes
+    ;
+    // Render error message if fetching fails
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _recipeListModuleCssDefault.default).errorContainer,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
+                alt: "error animation",
+                className: (0, _recipeListModuleCssDefault.default).icon
+            }, void 0, false, {
+                fileName: "components/SearchResult.jsx",
+                lineNumber: 37,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: error
+            }, void 0, false, {
+                fileName: "components/SearchResult.jsx",
+                lineNumber: 42,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/SearchResult.jsx",
+        lineNumber: 36,
+        columnNumber: 7
+    }, undefined);
+    // Render recipes or "No recipes found" message
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _recipeListModuleCssDefault.default).topPicksPage,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _recipeListModuleCssDefault.default).heading,
+                children: "Search Results:"
+            }, void 0, false, {
+                fileName: "components/SearchResult.jsx",
+                lineNumber: 50,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _recipeListModuleCssDefault.default).recipeContainer,
+                children: recipes.length > 0 ? recipes.map((recipe)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _recipeListModuleCssDefault.default).recipeCard,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: recipe.image,
+                                alt: recipe.title
+                            }, void 0, false, {
+                                fileName: "components/SearchResult.jsx",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: recipe.title
+                                }, void 0, false, {
+                                    fileName: "components/SearchResult.jsx",
+                                    lineNumber: 57,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/SearchResult.jsx",
+                                lineNumber: 56,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, recipe.id, true, {
+                        fileName: "components/SearchResult.jsx",
+                        lineNumber: 54,
+                        columnNumber: 13
+                    }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "No recipes found."
+                }, void 0, false, {
+                    fileName: "components/SearchResult.jsx",
+                    lineNumber: 62,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/SearchResult.jsx",
+                lineNumber: 51,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/SearchResult.jsx",
+        lineNumber: 49,
+        columnNumber: 5
+    }, undefined);
+};
+_s(SearchResult, "ohMqFt/cdTJ3t+pGlBUBekHej2E=");
+_c = SearchResult;
+exports.default = SearchResult;
+var _c;
+$RefreshReg$(_c, "SearchResult");
+
+  $parcel$ReactRefreshHelpers$67f6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./recipeList.module.css":"ieGJH"}],"cmcNe":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const cuisines = [
