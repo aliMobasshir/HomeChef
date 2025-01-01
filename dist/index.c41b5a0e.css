@@ -2136,12 +2136,14 @@ a {
 
 .t7jeDG_btn {
   cursor: pointer;
-  border: 2px solid #000;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  padding: 1.5vw;
-  font-family: Shantell Sans, cursive;
-  font-size: 1.5vw;
+  color: #000;
+  text-transform: uppercase;
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
 .t7jeDG_errorContainer {
