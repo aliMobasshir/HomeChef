@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 
-const apiKey = '834e4826627e40619840c9f299b31f36'
+const apiKey = '716d2d891ccc4e788b471c105f5928e8'
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
@@ -31,6 +31,11 @@ const SearchIngredientImage = () => {
 
   const endpoint = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${apiKey}`
   const baseImageUrl = 'https://spoonacular.com/cdn/ingredients_100x100/'
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 
   useEffect(() => {
     async function fetchRecipes () {

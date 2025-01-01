@@ -5,7 +5,7 @@ import Navigation from './Navigation.jsx'
 import Footer from './Footer.jsx'
 import { useNavigate } from 'react-router-dom'
 
-const apiKey = '5253113cb6ff4e67ad11c72ec6ae2ec0'
+const apiKey = '0d0e212f1a904e9cb772072f49167a4b'
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87

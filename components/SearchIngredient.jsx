@@ -6,7 +6,7 @@ import IngredientData from '../IngredientData.js'
 import apiImage from './api_error_image.gif'
 import { useNavigate, Link } from 'react-router-dom'
 
-const apiKey = '5253113cb6ff4e67ad11c72ec6ae2ec0'
+const apiKey = 'd2a320ed5a3a463ca1b8dce923cd49dc'
 //  cb830b43603108a2e1b0d922bac475a945a8404a
 
 // 834e4826627e40619840c9f299b31f36
