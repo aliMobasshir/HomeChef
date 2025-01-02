@@ -3077,7 +3077,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC","./components/Contact.jsx":"idlIC"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Contact.jsx":"idlIC"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -36295,7 +36295,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Footer.jsx":"6QIYt","react-router-dom":"9xmpe","./happycustomer.svg":"aYmr8","./missionImage.svg":"2gjAO","./MobasshirImage.svg":"drTUg","./Linkedinicon.svg":"93b21","./ExternalLinkicon.svg":"4DXAr","./DanishImage.svg":"dabru"}],"4TlvK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","./happycustomer.svg":"aYmr8","./missionImage.svg":"2gjAO","./MobasshirImage.svg":"drTUg","./Linkedinicon.svg":"93b21","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ExternalLinkicon.svg":"4DXAr","./DanishImage.svg":"dabru","./Footer.jsx":"6QIYt","react-router-dom":"9xmpe"}],"4TlvK":[function(require,module,exports,__globalThis) {
 module.exports["HeaderPage"] = `IHfPZW_HeaderPage`;
 module.exports["WhoWeAreContainer"] = `IHfPZW_WhoWeAreContainer`;
 module.exports["aboutwebsite"] = `IHfPZW_aboutwebsite`;
@@ -36324,7 +36324,25 @@ module.exports["textnimage"] = `IHfPZW_textnimage`;
 module.exports["whatweoffercontainer"] = `IHfPZW_whatweoffercontainer`;
 module.exports["whychoosehomechefcontainer"] = `IHfPZW_whychoosehomechefcontainer`;
 
-},{}],"6QIYt":[function(require,module,exports,__globalThis) {
+},{}],"aYmr8":[function(require,module,exports,__globalThis) {
+module.exports = require("317fbb4f75a4643d").getBundleURL('avzPb') + "happycustomer.b66de615.svg" + "?" + Date.now();
+
+},{"317fbb4f75a4643d":"lgJ39"}],"2gjAO":[function(require,module,exports,__globalThis) {
+module.exports = require("e2f89467bd24fc1f").getBundleURL('avzPb') + "missionImage.b43be2b1.svg" + "?" + Date.now();
+
+},{"e2f89467bd24fc1f":"lgJ39"}],"drTUg":[function(require,module,exports,__globalThis) {
+module.exports = require("4f5a2cd554e2ae61").getBundleURL('avzPb') + "MobasshirImage.9f1b7cfb.svg" + "?" + Date.now();
+
+},{"4f5a2cd554e2ae61":"lgJ39"}],"93b21":[function(require,module,exports,__globalThis) {
+module.exports = require("4cbf30d9acad9d35").getBundleURL('avzPb') + "Linkedinicon.91360f71.svg" + "?" + Date.now();
+
+},{"4cbf30d9acad9d35":"lgJ39"}],"4DXAr":[function(require,module,exports,__globalThis) {
+module.exports = require("20ed01efea0c75b5").getBundleURL('avzPb') + "ExternalLinkicon.5eb4e9c2.svg" + "?" + Date.now();
+
+},{"20ed01efea0c75b5":"lgJ39"}],"dabru":[function(require,module,exports,__globalThis) {
+module.exports = require("c2b3b20d06e3768b").getBundleURL('avzPb') + "DanishImage.2284c450.svg" + "?" + Date.now();
+
+},{"c2b3b20d06e3768b":"lgJ39"}],"6QIYt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fe51 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36736,25 +36754,7 @@ module.exports["socialMedia"] = `ASPDhq_socialMedia`;
 },{}],"7pU0l":[function(require,module,exports,__globalThis) {
 module.exports = require("4f19e34ce1d02795").getBundleURL('avzPb') + "HomeChefLogo.0bee7880.svg" + "?" + Date.now();
 
-},{"4f19e34ce1d02795":"lgJ39"}],"aYmr8":[function(require,module,exports,__globalThis) {
-module.exports = require("317fbb4f75a4643d").getBundleURL('avzPb') + "happycustomer.b66de615.svg" + "?" + Date.now();
-
-},{"317fbb4f75a4643d":"lgJ39"}],"2gjAO":[function(require,module,exports,__globalThis) {
-module.exports = require("e2f89467bd24fc1f").getBundleURL('avzPb') + "missionImage.b43be2b1.svg" + "?" + Date.now();
-
-},{"e2f89467bd24fc1f":"lgJ39"}],"drTUg":[function(require,module,exports,__globalThis) {
-module.exports = require("4f5a2cd554e2ae61").getBundleURL('avzPb') + "MobasshirImage.9f1b7cfb.svg" + "?" + Date.now();
-
-},{"4f5a2cd554e2ae61":"lgJ39"}],"93b21":[function(require,module,exports,__globalThis) {
-module.exports = require("4cbf30d9acad9d35").getBundleURL('avzPb') + "Linkedinicon.91360f71.svg" + "?" + Date.now();
-
-},{"4cbf30d9acad9d35":"lgJ39"}],"4DXAr":[function(require,module,exports,__globalThis) {
-module.exports = require("20ed01efea0c75b5").getBundleURL('avzPb') + "ExternalLinkicon.5eb4e9c2.svg" + "?" + Date.now();
-
-},{"20ed01efea0c75b5":"lgJ39"}],"dabru":[function(require,module,exports,__globalThis) {
-module.exports = require("c2b3b20d06e3768b").getBundleURL('avzPb') + "DanishImage.2284c450.svg" + "?" + Date.now();
-
-},{"c2b3b20d06e3768b":"lgJ39"}],"7qUU2":[function(require,module,exports,__globalThis) {
+},{"4f19e34ce1d02795":"lgJ39"}],"7qUU2":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$ee5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37064,7 +37064,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Random_icon.png":"5H693","./api_error_image.gif":"27OUK","react-router-dom":"9xmpe"}],"ieGJH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./Random_icon.png":"5H693","./api_error_image.gif":"27OUK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"ieGJH":[function(require,module,exports,__globalThis) {
 module.exports["btn"] = `jjQB4a_btn`;
 module.exports["btnContainer"] = `jjQB4a_btnContainer`;
 module.exports["errorContainer"] = `jjQB4a_errorContainer`;
@@ -37480,7 +37480,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Quick_Recipe_icon.png":"2BCLX","./api_error_image.gif":"27OUK","react-router-dom":"9xmpe"}],"2BCLX":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./Quick_Recipe_icon.png":"2BCLX","./api_error_image.gif":"27OUK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"2BCLX":[function(require,module,exports,__globalThis) {
 module.exports = require("cc4751e6044a593").getBundleURL('avzPb') + "Quick_Recipe_icon.bfe2aa31.png" + "?" + Date.now();
 
 },{"cc4751e6044a593":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
@@ -38048,12 +38048,12 @@ const ShowAll = ()=>{
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/ShowAll.jsx",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 58,
+        lineNumber: 59,
         columnNumber: 7
     }, undefined);
     if (error?.includes('402')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38067,20 +38067,20 @@ const ShowAll = ()=>{
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipes data. Please try again later."
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 68,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38091,18 +38091,18 @@ const ShowAll = ()=>{
                     children: "Go Back"
                 }, void 0, false, {
                     fileName: "components/ShowAll.jsx",
-                    lineNumber: 71,
+                    lineNumber: 72,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 70,
+                lineNumber: 71,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 65,
+        lineNumber: 66,
         columnNumber: 7
     }, undefined);
     if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38116,20 +38116,20 @@ const ShowAll = ()=>{
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 86,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipe data due to a server error. Please try again later."
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 85,
+                lineNumber: 86,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38140,18 +38140,18 @@ const ShowAll = ()=>{
                     children: "Go Back"
                 }, void 0, false, {
                     fileName: "components/ShowAll.jsx",
-                    lineNumber: 99,
+                    lineNumber: 100,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 98,
+                lineNumber: 99,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/ShowAll.jsx",
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -38160,7 +38160,7 @@ const ShowAll = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 108,
+                lineNumber: 109,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38176,7 +38176,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 110,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, undefined),
                     error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -38186,7 +38186,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 115,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeContainer,
@@ -38200,7 +38200,7 @@ const ShowAll = ()=>{
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-                                            lineNumber: 125,
+                                            lineNumber: 126,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -38208,36 +38208,36 @@ const ShowAll = ()=>{
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/ShowAll.jsx",
-                                                lineNumber: 127,
+                                                lineNumber: 128,
                                                 columnNumber: 23
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-                                            lineNumber: 126,
+                                            lineNumber: 127,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "components/ShowAll.jsx",
-                                    lineNumber: 124,
+                                    lineNumber: 125,
                                     columnNumber: 19
                                 }, undefined)
                             }, recipe.id, false, {
                                 fileName: "components/ShowAll.jsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 17
                             }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 children: "No recipes found."
                             }, void 0, false, {
                                 fileName: "components/ShowAll.jsx",
-                                lineNumber: 134,
+                                lineNumber: 135,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false)
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 117,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, undefined),
                     error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -38247,7 +38247,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 141,
+                        lineNumber: 142,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).paginationContainer,
@@ -38259,7 +38259,7 @@ const ShowAll = ()=>{
                                 children: "Previous Page"
                             }, void 0, false, {
                                 fileName: "components/ShowAll.jsx",
-                                lineNumber: 144,
+                                lineNumber: 145,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38269,19 +38269,19 @@ const ShowAll = ()=>{
                                 children: "Next Page"
                             }, void 0, false, {
                                 fileName: "components/ShowAll.jsx",
-                                lineNumber: 151,
+                                lineNumber: 152,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 143,
+                        lineNumber: 144,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-                lineNumber: 109,
+                lineNumber: 110,
                 columnNumber: 7
             }, undefined)
         ]
@@ -38303,7 +38303,7 @@ $RefreshReg$(_c, "ShowAll");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./api_error_image.gif":"27OUK"}],"hRaAz":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./Navigation":"kfJB7","./api_error_image.gif":"27OUK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hRaAz":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$591e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39060,7 +39060,7 @@ $RefreshReg$(_c, "Image");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Image.module.css":"3dNuP","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./api_error_image.gif":"27OUK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3dNuP":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Image.module.css":"3dNuP","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./api_error_image.gif":"27OUK"}],"3dNuP":[function(require,module,exports,__globalThis) {
 module.exports["btn"] = `CdOZGa_btn`;
 module.exports["btnContainer"] = `CdOZGa_btnContainer`;
 module.exports["eggRst"] = `CdOZGa_eggRst`;
@@ -40306,7 +40306,7 @@ $RefreshReg$(_c, "SearchIngredientImage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./api_error_image.gif":"27OUK","./SearchIngredientImage.module.css":"7JaIJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7JaIJ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Navigation.jsx":"kfJB7","./Footer.jsx":"6QIYt","./SearchIngredientImage.module.css":"7JaIJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./api_error_image.gif":"27OUK"}],"7JaIJ":[function(require,module,exports,__globalThis) {
 module.exports["btn"] = `M0v9NW_btn`;
 module.exports["btnContainer"] = `M0v9NW_btnContainer`;
 module.exports["eggRst"] = `M0v9NW_eggRst`;
@@ -40892,7 +40892,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Diet.js":"1xx62","./ExploreCategories.module.css":"bFFAe","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","react-router-dom":"9xmpe","./KnowMoreDiets.jsx":"hRaAz","./SearchResult.jsx":"4BD5I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1xx62":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Diet.js":"1xx62","./ExploreCategories.module.css":"bFFAe","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","react-router-dom":"9xmpe","./KnowMoreDiets.jsx":"hRaAz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./SearchResult.jsx":"4BD5I"}],"1xx62":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const diets = [
