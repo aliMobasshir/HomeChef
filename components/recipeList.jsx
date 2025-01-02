@@ -26,6 +26,8 @@ function RecipeList ({ query }) {
   const [usedKeys, setUsedKeys] = useState([])
 
   const fetchRecipes = async () => {
+    setLoading(true)
+    setError(null)
     const currentApiKey = apiKeys[currentKeyIndex]
     const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${currentApiKey}&number=6`
 
@@ -54,8 +56,8 @@ function RecipeList ({ query }) {
         setRecipes(data.recipes)
         console.log('Api', apiKeys[currentKeyIndex])
       }
-    } catch (err) {
-      setError(err.message)
+    } catch (error) {
+      setError(error.message)
     } finally {
       setLoading(false)
     }
