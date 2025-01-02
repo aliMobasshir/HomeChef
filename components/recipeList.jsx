@@ -18,6 +18,8 @@ const apiKey = 'f2fbb965309246e7906f64251396be87'
 // 716d2d891ccc4e788b471c105f5928e8
 // 3036c2facd2447e380f01fd8061794c4
 
+
+
 const endpoint = `https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=6`
 
 function RecipeList ({ query }) {

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 // API configuration
 
+
 const apiKey = '0d0e212f1a904e9cb772072f49167a4b  '
 //cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
