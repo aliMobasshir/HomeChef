@@ -1,71 +1,72 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import Style from './recipeList.module.css'
-import Navigation from './Navigation'
-import apiImage from './api_error_image.gif'
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import Style from './recipeList.module.css';
+import Navigation from './Navigation';
+import apiImage from './api_error_image.gif';
 
+<<<<<<< HEAD
 const apiKey = '25a0399599c74ee1bf6d2193351c8ec6'
 // '25a0399599c74ee1bf6d2193351c8ec6',
 //834e4826627e40619840c9f299b31f36
+=======
+const apiKey = 'f2fbb965309246e7906f64251396be87';
+>>>>>>> parent of f25e223 (Added Contact Page)
 
 const ShowAll = () => {
-  const { type, name } = useParams()
-  const [recipes, setRecipes] = useState([])
-  const [error, setError] = useState(null)
-  const [query, setQuery] = useState('')
-  const [loading, setLoading] = useState(true)
-  const [offset, setOffset] = useState(0) // Added offset for pagination
-  const navigate = useNavigate()
+  const { type, name } = useParams();
+  const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState(null);
+  const [query, setQuery] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [offset, setOffset] = useState(0); // Added offset for pagination
+  const navigate = useNavigate();
 
   const fetchRecipes = async () => {
-    setLoading(true)
-    setError(null)
+    setLoading(true);
+    setError(null);
 
-    const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=50&offset=${offset}`
+    const endpoint = `https://api.spoonacular.com/recipes/complexSearch?${type}=${name}&apiKey=${apiKey}&number=100&offset=${offset}`;
 
     try {
-      const response = await fetch(endpoint)
-      if (!response.ok)
-        throw new Error(`An error has occurred: ${response.status}`)
-      const data = await response.json()
-      setRecipes(data.results || [])
+      const response = await fetch(endpoint);
+      if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+      const data = await response.json();
+      setRecipes(data.results || []);
     } catch (error) {
-      setError(error.message)
+      setError(error.message);
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
-    fetchRecipes()
-  }, [type, name, offset]) // Re-fetch when offset changes
+    fetchRecipes();
+  }, [type, name, offset]); // Re-fetch when offset changes
 
   const handleNextPage = () => {
-    console.log(offset)
-    setOffset(prevOffset => prevOffset + 50)
-    console.log(offset)
-  }
+    setOffset(prevOffset => prevOffset + 100);
+  };
 
   const handlePreviousPage = () => {
-    if (offset > 0) setOffset(prevOffset => prevOffset - 50)
-  }
+    if (offset > 0) setOffset(prevOffset => prevOffset - 100);
+  };
 
   const filteredRecipes = recipes.filter(recipe =>
     recipe.title.toLowerCase().includes(query.toLowerCase())
-  )
+  );
 
   if (loading)
     return (
       <div className={Style.loaderContainer}>
         <p className={Style.loader}></p>
       </div>
-    )
+    );
 
   if (error?.includes('402'))
     return (
       <div>
         <div className={Style.errorContainer}>
-          <img src={apiImage} alt='Error' className={Style.icon} />
+          <img src={apiImage} alt="Error" className={Style.icon} />
           <p>Failed to fetch recipes data. Please try again later.</p>
         </div>
         <div className={Style.btnContainer}>
@@ -74,35 +75,7 @@ const ShowAll = () => {
           </button>
         </div>
       </div>
-    )
-
-  if (
-    error?.includes('401') ||
-    error?.includes('503') ||
-    error?.includes('504')
-  )
-    return (
-      <div>
-        <div className={Style.errorContainer}>
-          <img
-            src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
-            alt='arrow'
-            className={Style.icon}
-          />
-
-          <p>
-            Failed to fetch recipe data due to a server error. Please try again
-            later.
-          </p>
-        </div>
-
-        <div className={Style.btnContainer}>
-          <button className={Style.btn} onClick={() => navigate(-1)}>
-            Go Back
-          </button>
-        </div>
-      </div>
-    )
+    );
 
   return (
     <>
@@ -118,10 +91,7 @@ const ShowAll = () => {
           <div className={Style.recipeContainer}>
             {filteredRecipes.length > 0 ? (
               filteredRecipes.map(recipe => (
-                <Link
-                  to={`/image/${type}/${name}/${recipe.id}`}
-                  key={recipe.id}
-                >
+                <Link to={`/image/${type}/${name}/${recipe.id}`} key={recipe.id}>
                   <div className={Style.recipeCard}>
                     <img src={recipe.image} alt={recipe.title} />
                     <h2>
@@ -131,36 +101,26 @@ const ShowAll = () => {
                 </Link>
               ))
             ) : (
-              <>
-                <h1>No recipes found.</h1>
-              </>
+              <h1>No recipes found.</h1>
             )}
           </div>
         )}
 
-        {error ? (
-          <p>Error: {error}</p>
-        ) : (
-          <div className={Style.paginationContainer}>
-            <button
-              className={Style.paginationBtn}
-              onClick={handlePreviousPage}
-              disabled={offset === 0}
-            >
-              Previous Page
-            </button>
-            <button
-              className={Style.paginationBtn}
-              onClick={handleNextPage}
-              disabled={recipes.length < 50}
-            >
-              Next Page
-            </button>
-          </div>
-        )}
+        <div className={Style.paginationContainer}>
+          <button
+            className={Style.paginationBtn}
+            onClick={handlePreviousPage}
+            disabled={offset === 0}
+          >
+            Previous Page
+          </button>
+          <button className={Style.paginationBtn} onClick={handleNextPage}>
+            Next Page
+          </button>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ShowAll
+export default ShowAll;

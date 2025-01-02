@@ -10,7 +10,6 @@ import Image from './components/Image.jsx'
 import SearchIngredient from './components/SearchIngredient.jsx'
 import SearchIngredientImage from './components/SearchIngredientImage.jsx'
 import ExploreCategory from './components/ExploreCategory.jsx'
-import Contact from './components/Contact.jsx'
 // import Error from './components/Error.jsx'
 console.log(cuisines)
 
@@ -48,10 +47,6 @@ const router = createBrowserRouter([
   {
     path: '/searchIngredientImage/:id',
     element: <SearchIngredientImage />
-  },
-  {
-    path : '/contact',
-    element : <Contact/>
   }
 ])
 
