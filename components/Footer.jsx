@@ -1,9 +1,17 @@
 import React from 'react'
 import style from './Footer.module.css'
 import image from './HomeChefLogo.svg'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
+  const handleButton = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <div className={style.footer_container}>
       <div className={style.footerContent}>
@@ -14,9 +22,8 @@ const Footer = () => {
         <div className={style.navigation}>
           <h3>Navigation</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>FAQs</li>
+            <li onClick={handleButton}> <Link to ='/'>Home </Link></li>
+            <li onClick={handleButton}> <Link to='/about' >About</Link></li>
             <li>Privacy Policy</li>
             <li>Terms And Conditions</li>
           </ul>
@@ -25,24 +32,23 @@ const Footer = () => {
         <div className={style.quickLinks}>
           <h3>Quick Links</h3>
           <ul>
-            <li>Veg Recipes</li>
-            <li>Non-Veg Recipes</li>
-            <li>Indian Recipes</li>
-            <li>Explore Categories</li>
-            <li>Search by Ingredients</li>
+            <li> <Link to='/showall/diet/vegan'>Vegan Recipes</Link></li>
+            <li> <Link to='/showall/type/salad'>Healthy Salads </Link></li>
+            <li> <Link to='/showall/cuisine/Indian'>Indian Recipes </Link></li>
+            <li> <Link to ='/exploreCategory'>Explore Categories</Link></li>
+            <li> <Link to ='/SearchIngredient'>Search by Ingredients</Link></li>
           </ul>
         </div>
 
         <div className={style.contact}>
-          <h3>Contact Us</h3>
+          <h3 >Contact Us</h3>
           <ul>
-            <li>HomeChef@gmail.com</li>
-            <li>199999-1999</li>
+            <li onClick={handleButton}> <Link to ='/contact'>Write to us </Link></li>
           </ul>
         </div>
 
         <div className={style.socialMedia}>
-          <h3>Social</h3>
+          <h3>Social (dummy)</h3>
           <ul>
             <li>
               <i className='fa-brands fa-facebook'></i>
