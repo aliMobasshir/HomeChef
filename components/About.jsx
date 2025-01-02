@@ -10,7 +10,7 @@ import DanishImage from './DanishImage.svg'
 import Footer from './Footer.jsx'
 import { Link } from 'react-router-dom'
 import { useState } from "react"
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [query, setQuery] = useState('');

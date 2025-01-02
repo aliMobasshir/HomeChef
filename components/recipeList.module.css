@@ -3,6 +3,12 @@ a {
   color: inherit;
 }
 
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
 
 .loader {
   border: 6px solid #f3f3f3; /* Light grey */

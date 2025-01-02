@@ -46,12 +46,13 @@ const router = createBrowserRouter([
   },
 
   {
+    path : '/contact',
+    element: <Contact />
+  },
+
+  {
     path: '/searchIngredientImage/:id',
     element: <SearchIngredientImage />
-  },
-  {
-    path : '/contact',
-    element : <Contact/>
   }
 ])
 
