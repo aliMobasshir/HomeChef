@@ -182,4 +182,7 @@
   .copyright{
     font-size: 15px;
   }
+  .socialMedia ul {
+    gap: 6vw; /* Space between items */
+  }
 }

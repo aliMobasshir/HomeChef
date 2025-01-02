@@ -4,8 +4,13 @@ import Style from './recipeList.module.css';
 import Navigation from './Navigation';
 import apiImage from './api_error_image.gif';
 
+<<<<<<< HEAD
 
 const apiKey = '25a0399599c74ee1bf6d2193351c8ec6';
+=======
+const apiKey = 'f2fbb965309246e7906f64251396be87'
+//834e4826627e40619840c9f299b31f36
+>>>>>>> 3d6c9cc994a131a72c2d2515641939c4d7acea9b
 
 const ShowAll = () => {
   const { type, name } = useParams();

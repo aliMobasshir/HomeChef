@@ -47,7 +47,7 @@ const Main = ({ query }) => {
           <ul>
             <li className={Style.featuresText}>Nutritional Information</li>
             <li className={Style.featuresPartition}></li>
-            <li className={Style.featuresText}>300+ Recipes</li>
+            <li className={Style.featuresText}>2000+ Recipes</li>
             <li className={Style.featuresPartition}></li>
             <li className={Style.featuresText}>26+ Cuisines</li>
             <li className={Style.featuresPartition}></li>
