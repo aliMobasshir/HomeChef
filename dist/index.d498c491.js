@@ -3009,7 +3009,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -27343,7 +27343,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","./components/About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/Render.jsx":"8Ui3Q","./components/Navigation.jsx":"kfJB7","./components/Main.jsx":"hKJXg","./components/Body.jsx":"8RO98","./components/recipeList.jsx":"7qUU2","./components/reviewPage.jsx":"1J5Ne","./components/trending.jsx":"fIvsv","./components/FAQ.jsx":"4b8ki","./components/Footer.jsx":"6QIYt","./components/About.jsx":"jb55R","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-dom":"j6uA9"}],"8Ui3Q":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$b630 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36144,80 +36144,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Diet.js":"1xx62","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./Footer.jsx":"6QIYt","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","react-router-dom":"9xmpe","./KnowMoreDiets.jsx":"hRaAz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1xx62":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const diets = [
-    {
-        id: 1,
-        name: 'Gluten Free',
-        description: 'Eliminating gluten means avoiding wheat, barley, rye, and other gluten-containing grains and foods made from them (or that may have been cross-contaminated).',
-        image: 'https://img.freepik.com/premium-photo/salmon-steak-plate-top-view-isolated-white-background_9493-19995.jpg'
-    },
-    {
-        id: 2,
-        name: 'Ketogenic',
-        description: 'The keto diet is based more on the ratio of fat, protein, and carbs in the diet rather than specific ingredients. Generally speaking, high fat, protein-rich foods are acceptable and high carbohydrate foods are not. The formula we use is 55-80% fat content, 15-35% protein content, and under 10% of carbohydrates.',
-        image: 'https://media.istockphoto.com/id/1174567728/photo/ketogenic-diet-keto-brunch-boiled-egg-pork-steak-and-olives-cucumber-spinach-brie-cheese-nuts.jpg?s=612x612&w=0&k=20&c=f59X5n1LpERJm9y1QD4w4D2OagWs7K2IZC2j6ZVyKVQ='
-    },
-    {
-        id: 3,
-        name: 'Vegetarian',
-        description: 'No ingredients may contain meat or meat by-products, such as bones or gelatin.',
-        image: 'https://img.freepik.com/premium-photo/veg-sabji-black-bowl-top-view-isolated-white-background-generative-ai_802140-415.jpg'
-    },
-    {
-        id: 4,
-        name: 'Lacto-Vegetarian',
-        description: 'All ingredients must be vegetarian and none of the ingredients can be or contain egg.',
-        image: 'https://myblacktree.com/cdn/shop/files/paneer-butter-masala-recipe-removebg-preview.png?v=1691158494'
-    },
-    {
-        id: 5,
-        name: 'Ovo-Vegetarian',
-        description: 'All ingredients must be vegetarian and none of the ingredients can be or contain dairy.',
-        image: 'https://img.freepik.com/premium-photo/photo-background-white-backgroundimg-jpghd-item-white-plant-color-texture-2024-stock-ima_873925-283268.jpg'
-    },
-    {
-        id: 6,
-        name: 'Vegan',
-        description: 'No ingredients may contain meat or meat by-products, such as bones or gelatin, nor may they contain eggs, dairy, or honey.',
-        image: 'https://img.freepik.com/premium-photo/lentil-soup-closeup_941097-166645.jpg'
-    },
-    {
-        id: 7,
-        name: 'Pescetarian',
-        description: 'Everything is allowed except meat and meat by-products - some pescetarians eat eggs and dairy, some do not.',
-        image: 'https://media.istockphoto.com/id/1348318884/photo/plate-of-mexican-food-tacos.jpg?s=612x612&w=0&k=20&c=Vt8vi4-sCaum6YrzAiAkH7lUJK5mtp2zYT3uYw1M7iA='
-    },
-    {
-        id: 8,
-        name: 'Paleo',
-        description: 'Allowed ingredients include meat (especially grass-fed), fish, eggs, vegetables, some oils (e.g. coconut and olive oil), and in smaller quantities, fruit, nuts, and sweet potatoes. We also allow honey and maple syrup (popular in Paleo desserts, but strict Paleo followers may disagree). Ingredients not allowed include legumes (e.g. beans and lentils), grains, dairy, refined sugar, and processed foods.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_wnGeqMpE2fJaX_p4LSnjq2BcJqM_LuGeQ&s'
-    },
-    {
-        id: 9,
-        name: 'Primal',
-        description: 'Very similar to Paleo, except dairy is allowed - think raw and full-fat milk, butter, ghee, etc.',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvnGEENVM6sKSjo4sqamvVq2EBCVNq_on7yQ&s'
-    },
-    {
-        id: 10,
-        name: 'Low FODMAP',
-        description: "FODMAP stands for 'fermentable oligo-, di-, mono-saccharides and polyols'. Our ontology knows which foods are considered high in these types of carbohydrates (e.g. legumes, wheat, and dairy products).",
-        image: 'https://static.vecteezy.com/system/resources/previews/036/498/035/non_2x/ai-generated-bowl-of-hearty-chicken-and-wild-rice-soup-on-transparent-background-free-png.png'
-    },
-    {
-        id: 11,
-        name: 'Whole30',
-        description: 'Allowed ingredients include meat, fish/seafood, eggs, vegetables, fresh fruit, coconut oil, olive oil, small amounts of dried fruit and nuts/seeds. Ingredients not allowed include added sweeteners (natural and artificial, except small amounts of fruit juice), dairy (except clarified butter or ghee), alcohol, grains, legumes (except green beans, sugar snap peas, and snow peas), and food additives, such as carrageenan, MSG, and sulfites.',
-        image: 'https://static.vecteezy.com/system/resources/previews/029/558/574/non_2x/top-view-grilled-chicken-with-vegetables-isolated-on-white-background-free-photo.jpg'
-    }
-];
-exports.default = diets;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4TlvK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Footer.jsx":"6QIYt","react-router-dom":"9xmpe","../Diet.js":"1xx62","../Cuisines.js":"cmcNe","../Mealtypes.js":"4958p","./left-arrow-scroll.png":"6kDz0","./right-arrow-scroll.png":"cfM7t","./PopularIndian.jsx":"6Ao4b","./RecommendedDesserts.jsx":"gVR3S","./RecommendedWhole30.jsx":"ctH7H","./KnowMoreDiets.jsx":"hRaAz"}],"4TlvK":[function(require,module,exports,__globalThis) {
 module.exports["arrow_left"] = `IHfPZW_arrow_left`;
 module.exports["arrow_right"] = `IHfPZW_arrow_right`;
 module.exports["cuisine"] = `IHfPZW_cuisine`;
@@ -36247,221 +36174,7 @@ module.exports["show_all"] = `IHfPZW_show_all`;
 module.exports["show_all_button"] = `IHfPZW_show_all_button`;
 module.exports["sliderContainer"] = `IHfPZW_sliderContainer`;
 
-},{}],"cmcNe":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const cuisines = [
-    {
-        id: 1,
-        name: 'African',
-        image: 'https://feastwithsafiya.com/wp-content/uploads/2021/11/creamy-tomato-soup-2.jpg'
-    },
-    {
-        id: 2,
-        name: 'Asian',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoseXWizW53EeKvEbsrk4Be_VyCZWk9xA9g&s'
-    },
-    {
-        id: 3,
-        name: 'American',
-        image: 'https://t3.ftcdn.net/jpg/07/54/04/66/360_F_754046676_EUe1K1ZYznZwGkhLbzkin0Ky86mYuEkq.jpg'
-    },
-    {
-        id: 4,
-        name: 'British',
-        image: 'https://img.freepik.com/premium-photo/top-view-vegan-lentil-shepherds-pie-white-round-plate-white-background-generative-ai_918839-7154.jpg'
-    },
-    {
-        id: 5,
-        name: 'Cajun',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7bDvyEN0jM515k7JDKb4lfOAwRovyo71cQ&s'
-    },
-    {
-        id: 6,
-        name: 'Caribbean',
-        image: 'https://www.ambitiouskitchen.com/wp-content/uploads/2020/08/Sazon-Grilled-Chicken-Thighs-3-594x594.jpg'
-    },
-    {
-        id: 7,
-        name: 'Chinese',
-        image: 'https://media.istockphoto.com/id/1252605665/photo/chilli-garlic-hakka-noodles-in-black-bowl-isolated-on-white-background-indo-chinese.jpg?s=612x612&w=0&k=20&c=lesS8Wt5JVauAqjVh9uPfoiGr1ZjsnjHWZyKw3zLg2E='
-    },
-    {
-        id: 8,
-        name: 'Eastern European',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi_M9ARlcuxaoTtuRVG931_Y_v23nj-xnUA&s'
-    },
-    {
-        id: 9,
-        name: 'European',
-        image: 'https://www.shutterstock.com/image-photo/plate-grilled-salmon-steak-potato-600nw-2141539785.jpg'
-    },
-    {
-        id: 10,
-        name: 'French',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrwJiPzvRoXe52yLVMnW5KremXvIqyqQdoeuSVDusxwOX9dBGP-RX_8XzX8On48uVfYPE&usqp=CAU'
-    },
-    {
-        id: 11,
-        name: 'German',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1mlILSY0aYzgmyE0gtQioXFr9JSAjN44sA&s'
-    },
-    {
-        id: 12,
-        name: 'Greek',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlpbO-BHk_idmiIcN19pQv3lWfFLADmukgw&s'
-    },
-    {
-        id: 13,
-        name: 'Indian',
-        image: 'https://www.shutterstock.com/image-photo/chole-bhature-north-indian-food-600nw-2241211611.jpg'
-    },
-    {
-        id: 14,
-        name: 'Irish',
-        image: 'https://img.freepik.com/premium-photo/sliced-corned-beef-with-cabbage-potatoes-plate-traditional-irish-meal-white-background_862489-13971.jpg'
-    },
-    {
-        id: 15,
-        name: 'Italian',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPWNHT7d9RL22yfONXfvILVWOYXtlKxl6Og&s'
-    },
-    {
-        id: 16,
-        name: 'Japanese',
-        image: 'https://png.pngtree.com/png-vector/20231018/ourlarge/pngtree-sushi-on-black-plate-aerial-view-generative-ai-technology-png-image_10205067.png'
-    },
-    {
-        id: 17,
-        name: 'Korean',
-        image: 'https://img.freepik.com/premium-photo/bowl-korean-food-plate-bowl-top-view-white-background_951562-72831.jpg'
-    },
-    {
-        id: 18,
-        name: 'Latin American',
-        image: 'https://img.freepik.com/premium-photo/typical-latin-america-salchipapa-sausages-with-fries-ketchup-mustard-mayo-isolated-white-surface-top-view_123827-4038.jpg?w=360'
-    },
-    {
-        id: 19,
-        name: 'Mediterranean',
-        image: 'https://www.shutterstock.com/image-photo/top-view-plate-fettuccine-alfredo-260nw-2498764063.jpg'
-    },
-    {
-        id: 20,
-        name: 'Mexican',
-        image: 'https://media.istockphoto.com/id/1348318884/photo/plate-of-mexican-food-tacos.jpg?s=612x612&w=0&k=20&c=Vt8vi4-sCaum6YrzAiAkH7lUJK5mtp2zYT3uYw1M7iA='
-    },
-    {
-        id: 21,
-        name: 'Middle Eastern',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRconGKsGVAurwaUjH9x1FVHCd1YUWghWp96A&s'
-    },
-    {
-        id: 22,
-        name: 'Nordic',
-        image: 'https://thumbs.dreamstime.com/b/poppy-seed-rolls-cardamom-buns-traditional-nordic-baked-sweet-breads-wooden-board-white-background-top-view-265974475.jpg'
-    },
-    {
-        id: 23,
-        name: 'Southern',
-        image: 'https://img.freepik.com/premium-photo/tuna-salad-with-egg-vegetables-corn-white-bowl-white-background-top-view-generative-ai_1259709-87173.jpg'
-    },
-    {
-        id: 24,
-        name: 'Spanish',
-        image: 'https://img.freepik.com/premium-photo/seafood-paella-top-view-white-background_951562-73411.jpg'
-    },
-    {
-        id: 25,
-        name: 'Thai',
-        image: 'https://media.istockphoto.com/id/878876758/photo/roast-chicken-nuggets-and-vegetables.jpg?s=612x612&w=0&k=20&c=OlYAJ9mxjb2gIZBo2KjC74WxiWAdcY3jJZC9UGfsQAs='
-    },
-    {
-        id: 26,
-        name: 'Vietnamese',
-        image: 'https://img.freepik.com/premium-photo/pho-bo-vietnamese-soup-with-beef-rice-noodles-white-background-top-view-close-up_233226-570.jpg'
-    }
-];
-exports.default = cuisines;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4958p":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const mealTypes = [
-    {
-        id: 1,
-        name: 'Main Course',
-        image: 'https://img.freepik.com/premium-photo/top-view-delicious-spicy-chicken-biryani-traditional-bowl-white-background-indian-food_667286-7331.jpg'
-    },
-    {
-        id: 2,
-        name: 'Side Dish',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaeGmlN7ByogbPumharBJh_vA6cpotL_w0Vw&s'
-    },
-    {
-        id: 3,
-        name: 'Dessert',
-        image: 'https://img.freepik.com/premium-photo/top-view-cheesecake-white-background-sweet-dessert-bakery-food-ai-generated_755721-19559.jpg'
-    },
-    {
-        id: 4,
-        name: 'Appetizer',
-        image: 'https://img.freepik.com/premium-photo/top-view-isolated-beer-appetizer-snack-platter-white-background_219193-3184.jpg'
-    },
-    {
-        id: 5,
-        name: 'Salad',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnaIyMSpNZh4HAC6WR1cSh0Z20MZdGZ222rA&s'
-    },
-    {
-        id: 6,
-        name: 'Bread',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-EINojHr2CfnTujQtYWMgz0MC8tJiRHhgA&s'
-    },
-    {
-        id: 7,
-        name: 'Breakfast',
-        image: 'https://t3.ftcdn.net/jpg/02/46/16/92/360_F_246169236_XndijzYiPUZmE5C8aZM9ee7wdvPD9WbX.jpg'
-    },
-    {
-        id: 8,
-        name: 'Soup',
-        image: 'https://img.freepik.com/premium-photo/plate-red-vegetable-soup-top-view-isolated-white-background_917664-9426.jpg'
-    },
-    {
-        id: 9,
-        name: 'Beverage',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttRRoQrnZT9XD-_WlZwmZwCbMkKLOrkrN7g&s'
-    },
-    {
-        id: 10,
-        name: 'Sauce',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOf_5i9b42THIHwrWpkjN_Cri0cvHmZwggA&s'
-    },
-    {
-        id: 11,
-        name: 'Marinade',
-        image: 'https://img.freepik.com/premium-photo/bbq-sauce-white-background-top-view_1007204-34741.jpg'
-    },
-    {
-        id: 12,
-        name: 'Fingerfood',
-        image: 'https://img.freepik.com/premium-photo/spring-rolls-food-plate-top-view-white-background_951562-68752.jpg'
-    },
-    {
-        id: 13,
-        name: 'Snack',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7cegVYAorjE28_m0YQN3eaFxlOB1zslgJw&s'
-    },
-    {
-        id: 14,
-        name: 'Drink',
-        image: 'https://img.freepik.com/free-photo/glass-aperol-spritz-cocktail-isolated-white-background_123827-21394.jpg'
-    }
-];
-exports.default = mealTypes;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6QIYt":[function(require,module,exports,__globalThis) {
+},{}],"6QIYt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fe51 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36799,7 +36512,294 @@ module.exports["socialMedia"] = `ASPDhq_socialMedia`;
 },{}],"7pU0l":[function(require,module,exports,__globalThis) {
 module.exports = require("4f19e34ce1d02795").getBundleURL('avzPb') + "HomeChefLogo.0bee7880.svg" + "?" + Date.now();
 
-},{"4f19e34ce1d02795":"lgJ39"}],"6kDz0":[function(require,module,exports,__globalThis) {
+},{"4f19e34ce1d02795":"lgJ39"}],"1xx62":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const diets = [
+    {
+        id: 1,
+        name: 'Gluten Free',
+        description: 'Eliminating gluten means avoiding wheat, barley, rye, and other gluten-containing grains and foods made from them (or that may have been cross-contaminated).',
+        image: 'https://img.freepik.com/premium-photo/salmon-steak-plate-top-view-isolated-white-background_9493-19995.jpg'
+    },
+    {
+        id: 2,
+        name: 'Ketogenic',
+        description: 'The keto diet is based more on the ratio of fat, protein, and carbs in the diet rather than specific ingredients. Generally speaking, high fat, protein-rich foods are acceptable and high carbohydrate foods are not. The formula we use is 55-80% fat content, 15-35% protein content, and under 10% of carbohydrates.',
+        image: 'https://media.istockphoto.com/id/1174567728/photo/ketogenic-diet-keto-brunch-boiled-egg-pork-steak-and-olives-cucumber-spinach-brie-cheese-nuts.jpg?s=612x612&w=0&k=20&c=f59X5n1LpERJm9y1QD4w4D2OagWs7K2IZC2j6ZVyKVQ='
+    },
+    {
+        id: 3,
+        name: 'Vegetarian',
+        description: 'No ingredients may contain meat or meat by-products, such as bones or gelatin.',
+        image: 'https://img.freepik.com/premium-photo/veg-sabji-black-bowl-top-view-isolated-white-background-generative-ai_802140-415.jpg'
+    },
+    {
+        id: 4,
+        name: 'Lacto-Vegetarian',
+        description: 'All ingredients must be vegetarian and none of the ingredients can be or contain egg.',
+        image: 'https://myblacktree.com/cdn/shop/files/paneer-butter-masala-recipe-removebg-preview.png?v=1691158494'
+    },
+    {
+        id: 5,
+        name: 'Ovo-Vegetarian',
+        description: 'All ingredients must be vegetarian and none of the ingredients can be or contain dairy.',
+        image: 'https://img.freepik.com/premium-photo/photo-background-white-backgroundimg-jpghd-item-white-plant-color-texture-2024-stock-ima_873925-283268.jpg'
+    },
+    {
+        id: 6,
+        name: 'Vegan',
+        description: 'No ingredients may contain meat or meat by-products, such as bones or gelatin, nor may they contain eggs, dairy, or honey.',
+        image: 'https://img.freepik.com/premium-photo/lentil-soup-closeup_941097-166645.jpg'
+    },
+    {
+        id: 7,
+        name: 'Pescetarian',
+        description: 'Everything is allowed except meat and meat by-products - some pescetarians eat eggs and dairy, some do not.',
+        image: 'https://media.istockphoto.com/id/1348318884/photo/plate-of-mexican-food-tacos.jpg?s=612x612&w=0&k=20&c=Vt8vi4-sCaum6YrzAiAkH7lUJK5mtp2zYT3uYw1M7iA='
+    },
+    {
+        id: 8,
+        name: 'Paleo',
+        description: 'Allowed ingredients include meat (especially grass-fed), fish, eggs, vegetables, some oils (e.g. coconut and olive oil), and in smaller quantities, fruit, nuts, and sweet potatoes. We also allow honey and maple syrup (popular in Paleo desserts, but strict Paleo followers may disagree). Ingredients not allowed include legumes (e.g. beans and lentils), grains, dairy, refined sugar, and processed foods.',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_wnGeqMpE2fJaX_p4LSnjq2BcJqM_LuGeQ&s'
+    },
+    {
+        id: 9,
+        name: 'Primal',
+        description: 'Very similar to Paleo, except dairy is allowed - think raw and full-fat milk, butter, ghee, etc.',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvnGEENVM6sKSjo4sqamvVq2EBCVNq_on7yQ&s'
+    },
+    {
+        id: 10,
+        name: 'Low FODMAP',
+        description: "FODMAP stands for 'fermentable oligo-, di-, mono-saccharides and polyols'. Our ontology knows which foods are considered high in these types of carbohydrates (e.g. legumes, wheat, and dairy products).",
+        image: 'https://static.vecteezy.com/system/resources/previews/036/498/035/non_2x/ai-generated-bowl-of-hearty-chicken-and-wild-rice-soup-on-transparent-background-free-png.png'
+    },
+    {
+        id: 11,
+        name: 'Whole30',
+        description: 'Allowed ingredients include meat, fish/seafood, eggs, vegetables, fresh fruit, coconut oil, olive oil, small amounts of dried fruit and nuts/seeds. Ingredients not allowed include added sweeteners (natural and artificial, except small amounts of fruit juice), dairy (except clarified butter or ghee), alcohol, grains, legumes (except green beans, sugar snap peas, and snow peas), and food additives, such as carrageenan, MSG, and sulfites.',
+        image: 'https://static.vecteezy.com/system/resources/previews/029/558/574/non_2x/top-view-grilled-chicken-with-vegetables-isolated-on-white-background-free-photo.jpg'
+    }
+];
+exports.default = diets;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cmcNe":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const cuisines = [
+    {
+        id: 1,
+        name: 'African',
+        image: 'https://feastwithsafiya.com/wp-content/uploads/2021/11/creamy-tomato-soup-2.jpg'
+    },
+    {
+        id: 2,
+        name: 'Asian',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoseXWizW53EeKvEbsrk4Be_VyCZWk9xA9g&s'
+    },
+    {
+        id: 3,
+        name: 'American',
+        image: 'https://t3.ftcdn.net/jpg/07/54/04/66/360_F_754046676_EUe1K1ZYznZwGkhLbzkin0Ky86mYuEkq.jpg'
+    },
+    {
+        id: 4,
+        name: 'British',
+        image: 'https://img.freepik.com/premium-photo/top-view-vegan-lentil-shepherds-pie-white-round-plate-white-background-generative-ai_918839-7154.jpg'
+    },
+    {
+        id: 5,
+        name: 'Cajun',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7bDvyEN0jM515k7JDKb4lfOAwRovyo71cQ&s'
+    },
+    {
+        id: 6,
+        name: 'Caribbean',
+        image: 'https://www.ambitiouskitchen.com/wp-content/uploads/2020/08/Sazon-Grilled-Chicken-Thighs-3-594x594.jpg'
+    },
+    {
+        id: 7,
+        name: 'Chinese',
+        image: 'https://media.istockphoto.com/id/1252605665/photo/chilli-garlic-hakka-noodles-in-black-bowl-isolated-on-white-background-indo-chinese.jpg?s=612x612&w=0&k=20&c=lesS8Wt5JVauAqjVh9uPfoiGr1ZjsnjHWZyKw3zLg2E='
+    },
+    {
+        id: 8,
+        name: 'Eastern European',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQi_M9ARlcuxaoTtuRVG931_Y_v23nj-xnUA&s'
+    },
+    {
+        id: 9,
+        name: 'European',
+        image: 'https://www.shutterstock.com/image-photo/plate-grilled-salmon-steak-potato-600nw-2141539785.jpg'
+    },
+    {
+        id: 10,
+        name: 'French',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrwJiPzvRoXe52yLVMnW5KremXvIqyqQdoeuSVDusxwOX9dBGP-RX_8XzX8On48uVfYPE&usqp=CAU'
+    },
+    {
+        id: 11,
+        name: 'German',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1mlILSY0aYzgmyE0gtQioXFr9JSAjN44sA&s'
+    },
+    {
+        id: 12,
+        name: 'Greek',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlpbO-BHk_idmiIcN19pQv3lWfFLADmukgw&s'
+    },
+    {
+        id: 13,
+        name: 'Indian',
+        image: 'https://www.shutterstock.com/image-photo/chole-bhature-north-indian-food-600nw-2241211611.jpg'
+    },
+    {
+        id: 14,
+        name: 'Irish',
+        image: 'https://img.freepik.com/premium-photo/sliced-corned-beef-with-cabbage-potatoes-plate-traditional-irish-meal-white-background_862489-13971.jpg'
+    },
+    {
+        id: 15,
+        name: 'Italian',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPWNHT7d9RL22yfONXfvILVWOYXtlKxl6Og&s'
+    },
+    {
+        id: 16,
+        name: 'Japanese',
+        image: 'https://png.pngtree.com/png-vector/20231018/ourlarge/pngtree-sushi-on-black-plate-aerial-view-generative-ai-technology-png-image_10205067.png'
+    },
+    {
+        id: 17,
+        name: 'Korean',
+        image: 'https://img.freepik.com/premium-photo/bowl-korean-food-plate-bowl-top-view-white-background_951562-72831.jpg'
+    },
+    {
+        id: 18,
+        name: 'Latin American',
+        image: 'https://img.freepik.com/premium-photo/typical-latin-america-salchipapa-sausages-with-fries-ketchup-mustard-mayo-isolated-white-surface-top-view_123827-4038.jpg?w=360'
+    },
+    {
+        id: 19,
+        name: 'Mediterranean',
+        image: 'https://www.shutterstock.com/image-photo/top-view-plate-fettuccine-alfredo-260nw-2498764063.jpg'
+    },
+    {
+        id: 20,
+        name: 'Mexican',
+        image: 'https://media.istockphoto.com/id/1348318884/photo/plate-of-mexican-food-tacos.jpg?s=612x612&w=0&k=20&c=Vt8vi4-sCaum6YrzAiAkH7lUJK5mtp2zYT3uYw1M7iA='
+    },
+    {
+        id: 21,
+        name: 'Middle Eastern',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRconGKsGVAurwaUjH9x1FVHCd1YUWghWp96A&s'
+    },
+    {
+        id: 22,
+        name: 'Nordic',
+        image: 'https://thumbs.dreamstime.com/b/poppy-seed-rolls-cardamom-buns-traditional-nordic-baked-sweet-breads-wooden-board-white-background-top-view-265974475.jpg'
+    },
+    {
+        id: 23,
+        name: 'Southern',
+        image: 'https://img.freepik.com/premium-photo/tuna-salad-with-egg-vegetables-corn-white-bowl-white-background-top-view-generative-ai_1259709-87173.jpg'
+    },
+    {
+        id: 24,
+        name: 'Spanish',
+        image: 'https://img.freepik.com/premium-photo/seafood-paella-top-view-white-background_951562-73411.jpg'
+    },
+    {
+        id: 25,
+        name: 'Thai',
+        image: 'https://media.istockphoto.com/id/878876758/photo/roast-chicken-nuggets-and-vegetables.jpg?s=612x612&w=0&k=20&c=OlYAJ9mxjb2gIZBo2KjC74WxiWAdcY3jJZC9UGfsQAs='
+    },
+    {
+        id: 26,
+        name: 'Vietnamese',
+        image: 'https://img.freepik.com/premium-photo/pho-bo-vietnamese-soup-with-beef-rice-noodles-white-background-top-view-close-up_233226-570.jpg'
+    }
+];
+exports.default = cuisines;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4958p":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const mealTypes = [
+    {
+        id: 1,
+        name: 'Main Course',
+        image: 'https://img.freepik.com/premium-photo/top-view-delicious-spicy-chicken-biryani-traditional-bowl-white-background-indian-food_667286-7331.jpg'
+    },
+    {
+        id: 2,
+        name: 'Side Dish',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaeGmlN7ByogbPumharBJh_vA6cpotL_w0Vw&s'
+    },
+    {
+        id: 3,
+        name: 'Dessert',
+        image: 'https://img.freepik.com/premium-photo/top-view-cheesecake-white-background-sweet-dessert-bakery-food-ai-generated_755721-19559.jpg'
+    },
+    {
+        id: 4,
+        name: 'Appetizer',
+        image: 'https://img.freepik.com/premium-photo/top-view-isolated-beer-appetizer-snack-platter-white-background_219193-3184.jpg'
+    },
+    {
+        id: 5,
+        name: 'Salad',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnaIyMSpNZh4HAC6WR1cSh0Z20MZdGZ222rA&s'
+    },
+    {
+        id: 6,
+        name: 'Bread',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-EINojHr2CfnTujQtYWMgz0MC8tJiRHhgA&s'
+    },
+    {
+        id: 7,
+        name: 'Breakfast',
+        image: 'https://t3.ftcdn.net/jpg/02/46/16/92/360_F_246169236_XndijzYiPUZmE5C8aZM9ee7wdvPD9WbX.jpg'
+    },
+    {
+        id: 8,
+        name: 'Soup',
+        image: 'https://img.freepik.com/premium-photo/plate-red-vegetable-soup-top-view-isolated-white-background_917664-9426.jpg'
+    },
+    {
+        id: 9,
+        name: 'Beverage',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttRRoQrnZT9XD-_WlZwmZwCbMkKLOrkrN7g&s'
+    },
+    {
+        id: 10,
+        name: 'Sauce',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOf_5i9b42THIHwrWpkjN_Cri0cvHmZwggA&s'
+    },
+    {
+        id: 11,
+        name: 'Marinade',
+        image: 'https://img.freepik.com/premium-photo/bbq-sauce-white-background-top-view_1007204-34741.jpg'
+    },
+    {
+        id: 12,
+        name: 'Fingerfood',
+        image: 'https://img.freepik.com/premium-photo/spring-rolls-food-plate-top-view-white-background_951562-68752.jpg'
+    },
+    {
+        id: 13,
+        name: 'Snack',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7cegVYAorjE28_m0YQN3eaFxlOB1zslgJw&s'
+    },
+    {
+        id: 14,
+        name: 'Drink',
+        image: 'https://img.freepik.com/free-photo/glass-aperol-spritz-cocktail-isolated-white-background_123827-21394.jpg'
+    }
+];
+exports.default = mealTypes;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6kDz0":[function(require,module,exports,__globalThis) {
 module.exports = require("24317ff693fdcf17").getBundleURL('avzPb') + "left-arrow-scroll.7ca5d5b0.png" + "?" + Date.now();
 
 },{"24317ff693fdcf17":"lgJ39"}],"cfM7t":[function(require,module,exports,__globalThis) {
@@ -37736,7 +37736,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ieGJH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./right-arrow.png":"hx3sc"}],"ieGJH":[function(require,module,exports,__globalThis) {
 module.exports["heading"] = `jjQB4a_heading`;
 module.exports["recipeCard"] = `jjQB4a_recipeCard`;
 module.exports["recipeContainer"] = `jjQB4a_recipeContainer`;
@@ -37973,7 +37973,7 @@ $RefreshReg$(_c, "RecipeList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","./fire-flame.png":"4QPOt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4QPOt":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./recipeList.module.css":"ieGJH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./fire-flame.png":"4QPOt"}],"4QPOt":[function(require,module,exports,__globalThis) {
 module.exports = require("1b9da1e600612d13").getBundleURL('avzPb') + "fire-flame.bdef1604.png" + "?" + Date.now();
 
 },{"1b9da1e600612d13":"lgJ39"}],"4b8ki":[function(require,module,exports,__globalThis) {
@@ -38285,7 +38285,7 @@ $RefreshReg$(_c, "ShowAll");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./right-arrow.png":"hx3sc","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOk8I":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./recipeList.module.css":"ieGJH","./Navigation":"kfJB7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./right-arrow.png":"hx3sc"}],"lOk8I":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$2fbb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
