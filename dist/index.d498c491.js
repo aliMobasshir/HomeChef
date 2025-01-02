@@ -3040,7 +3040,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App.jsx":"ifStX","./components/About.jsx":"jb55R","react-router-dom":"9xmpe","./Cuisines.js":"cmcNe","./components/ShowAll.jsx":"3EMrT","./components/KnowMoreDiets.jsx":"hRaAz","./components/Image.jsx":"lOk8I","./components/SearchIngredient.jsx":"6KC69","./components/SearchIngredientImage.jsx":"gbMQ2","./components/ExploreCategory.jsx":"kyzYC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Contact.jsx":"idlIC"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -36663,7 +36663,7 @@ var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = 'f2fbb965309246e7906f64251396be87';
+const apiKey = '25a0399599c74ee1bf6d2193351c8ec6';
 //  cb830b43603108a2e1b0d922bac475a945a8404a
 // 834e4826627e40619840c9f299b31f36
 // f2fbb965309246e7906f64251396be87
@@ -36759,7 +36759,7 @@ function RecipeList({ query }) {
         lineNumber: 51,
         columnNumber: 7
     }, this);
-    if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    if (error?.includes('503') || error?.includes('401') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).topPicksPage,
@@ -37887,13 +37887,7 @@ var _navigationDefault = parcelHelpers.interopDefault(_navigation);
 var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _s = $RefreshSig$();
-<<<<<<< HEAD
 const apiKey = '25a0399599c74ee1bf6d2193351c8ec6';
-// '25a0399599c74ee1bf6d2193351c8ec6',
-//834e4826627e40619840c9f299b31f36
-=======
-const apiKey = 'f2fbb965309246e7906f64251396be87';
->>>>>>> parent of f25e223 (Added Contact Page)
 const ShowAll = ()=>{
     _s();
     const { type, name } = (0, _reactRouterDom.useParams)();
@@ -37938,20 +37932,12 @@ const ShowAll = ()=>{
             className: (0, _recipeListModuleCssDefault.default).loader
         }, void 0, false, {
             fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-            lineNumber: 60,
-=======
-            lineNumber: 55,
->>>>>>> parent of f25e223 (Added Contact Page)
+            lineNumber: 56,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-        lineNumber: 59,
-=======
-        lineNumber: 54,
->>>>>>> parent of f25e223 (Added Contact Page)
+        lineNumber: 55,
         columnNumber: 7
     }, undefined);
     if (error?.includes('402')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37965,124 +37951,42 @@ const ShowAll = ()=>{
                         className: (0, _recipeListModuleCssDefault.default).icon
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                        lineNumber: 68,
-=======
-                        lineNumber: 63,
->>>>>>> parent of f25e223 (Added Contact Page)
+                        lineNumber: 64,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "Failed to fetch recipes data. Please try again later."
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                        lineNumber: 69,
-=======
-                        lineNumber: 64,
->>>>>>> parent of f25e223 (Added Contact Page)
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
+                lineNumber: 63,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _recipeListModuleCssDefault.default).btnContainer,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: (0, _recipeListModuleCssDefault.default).btn,
+                    onClick: ()=>navigate(-1),
+                    children: "Go Back"
+                }, void 0, false, {
+                    fileName: "components/ShowAll.jsx",
+                    lineNumber: 68,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/ShowAll.jsx",
                 lineNumber: 67,
                 columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _recipeListModuleCssDefault.default).btnContainer,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _recipeListModuleCssDefault.default).btn,
-                    onClick: ()=>navigate(-1),
-                    children: "Go Back"
-                }, void 0, false, {
-                    fileName: "components/ShowAll.jsx",
-                    lineNumber: 72,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/ShowAll.jsx",
-                lineNumber: 71,
-                columnNumber: 9
-=======
-                lineNumber: 62,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _recipeListModuleCssDefault.default).btnContainer,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _recipeListModuleCssDefault.default).btn,
-                    onClick: ()=>navigate(-1),
-                    children: "Go Back"
-                }, void 0, false, {
-                    fileName: "components/ShowAll.jsx",
-                    lineNumber: 67,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/ShowAll.jsx",
-                lineNumber: 66,
-                columnNumber: 9
->>>>>>> parent of f25e223 (Added Contact Page)
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-        lineNumber: 66,
-        columnNumber: 7
-    }, undefined);
-    if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _recipeListModuleCssDefault.default).errorContainer,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
-                        alt: "arrow",
-                        className: (0, _recipeListModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/ShowAll.jsx",
-                        lineNumber: 87,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Failed to fetch recipe data due to a server error. Please try again later."
-                    }, void 0, false, {
-                        fileName: "components/ShowAll.jsx",
-                        lineNumber: 93,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "components/ShowAll.jsx",
-                lineNumber: 86,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _recipeListModuleCssDefault.default).btnContainer,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: (0, _recipeListModuleCssDefault.default).btn,
-                    onClick: ()=>navigate(-1),
-                    children: "Go Back"
-                }, void 0, false, {
-                    fileName: "components/ShowAll.jsx",
-                    lineNumber: 100,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "components/ShowAll.jsx",
-                lineNumber: 99,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "components/ShowAll.jsx",
-        lineNumber: 85,
-=======
-        lineNumber: 61,
->>>>>>> parent of f25e223 (Added Contact Page)
+        lineNumber: 62,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -38091,11 +37995,7 @@ const ShowAll = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                lineNumber: 109,
-=======
-                lineNumber: 76,
->>>>>>> parent of f25e223 (Added Contact Page)
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38111,11 +38011,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                        lineNumber: 111,
-=======
-                        lineNumber: 78,
->>>>>>> parent of f25e223 (Added Contact Page)
+                        lineNumber: 79,
                         columnNumber: 9
                     }, undefined),
                     error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -38125,11 +38021,7 @@ const ShowAll = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                        lineNumber: 116,
-=======
-                        lineNumber: 83,
->>>>>>> parent of f25e223 (Added Contact Page)
+                        lineNumber: 84,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _recipeListModuleCssDefault.default).recipeContainer,
@@ -38143,11 +38035,7 @@ const ShowAll = ()=>{
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                            lineNumber: 126,
-=======
-                                            lineNumber: 90,
->>>>>>> parent of f25e223 (Added Contact Page)
+                                            lineNumber: 91,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -38155,78 +38043,37 @@ const ShowAll = ()=>{
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                                lineNumber: 128,
-=======
-                                                lineNumber: 92,
->>>>>>> parent of f25e223 (Added Contact Page)
+                                                lineNumber: 93,
                                                 columnNumber: 23
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                            lineNumber: 127,
-=======
-                                            lineNumber: 91,
->>>>>>> parent of f25e223 (Added Contact Page)
+                                            lineNumber: 92,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                    lineNumber: 125,
-=======
-                                    lineNumber: 89,
->>>>>>> parent of f25e223 (Added Contact Page)
+                                    lineNumber: 90,
                                     columnNumber: 19
                                 }, undefined)
                             }, recipe.id, false, {
                                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                lineNumber: 121,
-                                columnNumber: 17
-                            }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "No recipes found."
-                            }, void 0, false, {
-                                fileName: "components/ShowAll.jsx",
-                                lineNumber: 135,
-                                columnNumber: 17
-                            }, undefined)
-                        }, void 0, false)
-                    }, void 0, false, {
-                        fileName: "components/ShowAll.jsx",
-                        lineNumber: 118,
-                        columnNumber: 11
-                    }, undefined),
-                    error ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            "Error: ",
-                            error
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/ShowAll.jsx",
-                        lineNumber: 142,
-                        columnNumber: 11
-                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-=======
-                                lineNumber: 88,
+                                lineNumber: 89,
                                 columnNumber: 17
                             }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: "No recipes found."
                         }, void 0, false, {
                             fileName: "components/ShowAll.jsx",
-                            lineNumber: 98,
+                            lineNumber: 99,
                             columnNumber: 15
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/ShowAll.jsx",
-                        lineNumber: 85,
+                        lineNumber: 86,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
->>>>>>> parent of f25e223 (Added Contact Page)
                         className: (0, _recipeListModuleCssDefault.default).paginationContainer,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -38236,13 +38083,8 @@ const ShowAll = ()=>{
                                 children: "Previous Page"
                             }, void 0, false, {
                                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                lineNumber: 145,
-                                columnNumber: 13
-=======
-                                lineNumber: 104,
+                                lineNumber: 105,
                                 columnNumber: 11
->>>>>>> parent of f25e223 (Added Contact Page)
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: (0, _recipeListModuleCssDefault.default).paginationBtn,
@@ -38250,33 +38092,19 @@ const ShowAll = ()=>{
                                 children: "Next Page"
                             }, void 0, false, {
                                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                                lineNumber: 152,
-                                columnNumber: 13
-=======
-                                lineNumber: 111,
+                                lineNumber: 112,
                                 columnNumber: 11
->>>>>>> parent of f25e223 (Added Contact Page)
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                        lineNumber: 144,
-                        columnNumber: 11
-=======
-                        lineNumber: 103,
+                        lineNumber: 104,
                         columnNumber: 9
->>>>>>> parent of f25e223 (Added Contact Page)
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/ShowAll.jsx",
-<<<<<<< HEAD
-                lineNumber: 110,
-=======
-                lineNumber: 77,
->>>>>>> parent of f25e223 (Added Contact Page)
+                lineNumber: 78,
                 columnNumber: 7
             }, undefined)
         ]
@@ -41871,6 +41699,201 @@ module.exports["showAllImages"] = `DNUXEq_showAllImages`;
 module.exports["show_all"] = `DNUXEq_show_all`;
 module.exports["show_all_button"] = `DNUXEq_show_all_button`;
 module.exports["sliderContainer"] = `DNUXEq_sliderContainer`;
+
+},{}],"idlIC":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3f7e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3f7e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _contactModuleCss = require("./Contact.module.css");
+var _contactModuleCssDefault = parcelHelpers.interopDefault(_contactModuleCss);
+const Contact = ()=>{
+    const handleSubmit = (e)=>{
+        alert('Submitted!');
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: (0, _contactModuleCssDefault.default).contact_container,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _contactModuleCssDefault.default).contact_content,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Contact Us"
+                    }, void 0, false, {
+                        fileName: "components/Contact.jsx",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "I would love to hear about your project and how I could help. Please fill in the form, and I\u2019ll get back to you as soon as possible."
+                    }, void 0, false, {
+                        fileName: "components/Contact.jsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "components/Contact.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _contactModuleCssDefault.default).form_container,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    onSubmit: handleSubmit,
+                    action: "https://formspree.io/f/mjkvjdzj",
+                    method: "POST",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).form_input_container,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: (0, _contactModuleCssDefault.default).form_input,
+                                type: "text",
+                                name: "name" /* Added */ ,
+                                placeholder: "Name",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 25,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).form_input_container,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: (0, _contactModuleCssDefault.default).form_input,
+                                type: "email",
+                                name: "email" /* Added */ ,
+                                placeholder: "Email",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).form_input_container,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: (0, _contactModuleCssDefault.default).form_input,
+                                type: "number",
+                                name: "number" /* Added */ ,
+                                placeholder: "Phone Number",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).form_input_container,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: (0, _contactModuleCssDefault.default).form_input,
+                                type: "text",
+                                name: "subject" /* Added */ ,
+                                placeholder: "Subject",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).form_input_container,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                className: (0, _contactModuleCssDefault.default).form_input,
+                                name: "message" /* Added */ ,
+                                placeholder: "Message",
+                                cols: "30",
+                                rows: "10",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 63,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 62,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _contactModuleCssDefault.default).container_button,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: (0, _contactModuleCssDefault.default).section__link,
+                                type: "submit",
+                                children: "Send Message"
+                            }, void 0, false, {
+                                fileName: "components/Contact.jsx",
+                                lineNumber: 74,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "components/Contact.jsx",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Contact.jsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/Contact.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "components/Contact.jsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Contact;
+exports.default = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$3f7e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Contact.module.css":"PJUbj"}],"PJUbj":[function(require,module,exports,__globalThis) {
+module.exports["contact_container"] = `_92uu0W_contact_container`;
+module.exports["contact_content"] = `_92uu0W_contact_content`;
+module.exports["container_button"] = `_92uu0W_container_button`;
+module.exports["form_container"] = `_92uu0W_form_container`;
+module.exports["form_input"] = `_92uu0W_form_input`;
+module.exports["form_input_container"] = `_92uu0W_form_input_container`;
+module.exports["section__link"] = `_92uu0W_section__link`;
 
 },{}]},["aQL8O","c2I8d","g9R30"], "g9R30", "parcelRequire94c2")
 
