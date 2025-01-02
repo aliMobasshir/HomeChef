@@ -1,18 +1,16 @@
+
 import React from 'react'
-<<<<<<< HEAD
-=======
 import style from './Contact.module.css'
 import Navigation from './Navigation'
 import Footer from './Footer'
 
->>>>>>> 3d6c9cc994a131a72c2d2515641939c4d7acea9b
 
 const Contact = () => {
+  const handleSubmit = e => {
+    alert('Submitted!')
+  }
+
   return (
-<<<<<<< HEAD
-    <div>
-      
-=======
     <>
    
     <div className={style.contact_container}>
@@ -84,7 +82,6 @@ const Contact = () => {
           </div>
         </form>
       </div>
->>>>>>> 3d6c9cc994a131a72c2d2515641939c4d7acea9b
     </div>
     <div className={style.blackline}></div>
     <Footer />
