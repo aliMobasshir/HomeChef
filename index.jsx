@@ -7,6 +7,11 @@ import cuisines from './Cuisines.js'
 import ShowAll from './components/ShowAll.jsx'
 import KnowMoreDiets from './components/KnowMoreDiets.jsx'
 import Image from './components/Image.jsx'
+import SearchIngredient from './components/SearchIngredient.jsx'
+import SearchIngredientImage from './components/SearchIngredientImage.jsx'
+import ExploreCategory from './components/ExploreCategory.jsx'
+import Contact from './components/Contact.jsx'
+// import Error from './components/Error.jsx'
 console.log(cuisines)
 
 const router = createBrowserRouter([
@@ -15,8 +20,17 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/About',
+    path: '/exploreCategory',
+    element: <ExploreCategory />
+  },
+
+  {
+    path: '/about',
     element: <About />
+  },
+  {
+    path: '/SearchIngredient',
+    element: <SearchIngredient />
   },
   {
     path: '/ShowAll/:type/:name',
@@ -29,6 +43,15 @@ const router = createBrowserRouter([
   {
     path: '/image/:type/:name/:id',
     element: <Image />
+  },
+
+  {
+    path: '/searchIngredientImage/:id',
+    element: <SearchIngredientImage />
+  },
+  {
+    path : '/contact',
+    element : <Contact/>
   }
 ])
 

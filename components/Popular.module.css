@@ -1,3 +1,47 @@
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid orange; /* Orange */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: hidden;
+}
+.errorContainer p {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.3vw;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.errorContainer img {
+  height: 20.5em;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
 .RecommendedPage {
   padding: 50px 0;
   display: flex;
@@ -97,6 +141,8 @@
   color: rgb(255, 119, 0);
 }
 
+
+
 @media (max-width: 800px) {
   .recipeContainer {
     gap: 16px;
@@ -113,5 +159,32 @@
   }
   .show_all_button {
     font-size: 12px;
+  }
+  .errorContainer {
+    gap: 20px;
+  }
+  .errorContainer img {
+    height: 10.5em;
+  }
+  .errorContainer p {
+    font-size: 1.2rem;
+  }
 }
-}
+
+/* .error {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+} */
