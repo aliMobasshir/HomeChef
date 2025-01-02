@@ -1,5 +1,8 @@
 import React from 'react'
 import style from './Contact.module.css'
+import Navigation from './Navigation'
+import Footer from './Footer'
+
 
 const Contact = () => {
   const handleSubmit = e => {
@@ -7,12 +10,13 @@ const Contact = () => {
   }
 
   return (
+    <>
+   
     <div className={style.contact_container}>
       <div className={style.contact_content}>
         <h1>Contact Us</h1>
         <p>
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
+        We’d love to hear from you! Share your thoughts, questions, or feedback by filling out the form below, and we’ll get back to you promptly.
         </p>
       </div>
       <div className={style.form_container}>
@@ -78,6 +82,9 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    <div className={style.blackline}></div>
+    <Footer />
+    </>
   )
 }
 

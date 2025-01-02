@@ -147,7 +147,7 @@
 }
 
 .card4::after {
-    content: "With hundreds of recipes to explore, you'll never run out of meal ideas,HomeChef provides an extensive library to meet your needs.";
+    content: "With Thousands of recipes to explore, you'll never run out of meal ideas,HomeChef provides an extensive library to meet your needs.";
     position: absolute;
     opacity: 0; /* Hidden initially */
     transition: opacity 0.3s ease; /* Smooth transition */
