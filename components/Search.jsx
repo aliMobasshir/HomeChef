@@ -29,7 +29,7 @@ const Search = ({ setSearchOpen, setQuery }) => {
   return (
     <div className={Style.searchContainer}>
       <div className={Style.searchDiv}>
-        {/* <img src={maginfy} alt="Click to magnify" /> */}
+        <img src={maginfy} alt="Click to magnify" />
         <input
           className={Style.searchInput}
           type='text'

@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import Style from './recipeList.module.css';
-import apiImage from './api_error_image.gif'
+import apiImage from './api_error_image.gif';
 import { Link } from 'react-router-dom';
 
-const apiKey = 'f2fbb965309246e7906f64251396be87'
-
-//  cb830b43603108a2e1b0d922bac475a945a8404a
-
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
+const apiKeys = [
+  '834e4826627e40619840c9f299b31f36',
+  'f2fbb965309246e7906f64251396be87',
+  '5ce733c6c24d4454ab2395b906ae5dc1',
+  '5253113cb6ff4e67ad11c72ec6ae2ec0',
+  'd2a320ed5a3a463ca1b8dce923cd49dc',
+  'af3ad633e574425c90e2c0ef4a4fefc0',
+  '3544e0a87f98468883e9169172546ac1',
+  '0d0e212f1a904e9cb772072f49167a4b',
+  '716d2d891ccc4e788b471c105f5928e8',
+  '3036c2facd2447e380f01fd8061794c4'
+];
 
 const SearchResult = ({ query }) => {
   const [recipes, setRecipes] = useState([]); // State to store fetched recipes
   const [error, setError] = useState(null); // State to handle errors
   const [loading, setLoading] = useState(false); // State to handle loading
+  const [currentKeyIndex, setCurrentKeyIndex] = useState(0); // Track the current API key index
+  const [usedKeys, setUsedKeys] = useState([]); // Track used keys
 
   // Fetch recipes when query changes
   useEffect(() => {
@@ -33,15 +33,33 @@ const SearchResult = ({ query }) => {
     const fetchRecipes = async () => {
       setLoading(true); // Set loading to true at the start of fetch
       setError(null); // Reset error state
+
+      const currentApiKey = apiKeys[currentKeyIndex];
+      const endpoint = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${currentApiKey}&number=100`;
+
       try {
-        const response = await fetch(
-          `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${apiKey}&number=100`
-        );
+        console.log(`Using API key: ${currentApiKey}`); // Log the current API key being used
+        const response = await fetch(endpoint);
 
         if (!response.ok) {
+          console.log(`Error with API key: ${currentApiKey}, Status: ${response.status}`); // Log the error status
+          // Rotate API key on 401 or 402 errors
+          if (response.status === 401 || response.status === 402) {
+            const newIndex = currentKeyIndex + 1;
+
+            if (newIndex < apiKeys.length) {
+              setUsedKeys([...usedKeys, currentApiKey]); // Add to used keys
+              setCurrentKeyIndex(newIndex); // Rotate to the next key
+            } else {
+              setError('All API keys are exhausted.');
+            }
+            return; // Exit to retry with the next key
+          }
+
           throw new Error(`An error occurred: ${response.status}`);
         }
 
+        console.log(`Successful fetch with API key: ${currentApiKey}`); // Log successful fetch
         const data = await response.json();
 
         if (data.results) {
@@ -57,7 +75,7 @@ const SearchResult = ({ query }) => {
     };
 
     fetchRecipes();
-  }, [query]); // Re-run the effect when query changes
+  }, [query, currentKeyIndex]); // Re-run the effect when query or API key index changes
 
   // Render loading indicator while fetching data
   if (loading) {
@@ -98,13 +116,13 @@ const SearchResult = ({ query }) => {
       <div className={Style.recipeContainer}>
         {recipes.length > 0 ? (
           recipes.map((recipe) => (
-             <Link to={`/searchIngredientImage/${recipe.id}`}>
-            <div key={recipe.id} className={Style.recipeCard}>
-              <img src={recipe.image} alt={recipe.title} />
-              <h2>
-                <span>{recipe.title}</span>
-              </h2>
-            </div>
+            <Link to={`/searchIngredientImage/${recipe.id}`} key={recipe.id}>
+              <div className={Style.recipeCard}>
+                <img src={recipe.image} alt={recipe.title} />
+                <h2>
+                  <span>{recipe.title}</span>
+                </h2>
+              </div>
             </Link>
           ))
         ) : (
@@ -116,3 +134,4 @@ const SearchResult = ({ query }) => {
 };
 
 export default SearchResult;
+
