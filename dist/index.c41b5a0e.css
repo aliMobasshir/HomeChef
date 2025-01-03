@@ -2079,7 +2079,7 @@ a {
     font-size: 25px;
   }
 
-  .CdOZGa_ingredientList {
+  .CdOZGa_ingredientList, .CdOZGa_stepIngredients li {
     margin-left: 20px;
     font-size: 20px;
   }
@@ -2099,7 +2099,7 @@ a {
     font-size: 25px;
   }
 
-  .CdOZGa_equipmentList {
+  .CdOZGa_equipmentList, .CdOZGa_stepEquipment li {
     margin-left: 20px;
     font-size: 20px;
   }
@@ -2988,7 +2988,7 @@ input[type="checkbox"]:checked:before {
     font-size: 25px;
   }
 
-  .M0v9NW_equipmentList {
+  .M0v9NW_stepIngredients li, .M0v9NW_equipmentList {
     margin-left: 20px;
     font-size: 20px;
   }
@@ -2996,6 +2996,11 @@ input[type="checkbox"]:checked:before {
   .M0v9NW_equipmententList li {
     margin-bottom: .25rem;
     list-style-type: disc;
+  }
+
+  .M0v9NW_stepEquipment li {
+    margin-left: 20px;
+    font-size: 20px;
   }
 
   .M0v9NW_errorContainer p {

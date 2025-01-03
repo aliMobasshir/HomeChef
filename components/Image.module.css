@@ -402,6 +402,11 @@
     font-size: 20px;
     margin-left: 20px;
   }
+
+  .stepIngredients li{
+    font-size: 20px;
+    margin-left: 20px;
+  }
   .ingredientList li {
     list-style-type: disc;
     margin-bottom: 0.25rem; /* Adds spacing between items */
@@ -418,6 +423,11 @@
   }
 
   .equipmentList {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .stepEquipment li{
     font-size: 20px;
     margin-left: 20px;
   }

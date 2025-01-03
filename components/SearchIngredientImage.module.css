@@ -407,6 +407,10 @@
     font-size: 25px;
     margin-left: 0px;
   }
+  .stepIngredients li{
+    font-size: 20px;
+    margin-left: 20px;
+  }
 
   .equipmentList {
     font-size: 20px;
@@ -416,6 +420,10 @@
   .equipmententList li {
     list-style-type: disc;
     margin-bottom: 0.25rem; /* Adds spacing between items */
+  }
+  .stepEquipment li{
+    font-size: 20px;
+    margin-left: 20px;
   }
 
   .errorContainer p{
