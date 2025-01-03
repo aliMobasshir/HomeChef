@@ -6,13 +6,19 @@ import IngredientData from '../IngredientData.js'
 import apiImage from './api_error_image.gif'
 import { useNavigate, Link } from 'react-router-dom'
 
-const apiKeys = [
-  '834e4826627e40619840c9f299b31f36',
-  'f2fbb965309246e7906f64251396be87',
-  '5ce733c6c24d4454ab2395b906ae5dc1',
-  '5253113cb6ff4e67ad11c72ec6ae2ec0',
-  // Add more API keys as necessary
-]
+const apiKey = '5253113cb6ff4e67ad11c72ec6ae2ec0'
+//  cb830b43603108a2e1b0d922bac475a945a8404a
+
+// 834e4826627e40619840c9f299b31f36
+// f2fbb965309246e7906f64251396be87
+// 5ce733c6c24d4454ab2395b906ae5dc1
+// 5253113cb6ff4e67ad11c72ec6ae2ec0
+// d2a320ed5a3a463ca1b8dce923cd49dc
+// af3ad633e574425c90e2c0ef4a4fefc0
+// 3544e0a87f98468883e9169172546ac1
+// 0d0e212f1a904e9cb772072f49167a4b
+// 716d2d891ccc4e788b471c105f5928e8
+// 3036c2facd2447e380f01fd8061794c4
 
 const SearchIngredient = () => {
   const [query, setQuery] = useState('')
@@ -23,9 +29,6 @@ const SearchIngredient = () => {
   const [error, setError] = useState(null)
   const [showAllData, setShowAllData] = useState(false)
   const [shouldFetchData, setShouldFetchData] = useState(false)
-  const [currentKeyIndex, setCurrentKeyIndex] = useState(0)
-  const [usedKeys, setUsedKeys] = useState([])
-
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -64,30 +67,18 @@ const SearchIngredient = () => {
 
   const selectedData = selectedIngredients.toString()
 
+  const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedData}&apiKey=${apiKey}&number=100`
+
   const fetchRecipes = async () => {
     if (!selectedData) {
       setRecipes([])
       return
     }
     setLoading(true)
-    const currentApiKey = apiKeys[currentKeyIndex]
-    const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedData}&apiKey=${currentApiKey}&number=100`
 
     try {
       const response = await fetch(endpoint)
       if (!response.ok) {
-        // Rotate API key if 401 or 402 status codes are encountered
-        if (response.status === 401 || response.status === 402) {
-          const newIndex = currentKeyIndex + 1
-          if (newIndex < apiKeys.length) {
-            setUsedKeys([...usedKeys, currentApiKey])
-            setCurrentKeyIndex(newIndex)
-            return
-          } else {
-            setError('All API keys are exhausted.')
-            return
-          }
-        }
         throw new Error(`An error has occurred: ${response.status}`)
       }
       const data = await response.json()
@@ -111,6 +102,7 @@ const SearchIngredient = () => {
   }, [shouldFetchData, selectedData, selectedIngredients])
 
   const ingredients = IngredientData.ingredients
+
   const IngredientfilterData = ingredients.filter(ingredient =>
     ingredient.toLowerCase().includes(searchIngredientQuery.toLowerCase())
   )
@@ -223,11 +215,19 @@ const SearchIngredient = () => {
 
         {!loading && (
           <>
-            {error?.includes('All API keys are exhausted.') && (
+            {error?.includes('402') && (
               <div>
                 <div className={style.errorContainer}>
-                  <img src={apiImage} alt='Error' className={style.icon} />
-                  <p>All API keys are exhausted. Please try again later.</p>
+                  <img src={apiImage} alt='arrow' className={style.icon} />
+                  <p>
+                    Failed to fetch recipes Data. Please Try after Some Time
+                  </p>
+                </div>
+
+                <div className={style.btnContainer}>
+                  <button className={style.btn} onClick={() => navigate(-1)}>
+                    Go Back
+                  </button>
                 </div>
               </div>
             )}
@@ -238,7 +238,7 @@ const SearchIngredient = () => {
                 <div className={style.errorContainer}>
                   <img
                     src='https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif'
-                    alt='Error'
+                    alt='arrow'
                     className={style.icon}
                   />
                   <p>
