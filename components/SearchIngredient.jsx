@@ -1,112 +1,126 @@
-import React, { useState, useEffect } from 'react';
-import Navigation from './Navigation.jsx';
-import Footer from './Footer.jsx';
-import style from './SearchIngredient.module.css';
-import IngredientData from '../IngredientData.js';
-import apiImage from './api_error_image.gif';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import Navigation from './Navigation.jsx'
+import Footer from './Footer.jsx'
+import style from './SearchIngredient.module.css'
+import IngredientData from '../IngredientData.js'
+import apiImage from './api_error_image.gif'
+import { useNavigate, Link } from 'react-router-dom'
 
 const apiKeys = [
   '834e4826627e40619840c9f299b31f36',
   'cb830b43603108a2e1b0d922bac475a94', // Add more keys as needed
   '5253113cb6ff4e67ad11c72ec6ae2ec0', // First API Key
   'f2fbb965309246e7906f64251396be87',
+  '716d2d891ccc4e788b471c105f5928e8',
+  '3036c2facd2447e380f01fd8061794c4'
   // Add more API keys here
-];
+]
 
 const SearchIngredient = () => {
-  const [query, setQuery] = useState('');
-  const [searchIngredientQuery, setSearchIngredientQuery] = useState('');
-  const [selectedIngredients, setSelectedIngredients] = useState([]);
-  const [recipe, setRecipes] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [showAllData, setShowAllData] = useState(false);
-  const [shouldFetchData, setShouldFetchData] = useState(false);
-  const [currentKeyIndex, setCurrentKeyIndex] = useState(0); // Track API key index
-  const navigate = useNavigate();
+  const [query, setQuery] = useState('')
+  const [searchIngredientQuery, setSearchIngredientQuery] = useState('')
+  const [selectedIngredients, setSelectedIngredients] = useState([])
+  const [recipe, setRecipes] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
+  const [showAllData, setShowAllData] = useState(false)
+  const [shouldFetchData, setShouldFetchData] = useState(false)
+  const [currentKeyIndex, setCurrentKeyIndex] = useState(0) // Track API key index
+  const navigate = useNavigate()
 
-  const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedIngredients.toString()}&apiKey=${apiKeys[currentKeyIndex]}&number=100`;
+  const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedIngredients.toString()}&apiKey=${
+    apiKeys[currentKeyIndex]
+  }&number=100`
 
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
-    });
-  }, []);
+      behavior: 'smooth'
+    })
+  }, [])
 
   const fetchRecipes = async () => {
     if (!selectedIngredients.length) {
-      setRecipes([]);
-      return;
+      setRecipes([])
+      return
     }
-    setLoading(true);
-    setError(null);
+    setLoading(true)
+    setError(null)
 
     try {
-      const response = await fetch(endpoint);
+      const response = await fetch(endpoint)
 
       if (!response.ok) {
-        console.error(`Error with API Key: ${apiKeys[currentKeyIndex]}, Status: ${response.status}`);
-        
+        console.error(
+          `Error with API Key: ${apiKeys[currentKeyIndex]}, Status: ${response.status}`
+        )
+
         // Rotate API key on error
-        if (currentKeyIndex + 1 < apiKeys.length) {
-          setCurrentKeyIndex(currentKeyIndex + 1);
+        if (response.status === 402 || response.status === 401) {
+          // Check if we have more API keys left
+          if (currentKeyIndex + 1 < apiKeys.length) {
+            setCurrentKeyIndex(currentKeyIndex + 1)
+            console.log('Api', apiKeys[currentKeyIndex])
+          } else {
+            setError('All API keys are exhausted.')
+          }
         } else {
-          setError('All API keys are exhausted.');
+          setError('An unexpected error occurred.')
         }
-        return;
+        return
       }
 
-      const data = await response.json();
-      setRecipes(data);
+      const data = await response.json()
+      setRecipes(data)
     } catch (error) {
-      setError('An unexpected error occurred. Please try again later.');
+      setError('An unexpected error occurred. Please try again later.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   useEffect(() => {
     if (shouldFetchData) {
-      fetchRecipes();
-      setShouldFetchData(false);
+      fetchRecipes()
+      setShouldFetchData(false)
     }
-  }, [shouldFetchData, currentKeyIndex]); // Fetch again if API key changes
+  }, [shouldFetchData, currentKeyIndex]) // Fetch again if API key changes
 
-  const handleInput = (e) => {
-    setSearchIngredientQuery(e.target.value);
-  };
+  const handleInput = e => {
+    setSearchIngredientQuery(e.target.value)
+  }
 
-  const handleCheckbox = (ingredient) => {
+  const handleCheckbox = ingredient => {
     if (selectedIngredients.includes(ingredient)) {
-      setSelectedIngredients(selectedIngredients.filter((item) => item !== ingredient));
+      setSelectedIngredients(
+        selectedIngredients.filter(item => item !== ingredient)
+      )
     } else {
-      setSelectedIngredients([...selectedIngredients, ingredient]);
+      setSelectedIngredients([...selectedIngredients, ingredient])
     }
-  };
+  }
 
   const showAll = () => {
     if (selectedIngredients.length > 0) {
-      setShowAllData(true);
-      setShouldFetchData(true);
+      setShowAllData(true)
+      setShouldFetchData(true)
       window.scrollTo({
         top: 1000,
-        behavior: 'smooth',
-      });
+        behavior: 'smooth'
+      })
     } else {
-      setShowAllData(false);
+      setShowAllData(false)
     }
-  };
+  }
 
-  const ingredients = IngredientData.ingredients;
-  const IngredientfilterData = ingredients.filter((ingredient) =>
+  const ingredients = IngredientData.ingredients
+  const IngredientfilterData = ingredients.filter(ingredient =>
     ingredient.toLowerCase().includes(searchIngredientQuery.toLowerCase())
-  );
+  )
 
-  const filterDishesData = recipe.filter((dishes) =>
+  const filterDishesData = recipe.filter(dishes =>
     dishes.title.toLowerCase().includes(query.toLowerCase())
-  );
+  )
 
   return (
     <div>
@@ -125,14 +139,17 @@ const SearchIngredient = () => {
           type='text'
           placeholder='Search by ingredients'
         />
-        <button onClick={() => setSelectedIngredients(IngredientfilterData)} className={style.button}>
+        <button
+          onClick={() => setSelectedIngredients(IngredientfilterData)}
+          className={style.button}
+        >
           Select All
         </button>
         <button
           onClick={() => {
-            setSelectedIngredients([]);
-            setSearchIngredientQuery('');
-            setShowAllData(false);
+            setSelectedIngredients([])
+            setSearchIngredientQuery('')
+            setShowAllData(false)
           }}
           className={style.button}
         >
@@ -156,9 +173,11 @@ const SearchIngredient = () => {
                     onChange={() => handleCheckbox(ingredient)}
                     checked={selectedIngredients.includes(ingredient)}
                   />
-                  <label htmlFor={`selected-ingredient-${index}`}>{ingredient}</label>
+                  <label htmlFor={`selected-ingredient-${index}`}>
+                    {ingredient}
+                  </label>
                 </div>
-              );
+              )
             })}
           </div>
         )}
@@ -242,7 +261,7 @@ const SearchIngredient = () => {
 
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default SearchIngredient;
+export default SearchIngredient

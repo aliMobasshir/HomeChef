@@ -39049,7 +39049,9 @@ const apiKeys = [
     '834e4826627e40619840c9f299b31f36',
     'cb830b43603108a2e1b0d922bac475a94',
     '5253113cb6ff4e67ad11c72ec6ae2ec0',
-    'f2fbb965309246e7906f64251396be87'
+    'f2fbb965309246e7906f64251396be87',
+    '716d2d891ccc4e788b471c105f5928e8',
+    '3036c2facd2447e380f01fd8061794c4'
 ];
 const SearchIngredient = ()=>{
     _s();
@@ -39061,7 +39063,8 @@ const SearchIngredient = ()=>{
     const [error, setError] = (0, _react.useState)(null);
     const [showAllData, setShowAllData] = (0, _react.useState)(false);
     const [shouldFetchData, setShouldFetchData] = (0, _react.useState)(false);
-    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0); // Track API key index
+    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0) // Track API key index
+    ;
     const navigate = (0, _reactRouterDom.useNavigate)();
     const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedIngredients.toString()}&apiKey=${apiKeys[currentKeyIndex]}&number=100`;
     (0, _react.useEffect)(()=>{
@@ -39082,8 +39085,13 @@ const SearchIngredient = ()=>{
             if (!response.ok) {
                 console.error(`Error with API Key: ${apiKeys[currentKeyIndex]}, Status: ${response.status}`);
                 // Rotate API key on error
-                if (currentKeyIndex + 1 < apiKeys.length) setCurrentKeyIndex(currentKeyIndex + 1);
-                else setError('All API keys are exhausted.');
+                if (response.status === 402 || response.status === 401) {
+                    // Check if we have more API keys left
+                    if (currentKeyIndex + 1 < apiKeys.length) {
+                        setCurrentKeyIndex(currentKeyIndex + 1);
+                        console.log('Api', apiKeys[currentKeyIndex]);
+                    } else setError('All API keys are exhausted.');
+                } else setError('An unexpected error occurred.');
                 return;
             }
             const data = await response.json();
@@ -39102,7 +39110,8 @@ const SearchIngredient = ()=>{
     }, [
         shouldFetchData,
         currentKeyIndex
-    ]); // Fetch again if API key changes
+    ]) // Fetch again if API key changes
+    ;
     const handleInput = (e)=>{
         setSearchIngredientQuery(e.target.value);
     };
@@ -39132,7 +39141,7 @@ const SearchIngredient = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 113,
+                lineNumber: 127,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39141,12 +39150,12 @@ const SearchIngredient = ()=>{
                     children: "Find recipes that use as many of the given ingredients as possible and require as few additional ingredients as possible."
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 115,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 114,
+                lineNumber: 128,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39159,7 +39168,7 @@ const SearchIngredient = ()=>{
                         placeholder: "Search by ingredients"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 122,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39168,7 +39177,7 @@ const SearchIngredient = ()=>{
                         children: "Select All"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 128,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39181,7 +39190,7 @@ const SearchIngredient = ()=>{
                         children: "Clear all"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 131,
+                        lineNumber: 148,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39190,13 +39199,13 @@ const SearchIngredient = ()=>{
                         children: "Show results"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 141,
+                        lineNumber: 158,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 121,
+                lineNumber: 135,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39208,7 +39217,7 @@ const SearchIngredient = ()=>{
                             children: "Selected :"
                         }, void 0, false, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 149,
+                            lineNumber: 166,
                             columnNumber: 13
                         }, undefined),
                         selectedIngredients.map((ingredient, index)=>{
@@ -39222,7 +39231,7 @@ const SearchIngredient = ()=>{
                                         checked: selectedIngredients.includes(ingredient)
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 153,
+                                        lineNumber: 170,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39230,25 +39239,25 @@ const SearchIngredient = ()=>{
                                         children: ingredient
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 159,
+                                        lineNumber: 176,
                                         columnNumber: 19
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 152,
+                                lineNumber: 169,
                                 columnNumber: 17
                             }, undefined);
                         })
                     ]
                 }, void 0, true, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 148,
+                    lineNumber: 165,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 146,
+                lineNumber: 163,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39265,7 +39274,7 @@ const SearchIngredient = ()=>{
                                     checked: selectedIngredients.includes(ingredient)
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 172,
+                                    lineNumber: 191,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39273,29 +39282,29 @@ const SearchIngredient = ()=>{
                                     children: ingredient
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 178,
+                                    lineNumber: 197,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 171,
+                            lineNumber: 190,
                             columnNumber: 15
                         }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "No ingredients found"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 182,
+                        lineNumber: 201,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 168,
+                    lineNumber: 187,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 167,
+                lineNumber: 186,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39305,14 +39314,14 @@ const SearchIngredient = ()=>{
                         children: "Resulted Recipes:"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 188,
+                        lineNumber: 207,
                         columnNumber: 9
                     }, undefined),
                     loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _searchIngredientModuleCssDefault.default).loader
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 190,
+                        lineNumber: 209,
                         columnNumber: 21
                     }, undefined),
                     !loading && !error && selectedIngredients.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39320,7 +39329,7 @@ const SearchIngredient = ()=>{
                         children: "No recipes to display. Please select ingredients and try again."
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 193,
+                        lineNumber: 212,
                         columnNumber: 11
                     }, undefined),
                     !loading && !error && selectedIngredients.length > 0 && filterDishesData.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39328,7 +39337,7 @@ const SearchIngredient = ()=>{
                         children: "No recipes match your selected ingredients. Try different ingredients."
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 202,
+                        lineNumber: 221,
                         columnNumber: 13
                     }, undefined),
                     !loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -39344,20 +39353,20 @@ const SearchIngredient = ()=>{
                                                 className: (0, _searchIngredientModuleCssDefault.default).icon
                                             }, void 0, false, {
                                                 fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 213,
+                                                lineNumber: 232,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                 children: error
                                             }, void 0, false, {
                                                 fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 214,
+                                                lineNumber: 233,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 212,
+                                        lineNumber: 231,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39368,18 +39377,18 @@ const SearchIngredient = ()=>{
                                             children: "Go Back"
                                         }, void 0, false, {
                                             fileName: "components/SearchIngredient.jsx",
-                                            lineNumber: 218,
+                                            lineNumber: 237,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 217,
+                                        lineNumber: 236,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 211,
+                                lineNumber: 230,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39394,34 +39403,34 @@ const SearchIngredient = ()=>{
                                                     alt: "Click Image"
                                                 }, void 0, false, {
                                                     fileName: "components/SearchIngredient.jsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 249,
                                                     columnNumber: 23
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                                     children: item.title
                                                 }, void 0, false, {
                                                     fileName: "components/SearchIngredient.jsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 250,
                                                     columnNumber: 23
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "components/SearchIngredient.jsx",
-                                            lineNumber: 229,
+                                            lineNumber: 248,
                                             columnNumber: 21
                                         }, undefined)
                                     }, index, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 228,
+                                        lineNumber: 247,
                                         columnNumber: 19
                                     }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {}, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 236,
+                                    lineNumber: 255,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 225,
+                                lineNumber: 244,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -39429,18 +39438,18 @@ const SearchIngredient = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 187,
+                lineNumber: 206,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 243,
+                lineNumber: 262,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/SearchIngredient.jsx",
-        lineNumber: 112,
+        lineNumber: 126,
         columnNumber: 5
     }, undefined);
 };
