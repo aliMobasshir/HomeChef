@@ -1,80 +1,82 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import style from './Image.module.css';
-import Navigation from './Navigation.jsx';
-import Footer from './Footer.jsx';
-import apiImage from './api_error_image.gif';
+import React, { useEffect, useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import style from './Image.module.css'
+import Navigation from './Navigation.jsx'
+import Footer from './Footer.jsx'
+import apiImage from './api_error_image.gif'
 
 const apiKeys = [
   'cb830b43603108a2e1b0d922bac475a94',
   '0d0e212f1a904e9cb772072f49167a4b',
   '834e4826627e40619840c9f299b31f36',
   'f2fbb965309246e7906f64251396be87',
-  '25a0399599c74ee1bf6d2193351c8ec6',
-];
+  '25a0399599c74ee1bf6d2193351c8ec6'
+]
 
 const Image = () => {
-  const { id } = useParams();
-  const [recipes, setRecipes] = useState([]);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [currentKeyIndex, setCurrentKeyIndex] = useState(0); // Tracks current API key index
-  const navigate = useNavigate();
+  const { id } = useParams()
+  const [recipes, setRecipes] = useState([])
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [currentKeyIndex, setCurrentKeyIndex] = useState(0) // Tracks current API key index
+  const navigate = useNavigate()
 
   const fetchRecipes = async () => {
-    setLoading(true);
-    setError(null);
+    setLoading(true)
+    setError(null)
 
     try {
-      const currentApiKey = apiKeys[currentKeyIndex];
-      console.log(`Using API Key: ${currentApiKey}`);
+      const currentApiKey = apiKeys[currentKeyIndex]
+      console.log(`Using API Key: ${currentApiKey}`)
       const response = await fetch(
         `https://api.spoonacular.com/recipes/${id}/information?apiKey=${currentApiKey}`
-      );
+      )
 
       if (!response.ok) {
-        console.error(`Error with API Key: ${currentApiKey}, Status: ${response.status}`);
+        console.error(
+          `Error with API Key: ${currentApiKey}, Status: ${response.status}`
+        )
 
         // Rotate API key on error
         if (currentKeyIndex + 1 < apiKeys.length) {
-          setCurrentKeyIndex(currentKeyIndex + 1);
+          setCurrentKeyIndex(currentKeyIndex + 1)
         } else {
-          setError('All API keys are exhausted.');
+          setError('All API keys are exhausted.')
         }
-        return; // Exit to retry with the next key
+        return // Exit to retry with the next key
       }
 
-      const data = await response.json();
-      console.log(`Successful fetch with API Key: ${currentApiKey}`);
-      setRecipes(data);
+      const data = await response.json()
+      console.log(`Successful fetch with API Key: ${currentApiKey}`)
+      setRecipes(data)
     } catch (error) {
-      setError('An unexpected error occurred. Please try again later.');
+      setError('An unexpected error occurred. Please try again later.')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   useEffect(() => {
-    fetchRecipes();
-  }, [id, currentKeyIndex]); // Retry fetch when the API key changes
+    fetchRecipes()
+  }, [id, currentKeyIndex]) // Retry fetch when the API key changes
 
-  const sanitizeAndLimitSummary = (summary) => {
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = summary;
+  const sanitizeAndLimitSummary = summary => {
+    const tempDiv = document.createElement('div')
+    tempDiv.innerHTML = summary
 
-    const links = tempDiv.querySelectorAll('a');
-    links.forEach((link) => link.remove());
+    const links = tempDiv.querySelectorAll('a')
+    links.forEach(link => link.remove())
 
-    const sanitizedText = tempDiv.textContent || tempDiv.innerText || '';
-    const sentences = sanitizedText.split('.');
-    return sentences.slice(0, 7).join('. ') + '.';
-  };
+    const sanitizedText = tempDiv.textContent || tempDiv.innerText || ''
+    const sentences = sanitizedText.split('.')
+    return sentences.slice(0, 7).join('. ') + '.'
+  }
 
   if (error) {
     return (
       <div>
         <div className={style.errorContainer}>
-          <img src={apiImage} alt="Error" className={style.icon} />
+          <img src={apiImage} alt='Error' className={style.icon} />
           <p>{error}</p>
         </div>
         <div className={style.btnContainer}>
@@ -83,7 +85,7 @@ const Image = () => {
           </button>
         </div>
       </div>
-    );
+    )
   }
 
   if (loading) {
@@ -91,11 +93,11 @@ const Image = () => {
       <div className={style.loaderContainer}>
         <p className={style.loader}></p>
       </div>
-    );
+    )
   }
 
   if (!recipes) {
-    return <p className={style.error}>No recipe data found!</p>;
+    return <p className={style.error}>No recipe data found!</p>
   }
 
   return (
@@ -132,47 +134,50 @@ const Image = () => {
         <h1 className={style.instructionsHeading}>Instructions:</h1>
         {recipes.analyzedInstructions &&
         recipes.analyzedInstructions.length > 0 ? (
-          recipes.analyzedInstructions.map((instruction, instructionIndex) =>
-            instruction.steps &&
-            instruction.steps.length > 0 && (
-              <div
-                key={instructionIndex}
-                className={style.instructionsContainer}
-              >
-                {instruction.steps.map((step, index) => (
-                  <div key={index} className={style.instructionContainer}>
-                    <div className={style.instruction}>
-                      <h2>Step {index + 1}:</h2>
-                      <p>{step.step}</p>
+          recipes.analyzedInstructions.map(
+            (instruction, instructionIndex) =>
+              instruction.steps &&
+              instruction.steps.length > 0 && (
+                <div
+                  key={instructionIndex}
+                  className={style.instructionsContainer}
+                >
+                  {instruction.steps.map((step, index) => (
+                    <div key={index} className={style.instructionContainer}>
+                      <div className={style.instruction}>
+                        <h2>Step {index + 1}:</h2>
+                        <p>{step.step}</p>
+                      </div>
+
+                      {/* Ingredients used in this step */}
+                      {step.ingredients && step.ingredients.length > 0 && (
+                        <div className={style.stepIngredients}>
+                          <h3>Ingredients used in this step:</h3>
+                          <ul>
+                            {step.ingredients.map(
+                              (ingredient, ingredientIndex) => (
+                                <li key={ingredientIndex}>{ingredient.name}</li>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Equipment needed for this step */}
+                      {step.equipment && step.equipment.length > 0 && (
+                        <div className={style.stepEquipment}>
+                          <h3>Equipment needed for this step:</h3>
+                          <ul>
+                            {step.equipment.map((equipment, equipmentIndex) => (
+                              <li key={equipmentIndex}>{equipment.name}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
-
-                    {/* Ingredients used in this step */}
-                    {step.ingredients && step.ingredients.length > 0 && (
-                      <div className={style.stepIngredients}>
-                        <h3>Ingredients used in this step:</h3>
-                        <ul>
-                          {step.ingredients.map((ingredient, ingredientIndex) => (
-                            <li key={ingredientIndex}>{ingredient.name}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {/* Equipment needed for this step */}
-                    {step.equipment && step.equipment.length > 0 && (
-                      <div className={style.stepEquipment}>
-                        <h3>Equipment needed for this step:</h3>
-                        <ul>
-                          {step.equipment.map((equipment, equipmentIndex) => (
-                            <li key={equipmentIndex}>{equipment.name}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            )
+                  ))}
+                </div>
+              )
           )
         ) : (
           <p>No instructions available.</p>
@@ -180,7 +185,7 @@ const Image = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Image;
+export default Image
