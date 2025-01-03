@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   const [query, setQuery] = useState('');
-  
+
 
   return (
     <div className='about'>

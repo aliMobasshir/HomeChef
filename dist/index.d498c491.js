@@ -39100,7 +39100,7 @@ const SearchIngredient = ()=>{
             }
             const data = await response.json();
             setRecipes(data);
-            console.log("Correct API key used:", apiKeys[currentKeyIndex]);
+            console.log('Correct API key used:', apiKeys[currentKeyIndex]);
         } catch (error) {
             setError('An unexpected error occurred. Please try again later.');
         } finally{
