@@ -197,7 +197,7 @@
   padding: 5px 10px;
 }
 
-.ingredientList {
+.stepIngredients li {
   line-height: 1.6;
   font-size: 1.8vw;
   font-family: Shantell Sans, cursive;
@@ -225,7 +225,7 @@
   padding: 5px 10px;
 }
 
-.equipmentList {
+.stepEquipment li {
   line-height: 1.6;
   font-size: 1.8vw;
   font-family: Shantell Sans, cursive;
