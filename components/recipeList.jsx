@@ -45,7 +45,6 @@ function RecipeList ({ query }) {
             setUsedKeys([...usedKeys, currentApiKey])
             setCurrentKeyIndex(newIndex)
           } else {
-            // All API keys are exhausted
             setError('All API keys are exhausted.')
           }
         } else {
