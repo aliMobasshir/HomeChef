@@ -95,14 +95,6 @@
   }
 }
 
-.jTSFqG_navigationContainer {
-  z-index: 100;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .jTSFqG_navigation {
   background-color: #fff;
   border-bottom: 2px solid #000;

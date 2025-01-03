@@ -27791,33 +27791,6 @@ const Navigation = ({ setQuery })=>{
                                 fileName: "components/Navigation.jsx",
                                 lineNumber: 87,
                                 columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/SignUp",
-                                className: (0, _navigationModuleCssDefault.default).menuItem,
-                                children: "Sign Up"
-                            }, void 0, false, {
-                                fileName: "components/Navigation.jsx",
-                                lineNumber: 90,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/SignIn",
-                                className: (0, _navigationModuleCssDefault.default).menuItem,
-                                children: "Sign In"
-                            }, void 0, false, {
-                                fileName: "components/Navigation.jsx",
-                                lineNumber: 93,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/services",
-                                className: (0, _navigationModuleCssDefault.default).menuItem,
-                                children: "Services"
-                            }, void 0, false, {
-                                fileName: "components/Navigation.jsx",
-                                lineNumber: 96,
-                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -35254,7 +35227,6 @@ module.exports["menuContainer"] = `jTSFqG_menuContainer`;
 module.exports["menuItem"] = `jTSFqG_menuItem`;
 module.exports["navigation"] = `jTSFqG_navigation`;
 module.exports["navigationBrandImage"] = `jTSFqG_navigationBrandImage`;
-module.exports["navigationContainer"] = `jTSFqG_navigationContainer`;
 module.exports["navigationItem"] = `jTSFqG_navigationItem`;
 module.exports["navigationLink"] = `jTSFqG_navigationLink`;
 module.exports["navigationList"] = `jTSFqG_navigationList`;
@@ -35644,8 +35616,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _aboutModuleCss = require("./About.module.css");
 var _aboutModuleCssDefault = parcelHelpers.interopDefault(_aboutModuleCss);
-var _navigationJsx = require("./Navigation.jsx");
-var _navigationJsxDefault = parcelHelpers.interopDefault(_navigationJsx);
+// import Navigation from './Navigation.jsx'
 var _happycustomerSvg = require("./happycustomer.svg");
 var _happycustomerSvgDefault = parcelHelpers.interopDefault(_happycustomerSvg);
 var _missionImageSvg = require("./missionImage.svg");
@@ -35668,11 +35639,6 @@ const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "about",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navigationJsxDefault.default), {}, void 0, false, {
-                fileName: "components/About.jsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _aboutModuleCssDefault.default).aboutwebsite,
                 children: [
@@ -36283,7 +36249,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.css":"4TlvK","./Navigation.jsx":"kfJB7","./happycustomer.svg":"aYmr8","./missionImage.svg":"2gjAO","./MobasshirImage.svg":"drTUg","./Linkedinicon.svg":"93b21","./ExternalLinkicon.svg":"4DXAr","./DanishImage.svg":"dabru","./Footer.jsx":"6QIYt","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4TlvK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./About.module.css":"4TlvK","./happycustomer.svg":"aYmr8","./missionImage.svg":"2gjAO","./MobasshirImage.svg":"drTUg","./Linkedinicon.svg":"93b21","./ExternalLinkicon.svg":"4DXAr","./DanishImage.svg":"dabru","./Footer.jsx":"6QIYt","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4TlvK":[function(require,module,exports,__globalThis) {
 module.exports["HeaderPage"] = `IHfPZW_HeaderPage`;
 module.exports["WhoWeAreContainer"] = `IHfPZW_WhoWeAreContainer`;
 module.exports["aboutwebsite"] = `IHfPZW_aboutwebsite`;

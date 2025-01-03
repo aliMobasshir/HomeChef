@@ -87,7 +87,7 @@ const Navigation = ({ setQuery }) => {
               <Link to='/contact' className={Style.menuItem}>
                 Contact
               </Link>
-              <Link to='/SignUp' className={Style.menuItem}>
+              {/* <Link to='/SignUp' className={Style.menuItem}>
                 Sign Up
               </Link>
               <Link to='/SignIn' className={Style.menuItem}>
@@ -95,7 +95,7 @@ const Navigation = ({ setQuery }) => {
               </Link>
               <Link to='/services' className={Style.menuItem}>
                 Services
-              </Link>
+              </Link> */}
             </div>
           )}
         </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from './About.module.css'
-import Navigation from './Navigation.jsx'
+// import Navigation from './Navigation.jsx'
 import Happycustomerbg from './happycustomer.svg'
 import mission from './missionImage.svg'
 import MobasshirImage from './MobasshirImage.svg'
@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <div className='about'>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className={style.aboutwebsite}>
         <div className={style.HeaderPage}>
           <h1>About HOMECHEF</h1>
