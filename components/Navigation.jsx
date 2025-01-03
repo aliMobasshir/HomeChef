@@ -22,13 +22,15 @@ const Navigation = ({ setQuery }) => {
     <div className={Style.navigationContainer}>
       <nav className={Style.navigation}>
         <ul className={Style.navigationList}>
-          <li className={Style.navigationItem}>
+          <li className={Style.navigationItem}> 
+             <Link to='/'>
             <img src={img1} alt='Icon Image' className={Style.navigationIcon} />
             <img
               src={img2}
               alt='HomeChef Image'
               className={Style.navigationBrandImage}
             />
+            </Link>
           </li>
 
           <li className={Style.navigationItem}>

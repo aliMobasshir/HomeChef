@@ -27647,27 +27647,34 @@ const Navigation = ({ setQuery })=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: (0, _navigationModuleCssDefault.default).navigationItem,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _chef1SvgDefault.default),
-                                alt: "Icon Image",
-                                className: (0, _navigationModuleCssDefault.default).navigationIcon
-                            }, void 0, false, {
-                                fileName: "components/Navigation.jsx",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _homeChefSvgDefault.default),
-                                alt: "HomeChef Image",
-                                className: (0, _navigationModuleCssDefault.default).navigationBrandImage
-                            }, void 0, false, {
-                                fileName: "components/Navigation.jsx",
-                                lineNumber: 27,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _chef1SvgDefault.default),
+                                    alt: "Icon Image",
+                                    className: (0, _navigationModuleCssDefault.default).navigationIcon
+                                }, void 0, false, {
+                                    fileName: "components/Navigation.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _homeChefSvgDefault.default),
+                                    alt: "HomeChef Image",
+                                    className: (0, _navigationModuleCssDefault.default).navigationBrandImage
+                                }, void 0, false, {
+                                    fileName: "components/Navigation.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/Navigation.jsx",
+                            lineNumber: 26,
+                            columnNumber: 14
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "components/Navigation.jsx",
                         lineNumber: 25,
                         columnNumber: 11
@@ -27679,12 +27686,12 @@ const Navigation = ({ setQuery })=>{
                             setQuery: setQuery
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 35,
+                            lineNumber: 37,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, undefined),
                     !isSearchOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27694,7 +27701,7 @@ const Navigation = ({ setQuery })=>{
                         alt: "Click Here"
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27705,12 +27712,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 53,
+                            lineNumber: 55,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 52,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27721,12 +27728,12 @@ const Navigation = ({ setQuery })=>{
                             children: "About"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 58,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27737,12 +27744,12 @@ const Navigation = ({ setQuery })=>{
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "components/Navigation.jsx",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, undefined),
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27755,7 +27762,7 @@ const Navigation = ({ setQuery })=>{
                                 alt: ""
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 73,
+                                lineNumber: 75,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27764,7 +27771,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 79,
+                                lineNumber: 81,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27773,7 +27780,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 82,
+                                lineNumber: 84,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27782,7 +27789,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 85,
+                                lineNumber: 87,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27791,7 +27798,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 88,
+                                lineNumber: 90,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27800,7 +27807,7 @@ const Navigation = ({ setQuery })=>{
                                 children: "Sign In"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 91,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27809,13 +27816,13 @@ const Navigation = ({ setQuery })=>{
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "components/Navigation.jsx",
-                                lineNumber: 94,
+                                lineNumber: 96,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Navigation.jsx",
-                        lineNumber: 72,
+                        lineNumber: 74,
                         columnNumber: 13
                     }, undefined)
                 ]
@@ -36355,16 +36362,27 @@ const Footer = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "LogoImage",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: (0, _footerModuleCssDefault.default).image,
-                            src: (0, _homeChefLogoSvgDefault.default),
-                            alt: "HomeChef logo"
-                        }, void 0, false, {
-                            fileName: "components/Footer.jsx",
-                            lineNumber: 19,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
+                        children: [
+                            "  ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    onClick: handleButton,
+                                    className: (0, _footerModuleCssDefault.default).image,
+                                    src: (0, _homeChefLogoSvgDefault.default),
+                                    alt: "HomeChef logo"
+                                }, void 0, false, {
+                                    fileName: "components/Footer.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 11
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "components/Footer.jsx",
+                                lineNumber: 18,
+                                columnNumber: 39
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "components/Footer.jsx",
                         lineNumber: 18,
                         columnNumber: 9
@@ -36376,7 +36394,7 @@ const Footer = ()=>{
                                 children: "Navigation"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 23,
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36390,13 +36408,13 @@ const Footer = ()=>{
                                                 children: "Home "
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
-                                                lineNumber: 25,
+                                                lineNumber: 26,
                                                 columnNumber: 41
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 25,
+                                        lineNumber: 26,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36408,39 +36426,39 @@ const Footer = ()=>{
                                                 children: "About"
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
-                                                lineNumber: 26,
+                                                lineNumber: 27,
                                                 columnNumber: 41
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 26,
+                                        lineNumber: 27,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Privacy Policy"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 27,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                         children: "Terms And Conditions"
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 28,
+                                        lineNumber: 29,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 24,
+                                lineNumber: 25,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36450,7 +36468,7 @@ const Footer = ()=>{
                                 children: "Quick Links"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 33,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36461,23 +36479,6 @@ const Footer = ()=>{
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                                 to: "/showall/diet/vegan",
                                                 children: "Vegan Recipes"
-                                            }, void 0, false, {
-                                                fileName: "components/Footer.jsx",
-                                                lineNumber: 35,
-                                                columnNumber: 18
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/Footer.jsx",
-                                        lineNumber: 35,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                        children: [
-                                            " ",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                to: "/showall/type/salad",
-                                                children: "Healthy Salads "
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
                                                 lineNumber: 36,
@@ -36493,8 +36494,8 @@ const Footer = ()=>{
                                         children: [
                                             " ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                to: "/showall/cuisine/Indian",
-                                                children: "Indian Recipes "
+                                                to: "/showall/type/salad",
+                                                children: "Healthy Salads "
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
                                                 lineNumber: 37,
@@ -36510,8 +36511,8 @@ const Footer = ()=>{
                                         children: [
                                             " ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                to: "/exploreCategory",
-                                                children: "Explore Categories"
+                                                to: "/showall/cuisine/Indian",
+                                                children: "Indian Recipes "
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
                                                 lineNumber: 38,
@@ -36527,8 +36528,8 @@ const Footer = ()=>{
                                         children: [
                                             " ",
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                to: "/SearchIngredient",
-                                                children: "Search by Ingredients"
+                                                to: "/exploreCategory",
+                                                children: "Explore Categories"
                                             }, void 0, false, {
                                                 fileName: "components/Footer.jsx",
                                                 lineNumber: 39,
@@ -36539,17 +36540,34 @@ const Footer = ()=>{
                                         fileName: "components/Footer.jsx",
                                         lineNumber: 39,
                                         columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                        children: [
+                                            " ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                to: "/SearchIngredient",
+                                                children: "Search by Ingredients"
+                                            }, void 0, false, {
+                                                fileName: "components/Footer.jsx",
+                                                lineNumber: 40,
+                                                columnNumber: 18
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "components/Footer.jsx",
+                                        lineNumber: 40,
+                                        columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 34,
+                                lineNumber: 35,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36559,7 +36577,7 @@ const Footer = ()=>{
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 44,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36572,24 +36590,24 @@ const Footer = ()=>{
                                             children: "Write to us "
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 46,
+                                            lineNumber: 47,
                                             columnNumber: 41
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "components/Footer.jsx",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36599,7 +36617,7 @@ const Footer = ()=>{
                                 children: "Social (dummy)"
                             }, void 0, false, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36609,12 +36627,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-facebook"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 54,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 54,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36622,12 +36640,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-instagram"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 57,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 56,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36635,12 +36653,12 @@ const Footer = ()=>{
                                             className: "fa-brands fa-x-twitter"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 60,
+                                            lineNumber: 61,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 59,
+                                        lineNumber: 60,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36648,24 +36666,24 @@ const Footer = ()=>{
                                             className: "fa-brands fa-youtube"
                                         }, void 0, false, {
                                             fileName: "components/Footer.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "components/Footer.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "components/Footer.jsx",
-                                lineNumber: 52,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "components/Footer.jsx",
-                        lineNumber: 50,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -36680,12 +36698,12 @@ const Footer = ()=>{
                     className: (0, _footerModuleCssDefault.default).line
                 }, void 0, false, {
                     fileName: "components/Footer.jsx",
-                    lineNumber: 70,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/Footer.jsx",
-                lineNumber: 69,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36694,12 +36712,12 @@ const Footer = ()=>{
                     children: "\xa9 2024 HomeChef | All rights reserved."
                 }, void 0, false, {
                     fileName: "components/Footer.jsx",
-                    lineNumber: 73,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/Footer.jsx",
-                lineNumber: 72,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined)
         ]

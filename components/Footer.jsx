@@ -15,8 +15,9 @@ const Footer = () => {
   return (
     <div className={style.footer_container}>
       <div className={style.footerContent}>
-        <div className='LogoImage'>
-          <img className={style.image} src={image} alt='HomeChef logo' />
+        <div className='LogoImage' >  <Link to ='/'>
+          <img onClick={handleButton} className={style.image} src={image} alt='HomeChef logo' />
+          </Link>
         </div>
 
         <div className={style.navigation}>
