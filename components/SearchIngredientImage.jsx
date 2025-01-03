@@ -4,6 +4,7 @@ import Navigation from './Navigation.jsx';
 import Footer from './Footer.jsx';
 import apiImage from './api_error_image.gif';
 import style from './SearchIngredientImage.module.css';
+import SearchResult from './SearchResult.jsx';
 
 const apiKeys = [
   'cb830b43603108a2e1b0d922bac475a945a8404a',
@@ -21,6 +22,7 @@ const SearchIngredientImage = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentKeyIndex, setCurrentKeyIndex] = useState(0);
+  const [query, setQuery] = useState(''); // Track the query state for search
   const navigate = useNavigate();
 
   const fetchRecipes = async () => {
@@ -100,75 +102,84 @@ const SearchIngredientImage = () => {
 
   return (
     <div>
-      <Navigation />
-      <div className={style.instructionPageContainer}>
-        <div className={style.imagePara}>
-          <div className={style.image}>
-            <img src={recipes.image} alt={recipes.title || 'Recipe Image'} />
-          </div>
-          <div className={style.para}>
-            <h2>{recipes.title}</h2>
-            <p>{sanitizeAndLimitSummary(recipes.summary)}</p>
-          </div>
-        </div>
+      <Navigation setQuery={setQuery} />
 
-        <h1 className={style.ingredientHeading}>Ingredients needed:</h1>
-        <div className={style.ingredientContainer}>
-          {recipes.extendedIngredients.map((ingredient, index) => (
-            <div key={index} className={style.ingredient}>
-              <p>{ingredient.name}</p>
-              <img
-                src={`${baseImageUrl}${ingredient.image}`}
-                alt={ingredient.name}
-                className={style.ingredientImage}
-              />
-            </div>
-          ))}
-        </div>
-
-        <h1 className={style.instructionsHeading}>Instructions:</h1>
-        {recipes.analyzedInstructions?.length > 0 ? (
-          recipes.analyzedInstructions.map((instruction, instructionIndex) =>
-            instruction.steps?.length > 0 && (
-              <div key={instructionIndex} className={style.instructionsContainer}>
-                {instruction.steps.map((step, index) => (
-                  <div key={index} className={style.instructionContainer}>
-                    <div className={style.instruction}>
-                      <h2>Step {index + 1}:</h2>
-                      <p>{step.step}</p>
-                    </div>
-
-                    {step.ingredients?.length > 0 && (
-                      <div className={style.stepIngredients}>
-                        <h3 className={style.ingredientStep}>Ingredients used here:</h3>
-                        <ul>
-                          {step.ingredients.map((ingredient, ingredientIndex) => (
-                            <li key={ingredientIndex}>{ingredient.name}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {step.equipment?.length > 0 && (
-                      <div className={style.stepEquipment}>
-                        <h3 className={style.equipmentStep}>Equipment needed:</h3>
-                        <ul>
-                          {step.equipment.map((equipment, equipmentIndex) => (
-                            <li key={equipmentIndex}>{equipment.name}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                ))}
+      {query ? (
+        <>
+          <SearchResult query={query} />
+        </>
+      ) : (
+        <>
+          <div className={style.instructionPageContainer}>
+            <div className={style.imagePara}>
+              <div className={style.image}>
+                <img src={recipes.image} alt={recipes.title || 'Recipe Image'} />
               </div>
-            )
-          )
-        ) : (
-          <p>No instructions available.</p>
-        )}
-      </div>
-      <Footer />
+              <div className={style.para}>
+                <h2>{recipes.title}</h2>
+                <p>{sanitizeAndLimitSummary(recipes.summary)}</p>
+              </div>
+            </div>
+
+            <h1 className={style.ingredientHeading}>Ingredients needed:</h1>
+            <div className={style.ingredientContainer}>
+              {recipes.extendedIngredients.map((ingredient, index) => (
+                <div key={index} className={style.ingredient}>
+                  <p>{ingredient.name}</p>
+                  <img
+                    src={`${baseImageUrl}${ingredient.image}`}
+                    alt={ingredient.name}
+                    className={style.ingredientImage}
+                  />
+                </div>
+              ))}
+            </div>
+
+            <h1 className={style.instructionsHeading}>Instructions:</h1>
+            {recipes.analyzedInstructions?.length > 0 ? (
+              recipes.analyzedInstructions.map((instruction, instructionIndex) =>
+                instruction.steps?.length > 0 && (
+                  <div key={instructionIndex} className={style.instructionsContainer}>
+                    {instruction.steps.map((step, index) => (
+                      <div key={index} className={style.instructionContainer}>
+                        <div className={style.instruction}>
+                          <h2>Step {index + 1}:</h2>
+                          <p>{step.step}</p>
+                        </div>
+
+                        {step.ingredients?.length > 0 && (
+                          <div className={style.stepIngredients}>
+                            <h3 className={style.ingredientStep}>Ingredients used here:</h3>
+                            <ul>
+                              {step.ingredients.map((ingredient, ingredientIndex) => (
+                                <li key={ingredientIndex}>{ingredient.name}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {step.equipment?.length > 0 && (
+                          <div className={style.stepEquipment}>
+                            <h3 className={style.equipmentStep}>Equipment needed:</h3>
+                            <ul>
+                              {step.equipment.map((equipment, equipmentIndex) => (
+                                <li key={equipmentIndex}>{equipment.name}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )
+              )
+            ) : (
+              <p>No instructions available.</p>
+            )}
+          </div>
+          <Footer />
+        </>
+      )}
     </div>
   );
 };
