@@ -18,7 +18,6 @@ const About = () => {
 
   return (
     <div className='about'>
-      <Navigation setQuery={setQuery} />
       <div className={style.aboutwebsite}>
         <div className={style.HeaderPage}>
           <h1>About HOMECHEF</h1>

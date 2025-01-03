@@ -41,7 +41,7 @@ function RecipeList ({ query }) {
 
           if (newIndex < apiKeys.length) {
             // Move current key to `usedKeys` and update `currentKeyIndex`
-            console.log('Api', apiKeys[currentKeyIndex])
+            console.log('ErrorAPI', apiKeys[currentKeyIndex])
             setUsedKeys([...usedKeys, currentApiKey])
             setCurrentKeyIndex(newIndex)
           } else {
