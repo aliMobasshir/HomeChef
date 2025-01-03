@@ -35145,18 +35145,28 @@ const Search = ({ setSearchOpen, setQuery })=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _searchModuleCssDefault.default).searchDiv,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    className: (0, _searchModuleCssDefault.default).searchInput,
-                    type: "text",
-                    placeholder: "Search for recipes",
-                    value: localQuery,
-                    onChange: handleInput
-                }, void 0, false, {
-                    fileName: "components/Search.jsx",
-                    lineNumber: 33,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _magnifyingGlassSvgDefault.default),
+                        alt: "Click to magnify"
+                    }, void 0, false, {
+                        fileName: "components/Search.jsx",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: (0, _searchModuleCssDefault.default).searchInput,
+                        type: "text",
+                        placeholder: "Search for recipes",
+                        value: localQuery,
+                        onChange: handleInput
+                    }, void 0, false, {
+                        fileName: "components/Search.jsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "components/Search.jsx",
                 lineNumber: 31,
                 columnNumber: 7
@@ -37660,23 +37670,25 @@ var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = 'f2fbb965309246e7906f64251396be87';
-//  cb830b43603108a2e1b0d922bac475a945a8404a
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
+const apiKeys = [
+    '834e4826627e40619840c9f299b31f36',
+    'f2fbb965309246e7906f64251396be87',
+    '5ce733c6c24d4454ab2395b906ae5dc1',
+    '5253113cb6ff4e67ad11c72ec6ae2ec0',
+    'd2a320ed5a3a463ca1b8dce923cd49dc',
+    'af3ad633e574425c90e2c0ef4a4fefc0',
+    '3544e0a87f98468883e9169172546ac1',
+    '0d0e212f1a904e9cb772072f49167a4b',
+    '716d2d891ccc4e788b471c105f5928e8',
+    '3036c2facd2447e380f01fd8061794c4'
+];
 const SearchResult = ({ query })=>{
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]); // State to store fetched recipes
     const [error, setError] = (0, _react.useState)(null); // State to handle errors
     const [loading, setLoading] = (0, _react.useState)(false); // State to handle loading
+    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0); // Track the current API key index
+    const [usedKeys, setUsedKeys] = (0, _react.useState)([]); // Track used keys
     // Fetch recipes when query changes
     (0, _react.useEffect)(()=>{
         if (query.trim() === '') {
@@ -37686,9 +37698,28 @@ const SearchResult = ({ query })=>{
         const fetchRecipes = async ()=>{
             setLoading(true); // Set loading to true at the start of fetch
             setError(null); // Reset error state
+            const currentApiKey = apiKeys[currentKeyIndex];
+            const endpoint = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${currentApiKey}&number=100`;
             try {
-                const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${apiKey}&number=100`);
-                if (!response.ok) throw new Error(`An error occurred: ${response.status}`);
+                console.log(`Using API key: ${currentApiKey}`); // Log the current API key being used
+                const response = await fetch(endpoint);
+                if (!response.ok) {
+                    console.log(`Error with API key: ${currentApiKey}, Status: ${response.status}`); // Log the error status
+                    // Rotate API key on 401 or 402 errors
+                    if (response.status === 401 || response.status === 402) {
+                        const newIndex = currentKeyIndex + 1;
+                        if (newIndex < apiKeys.length) {
+                            setUsedKeys([
+                                ...usedKeys,
+                                currentApiKey
+                            ]); // Add to used keys
+                            setCurrentKeyIndex(newIndex); // Rotate to the next key
+                        } else setError('All API keys are exhausted.');
+                        return; // Exit to retry with the next key
+                    }
+                    throw new Error(`An error occurred: ${response.status}`);
+                }
+                console.log(`Successful fetch with API key: ${currentApiKey}`); // Log successful fetch
                 const data = await response.json();
                 if (data.results) setRecipes(data.results); // Set fetched recipes
                 else setRecipes([]); // If no recipes found, clear the results
@@ -37700,8 +37731,9 @@ const SearchResult = ({ query })=>{
         };
         fetchRecipes();
     }, [
-        query
-    ]); // Re-run the effect when query changes
+        query,
+        currentKeyIndex
+    ]); // Re-run the effect when query or API key index changes
     // Render loading indicator while fetching data
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -37712,25 +37744,25 @@ const SearchResult = ({ query })=>{
                     children: "Search Results:"
                 }, void 0, false, {
                     fileName: "components/SearchResult.jsx",
-                    lineNumber: 67,
+                    lineNumber: 85,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchResult.jsx",
-                lineNumber: 66,
+                lineNumber: 84,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _recipeListModuleCssDefault.default).loader
             }, void 0, false, {
                 fileName: "components/SearchResult.jsx",
-                lineNumber: 69,
+                lineNumber: 87,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/SearchResult.jsx",
-        lineNumber: 65,
+        lineNumber: 83,
         columnNumber: 7
     }, undefined);
     // Render specific error messages based on the error code
@@ -37746,20 +37778,20 @@ const SearchResult = ({ query })=>{
                     className: (0, _recipeListModuleCssDefault.default).icon
                 }, void 0, false, {
                     fileName: "components/SearchResult.jsx",
-                    lineNumber: 88,
+                    lineNumber: 106,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: errorMessage
                 }, void 0, false, {
                     fileName: "components/SearchResult.jsx",
-                    lineNumber: 89,
+                    lineNumber: 107,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "components/SearchResult.jsx",
-            lineNumber: 87,
+            lineNumber: 105,
             columnNumber: 7
         }, undefined);
     }
@@ -37772,7 +37804,7 @@ const SearchResult = ({ query })=>{
                 children: "Search Results:"
             }, void 0, false, {
                 fileName: "components/SearchResult.jsx",
-                lineNumber: 97,
+                lineNumber: 115,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37787,52 +37819,52 @@ const SearchResult = ({ query })=>{
                                     alt: recipe.title
                                 }, void 0, false, {
                                     fileName: "components/SearchResult.jsx",
-                                    lineNumber: 103,
-                                    columnNumber: 15
+                                    lineNumber: 121,
+                                    columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                         children: recipe.title
                                     }, void 0, false, {
                                         fileName: "components/SearchResult.jsx",
-                                        lineNumber: 105,
-                                        columnNumber: 17
+                                        lineNumber: 123,
+                                        columnNumber: 19
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "components/SearchResult.jsx",
-                                    lineNumber: 104,
-                                    columnNumber: 15
+                                    lineNumber: 122,
+                                    columnNumber: 17
                                 }, undefined)
                             ]
-                        }, recipe.id, true, {
+                        }, void 0, true, {
                             fileName: "components/SearchResult.jsx",
-                            lineNumber: 102,
-                            columnNumber: 13
+                            lineNumber: 120,
+                            columnNumber: 15
                         }, undefined)
-                    }, void 0, false, {
+                    }, recipe.id, false, {
                         fileName: "components/SearchResult.jsx",
-                        lineNumber: 101,
-                        columnNumber: 14
+                        lineNumber: 119,
+                        columnNumber: 13
                     }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "No recipes found."
                 }, void 0, false, {
                     fileName: "components/SearchResult.jsx",
-                    lineNumber: 111,
+                    lineNumber: 129,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchResult.jsx",
-                lineNumber: 98,
+                lineNumber: 116,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "components/SearchResult.jsx",
-        lineNumber: 96,
+        lineNumber: 114,
         columnNumber: 5
     }, undefined);
 };
-_s(SearchResult, "7f2ZpRkcyfAf6MIO29/o7zTmNOM=");
+_s(SearchResult, "OaJqSa9E1FTSVRuftr34Q01udE8=");
 _c = SearchResult;
 exports.default = SearchResult;
 var _c;
@@ -39011,18 +39043,12 @@ var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
-const apiKey = '5253113cb6ff4e67ad11c72ec6ae2ec0';
-//  cb830b43603108a2e1b0d922bac475a945a8404a
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
+const apiKeys = [
+    '834e4826627e40619840c9f299b31f36',
+    'f2fbb965309246e7906f64251396be87',
+    '5ce733c6c24d4454ab2395b906ae5dc1',
+    '5253113cb6ff4e67ad11c72ec6ae2ec0'
+];
 const SearchIngredient = ()=>{
     _s();
     const [query, setQuery] = (0, _react.useState)('');
@@ -39033,6 +39059,8 @@ const SearchIngredient = ()=>{
     const [error, setError] = (0, _react.useState)(null);
     const [showAllData, setShowAllData] = (0, _react.useState)(false);
     const [shouldFetchData, setShouldFetchData] = (0, _react.useState)(false);
+    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0);
+    const [usedKeys, setUsedKeys] = (0, _react.useState)([]);
     const navigate = (0, _reactRouterDom.useNavigate)();
     (0, _react.useEffect)(()=>{
         window.scrollTo({
@@ -39061,16 +39089,34 @@ const SearchIngredient = ()=>{
         } else setShowAllData(false);
     };
     const selectedData = selectedIngredients.toString();
-    const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedData}&apiKey=${apiKey}&number=100`;
     const fetchRecipes = async ()=>{
         if (!selectedData) {
             setRecipes([]);
             return;
         }
         setLoading(true);
+        const currentApiKey = apiKeys[currentKeyIndex];
+        const endpoint = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${selectedData}&apiKey=${currentApiKey}&number=100`;
         try {
             const response = await fetch(endpoint);
-            if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
+            if (!response.ok) {
+                // Rotate API key if 401 or 402 status codes are encountered
+                if (response.status === 401 || response.status === 402) {
+                    const newIndex = currentKeyIndex + 1;
+                    if (newIndex < apiKeys.length) {
+                        setUsedKeys([
+                            ...usedKeys,
+                            currentApiKey
+                        ]);
+                        setCurrentKeyIndex(newIndex);
+                        return;
+                    } else {
+                        setError('All API keys are exhausted.');
+                        return;
+                    }
+                }
+                throw new Error(`An error has occurred: ${response.status}`);
+            }
             const data = await response.json();
             setRecipes(data);
         } catch (error) {
@@ -39102,7 +39148,7 @@ const SearchIngredient = ()=>{
                 setQuery: setQuery
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 116,
+                lineNumber: 124,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39111,12 +39157,12 @@ const SearchIngredient = ()=>{
                     children: "Find recipes that use as many of the given ingredients as possible and require as few additional ingredients as possible."
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 118,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 117,
+                lineNumber: 125,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39129,7 +39175,7 @@ const SearchIngredient = ()=>{
                         placeholder: "Search by ingredients"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 125,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39138,7 +39184,7 @@ const SearchIngredient = ()=>{
                         children: "Select All"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 131,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39151,7 +39197,7 @@ const SearchIngredient = ()=>{
                         children: "Clear all"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 137,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39160,13 +39206,13 @@ const SearchIngredient = ()=>{
                         children: "Show results"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 147,
+                        lineNumber: 155,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 124,
+                lineNumber: 132,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39178,7 +39224,7 @@ const SearchIngredient = ()=>{
                             children: "Selected :"
                         }, void 0, false, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 155,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, undefined),
                         selectedIngredients.map((ingredient, index)=>{
@@ -39192,7 +39238,7 @@ const SearchIngredient = ()=>{
                                         checked: selectedIngredients.includes(ingredient)
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 159,
+                                        lineNumber: 167,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39200,25 +39246,25 @@ const SearchIngredient = ()=>{
                                         children: ingredient
                                     }, void 0, false, {
                                         fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 165,
+                                        lineNumber: 173,
                                         columnNumber: 19
                                     }, undefined)
                                 ]
                             }, index, true, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 158,
+                                lineNumber: 166,
                                 columnNumber: 17
                             }, undefined);
                         })
                     ]
                 }, void 0, true, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 154,
+                    lineNumber: 162,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 152,
+                lineNumber: 160,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39235,7 +39281,7 @@ const SearchIngredient = ()=>{
                                     checked: selectedIngredients.includes(ingredient)
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 180,
+                                    lineNumber: 188,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
@@ -39243,29 +39289,29 @@ const SearchIngredient = ()=>{
                                     children: ingredient
                                 }, void 0, false, {
                                     fileName: "components/SearchIngredient.jsx",
-                                    lineNumber: 186,
+                                    lineNumber: 194,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "components/SearchIngredient.jsx",
-                            lineNumber: 179,
+                            lineNumber: 187,
                             columnNumber: 15
                         }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: "No ingredients found"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 190,
+                        lineNumber: 198,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "components/SearchIngredient.jsx",
-                    lineNumber: 176,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 175,
+                lineNumber: 183,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39275,14 +39321,14 @@ const SearchIngredient = ()=>{
                         children: "Resulted Recipes:"
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 196,
+                        lineNumber: 204,
                         columnNumber: 9
                     }, undefined),
                     loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: (0, _searchIngredientModuleCssDefault.default).loader
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 198,
+                        lineNumber: 206,
                         columnNumber: 21
                     }, undefined),
                     !loading && !error && selectedIngredients.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39290,7 +39336,7 @@ const SearchIngredient = ()=>{
                         children: "No recipes to display. Please select ingredients and try again."
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 201,
+                        lineNumber: 209,
                         columnNumber: 11
                     }, undefined),
                     !loading && !error && selectedIngredients.length > 0 && filterDishesData.length === 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39298,58 +39344,40 @@ const SearchIngredient = ()=>{
                         children: "No recipes match your selected ingredients. Try different ingredients."
                     }, void 0, false, {
                         fileName: "components/SearchIngredient.jsx",
-                        lineNumber: 210,
+                        lineNumber: 218,
                         columnNumber: 13
                     }, undefined),
                     !loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                         children: [
-                            error?.includes('402') && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: (0, _searchIngredientModuleCssDefault.default).errorContainer,
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                src: (0, _apiErrorImageGifDefault.default),
-                                                alt: "arrow",
-                                                className: (0, _searchIngredientModuleCssDefault.default).icon
-                                            }, void 0, false, {
-                                                fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 221,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                children: "Failed to fetch recipes Data. Please Try after Some Time"
-                                            }, void 0, false, {
-                                                fileName: "components/SearchIngredient.jsx",
-                                                lineNumber: 222,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 220,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: (0, _searchIngredientModuleCssDefault.default).btnContainer,
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                            className: (0, _searchIngredientModuleCssDefault.default).btn,
-                                            onClick: ()=>navigate(-1),
-                                            children: "Go Back"
+                            error?.includes('All API keys are exhausted.') && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: (0, _searchIngredientModuleCssDefault.default).errorContainer,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _apiErrorImageGifDefault.default),
+                                            alt: "Error",
+                                            className: (0, _searchIngredientModuleCssDefault.default).icon
                                         }, void 0, false, {
                                             fileName: "components/SearchIngredient.jsx",
-                                            lineNumber: 228,
+                                            lineNumber: 229,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "All API keys are exhausted. Please try again later."
+                                        }, void 0, false, {
+                                            fileName: "components/SearchIngredient.jsx",
+                                            lineNumber: 230,
                                             columnNumber: 19
                                         }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "components/SearchIngredient.jsx",
-                                        lineNumber: 227,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "components/SearchIngredient.jsx",
+                                    lineNumber: 228,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
                                 fileName: "components/SearchIngredient.jsx",
-                                lineNumber: 219,
+                                lineNumber: 227,
                                 columnNumber: 15
                             }, undefined),
                             (error?.includes('401') || error?.includes('503') || error?.includes('504')) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39359,7 +39387,7 @@ const SearchIngredient = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                                 src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
-                                                alt: "arrow",
+                                                alt: "Error",
                                                 className: (0, _searchIngredientModuleCssDefault.default).icon
                                             }, void 0, false, {
                                                 fileName: "components/SearchIngredient.jsx",
@@ -39448,7 +39476,7 @@ const SearchIngredient = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "components/SearchIngredient.jsx",
-                lineNumber: 195,
+                lineNumber: 203,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
@@ -39459,11 +39487,11 @@ const SearchIngredient = ()=>{
         ]
     }, void 0, true, {
         fileName: "components/SearchIngredient.jsx",
-        lineNumber: 115,
+        lineNumber: 123,
         columnNumber: 5
     }, undefined);
 };
-_s(SearchIngredient, "uS6e11/4ngt0psF/qgTjxYcB7A0=", false, function() {
+_s(SearchIngredient, "wIta7mxnhg5kCnQt5ts88+2o5kA=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -41185,125 +41213,68 @@ var _reactRouterDom = require("react-router-dom");
 var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _s = $RefreshSig$();
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1';
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
-const endpoint = `https://api.spoonacular.com/recipes/complexSearch?type=dessert&apiKey=${apiKey}&number=9&offset=21`;
+const apiKeys = [
+    '834e4826627e40619840c9f299b31f36',
+    'f2fbb965309246e7906f64251396be87',
+    '5ce733c6c24d4454ab2395b906ae5dc1',
+    '5253113cb6ff4e67ad11c72ec6ae2ec0'
+];
 function RecommendedDesserts({ query }) {
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]);
-    const [error, setError] = (0, _react.useState)();
+    const [error, setError] = (0, _react.useState)(null);
     const [loading, setLoading] = (0, _react.useState)(true);
+    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0) // Track the current API key index
+    ;
+    const [usedKeys, setUsedKeys] = (0, _react.useState)([]) // Track used keys
+    ;
     const type = 'type';
     const name = 'dessert';
-    (0, _react.useEffect)(()=>{
-        async function fetchRecipes() {
-            try {
-                const response = await fetch(endpoint);
-                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
-                const data = await response.json();
-                setRecipes(data.results);
-            } catch (error) {
-                setError(error.message);
-            } finally{
-                setLoading(false) // Ensure loading is false regardless of success or error
+    const fetchRecipes = async ()=>{
+        setLoading(true);
+        setError(null);
+        const currentApiKey = apiKeys[currentKeyIndex];
+        const endpoint = `https://api.spoonacular.com/recipes/complexSearch?type=dessert&apiKey=${currentApiKey}&number=9` // Fixed endpoint
+        ;
+        try {
+            console.log(`Using API key: ${currentApiKey}`) // Log the current API key being used
+            ;
+            const response = await fetch(endpoint);
+            if (!response.ok) {
+                console.log(`Error with API key: ${currentApiKey}, Status: ${response.status}`) // Log the error status
                 ;
+                // Rotate API key on 401 or 402 errors
+                if (response.status === 401 || response.status === 402) {
+                    const newIndex = currentKeyIndex + 1;
+                    if (newIndex < apiKeys.length) {
+                        setUsedKeys([
+                            ...usedKeys,
+                            currentApiKey
+                        ]) // Add to used keys
+                        ;
+                        setCurrentKeyIndex(newIndex) // Rotate to the next key
+                        ;
+                    } else setError('All API keys are exhausted.');
+                    return; // Exit to retry with the next key
+                }
+                throw new Error(`An error has occurred: ${response.status}`);
             }
+            console.log(`Successful fetch with API key: ${currentApiKey}`) // Log successful fetch
+            ;
+            const data = await response.json();
+            setRecipes(data.results || []);
+        } catch (error) {
+            setError(error.message);
+        } finally{
+            setLoading(false);
         }
+    };
+    (0, _react.useEffect)(()=>{
         fetchRecipes();
-    }, []);
-    // <h1 className={Style.heading}>Recommended in Desserts</h1>
-    // Render 401 error image if the error status is 401
-    if (error?.includes('402')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _popularModuleCssDefault.default).heading,
-                children: "Recommended in Desserts"
-            }, void 0, false, {
-                fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 51,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _popularModuleCssDefault.default).errorContainer,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _apiErrorImageGifDefault.default),
-                        alt: "arrow",
-                        className: (0, _popularModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 53,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Failed to fetch recipes Data Due to an Api Error. Please Try after Some Time"
-                    }, void 0, false, {
-                        fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 54,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 52,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 50,
-        columnNumber: 7
-    }, this);
-    if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _popularModuleCssDefault.default).heading,
-                children: "Recommended in Desserts"
-            }, void 0, false, {
-                fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 69,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _popularModuleCssDefault.default).errorContainer,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
-                        alt: "arrow",
-                        className: (0, _popularModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 71,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Failed to fetch recipe data due to a server error. Please try again later."
-                    }, void 0, false, {
-                        fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 77,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 70,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 68,
-        columnNumber: 7
-    }, this);
+    }, [
+        currentKeyIndex
+    ]) // Re-fetch when API key index changes
+    ;
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41311,28 +41282,107 @@ function RecommendedDesserts({ query }) {
                 children: "Recommended in Desserts"
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 88,
+                lineNumber: 73,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _popularModuleCssDefault.default).loader
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 89,
+                lineNumber: 74,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 87,
+        lineNumber: 72,
         columnNumber: 7
     }, this);
-    // if (loading)
-    //   return (
-    //     <div className={Style.loaderContainer}>
-    //       <p className={Style.loader}></p>
-    //     </div>
-    //   )
+    if (error?.includes('All API keys are exhausted.')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _popularModuleCssDefault.default).heading,
+                children: "Recommended in Desserts"
+            }, void 0, false, {
+                fileName: "components/RecommendedDesserts.jsx",
+                lineNumber: 81,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _popularModuleCssDefault.default).errorContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _apiErrorImageGifDefault.default),
+                        alt: "Error",
+                        className: (0, _popularModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/RecommendedDesserts.jsx",
+                        lineNumber: 83,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "All API keys are exhausted. Please try again later."
+                    }, void 0, false, {
+                        fileName: "components/RecommendedDesserts.jsx",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/RecommendedDesserts.jsx",
+                lineNumber: 82,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/RecommendedDesserts.jsx",
+        lineNumber: 80,
+        columnNumber: 7
+    }, this);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _popularModuleCssDefault.default).heading,
+                children: "Recommended in Desserts"
+            }, void 0, false, {
+                fileName: "components/RecommendedDesserts.jsx",
+                lineNumber: 92,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _popularModuleCssDefault.default).errorContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
+                        alt: "Error",
+                        className: (0, _popularModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/RecommendedDesserts.jsx",
+                        lineNumber: 94,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            "Error: ",
+                            error
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/RecommendedDesserts.jsx",
+                        lineNumber: 99,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/RecommendedDesserts.jsx",
+                lineNumber: 93,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/RecommendedDesserts.jsx",
+        lineNumber: 91,
+        columnNumber: 7
+    }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -41341,7 +41391,7 @@ function RecommendedDesserts({ query }) {
                 children: "Recommended in Desserts"
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 106,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41359,7 +41409,7 @@ function RecommendedDesserts({ query }) {
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/RecommendedDesserts.jsx",
-                                            lineNumber: 113,
+                                            lineNumber: 117,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -41367,34 +41417,34 @@ function RecommendedDesserts({ query }) {
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/RecommendedDesserts.jsx",
-                                                lineNumber: 115,
+                                                lineNumber: 119,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "components/RecommendedDesserts.jsx",
-                                            lineNumber: 114,
+                                            lineNumber: 118,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "components/RecommendedDesserts.jsx",
-                                    lineNumber: 112,
+                                    lineNumber: 116,
                                     columnNumber: 17
                                 }, this)
                             }, recipe.id, false, {
                                 fileName: "components/RecommendedDesserts.jsx",
-                                lineNumber: 111,
+                                lineNumber: 115,
                                 columnNumber: 15
                             }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: "No recipes found."
                         }, void 0, false, {
                             fileName: "components/RecommendedDesserts.jsx",
-                            lineNumber: 121,
+                            lineNumber: 125,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 108,
+                        lineNumber: 112,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -41404,35 +41454,35 @@ function RecommendedDesserts({ query }) {
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/RecommendedDesserts.jsx",
-                            lineNumber: 126,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedDesserts.jsx",
-                        lineNumber: 125,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 107,
+                lineNumber: 111,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _popularModuleCssDefault.default).horizontalline
             }, void 0, false, {
                 fileName: "components/RecommendedDesserts.jsx",
-                lineNumber: 130,
+                lineNumber: 134,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/RecommendedDesserts.jsx",
-        lineNumber: 105,
+        lineNumber: 109,
         columnNumber: 5
     }, this);
 }
-_s(RecommendedDesserts, "aHz/kxaxcOwpJKzcutJ4O3P12U8=");
+_s(RecommendedDesserts, "Vq/iQ192mTZVGB0JbcgosGloZOA=");
 _c = RecommendedDesserts;
 exports.default = RecommendedDesserts;
 var _c;
@@ -41461,125 +41511,58 @@ var _reactRouterDom = require("react-router-dom");
 var _apiErrorImageGif = require("./api_error_image.gif");
 var _apiErrorImageGifDefault = parcelHelpers.interopDefault(_apiErrorImageGif);
 var _s = $RefreshSig$();
-const apiKey = '5ce733c6c24d4454ab2395b906ae5dc1' //af3ad633e574425c90e2c0ef4a4fefc0 //3544e0a87f98468883e9169172546ac1 0d0e212f1a904e9cb772072f49167a4b 716d2d891ccc4e788b471c105f5928e8
-;
-// const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${apiKey}&number=9&offset=5`
-// 834e4826627e40619840c9f299b31f36
-// f2fbb965309246e7906f64251396be87
-// 5ce733c6c24d4454ab2395b906ae5dc1
-// 5253113cb6ff4e67ad11c72ec6ae2ec0
-// d2a320ed5a3a463ca1b8dce923cd49dc
-// af3ad633e574425c90e2c0ef4a4fefc0
-// 3544e0a87f98468883e9169172546ac1
-// 0d0e212f1a904e9cb772072f49167a4b
-// 716d2d891ccc4e788b471c105f5928e8
-// 3036c2facd2447e380f01fd8061794c4
-const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${apiKey}&number=9&offset=21`;
+const apiKeys = [
+    '834e4826627e40619840c9f299b31f36',
+    'f2fbb965309246e7906f64251396be87',
+    '5ce733c6c24d4454ab2395b906ae5dc1',
+    '5253113cb6ff4e67ad11c72ec6ae2ec0'
+];
 function RecommendedWhole30({ query }) {
     _s();
     const [recipes, setRecipes] = (0, _react.useState)([]);
     const [error, setError] = (0, _react.useState)(null);
     const [loading, setLoading] = (0, _react.useState)(true);
+    const [currentKeyIndex, setCurrentKeyIndex] = (0, _react.useState)(0);
+    const [usedKeys, setUsedKeys] = (0, _react.useState)([]);
     const type = 'type';
     const name = 'whole30';
-    (0, _react.useEffect)(()=>{
-        async function fetchRecipes() {
-            try {
-                const response = await fetch(endpoint);
-                if (!response.ok) throw new Error(`An error has occurred: ${response.status}`);
-                const data = await response.json();
-                setRecipes(data.results);
-                setLoading(false);
-            } catch (error) {
-                setError(error.message);
+    const fetchRecipes = async ()=>{
+        setLoading(true);
+        setError(null);
+        const currentApiKey = apiKeys[currentKeyIndex];
+        const endpoint = `https://api.spoonacular.com/recipes/complexSearch?diet=whole30&apiKey=${currentApiKey}&number=9`;
+        try {
+            console.log(`Using API key: ${currentApiKey}`);
+            const response = await fetch(endpoint);
+            if (!response.ok) {
+                console.log(`Error with API key: ${currentApiKey}, Status: ${response.status}`);
+                if (response.status === 401 || response.status === 402) {
+                    const newIndex = currentKeyIndex + 1;
+                    if (newIndex < apiKeys.length) {
+                        setUsedKeys([
+                            ...usedKeys,
+                            currentApiKey
+                        ]);
+                        setCurrentKeyIndex(newIndex);
+                    } else setError('All API keys are exhausted.');
+                    return;
+                }
+                throw new Error(`An error has occurred: ${response.status}`);
             }
+            console.log(`Successful fetch with API key: ${currentApiKey}`);
+            const data = await response.json();
+            setRecipes(data.results || []);
+        } catch (error) {
+            setError(error.message);
+        } finally{
+            setLoading(false);
         }
+    };
+    (0, _react.useEffect)(()=>{
         fetchRecipes();
-    }, []);
-    // /
-    // Render 401 error image if the error status is 401
-    if (error?.includes('402')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _popularModuleCssDefault.default).heading,
-                children: "Recommended in Whole30 Diet"
-            }, void 0, false, {
-                fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 52,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _popularModuleCssDefault.default).errorContainer,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _apiErrorImageGifDefault.default),
-                        alt: "arrow",
-                        className: (0, _popularModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 54,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Failed to fetch recipes Data. Please Try after Some Time"
-                    }, void 0, false, {
-                        fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 56,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 53,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/RecommendedWhole30.jsx",
-        lineNumber: 51,
-        columnNumber: 7
-    }, this);
-    if (error?.includes('401') || error?.includes('503') || error?.includes('504')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: (0, _popularModuleCssDefault.default).heading,
-                children: "Recommended in Whole30 Diet"
-            }, void 0, false, {
-                fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 68,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: (0, _popularModuleCssDefault.default).errorContainer,
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
-                        alt: "arrow",
-                        className: (0, _popularModuleCssDefault.default).icon
-                    }, void 0, false, {
-                        fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 70,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Failed to fetch recipe data due to a server error. Please try again later."
-                    }, void 0, false, {
-                        fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 76,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 69,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/RecommendedWhole30.jsx",
-        lineNumber: 67,
-        columnNumber: 7
-    }, this);
+    }, [
+        currentKeyIndex
+    ]);
     if (loading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41587,20 +41570,105 @@ function RecommendedWhole30({ query }) {
                 children: "Recommended in Whole30 Diet"
             }, void 0, false, {
                 fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 87,
+                lineNumber: 69,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: (0, _popularModuleCssDefault.default).loader
             }, void 0, false, {
                 fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 88,
+                lineNumber: 70,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/RecommendedWhole30.jsx",
-        lineNumber: 86,
+        lineNumber: 68,
+        columnNumber: 7
+    }, this);
+    if (error?.includes('All API keys are exhausted.')) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _popularModuleCssDefault.default).heading,
+                children: "Recommended in Whole30 Diet"
+            }, void 0, false, {
+                fileName: "components/RecommendedWhole30.jsx",
+                lineNumber: 78,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _popularModuleCssDefault.default).errorContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _apiErrorImageGifDefault.default),
+                        alt: "Error",
+                        className: (0, _popularModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/RecommendedWhole30.jsx",
+                        lineNumber: 80,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "All API keys are exhausted. Please try again later."
+                    }, void 0, false, {
+                        fileName: "components/RecommendedWhole30.jsx",
+                        lineNumber: 81,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/RecommendedWhole30.jsx",
+                lineNumber: 79,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/RecommendedWhole30.jsx",
+        lineNumber: 77,
+        columnNumber: 7
+    }, this);
+    if (error) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: (0, _popularModuleCssDefault.default).heading,
+                children: "Recommended in Whole30 Diet"
+            }, void 0, false, {
+                fileName: "components/RecommendedWhole30.jsx",
+                lineNumber: 90,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _popularModuleCssDefault.default).errorContainer,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: "https://cdn.dribbble.com/users/19381/screenshots/3471308/dribbble-500-animated.gif",
+                        alt: "Error",
+                        className: (0, _popularModuleCssDefault.default).icon
+                    }, void 0, false, {
+                        fileName: "components/RecommendedWhole30.jsx",
+                        lineNumber: 92,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            "Error: ",
+                            error
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/RecommendedWhole30.jsx",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/RecommendedWhole30.jsx",
+                lineNumber: 91,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/RecommendedWhole30.jsx",
+        lineNumber: 89,
         columnNumber: 7
     }, this);
     const filteredRecipes = recipes.filter((recipe)=>recipe.title.toLowerCase().includes(query.toLowerCase()));
@@ -41611,7 +41679,7 @@ function RecommendedWhole30({ query }) {
                 children: "Recommended in Whole30 Diet"
             }, void 0, false, {
                 fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 99,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41629,7 +41697,7 @@ function RecommendedWhole30({ query }) {
                                             alt: recipe.title
                                         }, void 0, false, {
                                             fileName: "components/RecommendedWhole30.jsx",
-                                            lineNumber: 106,
+                                            lineNumber: 116,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -41637,34 +41705,34 @@ function RecommendedWhole30({ query }) {
                                                 children: recipe.title
                                             }, void 0, false, {
                                                 fileName: "components/RecommendedWhole30.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 118,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "components/RecommendedWhole30.jsx",
-                                            lineNumber: 107,
+                                            lineNumber: 117,
                                             columnNumber: 19
                                         }, this)
                                     ]
-                                }, recipe.id, true, {
+                                }, void 0, true, {
                                     fileName: "components/RecommendedWhole30.jsx",
-                                    lineNumber: 105,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, this)
-                            }, void 0, false, {
+                            }, recipe.id, false, {
                                 fileName: "components/RecommendedWhole30.jsx",
-                                lineNumber: 104,
+                                lineNumber: 114,
                                 columnNumber: 15
                             }, this)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: "No recipes found. "
+                            children: "No recipes found."
                         }, void 0, false, {
                             fileName: "components/RecommendedWhole30.jsx",
-                            lineNumber: 114,
+                            lineNumber: 124,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 101,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -41674,28 +41742,28 @@ function RecommendedWhole30({ query }) {
                             children: "Show All"
                         }, void 0, false, {
                             fileName: "components/RecommendedWhole30.jsx",
-                            lineNumber: 119,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "components/RecommendedWhole30.jsx",
-                        lineNumber: 118,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/RecommendedWhole30.jsx",
-                lineNumber: 100,
+                lineNumber: 110,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/RecommendedWhole30.jsx",
-        lineNumber: 98,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
 }
-_s(RecommendedWhole30, "1x66Du8ccXgoLHCkC87akHoVKzc=");
+_s(RecommendedWhole30, "Vq/iQ192mTZVGB0JbcgosGloZOA=");
 _c = RecommendedWhole30;
 exports.default = RecommendedWhole30;
 var _c;
@@ -41744,7 +41812,7 @@ const Contact = ()=>{
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "We\u2019d love to hear from you! Share your thoughts, questions, or feedback by filling out the form below, and we\u2019ll get back to you promptly."
+                                children: "We\u2019d love to hear from you! Share your thoughts, questions, or feedback by filling out the form below, and we\u2019ll get back to you shortly."
                             }, void 0, false, {
                                 fileName: "components/Contact.jsx",
                                 lineNumber: 19,

@@ -17,7 +17,7 @@ const Contact = () => {
       <div className={style.contact_content}>
         <h1>Contact Us</h1>
         <p>
-        We’d love to hear from you! Share your thoughts, questions, or feedback by filling out the form below, and we’ll get back to you promptly.
+        We’d love to hear from you! Share your thoughts, questions, or feedback by filling out the form below, and we’ll get back to you shortly.
         </p>
       </div>
       <div className={style.form_container}>

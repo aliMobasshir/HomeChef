@@ -1455,6 +1455,11 @@ a {
   .jjQB4a_btn {
     font-size: 5.5vw;
   }
+
+  .jjQB4a_paginationBtn {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
 }
 
 .tjevqG_mainContainer {
