@@ -1873,6 +1873,13 @@ a {
   list-style-type: disc;
 }
 
+.CdOZGa_stepIngredients li {
+  font-family: Shantell Sans, cursive;
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
 .CdOZGa_stepEquipment {
   align-items: flex-start;
   gap: 3vw;
@@ -1890,7 +1897,7 @@ a {
   font-weight: 600;
 }
 
-.CdOZGa_equipmentList {
+.CdOZGa_stepEquipment li {
   font-family: Shantell Sans, cursive;
   font-size: 1.8vw;
   font-weight: 600;
@@ -2750,7 +2757,7 @@ input[type="checkbox"]:checked:before {
   font-weight: 600;
 }
 
-.M0v9NW_ingredientList {
+.M0v9NW_stepIngredients li {
   font-family: Shantell Sans, cursive;
   font-size: 1.8vw;
   font-weight: 600;
@@ -2779,7 +2786,7 @@ input[type="checkbox"]:checked:before {
   font-weight: 600;
 }
 
-.M0v9NW_equipmentList {
+.M0v9NW_stepEquipment li {
   font-family: Shantell Sans, cursive;
   font-size: 1.8vw;
   font-weight: 600;
